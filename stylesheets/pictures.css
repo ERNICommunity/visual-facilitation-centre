@@ -1,0 +1,101 @@
+
+
+
+#gallery{
+	/* The pics container */
+	width:100%;
+	height:800px;
+	position:relative;
+    z-index: 99;
+    display: inline-block;
+    background-color: #D0D0D1;
+}
+
+
+
+.polaroid{
+    position: relative;
+    content: attr(title);
+    width: 200px;
+    height:205px;
+    display: inline-block;
+    border:1px solid #000000;
+    margin: 15px;
+    padding: 10px;
+
+    background-color: #0054A6;
+    color: white;
+    text-align: center;
+    font-family: "Marker Felt", sans-serif; text-decoration: none; font-size: 18px;
+
+    -moz-box-shadow:2px 2px 3px #333333;
+    -webkit-box-shadow:2px 2px 3px #333333;
+    box-shadow:2px 2px 3px #333333;
+
+}
+
+.polaroid img{
+    width: 190px;
+    height: 170px;
+
+
+    background-color: #fcfcfc;
+    padding: 4px;
+    margin-bottom: 9px;
+}
+
+
+.polaroid img:hover{
+    opacity: .8;
+    -webkit-transform: scale(1.07,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+
+
+
+}
+
+
+
+
+
+label, input{
+	/* The modal dialog URL field */
+	display:block;
+	padding:3px;
+}
+
+label{
+	font-size:10px;
+}
+
+fieldset{
+	border:0;
+	margin-top:10px;
+}
+
+#url{
+	/* The URL field */
+	width:240px;
+}
+
+
+ul.polaroids a:after {
+    content: attr(title);
+}
+
+#main{
+	/* The main container */
+	width:780px;
+	margin:30px auto;
+}
+
+
+a, a:visited {
+	color:#00BBFF;
+	text-decoration:none;
+	outline:none;
+}
