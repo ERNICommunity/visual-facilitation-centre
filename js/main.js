@@ -1,7 +1,7 @@
 angular.module('FlowApp', ['flow'])
     .config(['flowFactoryProvider', function (flowFactoryProvider) {
         flowFactoryProvider.defaults = {
-            target: '.Sections/upload.php',
+            target: './uploader.php',
             permanentErrors: [404, 500, 501],
             maxChunkRetries: 1,
             chunkRetryInterval: 5000,
@@ -72,15 +72,9 @@ app.controller('DisplayController', ['$scope', 'Restangular','$routeParams',
         $scope.title = $routeParams.tag;
         var all = db.all('content');
 
-        // GET ALL
-        all.getList().then(function(data) {
-            $scope.all = data;
-
-            console.log(data);
-        });
 
         // SEARCH
-        all.customGET('', {"q": {"tags": $routeParams.tag }}).then(function(data) {
+        all.customGET('', {"q": {"section": $routeParams.tag }}).then(function(data) {
             $scope.search = data;
 
             $scope.contacts = data;
