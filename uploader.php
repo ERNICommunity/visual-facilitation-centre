@@ -22,6 +22,6 @@ if(isset($_FILES['upload'])){
 
 }
 
-echo json_encode($output, JSON_PRETTY_PRINT);
+echo json_encode($output, JSON_UNESCAPED_SLASHES);
 
 ?>
