@@ -1,5 +1,3 @@
-alert('this was pushed from repo.');
-
 angular.module('FlowApp', ['flow'])
     .config(['flowFactoryProvider', function (flowFactoryProvider) {
         flowFactoryProvider.defaults = {
