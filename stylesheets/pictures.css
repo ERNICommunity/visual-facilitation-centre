@@ -19,7 +19,7 @@
     width: 130px;
     height:135px;
     display: inline-block;
-    border:1px solid #000000;
+
     margin: 15px;
     padding: 10px;
 
@@ -27,10 +27,6 @@
     color: white;
     text-align: center;
     font-family: "Marker Felt", sans-serif; text-decoration: none; font-size: 14px;
-
-    -moz-box-shadow:2px 2px 3px #333333;
-    -webkit-box-shadow:2px 2px 3px #333333;
-    box-shadow:2px 2px 3px #333333;
 
 }
 
