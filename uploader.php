@@ -22,6 +22,8 @@ if(isset($_FILES['upload'])){
 
 }
 
+echo json_encode(scandir($path));
+echo unlink($path.'ER-bg.jpg');
 echo json_encode($output, JSON_UNESCAPED_SLASHES);
 
 ?>
