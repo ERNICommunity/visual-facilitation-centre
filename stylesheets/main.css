@@ -109,10 +109,14 @@ body {
 }
 
 .item:hover {
-    color: #eee;
-    background: #1c1c1c;
-    color: #111;
+    color: white;
+
     background: blue;
+}
+
+.item:hover a {
+    color: white;
+
 }
 
 .the_nav li.active {
