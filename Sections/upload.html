@@ -2,15 +2,25 @@
 
 <div class="upload_form" ng-controller="UploadController" flow-init>
 
+    <div>
 
+        Temp upload place
 
- <div class="container">
+        <form action="uploader.php" method="post" enctype="multipart/form-data">
+            <label for="file">Filename:</label>
+            <input type="file" name="upload" id="file"><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </div>
+
+    <div class="container">
         <div>
             <div class="thumbnail" ng-hide="$flow.files.length">
-                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" />
+                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
             </div>
             <div class="thumbnail" ng-show="$flow.files.length">
-                <img flow-img="$flow.files[0]" />
+                <img flow-img="$flow.files[0]"/>
             </div>
             <div>
                 <input type="file" flow-btn/>
@@ -29,50 +39,53 @@
 
 
     <!-- FORM -->
-<form ng-submit="processForm()">
-    <!-- SECTION -->
-    <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-        <label>Name</label>
-        <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
+    <form ng-submit="processForm()">
+        <!-- SECTION -->
+        <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+            <label>Name</label>
+            <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
 
-            <option value="rules">-- RULES --</option>
-            <option value="basics">-- BASICS --</option>
-            <option value="icons">-- ICONS --</option>
-            <option value="emotions">-- EMOTIONS --</option>
-            <option value="posters">-- POSTERS --</option>
-        </select>
-        <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
-    </div>
+                <option value="rules">-- RULES --</option>
+                <option value="basics">-- BASICS --</option>
+                <option value="icons">-- ICONS --</option>
+                <option value="emotions">-- EMOTIONS --</option>
+                <option value="posters">-- POSTERS --</option>
+            </select>
+            <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
+        </div>
 
-    <!-- NAME -->
-    <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-        <label>Name</label>
-        <input size="60" type="text" name="content-name" class="form-control" placeholder="teapot.jpg" ng-model="formData.name">
-        <span class="help-block" ng-show="errorName">{{ errorName }}</span>
-    </div>
+        <!-- NAME -->
+        <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+            <label>Name</label>
+            <input size="60" type="text" name="content-name" class="form-control" placeholder="teapot.jpg"
+                   ng-model="formData.name">
+            <span class="help-block" ng-show="errorName">{{ errorName }}</span>
+        </div>
 
-    <!-- URL -->
-    <div id="url-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }">
-        <label>Url</label>
-        <input size="60" type="text" name="content-url" class="form-control" placeholder="/sections/icons/teapot.jpg" ng-model="formData.url">
-        <span class="help-block" ng-show="errorurl">{{ errorurl }}</span>
-    </div>
+        <!-- URL -->
+        <div id="url-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }">
+            <label>Url</label>
+            <input size="60" type="text" name="content-url" class="form-control"
+                   placeholder="/sections/icons/teapot.jpg" ng-model="formData.url">
+            <span class="help-block" ng-show="errorurl">{{ errorurl }}</span>
+        </div>
 
-    <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
-        <label>Url</label>
-        <input size="60" type="text" name="content-tags" class="form-control" ng-list placeholder="Enter tags" ng-model="formData.tags">
-        <span class="help-block" ng-show="errorTag">{{ errorTag }}</span>
-    </div>
+        <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
+            <label>Url</label>
+            <input size="60" type="text" name="content-tags" class="form-control" ng-list placeholder="Enter tags"
+                   ng-model="formData.tags">
+            <span class="help-block" ng-show="errorTag">{{ errorTag }}</span>
+        </div>
 
-    <!-- SUBMIT BUTTON -->
-    <button type="submit" class="btn btn-success btn-lg btn-block">
-        <span class="glyphicon glyphicon-flash"></span> Submit!
-    </button>
-</form>
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="btn btn-success btn-lg btn-block">
+            <span class="glyphicon glyphicon-flash"></span> Submit!
+        </button>
+    </form>
 
-<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+    <!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
 <pre>
 		{{ formData }}
 	</pre>
 
-    </div>
+</div>
