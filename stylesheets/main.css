@@ -121,6 +121,11 @@ body {
 
 }
 
+.the_nav li.active a {
+    color: #ffffff;
+
+}
+
 .the_nav li i {
     display: inline-block;
     width: 24px;
