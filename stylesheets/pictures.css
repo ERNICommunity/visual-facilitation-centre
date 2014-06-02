@@ -39,7 +39,7 @@
 }
 
 .polaroid img:hover {
-    opacity: .8;
+
     -webkit-transform: scale(1.07, 1.07);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
