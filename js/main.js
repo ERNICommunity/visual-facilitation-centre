@@ -16,10 +16,9 @@ angular.module('FlowApp', ['flow'])
     }]);
 
 
-
 angular.module('RestangularApp', ["restangular"]);
 
-angular.module('RestangularApp').config(function(RestangularProvider, $httpProvider) {
+angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
 
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
@@ -31,7 +30,7 @@ angular.module('RestangularApp').config(function(RestangularProvider, $httpProvi
     RestangularProvider.setRestangularFields({
         id: '_id'
     });
-    RestangularProvider.setRequestInterceptor(function(elem, operation, what) {
+    RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
         if (operation === 'put') {
             elem._id = undefined;
             return elem;
@@ -40,14 +39,14 @@ angular.module('RestangularApp').config(function(RestangularProvider, $httpProvi
     });
 });
 
-var app =angular.module('app',
+var app = angular.module('app',
     [
         'RestangularApp', 'FlowApp'
     ]
 );
 
 app.config(['$routeProvider',
-    function($routeProvider) {
+    function ($routeProvider) {
         $routeProvider.
             when('/content/:tag', {
 
@@ -66,7 +65,7 @@ app.config(['$routeProvider',
     }]);
 
 
-app.controller('DisplayController', ['$scope', 'Restangular','$routeParams',
+app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
     function IndexCtrl($scope, db, $routeParams) {
 
         $scope.title = $routeParams.tag;
@@ -74,7 +73,7 @@ app.controller('DisplayController', ['$scope', 'Restangular','$routeParams',
 
 
         // SEARCH
-        all.customGET('', {"q": {"section": $routeParams.tag }}).then(function(data) {
+        all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
             $scope.search = data;
 
             $scope.contacts = data;
@@ -83,7 +82,7 @@ app.controller('DisplayController', ['$scope', 'Restangular','$routeParams',
         });
 
         // SEARCH
-        db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }}) ).getList().then(function(data) {
+        db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
             $scope.search = data;
             console.log(data);
         });
@@ -91,51 +90,43 @@ app.controller('DisplayController', ['$scope', 'Restangular','$routeParams',
     }]);
 
 
-app.controller('UploadController', ['$scope', 'Restangular','$routeParams',
-    function addContent ($scope, db, $routeParams) {
+app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
+    function addContent($scope, db, $routeParams) {
 
-    // create a blank object to hold our form information
-    // $scope will allow this to pass between controller and view
-    $scope.formData = {section:"basics"};
-        $scope.processForm = function() {
+        // create a blank object to hold our form information
+        // $scope will allow this to pass between controller and view
+        $scope.formData = {section: "basics"};
+        $scope.processForm = function () {
             $scope.formData.tags.push($scope.formData.section);
 
-            db.all('content').post($scope.formData).then(function(response) {
+            db.all('content').post($scope.formData).then(function (response) {
                 $scope.message = 'Your form has been sent!';
-                $scope.formData = {section:"basics"};
-            }).otherwise(function(response) {
+                $scope.formData = {section: "basics"};
+            }).otherwise(function (response) {
                     $scope.message = 'An error occured. Please fix data and try again';
 
                 });
 
         };
 
-}]);
+    }]);
 
 
+$(document).ready(function () {
 
-
-
-
-
-
-
-
-$( document ).ready(function() {
-
-    $(".the_nav li:has(a)").click(function() {
-        window.location = $("a:first",this).attr("href");
+    $(".the_nav li:has(a)").click(function () {
+        window.location = $("a:first", this).attr("href");
     });
 
 
     $.ajaxSetup({cache: false});
     var $nav = $('#primary_nav');
 
-    $('.menu li').click(function () {
+    $('.item').click(function () {
 
         //'unselect' all the rest
 
-        $('.menu li').each(function(index, element) {
+        $('.menu li').each(function (index, element) {
             $(this).removeClass('active'); // set all links' style to unselected first
         });
 
@@ -145,7 +136,7 @@ $( document ).ready(function() {
     });
 
 // Collapsing
-    $('[data-action="nav_switch"]').click(function() {
+    $('[data-action="nav_switch"]').click(function () {
         var $switch = $(this);
 
         $nav.toggleClass('collapsing');
@@ -153,22 +144,22 @@ $( document ).ready(function() {
         $switch.find('i').toggleClass("fa-chevron-circle-left fa-chevron-circle-right");
 
 
-        if ( $nav.hasClass('collapsing') ) {
+        if ($nav.hasClass('collapsing')) {
             $switch.find('span').text('Pin Menu');
         } else {
             $switch.find('span').text('Unpin Menu');
         }
     });
 
-    $nav.hover( function() {
-        if ( $nav.hasClass('collapsing') ) {
+    $nav.hover(function () {
+        if ($nav.hasClass('collapsing')) {
             $(this).toggleClass('collapsed');
         }
     });
 
 // Submenus
     $('.has_submenu').hover(
-        function() {
+        function () {
             var $sub = $(this).find('.submenu');
 
             var subheight = $sub.outerHeight(),
@@ -185,7 +176,6 @@ $( document ).ready(function() {
              $sub.css('margin-top', maxoffset );*/
         }
     );
-
 
 
 });
