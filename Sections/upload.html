@@ -1,5 +1,19 @@
 <!-- SHOW ERROR/SUCCESS MESSAGES -->
 <div class="container">
+
+    <div>
+
+        Temp upload place
+
+        <form action="uploader.php" method="post" enctype="multipart/form-data">
+            <label for="file">Filename:</label>
+            <input type="file" name="upload" id="file"><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </div>
+
+
     <div>
         <div class="thumbnail" ng-hide="$flow.files.length">
             <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
@@ -26,18 +40,6 @@
     </div>
 </div>
 <div class="upload_form" ng-controller="UploadController" flow-init>
-
-    <div>
-
-        Temp upload place
-
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
-            <label for="file">Filename:</label>
-            <input type="file" name="upload" id="file"><br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-
-    </div>
 
 
     <div id="messages" class="well" ng-show="message">{{ message }}</div>
