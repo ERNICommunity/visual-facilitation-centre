@@ -1,21 +1,3 @@
-angular.module('FlowApp', ['flow'])
-    .config(['flowFactoryProvider', function (flowFactoryProvider) {
-        flowFactoryProvider.defaults = {
-            target: './uploader.php',
-            permanentErrors: [404, 500, 501],
-            maxChunkRetries: 1,
-            chunkRetryInterval: 5000,
-            simultaneousUploads: 4,
-            singleFile: true
-        };
-        flowFactoryProvider.on('catchAll', function (event) {
-            console.log('catchAll', arguments);
-        });
-        // Can be used with different implementations of Flow.js
-        // flowFactoryProvider.factory = fustyFlowFactory;
-    }]);
-
-
 angular.module('RestangularApp', ["restangular"]);
 
 angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
@@ -41,7 +23,7 @@ angular.module('RestangularApp').config(function (RestangularProvider, $httpProv
 
 var app = angular.module('app',
     [
-        'RestangularApp', 'FlowApp'
+        'RestangularApp'
     ]
 );
 
