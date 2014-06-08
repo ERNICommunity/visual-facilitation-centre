@@ -1,5 +1,30 @@
 <!-- SHOW ERROR/SUCCESS MESSAGES -->
+<div class="container">
+    <div>
+        <div class="thumbnail" ng-hide="$flow.files.length">
+            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
+        </div>
+        <div class="thumbnail" ng-show="$flow.files.length">
+            <img flow-img="$flow.files[0]"/>
+        </div>
+        <div>
+            <input type="file" name="upload" id="file"><br>
 
+            <a href="#/upload" class="btn btn-danger" ng-show="$flow.files.length"
+               ng-click="$flow.cancel()">
+                Remove
+            </a>
+
+            <a href="#/upload" class="btn btn-danger" ng-show="$flow.files.length"
+               ng-click="$flow.submit()">
+                submit
+            </a>
+        </div>
+        <p>
+            Only PNG,GIF,JPG files allowed.
+        </p>
+    </div>
+</div>
 <div class="upload_form" ng-controller="UploadController" flow-init>
 
     <div>
@@ -14,27 +39,7 @@
 
     </div>
 
-    <div class="container">
-        <div>
-            <div class="thumbnail" ng-hide="$flow.files.length">
-                <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
-            </div>
-            <div class="thumbnail" ng-show="$flow.files.length">
-                <img flow-img="$flow.files[0]"/>
-            </div>
-            <div>
-                <input type="file" flow-btn/>
 
-                <a href="#/upload" class="btn btn-danger" ng-show="$flow.files.length"
-                   ng-click="$flow.cancel()">
-                    Remove
-                </a>
-            </div>
-            <p>
-                Only PNG,GIF,JPG files allowed.
-            </p>
-        </div>
-    </div>
     <div id="messages" class="well" ng-show="message">{{ message }}</div>
 
 
@@ -42,6 +47,8 @@
     <form ng-submit="processForm()">
         <!-- SECTION -->
         <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+
+
             <label>Name</label>
             <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
 
