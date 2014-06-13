@@ -6,7 +6,7 @@ $output = [];
 $status = 404;
 $message = 'Not Found';
 
-if(isset($_POST)){
+//if(isset($_POST)){
 	if(isset($_FILES['upload'])){
 		if($_FILES["upload"]["error"]) {
 			echo "Error: " . $_FILES["upload"]["error"] . "<br>";
@@ -27,7 +27,7 @@ if(isset($_POST)){
 		}
 	
 	}
-} 
+//} 
 
 //echo json_encode(scandir($path));
 //echo unlink($path.'ER-bg.jpg');
