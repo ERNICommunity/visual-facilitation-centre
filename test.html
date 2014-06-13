@@ -11,11 +11,26 @@
 	<script type="text/javascript" > 
 		
 		jQuery('form').submit(function(){
-			jQuery.post('uploader.php', jQuery('form').serialize(), function(){
-				alert('upload success')
-			})
-			event.preventDefault();
+
+			var fileFiled = document.getElementById('file');
+			var formData = new FormData();
 			
+			for (var i = 0; i < fileFiled.length; i++) {
+				var file = fileFiled[i];
+				formData.append('upload[]', file, file.name);
+			}
+			
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', 'uploader.php', true);
+			
+			xhr.onload = function () {
+				if (xhr.status === 200) {
+					alert('Upload');
+				} else {
+					alert('An error occurred!');
+				}
+			};
+
 		})
 		
 		
