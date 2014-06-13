@@ -1,51 +1,56 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-
 html,
 body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+
 }
+
 body {
     font-family: "Open Sans", sans-serif;
     background: white;
 }
 
-#body_wrap{
+#body_wrap {
     position: relative;
     width: 80%;
-    float: left;
+    float: right;
     z-index: 10;
+
 }
 
-.tag{
+.tag {
     display: inline-block;
 
     padding-right: 3px;
-    color: ghostwhite;
+    color: white;
     margin-top: 5px;
     font-size: 0.8em;
 
 }
-.tags{
+
+.tags {
     text-align: center;
-   height: 50px;
+    height: 50px;
     overflow: hidden;
     margin-top: 5px;
 
 }
 
-
 #window_wrap {
     min-height: 100%;
 
 }
+
 #primary_nav {
     z-index: 10;
     float: left;
     width: 20%;
+    position: fixed;
 }
+
 .the_nav {
     color: #888;
     font-weight: 500;
@@ -54,11 +59,9 @@ body {
     margin-right: 5px;
 }
 
-
-.header{
+.header {
     list-style: none;
     padding: 0;
-
 
     border-top: 2px solid lightgray;
 
@@ -74,7 +77,6 @@ body {
 
 }
 
-
 .header li {
     position: relative;
     font-size: 16px;
@@ -85,7 +87,6 @@ body {
     cursor: pointer;
 }
 
-
 .the_nav, .header li {
     position: relative;
     font-size: 16px;
@@ -95,6 +96,7 @@ body {
     transition: all 0.2s;
     cursor: pointer;
 }
+
 .the_nav, .header li span {
     text-decoration: none;
     transition: all 0.2s;
@@ -105,32 +107,45 @@ body {
     text-transform: uppercase
 
 }
+
 .item:hover {
-    color: #eee;
-    background: #1c1c1c;
-    color: #111;
+    color: white;
+
     background: blue;
 }
+
+.item:hover a {
+    color: white;
+
+}
+
 .the_nav li.active {
     color: #ffffff;
     background: #0054A6;
 
 }
+
+.the_nav li.active a {
+    color: #ffffff;
+
+}
+
 .the_nav li i {
     display: inline-block;
     width: 24px;
     text-align: center;
 
 }
+
 .header li img {
     padding-top: 10px;
-    margin-left:10px;
+    margin-left: 10px;
     text-align: center;
     width: 60%;
 
 }
 
-.upload_form{
+.upload_form {
     padding: 40px;
     margin-left: 100px;
     background-color: #D0D0D1;
@@ -148,7 +163,10 @@ body {
 }
 
 .thumbnail {
-    max-width: 200px; max-height: 150px; line-height: 20px; margin-bottom: 5px;
+    max-width: 200px;
+    max-height: 150px;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .thumbnail > img {
@@ -158,24 +176,26 @@ body {
     margin-right: auto;
 }
 
-.notop{
+.notop {
 
     border-top: none;
 }
-.search{
+
+.search {
 
     width: 90%;
     font-style: italic;
     color: grey;
     border-radius: 5px;
     border: 2px solid #2e4174;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: normal;
     transition: all 0.2s;
     margin-top: 10px;
 }
 
-.the_nav li a{
-   text-decoration: none;
+.the_nav li a {
+    text-decoration: none;
     transition: all 0.2s;
     color: #888888;
     font-weight: 500;
@@ -183,10 +203,7 @@ body {
     text-transform: uppercase
 }
 
-
-
-
-.submenu{
+.submenu {
     display: none;
 }
 
@@ -195,15 +212,18 @@ body {
     min-width: 100%;
     color: #ddd;
 }
+
 .the_nav .submenu li:hover {
     background: deepskyblue;
 }
+
 .the_nav .has_submenu:hover .submenu {
     z-index: 9000;
     display: inline;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s, z-index 0 0.2s;
 }
+
 #primary_nav,
 .the_nav,
 .the_nav_bg {
@@ -212,7 +232,7 @@ body {
 
 }
 
-.pin{
+.pin {
     background-color: #2e4174;
 }
 
@@ -223,32 +243,36 @@ body {
     height: 100%;
     z-index: -1;
 }
+
 .collapsing#primary_nav,
 .collapsing .the_nav,
 .collapsing .the_nav_bg {
     transition: width 0.2s;
 }
+
 .collapsing.collapsed#primary_nav,
 .collapsing.collapsed .the_nav,
 .collapsing.collapsed .the_nav_bg {
     width: 36px;
     transition: width 0.4s;
 }
+
 .collapsing.collapsed .the_nav li {
     padding: 0 6px;
 }
-
 
 .collapsing.collapsed .the_nav li span {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s, visibility 0 1.2s;
 }
+
 .collapsing.collapsed .the_nav input {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s, visibility 0 1.2s;
 }
+
 .collapsing.collapsed .the_nav a {
     visibility: hidden;
     opacity: 0;

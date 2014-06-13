@@ -1,23 +1,20 @@
+#gallery {
+    /* The pics container */
+    width: 100%;
 
-
-
-#gallery{
-	/* The pics container */
-	width:100%;
-	height:800px;
-	position:relative;
+    position: relative;
     z-index: 99;
     display: inline-block;
     background-color: #D0D0D1;
+    overflow: visible;
+    min-height: 700px;
 }
 
-
-
-.polaroid{
+.polaroid {
     position: relative;
     content: attr(title);
     width: 130px;
-    height:135px;
+    height: 135px;
     display: inline-block;
 
     margin: 15px;
@@ -26,72 +23,64 @@
     background-color: #0054A6;
     color: white;
     text-align: center;
-    font-family: "Marker Felt", sans-serif; text-decoration: none; font-size: 14px;
+    font-family: "Marker Felt", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
 
 }
 
-.polaroid img{
+.polaroid img {
     width: 120px;
     height: 115px;
-
 
     background-color: #fcfcfc;
     padding: 4px;
 
 }
 
+.polaroid img:hover {
 
-.polaroid img:hover{
-    opacity: .8;
-    -webkit-transform: scale(1.07,1.07);
+    -webkit-transform: scale(1.07, 1.07);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.07,1.07);
+    -moz-transform: scale(1.07, 1.07);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
 
-
-
 }
 
-
-
-
-
-label, input{
-	/* The modal dialog URL field */
-	display:block;
-	padding:3px;
+label, input {
+    /* The modal dialog URL field */
+    display: block;
+    padding: 3px;
 }
 
-label{
-	font-size:10px;
+label {
+    font-size: 10px;
 }
 
-fieldset{
-	border:0;
-	margin-top:10px;
+fieldset {
+    border: 0;
+    margin-top: 10px;
 }
 
-#url{
-	/* The URL field */
-	width:240px;
+#url {
+    /* The URL field */
+    width: 240px;
 }
-
 
 ul.polaroids a:after {
     content: attr(title);
 }
 
-#main{
-	/* The main container */
-	width:780px;
-	margin:30px auto;
+#main {
+    /* The main container */
+    width: 780px;
+    margin: 30px auto;
 }
 
-
 a, a:visited {
-	color:#00BBFF;
-	text-decoration:none;
-	outline:none;
+    color: #00BBFF;
+    text-decoration: none;
+    outline: none;
 }
