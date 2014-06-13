@@ -6,7 +6,7 @@ $output = [];
 $status = 404;
 $message = 'Not Found';
 
-if($_POST){
+if(isset($_POST)){
 	if(isset($_FILES['upload'])){
 		if($_FILES["upload"]["error"]) {
 			echo "Error: " . $_FILES["upload"]["error"] . "<br>";
