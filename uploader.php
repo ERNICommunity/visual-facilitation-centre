@@ -28,7 +28,8 @@ if(isset($_REQUEST)){
 		}
 	
 	} else {
-		$status = 409;
+		$status = 200;
+		$output = $_REQUEST;
 		$message = "file upload not found";
 	}
 } 
