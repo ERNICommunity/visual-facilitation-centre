@@ -29,7 +29,7 @@ if(isset($_REQUEST)){
 	
 	} else {
 		$status = 200;
-		$output = $_REQUEST['upload'];
+		$output = $_REQUEST['upload']['Upload'];
 		$message = "file upload not found";
 	}
 } 
