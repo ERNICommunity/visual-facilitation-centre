@@ -9,7 +9,8 @@ $message = 'Not Found';
 if(isset($_POST)){
 	if(isset($_FILES['upload'])){
 		if($_FILES["upload"]["error"]) {
-			echo "Error: " . $_FILES["upload"]["error"] . "<br>";
+			$status = 409;
+			$message = "Error: " . $_FILES["upload"]["error"];
 		} else {
 			if (file_exists($path . $_FILES["upload"]["name"])) {				
 				$status = 409;
