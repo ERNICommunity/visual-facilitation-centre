@@ -3,7 +3,7 @@
 
 <form action="uploader.php" method="post" enctype="multipart/form-data">
     <label for="file">Filename:</label>
-    <input type="file" name="upload" id="file"><br>
+    <input type="file" name="upload" id="file" multiple="multiple"><br>
     <input type="submit" name="submit" value="Submit">
 </form>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -12,15 +12,19 @@
 		
 		jQuery('form').submit(function(){
 			
-			var xhr = new XMLHttpRequest();
+			event.preventDefault();
 			
-			var fileFiled = document.getElementById('file');
+			var fileField = document.getElementById('file');
 			var formData = new FormData();
-			
-			for (var i = 0; i < fileFiled.length; i++) {
-				var file = fileFiled[i];
-				formData.append('upload[]', file, file.name);
+
+			formData.append('banana','banana');
+			for (var i = 0; i < fileField.files.length; i++) {
+				var file = fileField.files[i];
+				formData.append('image['+i+']', file);
 			}
+			
+/*
+			var xhr = new XMLHttpRequest();
 			
 			xhr.open('POST', 'uploader.php', true);
 			xhr.setRequestHeader("Content-Type", "multipart/form-data");
@@ -38,8 +42,18 @@
 				}
 			};
 			
+
 			
-			event.preventDefault();
+*/
+			$.ajax({
+				url: "uploader.php",
+				type: "POST",
+				data: formData,
+				processData: false,  
+				contentType: false   
+			});			
+			
+			
 
 		})
 		

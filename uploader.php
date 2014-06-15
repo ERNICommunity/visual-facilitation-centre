@@ -7,29 +7,56 @@ $status = 404;
 $message = 'Not Found';
 
 if(isset($_REQUEST)){
-	if(isset($_FILES['upload'])){
-		if($_FILES["upload"]["error"]) {
-			$status = 409;
-			$message = "Error: " . $_FILES["upload"]["error"];
+	if(isset($_FILES['image'])){
+
+		if(count($_FILES['image']['name'])>1){
+			//multiple file upload
+			for($i=0; $i<count($_FILES['image']['name']); $i++){
+				if($_FILES['image']["error"][$i] != 0) {
+					$status = 206;
+					$output = $_FILES['image']["error"][$i];
+					$message = "Error: " . $_FILES['image']["error"][$i];
+				} else {
+					if (file_exists($path . $_FILES['image']["name"][$i])) {				
+						$status = 204;
+						$message = 'error file exists';
+						$output['details']['content-name'] = $_FILES['image']["name"][$i];
+						$output['details']['content-url'] = $path;
+					} else {
+						if(move_uploaded_file($_FILES['image']["tmp_name"], $path.$_FILES['image']["name"][$i])){
+							$status = 201;
+							$message = 'upload successful';
+							$output['details']['content-name'] = $_FILES['image']["name"][$i];
+							$output['details']['content-url'] = $path;
+						}
+					}
+				}
+			}
 		} else {
-			if (file_exists($path . $_FILES["upload"]["name"])) {				
+			//single file upload
+			if($_FILES['image']["error"] != 0) {
 				$status = 409;
-				$message = 'error file exists';
-				$output['details']['content-name'] = $_FILES["upload"]["name"];
-				$output['details']['content-url'] = $path;
+				$output = $_FILES['image']["error"];
+				$message = "Error: " . $_FILES['image']["error"];
 			} else {
-				if(move_uploaded_file($_FILES["upload"]["tmp_name"], $path.$_FILES["upload"]["name"])){
-					$status = 200;
-					$message = 'upload successful';
-					$output['details']['content-name'] = $_FILES["upload"]["name"];
+				if (file_exists($path . $_FILES['image']["name"])) {				
+					$status = 204;
+					$message = 'error file exists';
+					$output['details']['content-name'] = $_FILES['image']["name"];
 					$output['details']['content-url'] = $path;
+				} else {
+					if(move_uploaded_file($_FILES['image']["tmp_name"], $path.$_FILES['image']["name"])){
+						$status = 201;
+						$message = 'upload successful';
+						$output['details']['content-name'] = $_FILES['image']["name"];
+						$output['details']['content-url'] = $path;
+					}
 				}
 			}
 		}
 	
 	} else {
-		$status = 200;
-		$output = $_REQUEST['upload'];
+		$status = 409;
 		$message = "file upload not found";
 	}
 } 
