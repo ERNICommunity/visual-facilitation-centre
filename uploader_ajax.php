@@ -17,17 +17,19 @@ if(isset($_REQUEST)){
 					$output = $_FILES['image']["error"][$i];
 					$message = "Error: " . $_FILES['image']["error"][$i];
 				} else {
+					$output['details'] = [];
+					
 					if (file_exists($path . $_FILES['image']["name"][$i])) {				
 						$status = 204;
 						$message = 'error file exists';
-						$output['details']['content-name'][$i] = $_FILES['image']["name"][$i];
-						$output['details']['content-url'][$i] = $path;
+						$output['details'][$i]['content-name'] = $_FILES['image']["name"][$i];
+						$output['details'][$i]['content-url'] = $path;
 					} else {
 						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_FILES['image']["name"][$i])){
 							$status = 201;
 							$message = 'upload successful';
-							$output['details']['content-name'][$i] = $_FILES['image']["name"][$i];
-							$output['details']['content-url'][$i] = $path;
+							$output['details'][$i]['content-name'] = $_FILES['image']["name"][$i];
+							$output['details'][$i]['content-url'] = $path;
 						}
 					}
 				}
