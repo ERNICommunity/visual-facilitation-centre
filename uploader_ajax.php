@@ -34,21 +34,21 @@ if(isset($_REQUEST)){
 			}
 		} else {
 			//single file upload
-			if($_FILES['image']["error"] != 0) {
+			if($_FILES['image']["error"][0] != 0) {
 				$status = 409;
-				$output = $_FILES['image']["error"];
-				$message = "Error: " . $_FILES['image']["error"];
+				$output = $_FILES['image']["error"][0];
+				$message = "Error: " . $_FILES['image']["error"][0];
 			} else {
-				if (file_exists($path . $_FILES['image']["name"])) {				
+				if (file_exists($path . $_FILES['image']["name"][0])) {				
 					$status = 204;
 					$message = 'error file exists';
-					$output['details']['content-name'] = $_FILES['image']["name"];
+					$output['details']['content-name'] = $_FILES['image']["name"][0];
 					$output['details']['content-url'] = $path;
 				} else {
-					if(move_uploaded_file($_FILES['image']["tmp_name"], $path.$_FILES['image']["name"])){
+					if(move_uploaded_file($_FILES['image']["tmp_name"][0], $path.$_FILES['image']["name"][0])){
 						$status = 201;
 						$message = 'upload successful';
-						$output['details']['content-name'] = $_FILES['image']["name"];
+						$output['details']['content-name'] = $_FILES['image']["name"][0];
 						$output['details']['content-url'] = $path;
 					}
 				}
