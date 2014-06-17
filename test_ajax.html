@@ -16,13 +16,19 @@
 			
 			var fileField = document.getElementById('file');
 			var formData = new FormData();
-
-			formData.append('banana','banana');
+			
 			for (var i = 0; i < fileField.files.length; i++) {
 				var file = fileField.files[i];
 				formData.append('image['+i+']', file);
 			}
 			
+			/*
+0: request not initialized 
+1: server connection established
+2: request received 
+3: processing request 
+4: request finished and response is ready
+			*/
 /*
 			var xhr = new XMLHttpRequest();
 			
@@ -45,12 +51,16 @@
 
 			
 */
-			$.ajax({
+			jQuery.ajax({
 				url: "uploader_ajax.php",
 				type: "POST",
 				data: formData,
 				processData: false,  
-				contentType: false   
+				contentType: false,
+				success: function(data){
+					console.log(data);
+				},
+				   
 			});			
 			
 			
