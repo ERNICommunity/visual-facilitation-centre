@@ -63,6 +63,7 @@
 				contentType: false,
 				success: function(data){
 					alert(data);
+					jQuery('#uploadedImage').append('<img src="'+data.details.content-url+data.details.content-name+'"/>');
 				},
 				   
 			});			
