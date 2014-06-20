@@ -14,11 +14,16 @@ body {
 }
 
 #body_wrap {
-    position: relative;
-    width: 80%;
-    float: right;
-    z-index: 10;
+   }
 
+.header-wrapper{
+	max-width:1400px;
+	margin:0 auto;
+}
+
+.wrapper{
+	max-width:960px;
+	margin:0 auto;
 }
 
 .tag {
@@ -49,6 +54,7 @@ body {
     float: left;
     width: 20%;
     position: fixed;
+	display:none;
 }
 
 .the_nav {
@@ -278,3 +284,4 @@ body {
     opacity: 0;
     transition: opacity 0.2s, visibility 0 1.2s;
 }
+

@@ -38,7 +38,7 @@
         <ul class ="header notop">
             <li class="empty"><img src="./img/logo.png" alt="ERNI Consulting"></li>
 
-            <li class="empty"><span>Visual Facilitation center</span></li>
+            <li class="empty"><span>ERNI Visual Facilitation Center</span></li>
 
         </ul>
         <div class="the_nav">
@@ -73,13 +73,18 @@
 
 
 
-
-    <div id="body_wrap">
-        <div ng-view></div>
-
-
-
-    </div>
+    <header>
+		<div class="header-wrapper">
+			<img class="logo" src="./img/logo.png" alt="ERNI Consulting">
+			<span>ERNI Visual Facilitation Center</span>
+		</div>
+	</header>
+	
+	<div class="wrapper">
+		<div id="body_wrap">
+			<div ng-view></div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
