@@ -5,7 +5,6 @@
     position: relative;
     z-index: 99;
     display: inline-block;
-    background-color: #D0D0D1;
     overflow: visible;
     min-height: 700px;
 }
