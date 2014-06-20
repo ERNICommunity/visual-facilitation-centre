@@ -89,6 +89,17 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					formData.append('image['+i+']', file);
 				}
 				if(element.files && element.files.length > 0){				
+
+					$http({method: 'GET', url: '/someUrl'}).
+						success(function(data, status, headers, config) {
+      // this callback will be called asynchronously
+      // when the response is available
+    }).
+    error(function(data, status, headers, config) {
+      // called asynchronously if an error occurs
+      // or server returns response with an error status.
+    });
+
 					jQuery.ajax({
 						url: "/uploader_ajax.php",
 						type: "POST",
@@ -99,8 +110,9 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 //						jQuery('#uploadedImage').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
 						console.log(data);
 						$scope.$apply(function() {
-						alert($scope.formData.name); 
+						alert($scope); 
 						alert(data['details']['content-name']);
+						$scope.formData.url = data['details']['content-name'];
 						$scope.formData.url = data['details']['content-url'];
 						});						
 						},
@@ -109,6 +121,10 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 				}
 			})
 		}
+        
+        $scope.test = function () {
+        	$scope.formData.name = "hello";
+        }
         
         $scope.processForm = function () {
             $scope.formData.tags.push($scope.formData.section);
