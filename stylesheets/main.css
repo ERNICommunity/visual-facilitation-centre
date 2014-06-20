@@ -16,6 +16,11 @@ body {
 #body_wrap {
    }
 
+.header-wrapper{
+	max-width:1400px;
+	margin:0 auto;
+}
+
 .wrapper{
 	max-width:960px;
 	margin:0 auto;
