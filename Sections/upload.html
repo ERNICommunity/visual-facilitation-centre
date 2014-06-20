@@ -41,8 +41,9 @@
 <div class="upload_form" ng-controller="UploadController" flow-init>
 
 
-    <div id="messages" class="well" ng-show="message">{{ message }}</div>
+<a href="javascript:void(0)" data-ng-click="changeEntries">CLICKY!</a>
 
+    <div id="messages" class="well" ng-show="message">{{ message }}</div>
 
     <!-- FORM -->
     <form ng-submit="processForm()">
@@ -84,6 +85,8 @@
                    ng-model="formData.tags">
             <span class="help-block" ng-show="errorTag">{{ errorTag }}</span>
         </div>
+        
+        
 
         <!-- SUBMIT BUTTON -->
         <button type="submit" class="btn btn-success btn-lg btn-block">
