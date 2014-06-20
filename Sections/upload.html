@@ -11,32 +11,11 @@
         </form>
 
     </div>
+	<img id="placeHolder" ng-model="formData.image" src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
 
-
-    <div>
-        <div class="thumbnail" ng-hide="$flow.files.length">
-            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
-        </div>
-        <div class="thumbnail" ng-show="$flow.files.length">
-            <img flow-img="$flow.files[0]"/>
-        </div>
-        <div>
-            <input type="file" name="upload" id="file"><br>
-
-            <a href="#/upload" class="btn btn-danger" ng-show="$flow.files.length"
-               ng-click="$flow.cancel()">
-                Remove
-            </a>
-
-            <a href="#/upload" class="btn btn-danger" ng-show="$flow.files.length"
-               ng-click="$flow.submit()">
-                submit
-            </a>
-        </div>
-        <p>
-            Only PNG,GIF,JPG files allowed.
-        </p>
-    </div>
+	<p>
+		Only PNG,GIF,JPG files allowed.
+	</p>
 </div>
 <div class="upload_form" ng-controller="UploadController" flow-init>
 

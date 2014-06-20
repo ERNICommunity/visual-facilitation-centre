@@ -107,13 +107,8 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 						processData: false,  
 						contentType: false,
 						success: function(data){
-//						jQuery('#uploadedImage').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
-						console.log(data);
-						$scope.$apply(function() {
-						alert($scope); 
-						alert(data['details']['content-name']);
-						$scope.formData.url = data['details']['content-name'];
-						$scope.formData.url = data['details']['content-url'];
+						jQuery('#placeHolder').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
+						
 						});						
 						},
 				   
