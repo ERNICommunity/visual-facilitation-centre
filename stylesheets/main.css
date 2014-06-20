@@ -21,6 +21,11 @@ body {
 
 }
 
+.wrapper{
+	max-width:960px;
+	margin:0 auto;
+}
+
 .tag {
     display: inline-block;
 
@@ -278,3 +283,4 @@ body {
     opacity: 0;
     transition: opacity 0.2s, visibility 0 1.2s;
 }
+
