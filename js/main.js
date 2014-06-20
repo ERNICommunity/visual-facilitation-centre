@@ -108,7 +108,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 	
 		$scope.changeEntries = function () {
 			$scope.formData.name="benjo";
-		});
+		};
 
         
         $scope.processForm = function () {
