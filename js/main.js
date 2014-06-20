@@ -89,17 +89,6 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					formData.append('image['+i+']', file);
 				}
 				if(element.files && element.files.length > 0){				
-
-					$http({method: 'GET', url: '/someUrl'}).
-						success(function(data, status, headers, config) {
-      // this callback will be called asynchronously
-      // when the response is available
-    }).
-    error(function(data, status, headers, config) {
-      // called asynchronously if an error occurs
-      // or server returns response with an error status.
-    });
-
 					jQuery.ajax({
 						url: "/uploader_ajax.php",
 						type: "POST",
