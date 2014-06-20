@@ -109,7 +109,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 						success: function(data){
 						jQuery('#placeHolder').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
 						
-						});						
+											
 						},
 				   
 					});
