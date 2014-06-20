@@ -99,7 +99,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 //						jQuery('#uploadedImage').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
 						console.log(data);
 						$scope.$apply(function() {
-						//$scope.formData.name = 
+						alert($scope.formData.name); 
 						alert(data['details']['content-name']);
 						$scope.formData.url = data['details']['content-url'];
 						});						
