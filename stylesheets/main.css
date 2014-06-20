@@ -14,12 +14,7 @@ body {
 }
 
 #body_wrap {
-    position: relative;
-    width: 80%;
-    float: right;
-    z-index: 10;
-
-}
+   }
 
 .wrapper{
 	max-width:960px;
@@ -54,6 +49,7 @@ body {
     float: left;
     width: 20%;
     position: fixed;
+	display:none;
 }
 
 .the_nav {
