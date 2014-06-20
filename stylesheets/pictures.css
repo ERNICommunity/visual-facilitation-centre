@@ -11,31 +11,26 @@
 }
 
 .polaroid {
-    position: relative;
     content: attr(title);
     width: 130px;
     height: 135px;
     display: inline-block;
-
     margin: 15px;
     padding: 10px;
-
-    background-color: #0054A6;
-    color: white;
     text-align: center;
     font-family: "Marker Felt", sans-serif;
     text-decoration: none;
     font-size: 14px;
-
+	border-radius: 78px;
+	border: solid 1px #000;
 }
 
 .polaroid img {
     width: 120px;
     height: 115px;
-
-    background-color: #fcfcfc;
     padding: 4px;
-
+	border-radius: 58px;
+	border: none;
 }
 
 .polaroid img:hover {
