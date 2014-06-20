@@ -96,7 +96,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 						processData: false,  
 						contentType: false,
 						success: function(data){
-						jQuery('#placeHolder').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
+						jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);
 						
 											
 						},
