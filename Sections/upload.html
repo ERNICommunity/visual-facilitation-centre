@@ -67,7 +67,7 @@
         <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
             <label>Name</label>
             <input size="60" type="text" name="content-name" class="form-control" placeholder="teapot.jpg"
-                   ng-model="formData.name">
+                   ng-model="formData.name" value="{{formData.name}}">
             <span class="help-block" ng-show="errorName">{{ errorName }}</span>
         </div>
 
