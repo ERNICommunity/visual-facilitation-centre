@@ -78,6 +78,34 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         // create a blank object to hold our form information
         // $scope will allow this to pass between controller and view
         $scope.formData = {section: "basics"};
+        
+        $scope.setFiles = function(element){
+			$scope.$apply(function(scope){
+				console.log(element.files);
+				var formData = new FormData();
+			
+				for (var i = 0; i < element.files.length; i++) {
+					var file = element.files[i];
+					formData.append('image['+i+']', file);
+				}
+				if(element.files && element.files.length > 0){				
+					jQuery.ajax({
+						url: "/uploader_ajax.php",
+						type: "POST",
+						data: formData,
+						processData: false,  
+						contentType: false,
+						success: function(data){
+//						jQuery('#uploadedImage').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
+						},
+				   
+					});
+				}
+			})
+		}
+	
+	
+        
         $scope.processForm = function () {
             $scope.formData.tags.push($scope.formData.section);
 
