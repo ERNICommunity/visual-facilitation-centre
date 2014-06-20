@@ -97,19 +97,18 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 						contentType: false,
 						success: function(data){
 //						jQuery('#uploadedImage').append('<img src="'+data['details']['content-url']+data['details']['content-name']+'"/>');
-						$scope.formData.name = data['details']['content-name'];
-						$scope.formData.url = data['details']['content-url'];						
+						console.log(data);
+						$scope.$apply(function() {
+						alert($scope.formData.name); 
+						alert(data['details']['content-name']);
+						$scope.formData.url = data['details']['content-url'];
+						});						
 						},
 				   
 					});
 				}
 			})
 		}
-	
-		$scope.changeEntries = function () {
-			$scope.formData.name="benjo";
-		};
-
         
         $scope.processForm = function () {
             $scope.formData.tags.push($scope.formData.section);
