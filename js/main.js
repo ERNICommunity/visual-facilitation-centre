@@ -115,8 +115,8 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 				
 			})
 			
-			$scope.formData.name = tempName;
-			$scope.formData.url = tempURL;
+			$scope.formData.name = "banana";
+			$scope.formData.url = 'banana';
 		}
         
         $scope.test = function () {
