@@ -80,8 +80,9 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         $scope.formData = {section: "basics"};
         
         $scope.setFiles = function(element){
-        	var parentScope = $scope;
-        	
+			var tempName;
+			var tempURL;
+			
 			$scope.$apply(function(scope){
 				console.log(element.files);
 
@@ -92,9 +93,9 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					formData.append('image['+i+']', file);
 				}
 				
-				parentScope.formData.name = element.files[0].name;
-				parentScope.formData.url = '/uploads';
-				
+				tempName = element.files[0].name;
+				tempURL = '/uploads';
+/*
 				if(element.files && element.files.length > 0){				
 					jQuery.ajax({
 						url: "/uploader_ajax.php",
@@ -110,7 +111,12 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 				   
 					});
 				}
+*/				
+				
 			})
+			
+			$scope.formData.name = tempName;
+			$scope.formData.url = tempURL;
 		}
         
         $scope.test = function () {
