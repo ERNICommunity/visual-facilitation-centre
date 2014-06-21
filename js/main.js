@@ -83,6 +83,8 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 			var tempName;
 			var tempURL;
 			
+			$scope.formData = {section: 'banana'};
+			
 			$scope.$apply(function(scope){
 				console.log(element.files);
 
