@@ -82,12 +82,17 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         $scope.setFiles = function(element){
 			$scope.$apply(function(scope){
 				console.log(element.files);
+				
 				var formData = new FormData();
 			
 				for (var i = 0; i < element.files.length; i++) {
 					var file = element.files[i];
 					formData.append('image['+i+']', file);
 				}
+				
+				$scope.formData.name = element.files[0].name;
+				$scope.formData.url = element.files[0].url;
+				
 				if(element.files && element.files.length > 0){				
 					jQuery.ajax({
 						url: "/uploader_ajax.php",
