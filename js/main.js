@@ -97,7 +97,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 				
 				tempName = element.files[0].name;
 				tempURL = '/uploads';
-/*
+
 				if(element.files && element.files.length > 0){				
 					jQuery.ajax({
 						url: "/uploader_ajax.php",
@@ -112,8 +112,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 						},
 				   
 					});
-				}
-*/				
+				}				
 				
 			})
 			
