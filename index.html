@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>ERNI Visual Facilitation Center</title>
     <link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" media="screen" href="./stylesheets/main.css">
-    <link rel="stylesheet" type="text/css" href="./stylesheets/pictures.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/pictures.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script data-require="lodash.js@*" data-semver="2.4.1" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
-    <script data-require="restangular@*" data-semver="1.3.1" src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.js"></script>
+    <script data-require="lodash.js@*" data-semver="2.4.1"
+            src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script data-require="restangular@*" data-semver="1.3.1"
+            src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.js"></script>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
     <script src="./dist/ng-flow-standalone.js"></script>
 
     <!-- Tell IE we are using html5 + CSS -->
-    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/lightbox.js"></script>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="./stylesheets/lightbox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css"
+          type="text/css" media="all"/>
+    <link rel="stylesheet" href="./stylesheets/lightbox.css" type="text/css" media="all"/>
 
     <script type='text/javascript' src='./js/main.js'></script>
 
@@ -35,22 +39,21 @@
 <div id="window_wrap">
 
     <nav id="primary_nav">
-        <ul class ="header notop">
+        <ul class="header notop">
             <li class="empty"><img src="./img/logo.png" alt="ERNI Consulting"></li>
 
-            <li class="empty"><span>ERNI Visual Facilitation Center</span></li>
-
+            <li class="empty"><span>ERNI Visual Facilitation Centre</span></li>
         </ul>
         <div class="the_nav">
 
-            <ul class ="menu">
+            <ul class="menu">
                 <li><input class="search" type="text" placeholder="search" ng-model="tags"></li>
                 <li class="item"><a href="#content/favourites">Favourites</a></li>
 
                 <li class="item"><a href="#content/rules">Drawing Rules</a></li>
 
             </ul>
-            <ul class ="menu">
+            <ul class="menu">
 
                 <li class="item"></i><a href="#/content/basics">Basics</a></li>
 
@@ -59,35 +62,61 @@
                 <li class="item"><a href="#/content/posters">Posters</a></li>
 
             </ul>
-            <ul class ="menu">
+            <ul class="menu">
                 <li class="item"><a href="#/upload">Upload</a></li>
                 <li class="item"><span>Recently added</span></li>
 
 
-
-                </ul>
+            </ul>
 
         </div>
         <div class="the_nav_bg"></div>
     </nav>
 
 
-
     <header>
-		<div class="header-wrapper">
-			<img class="logo" src="./img/logo.png" alt="ERNI Consulting">
-			<span>ERNI Visual Facilitation Center</span>
-		</div>
-		<nav class="search-header">
-		<input class="search-field" type="text" placeholder="search" ng-model="tags">
-		</nav>
-	</header>
-	
-	<div class="wrapper">
-		<div id="body_wrap">
-			<div ng-view></div>
-		</div>
-	</div>
+        <div class="header-wrapper">
+            <img class="logo" src="./img/logo.png" alt="ERNI Consulting">
+            <span>ERNI Visual Facilitation Center</span>
+
+
+            <div class="menu-bar">
+
+
+                <ul id="drop-nav" class="menu">
+                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#">Categories</a>
+                        <ul>
+                            <li class="item"></i><a href="#/content/basics">Basics</a></li>
+
+                            <li class="item"><a href="#/content/icons">Icons</a></li>
+                            <li class="item"><a href="#/content/emotions">Emotions</a></li>
+                            <li class="item"><a href="#/content/posters">Posters</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Uploads</a>
+                        <ul>
+                            <li class="item"></i><a href="./test_ajax.html">Upload content</a></li>
+
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <nav class="search-header">
+            <input class="search-field" type="text" placeholder="search" ng-model="tags">
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div id="body_wrap">
+            <div ng-view></div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
