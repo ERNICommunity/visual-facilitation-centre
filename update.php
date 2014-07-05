@@ -1,1 +1,1 @@
-<?php `sudo git pull origin master`;?>
+<?php echo `who`; echo `sudo git pull origin master`;?>
