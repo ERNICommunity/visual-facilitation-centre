@@ -1,1 +1,7 @@
-<?php echo `whoami`; echo `git pull origin master`;?>
+<?php 
+
+if($_POST[]){ 
+	echo `git pull origin master`;
+};
+
+?>
