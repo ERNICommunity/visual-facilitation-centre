@@ -1,1 +1,1 @@
-<?php echo `whoami`; echo `sudo git pull origin master`;?>
+<?php echo `whoami`; echo `git pull origin master`;?>
