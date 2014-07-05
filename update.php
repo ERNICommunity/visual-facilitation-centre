@@ -7,7 +7,7 @@ if($headers['X-Hub-Signature'] == '1B788A18E'){
 		http_response_code('200');
 	}
 
-	if($_POST[]){ 
+	if(isset($_POST[])){ 
 		echo json_encode($_POST[], JSON_UNESCAPED_SLASHES);
 		
 	};
