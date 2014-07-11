@@ -72,8 +72,8 @@ app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
     }]);
 
 
-app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
-    function addContent($scope, db, $routeParams) {
+app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$http',
+    function addContent($scope, db, $routeParams, $http) {
 
         // create a blank object to hold our form information
         // $scope will allow this to pass between controller and view
@@ -119,29 +119,6 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 		}
         
 		$scope.upload =function(){
-			console.log($scope.files);
-			$scope.formData.name = $scope.files[0].name;
-			$scope.formData.url = '/uploads/'+ $scope.files[0].name;
-		
-			var formData = new FormData();
-			
-			for (var i = 0; i < $scope.files.length; i++) {
-				var file = $scope.files[i];
-				formData.append('image['+i+']', file);
-			}	
-			
-			if($scope.files && $scope.files.length > 0){				
-				jQuery.ajax({
-					url: "/uploader_ajax.php",
-					type: "POST",
-					data: formData,
-					processData: false,  
-					contentType: false,
-					success: function(data){
-						jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);	
-					},
-				});
-			}					
 			
 		}
         
@@ -149,17 +126,48 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         	$scope.formData.name = "hello";
         }
         
-        $scope.processForm = function () {
-            $scope.formData.tags.push($scope.formData.section);
+		$scope.processForm = function () {
+		    console.log($scope.files);
+		    $scope.formData.name = $scope.files[0].name;
+		    $scope.formData.url = '/uploads/' + $scope.files[0].name;
 
-            db.all('content').post($scope.formData).then(function (response) {
-                $scope.message = 'Your form has been sent!';
-                $scope.formData = {section: "basics"};
-            }).otherwise(function (response) {
-                    $scope.message = 'An error occured. Please fix data and try again';
+		    var formData = new FormData();
 
-                });
+		    formData.append('image', $scope.files[0]);
 
+		    if ($scope.files && $scope.files.length > 0) {
+		        $http.post('/uploader_ajax.php', formData,
+                    {
+                        headers: { 'Content-Type': undefined },
+                        transformRequest: angular.identity
+                    }).success(
+                    function (data, status, headers, config) {
+                        jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+
+                        $scope.formData.tags.push($scope.formData.section);
+
+                        db.all('content').post($scope.formData).then(function (response) {
+                            $scope.message = 'Your form has been sent!';
+                            $scope.formData = { section: "basics" };
+                        }).otherwise(function (response) {
+                            $scope.message = 'An error occured. Please fix data and try again';
+                        });
+
+                    }).error(
+                    function (data, status, headers, config) {
+                        $scope.message = 'An error occured uploading image. Please fix data and try again';
+                    });
+		        //jQuery.ajax({
+		        //    url: "/uploader_ajax.php",
+		        //    type: "POST",
+		        //    data: formData,
+		        //    processData: false,
+		        //    contentType: false,
+		        //    success: function (data) {
+		        //        jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+		        //    },
+		        //});
+		    }
         };
 
     }]);
