@@ -6,12 +6,11 @@
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <label for="file">Filename:</label>
 				<div ng-repeat="file in files">
-					{{ file.name }} {{ file.size}}
+					{{ file.size}}
 				</div>
             <input type="file" id="file" name="image" ng-model-instant onchange="angular.element(this).scope().setFiles(this)"/>
-			<button ng-click="upload()" > Upload </button>
         </form>
-
+		<button ng-click="upload()" > Upload </button>
     </div>
 	<img id="placeHolder" width="250" style="border:1px solid #e0e0e0; padding: 5px; " ng-model="formData.image" src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
 	<p>
