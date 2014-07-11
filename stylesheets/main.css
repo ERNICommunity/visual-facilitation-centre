@@ -79,7 +79,7 @@ li:hover li a:hover {
     padding: 10px;
 }
 
-nav.search-header {
+nav.search-header, .recent-view {
     background: #0054a6;
     padding: 2px 10px;
     text-align: center;
@@ -354,4 +354,6 @@ li.active {
     opacity: 0;
     transition: opacity 0.2s, visibility 0 1.2s;
 }
+
+/*footer*/
 
