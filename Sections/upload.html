@@ -1,7 +1,8 @@
 <!-- SHOW ERROR/SUCCESS MESSAGES -->
 <div class="container">
-<div class="upload_form" ng-controller="UploadController" flow-init>
+
     <div>
+
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <label for="file">Filename:</label>
 				<div ng-repeat="file in files">
@@ -11,11 +12,13 @@
         </form>
 		<button ng-click="upload()" > Upload </button>
     </div>
-		<img id="placeHolder" width="250" style="border:1px solid #e0e0e0; padding: 5px; " ng-model="formData.image" src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
-		<p>
-			Only PNG,GIF,JPG files allowed.
-		</p>
-	</div>
+	<img id="placeHolder" width="250" style="border:1px solid #e0e0e0; padding: 5px; " ng-model="formData.image" src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
+	<p>
+		Only PNG,GIF,JPG files allowed.
+	</p>
+</div>
+<div class="upload_form" ng-controller="UploadController" flow-init>
+
     <div id="messages" class="well" ng-show="message">{{ message }}</div>
 
     <!-- FORM -->
