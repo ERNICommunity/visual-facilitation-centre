@@ -147,7 +147,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$h
                             jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
                         }
 
-                        $scope.formData.tags.push($scope.formData.section);
+                        //$scope.formData.tags.push($scope.formData.section);
 
                         db.all('content').post($scope.formData).then(function (response) {
                             $scope.message = 'Your form has been sent!';
