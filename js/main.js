@@ -118,7 +118,37 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 			
 		}
         
-        $scope.test = function () {
+		$scope.upload =function(){
+				console.log($scope.files);
+
+				var formData = new FormData();
+			
+				for (var i = 0; i < $scope.files.length; i++) {
+					var file = $scope.files[i];
+					formData.append('image['+i+']', file);
+				}
+				
+				tempName = $scope.files[0].name;
+				tempURL = '/uploads';
+
+				if($scope.files && $scope.files.length > 0){				
+					jQuery.ajax({
+						url: "/uploader_ajax.php",
+						type: "POST",
+						data: formData,
+						processData: false,  
+						contentType: false,
+						success: function(data){
+							jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);	
+							$scope.formData.name = tempName;
+							$scope.formData.url = tempURL;
+						},
+					});
+				}					
+			}
+		}
+        
+		$scope.test = function () {
         	$scope.formData.name = "hello";
         }
         

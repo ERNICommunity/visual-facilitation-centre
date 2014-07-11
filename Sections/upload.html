@@ -15,6 +15,7 @@
 	<div ng-repeat="file in files">
 		{{ file.name }} {{ file.size}}
 	</div>
+	<button ng-click="upload"/>
 	<p>
 		Only PNG,GIF,JPG files allowed.
 	</p>
@@ -31,7 +32,6 @@
 
             <label>Name</label>
             <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
-
                 <option value="rules">-- RULES --</option>
                 <option value="basics">-- BASICS --</option>
                 <option value="icons">-- ICONS --</option>
@@ -45,7 +45,7 @@
         <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
             <label>Name</label>
             <input size="60" type="text" name="content-name" class="form-control" placeholder="teapot.jpg"
-                   ng-model="formData.name" value="{{formData.name}}">
+                   ng-model="formData.name" value="{{formData.name}}" disabled="disabled">
             <span class="help-block" ng-show="errorName">{{ errorName }}</span>
         </div>
 
@@ -53,7 +53,7 @@
         <div id="url-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }">
             <label>Url</label>
             <input size="60" type="text" name="content-url" class="form-control"
-                   placeholder="/sections/icons/teapot.jpg" ng-model="formData.url">
+                   placeholder="/sections/icons/teapot.jpg" ng-model="formData.url" disabled="disabled">
             <span class="help-block" ng-show="errorurl">{{ errorurl }}</span>
         </div>
 
