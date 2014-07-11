@@ -80,12 +80,10 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         $scope.formData = {section: "basics"};
         
         $scope.setFiles = function(element){
-			var tempName;
-			var tempURL;
-			
-			$scope.formData = {section: 'banana'};
-			
-			$scope.$apply(function(scope){
+			$scope.files= element.files;
+			$scope.$apply(
+			/*
+				function(scope){
 				console.log(element.files);
 
 				var formData = new FormData();
@@ -114,10 +112,10 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					});
 				}				
 				
-			})
+			}
+			*/
+			)
 			
-			$scope.formData.name = "banana";
-			$scope.formData.url = 'banana';
 		}
         
         $scope.test = function () {
