@@ -13,7 +13,9 @@
     </div>
 	<img id="placeHolder" width="250" style="border:1px solid #e0e0e0; padding: 5px; " ng-model="formData.image" src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image"/>
 	<div ng-repeat="file in files">
-		{{ file.name }} | {{ file.type }} | {{ file.size }}
+		file name: {{ file.name }}  
+		file type: {{ file.type }} 
+		file size: {{ file.size }}
 	</div>
 	<p>
 		Only PNG,GIF,JPG files allowed.
