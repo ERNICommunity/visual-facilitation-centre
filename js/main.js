@@ -128,8 +128,8 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 				formData.append('image['+i+']', file);
 			}
 				
-			tempName = $scope.files[0].name;
-			tempURL = '/uploads';
+			$scope.formData.name = $scope.files[0].name;
+			$scope.formData.url = '/uploads';
 
 			if($scope.files && $scope.files.length > 0){				
 				jQuery.ajax({
@@ -140,8 +140,6 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					contentType: false,
 					success: function(data){
 						jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);	
-						$scope.formData.name = tempName;
-						$scope.formData.url = tempURL;
 					},
 				});
 			}					
