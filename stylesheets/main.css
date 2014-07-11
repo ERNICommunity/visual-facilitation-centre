@@ -407,25 +407,45 @@ border: 1px solid #000;
 padding-top: 25px;
 }
 
-@media (min-width : 320px) {
+
+
+@media only screen 
+and (min-width : 321px) and (max-width :480px) {
 
     .sub-footer-header {
-        border: none;
-        padding: 0;
+     display:none;
     }
 
     .email {
-    width: 100%;
-    margin: auto;
+        width: 100%;
+        margin: auto;
     }
 
     input.emailaddress {
-    margin: auto;
-    width: 100%;
+        margin: auto;
+        width: 100%;
     }
 
     .email p {
-    text-align: center;
-     }
+        text-align: center;
+    }
 
-}
+    .social-media {
+        width: 70%;
+        margin: auto;
+    }
+
+   sub-footer1 {
+    width: 100%;
+    margin: auto;
+    }
+
+    .footer-tags {
+    display: none;
+    }
+    .links {
+    width: 100%;
+    margin-top: 5%;
+    }
+
+} 
