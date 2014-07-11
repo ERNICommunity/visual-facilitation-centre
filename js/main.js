@@ -142,7 +142,10 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$h
                         transformRequest: angular.identity
                     }).success(
                     function (data, status, headers, config) {
-                        jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+                        if (typeof(data) != 'undefined' && typeof(data.details) != 'undefined')
+                        {
+                            jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+                        }
 
                         $scope.formData.tags.push($scope.formData.section);
 
