@@ -133,7 +133,7 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$h
 
 		    var formData = new FormData();
 
-		    formData.append('image', $scope.files[0]);
+		    formData.append('image[0]', $scope.files[0]);
 
 		    if ($scope.files && $scope.files.length > 0) {
 		        $http.post('/uploader_ajax.php', formData,
