@@ -120,7 +120,8 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
         
 		$scope.upload =function(){
 			console.log($scope.files);
-			
+			$scope.formData.name = $scope.files[0].name;
+			$scope.formData.url = '/uploads';
 		
 			var formData = new FormData();
 			
@@ -138,8 +139,6 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
 					contentType: false,
 					success: function(data){
 						jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);	
-						$scope.formData.name = $scope.files[0].name;
-						$scope.formData.url = '/uploads';
 					},
 				});
 			}					
