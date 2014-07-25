@@ -8,7 +8,6 @@ body {
 
 }
 
-
 .menu-bar {
     float: right;
     margin-top: 30px;
@@ -101,7 +100,7 @@ input.search-field {
     display: inline-block;
 
     padding-right: 3px;
-    color: white;
+    color: black;
     margin-top: 5px;
     font-size: 0.8em;
 
@@ -367,53 +366,54 @@ li.active {
 
 .email {
 
-width: 50%;
-float: left;
+    width: 50%;
+    float: left;
 }
 
 .social-media {
 
-width: 49%;
-float: right;
+    width: 49%;
+    float: right;
 }
+
 .links {
-float: left;
-width: 51%;
-margin-top: 15px;
+    float: left;
+    width: 51%;
+    margin-top: 15px;
 }
+
 .footer-tags {
-width: 46%;
-float: right;
-margin-top: 15px;
+    width: 46%;
+    float: right;
+    margin-top: 15px;
 }
+
 sub-footer1 {
     border: 1px solid #000;
     margin-top: 26px;
     padding-top: 20px;
 }
 
-
-
 .sub-footer1 {
-max-width: 960px;
-margin: auto;
+    max-width: 960px;
+    margin: auto;
 }
+
 .sub-footer2 {
-max-width: 960px;
-margin: auto;
+    max-width: 960px;
+    margin: auto;
 }
+
 .sub-footer-header {
-border: 1px solid #000;
-padding-top: 25px;
+    border: 1px solid #000;
+    padding-top: 25px;
 }
 
-
-
-@media only screen 
+@media only screen
 and (min-width : 321px) and (max-width :480px) {
 
     .sub-footer-header {
-     display:none;
+        display: none;
     }
 
     .email {
@@ -435,17 +435,18 @@ and (min-width : 321px) and (max-width :480px) {
         margin: auto;
     }
 
-   sub-footer1 {
-    width: 100%;
-    margin: auto;
+    sub-footer1 {
+        width: 100%;
+        margin: auto;
     }
 
     .footer-tags {
-    display: none;
+        display: none;
     }
+
     .links {
-    width: 100%;
-    margin-top: 5%;
+        width: 100%;
+        margin-top: 5%;
     }
 
 } 
