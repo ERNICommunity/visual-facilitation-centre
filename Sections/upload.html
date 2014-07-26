@@ -47,12 +47,12 @@
             <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
         </div>
 
-        <!-- NAME -->
+
         <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
             <label>Name</label>
             <input size="60" type="text" name="content-name" class="form-control"
                    placeholder="please enter a name for your image"
-                   ng-model="formData.name" value="{{formData.name}}">
+                   ng-model="formData.name" value="{{formData.name}}" required>
             <span class="help-block" ng-show="errorName">{{ errorName }}</span>
         </div>
 
@@ -60,7 +60,8 @@
             <label>tags</label>
             <input size="60" type="text" name="content-tags" class="form-control" ng-list placeholder="Enter tags"
                    ng-model="formData.tags">
-            <span class="help-block" ng-show="errorTag">{{ errorTag }}</span>
+
+            <p ng-show="formData.name.$invalid && !formData.name.$pristine" class="help-block">You name is required.</p>
         </div>
 
         <!-- SUBMIT BUTTON -->
