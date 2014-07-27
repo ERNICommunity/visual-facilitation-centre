@@ -1,0 +1,67 @@
+<div  ng-controller="EditController">
+	
+	<h4>Edit Visual Facilitation Image List</h4>
+	
+	<div ng-controller="EditDialogController">
+    <script type="text/ng-template" id="modal">
+        <div class="modal-header">
+            <h3 class="modal-title">Edit image info</h3>
+        </div>
+        <div class="modal-body">
+			<table class="table grid" id="grid">
+				<thead>
+                <tr>
+                    <th>Image Name</th>
+                    <th>Image Category</th>
+                    <th>Favorite</th>
+                </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" ng-model="images[0].name" required="" />
+						</td>
+						<td>
+							<select ng-model="images[0].category" required="">
+								<option value="Basics">Basics</option><option value="Icons">Icons</option><option value="Emotions">Emotions</option><option value="Posters">Posters</option>
+							</select>
+						</td>
+						<td>
+							<input type="checkbox" ng-model="todo.IsCompleted"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="save()">Save</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+	<table class="table grid">
+        <thead>
+            <tr>
+                <th>Image Name</th>
+                <th>Image Category</th>
+                <th>Image Favorite</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="image in images">
+                <td>{{image.name}}</td>
+                <td>{{image.category}}</td>
+                <td>{{image.favorite}}</td>
+                <td>
+					<button class="btn btn-default" ng-click="open()">Edit</button>
+					<button class="btn btn-danger" ng-click="open('lg')">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	
+	</div>
+	
+
+</div>

@@ -21,9 +21,11 @@ angular.module('RestangularApp').config(function (RestangularProvider, $httpProv
     });
 });
 
+angular.module('BootstrapApp', ['ui.bootstrap']);
+
 var app = angular.module('app',
     [
-        'RestangularApp'
+        'RestangularApp', 'BootstrapApp'
     ]
 );
 
@@ -40,6 +42,10 @@ app.config(['$routeProvider',
                 templateUrl: 'Sections/upload.html',
                 controller: 'UploadController'
             }).
+			when('/edit', {
+				templateUrl: 'Sections/edit.html',
+				controller: 'EditController'
+			}).
             when('/', {
 
                 redirectTo: 'content/basics'
@@ -173,7 +179,139 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$h
         };
 
     }]);
+	
+var imageInfoList = [
+	{
+		name: "Banner",
+		category: "Basics",
+		favorite: "true",
+	},
+	{
+		name: "Brain",
+		category: "Icons",
+		favorite: "false",
+	},
+	{
+		name: "Arrow",
+		category: "Emotions",
+		favorite: "false",
+	},
+	{
+		name: "Book",
+		category: "Posters",
+		favorite: "true",
+	}
+];
 
+app.controller('EditController', ['$scope', 'Restangular', '$routeParams', 
+	function editEntries($scope, db, $routeParams) {		
+		console.log("EditController action");
+		/*
+		$scope.title = $routeParams.tag;
+		var all = db.all('content');
+
+
+		// SEARCH
+		all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+			$scope.search = data;
+
+			$scope.contacts = data;
+
+			console.log(data);
+		});
+
+		// SEARCH
+		db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
+			$scope.search = data;
+			console.log(data);
+		});
+		*/
+
+		$scope.images = imageInfoList;
+		console.log(imageInfoList);
+		
+	}]);
+	
+/*
+app.controller('ListController', function($scope, $rootScope) {
+    $scope.list = db_list;
+    
+    $scope.editItem = function(item) {
+        $rootScope.item = item;
+    }
+});
+
+app.controller('ItemController', function($scope, $rootScope) {
+    $scope.saveItem = function() {
+        db_list.push($rootScope.item);
+        $rootScope.item = null;
+    }
+});	
+*/
+
+var EditDialogController = function ($scope, $modal, $log) {
+
+  $scope.items = ['item1', 'item2', 'item3'];
+
+  $scope.open = function (size) {
+
+    var modalInstance = $modal.open({
+      templateUrl: 'modal',
+      controller: EditDialogInstanceController,
+      size: size,
+      /*resolve: {
+        items: function () {
+          return $scope.items;
+        }
+	   */
+	   resolve: {
+        images: function () {
+          return $scope.images;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selectedItem) {
+      $scope.selected = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
+  };
+};
+
+var EditDialogInstanceController = function ($scope, $modalInstance, images) {
+
+  $scope.images = images;
+  $scope.selected = {
+    image: $scope.images[0]
+  };
+
+  $scope.save = function () {
+    $modalInstance.close($scope.selected.image);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};
+
+/*
+var EditDialogInstanceController = function ($scope, $modalInstance, items) {
+
+  $scope.items = items;
+  $scope.selected = {
+    item: $scope.items[0]
+  };
+
+  $scope.save = function () {
+    $modalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};
+*/
 
 $(document).ready(function () {
 
