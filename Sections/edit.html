@@ -11,23 +11,27 @@
 			<table class="table grid" id="grid">
 				<thead>
                 <tr>
-                    <th>Image Name</th>
-                    <th>Image Category</th>
+                    <th>Name</th>
+                    <th>Section</th>
                     <th>Favorite</th>
+                    <th>Tags</th>
                 </tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<input type="text" ng-model="images[0].name" required="" />
+							<input type="text" ng-model="selectedImage.name" required="" />
 						</td>
 						<td>
-							<select ng-model="images[0].category" required="">
+							<select ng-model="selectedImage.section" required="">
 								<option value="Basics">Basics</option><option value="Icons">Icons</option><option value="Emotions">Emotions</option><option value="Posters">Posters</option>
 							</select>
 						</td>
 						<td>
-							<input type="checkbox" ng-model="todo.IsCompleted"/>
+							<input type="checkbox" ng-model="selectedImage.favorite"/>
+						</td>
+						<td>
+							<input type="text" ng-model="selectedImage.tags" required="" />
 						</td>
 					</tr>
 				</tbody>
@@ -42,19 +46,21 @@
 	<table class="table grid">
         <thead>
             <tr>
-                <th>Image Name</th>
-                <th>Image Category</th>
-                <th>Image Favorite</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Favorite</th>
+                <th>Tags</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="image in images">
                 <td>{{image.name}}</td>
-                <td>{{image.category}}</td>
+                <td>{{image.section}}</td>
                 <td>{{image.favorite}}</td>
+                <td>{{image.tags}}</td>
                 <td>
-					<button class="btn btn-default" ng-click="open()">Edit</button>
+					<button class="btn btn-default" ng-click="open(image.id)">Edit</button>
 					<button class="btn btn-danger" ng-click="open('lg')">Delete</button>
                 </td>
             </tr>

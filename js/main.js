@@ -1,36 +1,33 @@
-angular.module('RestangularApp', ["restangular"]);
+(function(){
+	angular.module('RestangularApp', ["restangular"]);
 
-angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
+	angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
 
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+		$httpProvider.defaults.useXDomain = true;
+		delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-    RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
-    RestangularProvider.setDefaultRequestParams({
-        apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
-    })
-    RestangularProvider.setRestangularFields({
-        id: '_id'
-    });
-    RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
-        if (operation === 'put') {
-            elem._id = undefined;
-            return elem;
-        }
-        return elem;
-    });
-});
+		RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
+		RestangularProvider.setDefaultRequestParams({
+			apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
+		})
+		RestangularProvider.setRestangularFields({
+			id: '_id'
+		});
+		RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
+			if (operation === 'put') {
+				elem._id = undefined;
+				return elem;
+			}
+			return elem;
+		});
+	});
 
-angular.module('BootstrapApp', ['ui.bootstrap']);
+	angular.module('BootstrapApp', ['ui.bootstrap']);
 
-var app = angular.module('app',
-    [
-        'RestangularApp', 'BootstrapApp'
-    ]
-);
+	var app = angular.module('app', [ 'RestangularApp', 'BootstrapApp' ]);
 
-app.config(['$routeProvider',
-    function ($routeProvider) {
+	app.config(['$routeProvider',
+		function ($routeProvider) {
         $routeProvider.
             when('/content/:tag', {
 
@@ -53,8 +50,8 @@ app.config(['$routeProvider',
     }]);
 
 
-app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
-    function IndexCtrl($scope, db, $routeParams) {
+	app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
+		function IndexCtrl($scope, db, $routeParams) {
 
         $scope.title = $routeParams.tag;
         var all = db.all('content');
@@ -78,8 +75,8 @@ app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
     }]);
 
 
-app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$http',
-    function addContent($scope, db, $routeParams, $http) {
+	app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$http',
+		function addContent($scope, db, $routeParams, $http) {
 
         // create a blank object to hold our form information
         // $scope will allow this to pass between controller and view
@@ -180,31 +177,53 @@ app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$h
 
     }]);
 	
-var imageInfoList = [
-	{
-		name: "Banner",
-		category: "Basics",
-		favorite: "true",
-	},
-	{
-		name: "Brain",
-		category: "Icons",
-		favorite: "false",
-	},
-	{
-		name: "Arrow",
-		category: "Emotions",
-		favorite: "false",
-	},
-	{
-		name: "Book",
-		category: "Posters",
-		favorite: "true",
-	}
-];
+	var imageInfoList = [
+		{
+			id: 0,
+			name: "Banner",
+			section: "Basics",
+			tags: ["words", "rules", "sketch"],
+			favorite: true,
+		},
+		{
+			id: 1,
+			name: "Brain",
+			section: "Icons",
+			tags: ["words", "sketch"],
+			favorite: false,
+		},
+		{
+			id: 2,
+			name: "Arrow",
+			section: "Emotions",
+			tags: ["words", "rules"],
+			favorite: false,
+		},
+		{
+			id: 3,
+			name: "Book",
+			section: "Posters",
+			tags: ["rules", "sketch"],
+			favorite: true,
+		},
+		{
+			id: 4,
+			name: "Bulb",
+			section: "Posters",
+			tags: ["words", "rules", "sketch"],
+			favorite: false,
+		},
+		{
+			id: 5,
+			name: "Clock",
+			section: "Posters",
+			tags: ["words", "rules"],
+			favorite: true,
+		}
+	];
 
-app.controller('EditController', ['$scope', 'Restangular', '$routeParams', 
-	function editEntries($scope, db, $routeParams) {		
+	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', 
+		function editEntries($scope, db, $routeParams) {		
 		console.log("EditController action");
 		/*
 		$scope.title = $routeParams.tag;
@@ -232,86 +251,49 @@ app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
 		
 	}]);
 	
-/*
-app.controller('ListController', function($scope, $rootScope) {
-    $scope.list = db_list;
-    
-    $scope.editItem = function(item) {
-        $rootScope.item = item;
-    }
-});
+	app.controller('EditDialogController', ['$scope', '$modal', '$log', 
+		function EditDialogController($scope, $modal, $log) {
+			
+			$scope.open = function (id) {
+				var modalInstance = $modal.open({
+				  templateUrl: 'modal',
+				  controller: EditDialogInstanceController,
+				  resolve: {
+					imagess: function () {
+						return $scope.images;
+					},
+					selectedImage: function() {
+						return $scope.images[id];
+					}
+				  }
+				});
+				
+				modalInstance.result.then(function (selectedItem) {
+				  $scope.selected = selectedItem;
+				}, function () {
+				  $log.info('Modal dismissed at: ' + new Date());
+				});
+			};
+	}]);
 
-app.controller('ItemController', function($scope, $rootScope) {
-    $scope.saveItem = function() {
-        db_list.push($rootScope.item);
-        $rootScope.item = null;
-    }
-});	
-*/
+	var EditDialogInstanceController = function ($scope, $modalInstance, imagess, selectedImage) {
 
-var EditDialogController = function ($scope, $modal, $log) {
+	  $scope.selectedImage = selectedImage;
+	  $scope.images = imagess;
+	  $scope.selected = {
+		image: $scope.images[0]
+	  };
 
-  $scope.items = ['item1', 'item2', 'item3'];
+	  $scope.save = function () {
+		$modalInstance.close($scope.selected.image);
+	  };
 
-  $scope.open = function (size) {
+	  $scope.cancel = function () {
+		$modalInstance.dismiss('cancel');
+	  };
+	};
+})();
 
-    var modalInstance = $modal.open({
-      templateUrl: 'modal',
-      controller: EditDialogInstanceController,
-      size: size,
-      /*resolve: {
-        items: function () {
-          return $scope.items;
-        }
-	   */
-	   resolve: {
-        images: function () {
-          return $scope.images;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
-
-var EditDialogInstanceController = function ($scope, $modalInstance, images) {
-
-  $scope.images = images;
-  $scope.selected = {
-    image: $scope.images[0]
-  };
-
-  $scope.save = function () {
-    $modalInstance.close($scope.selected.image);
-  };
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-};
-
-/*
-var EditDialogInstanceController = function ($scope, $modalInstance, items) {
-
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
-
-  $scope.save = function () {
-    $modalInstance.close($scope.selected.item);
-  };
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-};
-*/
 
 $(document).ready(function () {
 
