@@ -1,0 +1,88 @@
+<div  ng-controller="EditController">
+	
+	<h4>Edit Visual Facilitation Image List</h4>
+	
+	<div ng-controller="EditDialogController">
+    <script type="text/ng-template" id="modal">
+        <div class="modal-header">
+            <h3 class="modal-title">Edit image info</h3>
+        </div>
+        <div class="modal-body">
+			<table class="table grid" id="grid">
+				<thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>Favorite</th>
+                    <th>Tags</th>
+                </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" ng-model="selectedImage.name" required="" />
+						</td>
+						<td>
+							<select ng-model="selectedImage.section" required="">
+								<option value="Basics">Basics</option><option value="Icons">Icons</option><option value="Emotions">Emotions</option><option value="Posters">Posters</option>
+							</select>
+						</td>
+						<td>
+							<input type="checkbox" ng-model="selectedImage.favorite"/>
+						</td>
+						<td>
+							<input type="text" ng-model="selectedImage.tags" required="" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="save()">Save</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+	
+	<script type="text/ng-template" id="modalDelete">
+        <div class="modal-header">
+            <h3 class="modal-title">Delete image</h3>
+        </div>
+        <div class="modal-body">
+			<p>
+				Are you sure you want to delete the image <b>{{selectedImage.name}}.jpg</b>?
+			</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="deleteConfirmed()">Yes</button>
+            <button class="btn btn-warning" ng-click="deleteCancelled()">No</button>
+        </div>
+    </script>
+
+	<table class="table grid">
+        <thead>
+            <tr>
+				<th>ID</th>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Favorite</th>
+                <th>Tags</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="image in images">
+				<td>{{image.id}}</td>
+                <td>{{image.name}}</td>
+                <td>{{image.section}}</td>
+                <td>{{image.favorite}}</td>
+                <td>{{image.tags}}</td>
+                <td>
+					<button class="btn btn-default" ng-click="open(image.id)">Edit</button>
+					<button class="btn btn-danger" ng-click="delete(image.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	
+	</div>
+</div>
