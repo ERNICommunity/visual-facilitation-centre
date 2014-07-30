@@ -56,7 +56,6 @@
         $scope.title = $routeParams.tag;
         var all = db.all('content');
 
-
         // SEARCH
         all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
             $scope.search = data;
@@ -69,7 +68,7 @@
         // SEARCH
         db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
             $scope.search = data;
-            console.log(data);
+            console.log(data.files);
         });
 
     }]);
@@ -177,120 +176,116 @@
 
     }]);
 	
-	var imageInfoList = [
-		{
-			id: 0,
-			name: "Banner",
-			section: "Basics",
-			tags: ["words", "rules", "sketch"],
-			favorite: true,
-		},
-		{
-			id: 1,
-			name: "Brain",
-			section: "Icons",
-			tags: ["words", "sketch"],
-			favorite: false,
-		},
-		{
-			id: 2,
-			name: "Arrow",
-			section: "Emotions",
-			tags: ["words", "rules"],
-			favorite: false,
-		},
-		{
-			id: 3,
-			name: "Book",
-			section: "Posters",
-			tags: ["rules", "sketch"],
-			favorite: true,
-		},
-		{
-			id: 4,
-			name: "Bulb",
-			section: "Posters",
-			tags: ["words", "rules", "sketch"],
-			favorite: false,
-		},
-		{
-			id: 5,
-			name: "Clock",
-			section: "Posters",
-			tags: ["words", "rules"],
-			favorite: true,
-		}
-	];
-
 	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', 
 		function editEntries($scope, db, $routeParams) {		
 		console.log("EditController action");
-		/*
+		
 		$scope.title = $routeParams.tag;
 		var all = db.all('content');
 
+		$scope.images = [];
 
 		// SEARCH
 		all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
 			$scope.search = data;
-
 			$scope.contacts = data;
-
-			console.log(data);
+			
+			// creating cached image list for modification
+			for(var i = 0; i< data.length; i++){
+				$scope.images.push({
+					id: i,
+					name: data[i].name,
+					section: data[i].section,
+					tags: data[i].tags,
+					favorite: false,		
+				});
+			}
+			console.log($scope.images);
 		});
-
-		// SEARCH
-		db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
-			$scope.search = data;
-			console.log(data);
-		});
-		*/
-
-		$scope.images = imageInfoList;
-		console.log(imageInfoList);
+		
+		$scope.deleteImage = function (id) {
+		// delete image and sort remaining image id's new 
+            $scope.images.splice(id, 1);
+			console.log($scope.images);		
+			for(var i = 0;i < $scope.images.length; i++){
+				$scope.images[i].id = i; 
+			}		
+        }
 		
 	}]);
 	
 	app.controller('EditDialogController', ['$scope', '$modal', '$log', 
 		function EditDialogController($scope, $modal, $log) {
 			
+			// edit image function
 			$scope.open = function (id) {
 				var modalInstance = $modal.open({
 				  templateUrl: 'modal',
 				  controller: EditDialogInstanceController,
 				  resolve: {
-					imagess: function () {
-						return $scope.images;
-					},
 					selectedImage: function() {
 						return $scope.images[id];
 					}
 				  }
 				});
 				
-				modalInstance.result.then(function (selectedItem) {
-				  $scope.selected = selectedItem;
+				modalInstance.result.then(function (selectedImage) {
+				  $log.info('image with ID: ' + id + ' was edited and is going to be saved');
+				  $log.info('name: ' + selectedImage.name);
+				  $log.info('section: ' + selectedImage.section);
+				  $log.info('favorite: ' + selectedImage.favorite);
+				  $log.info('tags: ' + selectedImage.tags);
+				  $scope.images[id] = selectedImage;
 				}, function () {
-				  $log.info('Modal dismissed at: ' + new Date());
+				  $log.info('Edid Modal dismissed at: ' + new Date());
+				});
+			};
+			
+			// delete image function
+			$scope.delete = function(id){
+				var modalInstance = $modal.open({
+				  templateUrl: 'modalDelete',
+				  controller: DeleteItemInstanceController,
+				  resolve: {
+					selectedImage: function() {
+						return $scope.images[id];
+					}
+				  }
+				});
+	
+				modalInstance.result.then(function (id) {
+				  $log.info('image to be deleted: ' + id);
+				  $scope.deleteImage(id);
+				}, function () {
+				  $log.info('Delete Modal dismissed at: ' + new Date());
 				});
 			};
 	}]);
 
-	var EditDialogInstanceController = function ($scope, $modalInstance, imagess, selectedImage) {
+	var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
 
-	  $scope.selectedImage = selectedImage;
-	  $scope.images = imagess;
-	  $scope.selected = {
-		image: $scope.images[0]
-	  };
+		$scope.selectedImage = selectedImage;
 
-	  $scope.save = function () {
-		$modalInstance.close($scope.selected.image);
-	  };
+		$scope.save = function () {
+			$modalInstance.close($scope.selectedImage);
+		};
 
-	  $scope.cancel = function () {
-		$modalInstance.dismiss('cancel');
-	  };
+		$scope.cancel = function () {
+			$modalInstance.dismiss('cancel');
+		};
+	};
+	
+	var DeleteItemInstanceController = function ($scope, $modalInstance, selectedImage) {
+
+		$scope.selectedImage = selectedImage;
+
+		$scope.deleteConfirmed = function () {
+			$modalInstance.close(selectedImage.id);
+		};
+
+		$scope.deleteCancelled = function () {
+			$modalInstance.dismiss('cancel');
+		};
 	};
 })();
 

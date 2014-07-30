@@ -42,10 +42,26 @@
             <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
         </div>
     </script>
+	
+	<script type="text/ng-template" id="modalDelete">
+        <div class="modal-header">
+            <h3 class="modal-title">Delete image</h3>
+        </div>
+        <div class="modal-body">
+			<p>
+				Are you sure you want to delete the image <b>{{selectedImage.name}}.jpg</b>?
+			</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="deleteConfirmed()">Yes</button>
+            <button class="btn btn-warning" ng-click="deleteCancelled()">No</button>
+        </div>
+    </script>
 
 	<table class="table grid">
         <thead>
             <tr>
+				<th>ID</th>
                 <th>Name</th>
                 <th>Section</th>
                 <th>Favorite</th>
@@ -55,19 +71,18 @@
         </thead>
         <tbody>
             <tr ng-repeat="image in images">
+				<td>{{image.id}}</td>
                 <td>{{image.name}}</td>
                 <td>{{image.section}}</td>
                 <td>{{image.favorite}}</td>
                 <td>{{image.tags}}</td>
                 <td>
 					<button class="btn btn-default" ng-click="open(image.id)">Edit</button>
-					<button class="btn btn-danger" ng-click="open('lg')">Delete</button>
+					<button class="btn btn-danger" ng-click="delete(image.id)">Delete</button>
                 </td>
             </tr>
         </tbody>
     </table>
 	
 	</div>
-	
-
 </div>
