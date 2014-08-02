@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>ERNI Visual Facilitation Center</title>
     <link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
-
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="./stylesheets/main.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/pictures.css"/>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script data-require="lodash.js@*" data-semver="2.4.1"
             src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
@@ -18,9 +18,9 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
     <script src="./dist/ng-flow-standalone.js"></script>
-	
-	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
-	
+
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+
     <!-- Tell IE we are using html5 + CSS -->
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -40,63 +40,48 @@
 <body ng-app="app">
 
 <div id="window_wrap">
-    <nav id="primary_nav">
-        <ul class="header notop">
-            <li class="empty"><img src="./img/logo.png" alt="ERNI Consulting"></li>
-
-            <li class="empty"><span>ERNI Visual Facilitation Centre</span></li>
-        </ul>
-        <div class="the_nav">
-
-            <ul class="menu">
-                <li><input class="search" type="text" placeholder="search" ng-model="tags"></li>
-                <li class="item"><a href="#content/favourites">Favourites</a></li>
-                <li class="item"><a href="#content/rules">Drawing Rules</a></li>
-            </ul>
-            <ul class="menu">
-                <li class="item"></i><a href="#/content/basics">Basics</a></li>
-                <li class="item"><a href="#/content/icons">Icons</a></li>
-                <li class="item"><a href="#/content/emotions">Emotions</a></li>
-                <li class="item"><a href="#/content/posters">Posters</a></li>
-            </ul>
-            <ul class="menu">
-                <li class="item"><a href="#/upload">Upload</a></li>
-                <li class="item"><span></span></li>
-            </ul>
-        </div>
-        <div class="the_nav_bg"></div>
-    </nav>
 
 
     <header>
-        <div class="header-wrapper">
-            <img class="logo" src="./img/logo.png" alt="ERNI Consulting">
-            <span>ERNI Visual Facilitation Center</span>
-            <div class="menu-bar">
-                <ul id="drop-nav" class="menu">
-                    <li><a href="#">Favourites</a></li>
-                    <li><a href="#">Categories</a>
-                        <ul>
-                            <li class="item"></i><a href="#/content/basics">Basics</a></li>
+        <div class="logo">
+            <img src="./img/logo.png" alt="ERNI Consulting">
+            <span>Visual Facilitation Center</span>
 
-                            <li class="item"><a href="#/content/icons">Icons</a></li>
-                            <li class="item"><a href="#/content/emotions">Emotions</a></li>
-                            <li class="item"><a href="#/content/posters">Posters</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Uploads</a>
-                        <ul>
-                            <li class="item"></i><a href="#/upload">Upload Images</a></li>
-							<li class="item"></i><a href="#/edit">Manage Images</a></li>
-                        </ul>
-					</li>
-                </ul>
-            </div>
         </div>
+        <div class="header-wrapper">
 
-        <nav class="search-header">
-            <input class="search-field" type="text" placeholder="search" ng-model="tags">
-        </nav>
+            <nav class="search-header">
+                <input class="search-field" type="text" placeholder="search" ng-model="tags">
+
+                <div class="menu-bar">
+                    <ul id="drop-nav" class="menu">
+                        <li><a href="#">Favourites</a></li>
+                        <li><a href="#">Categories</a>
+                            <ul>
+                                <li class="item"></i><a href="#/content/basics">Basics</a></li>
+
+                                <li class="item"><a href="#/content/icons">Icons</a></li>
+                                <li class="item"><a href="#/content/emotions">Emotions</a></li>
+                                <li class="item"><a href="#/content/posters">Posters</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Uploads</a>
+                            <ul>
+                                <li class="item"></i><a href="#/upload">Upload Images</a></li>
+                                <li class="item"></i><a href="#/edit">Manage Images</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tips</a>
+                            <ul>
+                                <li class="item"></i><a href="#/upload">Latest Tips</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
     </header>
 
     <div class="wrapper">
@@ -105,40 +90,44 @@
         </div>
     </div>
 
-<div class="recent-view"> </div>
-                
-                <div class="sub-footer-header"></div>
-                <div class="sub-footer1">
-                    <div class="email">
-                        <input class="emailaddress" type="text" placeholder="Email Address">
-                        <p>Subscribe to Newsletter</p>
+    <div class="recent-view"></div>
 
-                    </div>
+    <div class="sub-footer-header"></div>
+    <div class="sub-footer1">
+        <div class="email">
+            <input class="emailaddress" type="text" placeholder="Email Address">
 
-                    <div class="social-media">
-                        <img class="fb" src="img/fb.jpg" width="50px" alt="FB">
-                        <img class="tw" src="img/tweeter.jpg" width="50px" alt="TWITTER">
-                        <img class="gl" src="img/google.jpg" width="45px" alt="GOOGLE">
-                    </div>
-                </div> <!--sub-footer1-->
+            <p>Subscribe to Newsletter</p>
 
-                <div class="sub-footer2">
-                     <div class="links">
-                    <ul id="Ul1" class="menu">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contribute</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Contract</a></li>
-                        <li><a href="#">Legal</a></li>
-                    </ul>
-                     </div>
+        </div>
 
-                    <div class="footer-tags">
-                       <img class="logo" src="./img/logo.png" alt="ERNI Consulting">
-                        <p>ERNI - Innovation in Process and Technology</p>
-                    </div>
+        <div class="social-media">
+            <img class="fb" src="img/fb.jpg" width="50px" alt="FB">
+            <img class="tw" src="img/tweeter.jpg" width="50px" alt="TWITTER">
+            <img class="gl" src="img/google.jpg" width="45px" alt="GOOGLE">
+        </div>
+    </div>
+    <!--sub-footer1-->
 
-                </div> <!--sub-footer2-->
+    <div class="sub-footer2">
+        <div class="links">
+            <ul id="Ul1" class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contract</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-tags">
+            <img class="logo" src="./img/logo.png" alt="ERNI Consulting">
+
+            <p>ERNI - Innovation in Process and Technology</p>
+        </div>
+
+    </div>
+    <!--sub-footer2-->
 
 </div>
 </body>
