@@ -86,11 +86,12 @@ nav.search-header {
 }
 
 input.search-field {
-    padding-left: 10%;
+
     display: inline-block;
     background: white;
-
-    margin: 10px;
+    margin-left: 30px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     border: none;
     color: grey;
 
