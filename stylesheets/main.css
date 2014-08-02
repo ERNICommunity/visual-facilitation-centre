@@ -119,6 +119,8 @@ input.search-field {
 .logo span {
     font-size: 2em;
     padding-left: 10px;
+    position: relative;
+    top: 18px;
 
 }
 
