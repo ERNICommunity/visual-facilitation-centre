@@ -37,6 +37,7 @@
     padding: 2px;
     border-radius: 50%;
     border: none;
+    overflow: hidden;
 }
 
 .polaroid img:hover {
