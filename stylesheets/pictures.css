@@ -13,12 +13,20 @@
     display: block;
     width: 115px;
     height: 115px;
+
+    top: 50%;
+    left: 50%;
+}
+
+.polaroid span {
+    top: 50px;
+    position: relative;
 }
 
 .polaroid {
     content: attr(title);
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     display: inline-block;
     margin: 20px;
     padding: 5px;
@@ -32,9 +40,9 @@
 }
 
 .polaroid img {
-    width: 185px;
-    height: 185px;
-    padding: 2px;
+    width: 155px;
+    height: 155px;
+
     border-radius: 50%;
     border: none;
     overflow: hidden;

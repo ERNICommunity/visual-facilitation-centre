@@ -118,8 +118,12 @@ input.search-field {
     vertical-align: 50%;
 }
 
+.logo img {
+    width: 150px;
+}
+
 .logo span {
-    font-size: 2em;
+    font-size: 1.7em;
     padding-left: 10px;
     position: relative;
     top: 18px;
@@ -131,6 +135,8 @@ input.search-field {
     height: 50px;
     overflow: hidden;
     margin-top: 5px;
+    position: relative;
+    top: 40px;
 
 }
 
