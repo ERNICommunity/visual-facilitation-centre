@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407177490673" ignored="false" />
-    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407177178104" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407178331830" ignored="false" />
+    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407179280053" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402292868178" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407172795090" ignored="false" />
-    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407177278356" ignored="false" />
+    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407179203885" ignored="false" />
     <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173125810" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
     <file path="/uploader.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402204770083" ignored="false" />
@@ -39,7 +40,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="21" selection-start="3345" selection-end="3345" vertical-scroll-proportion="2.25">
+            <state line="45" column="8" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -66,7 +67,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="19" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.4075">
+            <state line="131" column="11" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.82">
               <folding />
             </state>
           </provider>
@@ -603,7 +604,19 @@
       <created>1407177495441</created>
       <updated>1407177495442</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="make header link to home page">
+      <created>1407178190098</created>
+      <updated>1407178190098</updated>
+    </task>
+    <task id="LOCAL-00067" summary="make header link to home page">
+      <created>1407178245897</created>
+      <updated>1407178245898</updated>
+    </task>
+    <task id="LOCAL-00068" summary="make header link to home page">
+      <created>1407178336399</created>
+      <updated>1407178336399</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +809,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="21" selection-start="3345" selection-end="3345" vertical-scroll-proportion="2.25">
+        <state line="45" column="8" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
@@ -810,7 +823,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="19" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.4075">
+        <state line="131" column="11" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.82">
           <folding />
         </state>
       </provider>
