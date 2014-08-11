@@ -10,32 +10,43 @@
 }
 
 .polaroid a {
-	display: block;
-	width: 100px;
-	height: 115px;
+    display: block;
+    width: 115px;
+    height: 115px;
+
+    top: 50%;
+    left: 50%;
+}
+
+.polaroid span {
+    top: 40px;
+    position: relative;
 }
 
 .polaroid {
     content: attr(title);
-    width: 130px;
-    height: 135px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
-    margin: 15px;
-    padding: 10px;
+    margin: 20px;
+    padding: 5px;
     text-align: center;
-    font-family: "Marker Felt", sans-serif;
+
     text-decoration: none;
     font-size: 14px;
-	border-radius: 78px;
-	border: solid 1px #000;
+    border-radius: 50%;
+    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+    text-align: center;
 }
 
 .polaroid img {
-    width: 120px;
-    height: 115px;
-    padding: 4px;
-	border-radius: 58px;
-	border: none;
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
 }
 
 .polaroid img:hover {
@@ -79,8 +90,4 @@ ul.polaroids a:after {
     margin: 30px auto;
 }
 
-a, a:visited {
-    color: #00BBFF;
-    text-decoration: none;
-    outline: none;
-}
+

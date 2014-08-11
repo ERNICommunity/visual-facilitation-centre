@@ -1,18 +1,25 @@
 <!-- SHOW ERROR/SUCCESS MESSAGES -->
 <div class="container">
 
-    <div>
 
-        Temp upload place
+</div>
+<div class="upload_form" ng-controller="UploadController" flow-init>
+
+
+    <div>
+        <p>Please select a file that you would like to load.</p>
 
         <form action="uploader.php" method="post" enctype="multipart/form-data">
             <label for="file">Filename:</label>
-            <input type="file" id="file" name="image" ng-model-instant onchange="angular.element(this).scope().setFiles(this)"/><br>
+
+            <div ng-repeat="file in files">
+                {{ file.size}}
+            </div>
+            <input type="file" id="file" name="image" ng-model-instant
+                   onchange="angular.element(this).scope().setFiles(this)"/>
         </form>
 
     </div>
-</div>
-<div class="upload_form" ng-controller="UploadController" flow-init>
 
     <div id="messages" class="well" ng-show="message">{{ message }}</div>
 
@@ -22,43 +29,35 @@
         <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
 
 
-            <label>Name</label>
+            <p>Which section would you like to place your image? </p>
             <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
-
                 <option value="rules">-- RULES --</option>
                 <option value="basics">-- BASICS --</option>
                 <option value="icons">-- ICONS --</option>
                 <option value="emotions">-- EMOTIONS --</option>
                 <option value="posters">-- POSTERS --</option>
+                <option value="tips">-- TIPS --</option>
             </select>
             <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
         </div>
 
-        <!-- NAME -->
+
         <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
             <label>Name</label>
-            <input size="60" type="text" name="content-name" class="form-control" placeholder="teapot.jpg"
-                   ng-model="formData.name" value="{{formData.name}}">
+            <input size="60" type="text" name="content-name" class="form-control"
+                   placeholder="please enter a name for your image"
+                   ng-model="formData.name" value="{{formData.name}}" required>
             <span class="help-block" ng-show="errorName">{{ errorName }}</span>
-        </div>
-
-        <!-- URL -->
-        <div id="url-group" class="form-group" ng-class="{ 'has-error' : errorSuperhero }">
-            <label>Url</label>
-            <input size="60" type="text" name="content-url" class="form-control"
-                   placeholder="/sections/icons/teapot.jpg" ng-model="formData.url">
-            <span class="help-block" ng-show="errorurl">{{ errorurl }}</span>
         </div>
 
         <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
             <label>tags</label>
             <input size="60" type="text" name="content-tags" class="form-control" ng-list placeholder="Enter tags"
                    ng-model="formData.tags">
-            <span class="help-block" ng-show="errorTag">{{ errorTag }}</span>
+
+            <p ng-show="formData.name.$invalid && !formData.name.$pristine" class="help-block">You name is required.</p>
         </div>
-        
-        
-		<button type="button" ng-click="test()">Test</button>
+
         <!-- SUBMIT BUTTON -->
         <button type="submit" class="btn btn-success btn-lg btn-block">
             <span class="glyphicon glyphicon-flash"></span> Submit!

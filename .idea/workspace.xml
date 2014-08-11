@@ -4,18 +4,20 @@
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1403895942737" ignored="false" />
-    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1403895135978" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407178331830" ignored="false" />
+    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407179280053" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402292868178" ignored="false" />
-    <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402292008767" ignored="false" />
-    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1401731684118" ignored="false" />
-    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1403894980057" ignored="false" />
-    <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1401736634039" ignored="false" />
+    <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
+    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407172795090" ignored="false" />
+    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407179203885" ignored="false" />
+    <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173125810" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
     <file path="/uploader.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402204770083" ignored="false" />
+    <file path="/login.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1406988961305" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="39" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.27764127">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
+            <state line="45" column="8" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -56,52 +49,25 @@
       <file leaf-file-name="pictures.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="17" column="23" selection-start="275" selection-end="275" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_ajax.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_ajax.html">
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="10" column="11" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="-8.076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="34" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sections/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sections/upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+            <state line="131" column="11" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.82">
               <folding />
             </state>
           </provider>
@@ -110,16 +76,48 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+            <state line="18" column="36" selection-start="1002" selection-end="1002" vertical-scroll-proportion="33.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/js/upload.js">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+            <state line="31" column="57" selection-start="971" selection-end="971" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/google.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fb.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/fb.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/content.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="63" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
@@ -144,27 +142,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Sections/content.html" />
-        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/uploader.php" />
         <option value="$PROJECT_DIR$/test/js/upload.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test2.html" />
         <option value="$PROJECT_DIR$/test/index.html" />
         <option value="$PROJECT_DIR$/test2/image/index.html" />
-        <option value="$PROJECT_DIR$/Sections/upload.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/common.css" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Sections/login.html" />
+        <option value="$PROJECT_DIR$/Sections/content.html" />
+        <option value="$PROJECT_DIR$/Sections/upload.html" />
+        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
     <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="790" />
+    <option name="width" value="1440" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -225,6 +223,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -239,11 +279,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="73" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../httpdocs" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="78" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="445" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="443" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="75" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="74" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -472,23 +512,127 @@
       <created>1403895948108</created>
       <updated>1403895948108</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="tidy up upload form.">
+      <created>1406053872299</created>
+      <updated>1406053872299</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add validation to user name">
+      <created>1406142415660</created>
+      <updated>1406142415660</updated>
+    </task>
+    <task id="LOCAL-00045" summary="add validation to user name">
+      <created>1406302404788</created>
+      <updated>1406302404788</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add validation to user name">
+      <created>1406352844405</created>
+      <updated>1406352844405</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update styling to latest look">
+      <created>1406980254410</created>
+      <updated>1406980254410</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update styling to latest look">
+      <created>1406980270454</created>
+      <updated>1406980270454</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update styling to latest look">
+      <created>1406980453952</created>
+      <updated>1406980453952</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update styling to latest look">
+      <created>1407007649755</created>
+      <updated>1407007649755</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update styling to latest look">
+      <created>1407007926840</created>
+      <updated>1407007926841</updated>
+    </task>
+    <task id="LOCAL-00052" summary="update styling to latest look">
+      <created>1407008100143</created>
+      <updated>1407008100143</updated>
+    </task>
+    <task id="LOCAL-00053" summary="revised styling according to Daniela's new design input.">
+      <created>1407173592588</created>
+      <updated>1407173592588</updated>
+    </task>
+    <task id="LOCAL-00054" summary="added tips to visual facilitation">
+      <created>1407174115027</created>
+      <updated>1407174115028</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added tips to visual facilitation">
+      <created>1407174453385</created>
+      <updated>1407174453385</updated>
+    </task>
+    <task id="LOCAL-00056" summary="correct url for tips">
+      <created>1407174774100</created>
+      <updated>1407174774101</updated>
+    </task>
+    <task id="LOCAL-00057" summary="make header link to home page">
+      <created>1407175496704</created>
+      <updated>1407175496705</updated>
+    </task>
+    <task id="LOCAL-00058" summary="make header link to home page">
+      <created>1407175557427</created>
+      <updated>1407175557427</updated>
+    </task>
+    <task id="LOCAL-00059" summary="make header link to home page">
+      <created>1407175747773</created>
+      <updated>1407175747773</updated>
+    </task>
+    <task id="LOCAL-00060" summary="make header link to home page">
+      <created>1407175796890</created>
+      <updated>1407175796891</updated>
+    </task>
+    <task id="LOCAL-00061" summary="make header link to home page">
+      <created>1407176283516</created>
+      <updated>1407176283516</updated>
+    </task>
+    <task id="LOCAL-00062" summary="make header link to home page">
+      <created>1407176389792</created>
+      <updated>1407176389793</updated>
+    </task>
+    <task id="LOCAL-00063" summary="make header link to home page">
+      <created>1407176640173</created>
+      <updated>1407176640173</updated>
+    </task>
+    <task id="LOCAL-00064" summary="make header link to home page">
+      <created>1407177432293</created>
+      <updated>1407177432293</updated>
+    </task>
+    <task id="LOCAL-00065" summary="make header link to home page">
+      <created>1407177495441</created>
+      <updated>1407177495442</updated>
+    </task>
+    <task id="LOCAL-00066" summary="make header link to home page">
+      <created>1407178190098</created>
+      <updated>1407178190098</updated>
+    </task>
+    <task id="LOCAL-00067" summary="make header link to home page">
+      <created>1407178245897</created>
+      <updated>1407178245898</updated>
+    </task>
+    <task id="LOCAL-00068" summary="make header link to home page">
+      <created>1407178336399</created>
+      <updated>1407178336399</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1420" height="790" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.4996421" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.280597" sideWeight="0.4996421" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27941176" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982105" sideWeight="0.71940297" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6696165" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.280597" sideWeight="0.5003579" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3318584" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3313433" sideWeight="0.4996421" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33038348" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -540,7 +684,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add menu to website" />
+    <option name="LAST_COMMIT_MESSAGE" value="make header link to home page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -554,13 +698,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="remove white space" />
-    <MESSAGE value="new images" />
-    <MESSAGE value="add rules to the menu options" />
-    <MESSAGE value="update styling to make polariod thumbnails much smaller" />
-    <MESSAGE value="delete old photos" />
-    <MESSAGE value="add new content from Daniela&#10;" />
-    <MESSAGE value="add name to pop up" />
     <MESSAGE value="remove unpin menu item" />
     <MESSAGE value="implement order by rank" />
     <MESSAGE value="temp upload section" />
@@ -579,37 +716,20 @@
     <MESSAGE value="adding a temp menu" />
     <MESSAGE value="playing with new uploader code" />
     <MESSAGE value="add menu to website" />
+    <MESSAGE value="tidy up upload form." />
+    <MESSAGE value="add validation to user name" />
+    <MESSAGE value="update styling to latest look" />
+    <MESSAGE value="revised styling according to Daniela's new design input." />
+    <MESSAGE value="added tips to visual facilitation" />
+    <MESSAGE value="correct url for tips" />
+    <MESSAGE value="make header link to home page" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/ng-flow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/js/angular-file-upload-html5-shim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -622,44 +742,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/js/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="34" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common.css">
@@ -669,23 +762,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
+    <entry file="file://$PROJECT_DIR$/img/fb.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/google.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="11" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="-8.076923">
+        <state line="18" column="36" selection-start="1002" selection-end="1002" vertical-scroll-proportion="33.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="63" selection-start="2515" selection-end="2515" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="57" selection-start="971" selection-end="971" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="39" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.27764127">
+        <state line="45" column="8" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="275" selection-end="275" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="11" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.82">
           <folding />
         </state>
       </provider>

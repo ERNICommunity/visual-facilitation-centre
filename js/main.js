@@ -1,34 +1,33 @@
-angular.module('RestangularApp', ["restangular"]);
+(function(){
+	angular.module('RestangularApp', ["restangular"]);
 
-angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
+	angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
 
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+		$httpProvider.defaults.useXDomain = true;
+		delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-    RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
-    RestangularProvider.setDefaultRequestParams({
-        apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
-    })
-    RestangularProvider.setRestangularFields({
-        id: '_id'
-    });
-    RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
-        if (operation === 'put') {
-            elem._id = undefined;
-            return elem;
-        }
-        return elem;
-    });
-});
+		RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
+		RestangularProvider.setDefaultRequestParams({
+			apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
+		})
+		RestangularProvider.setRestangularFields({
+			id: '_id'
+		});
+		RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
+			if (operation === 'put') {
+				elem._id = undefined;
+				return elem;
+			}
+			return elem;
+		});
+	});
 
-var app = angular.module('app',
-    [
-        'RestangularApp'
-    ]
-);
+	angular.module('BootstrapApp', ['ui.bootstrap']);
 
-app.config(['$routeProvider',
-    function ($routeProvider) {
+	var app = angular.module('app', [ 'RestangularApp', 'BootstrapApp' ]);
+
+	app.config(['$routeProvider',
+		function ($routeProvider) {
         $routeProvider.
             when('/content/:tag', {
 
@@ -40,6 +39,10 @@ app.config(['$routeProvider',
                 templateUrl: 'Sections/upload.html',
                 controller: 'UploadController'
             }).
+			when('/edit', {
+				templateUrl: 'Sections/edit.html',
+				controller: 'EditController'
+			}).
             when('/', {
 
                 redirectTo: 'content/basics'
@@ -47,12 +50,11 @@ app.config(['$routeProvider',
     }]);
 
 
-app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
-    function IndexCtrl($scope, db, $routeParams) {
+	app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
+		function IndexCtrl($scope, db, $routeParams) {
 
         $scope.title = $routeParams.tag;
         var all = db.all('content');
-
 
         // SEARCH
         all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
@@ -66,78 +68,226 @@ app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
         // SEARCH
         db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
             $scope.search = data;
-            console.log(data);
+            console.log(data.files);
         });
 
     }]);
 
 
-app.controller('UploadController', ['$scope', 'Restangular', '$routeParams',
-    function addContent($scope, db, $routeParams) {
+	app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$http',
+		function addContent($scope, db, $routeParams, $http) {
 
         // create a blank object to hold our form information
         // $scope will allow this to pass between controller and view
         $scope.formData = {section: "basics"};
-        
-        $scope.setFiles = function(element){
-			var tempName;
-			var tempURL;
-			
-			$scope.formData = {section: 'banana'};
-			
-			$scope.$apply(function(scope){
-				console.log(element.files);
 
-				var formData = new FormData();
-			
-				for (var i = 0; i < element.files.length; i++) {
-					var file = element.files[i];
-					formData.append('image['+i+']', file);
-				}
-				
-				tempName = element.files[0].name;
-				tempURL = '/uploads';
+        $scope.setFiles = function (element) {
+            $scope.files = element.files;
+            $scope.$apply(
+                /*
+                 function(scope){
+                 console.log(element.files);
 
-				if(element.files && element.files.length > 0){				
-					jQuery.ajax({
-						url: "/uploader_ajax.php",
-						type: "POST",
-						data: formData,
-						processData: false,  
-						contentType: false,
-						success: function(data){
-						jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);
-						
-											
-						},
-				   
-					});
-				}				
-				
-			})
-			
-			$scope.formData.name = "banana";
-			$scope.formData.url = 'banana';
-		}
-        
-        $scope.test = function () {
-        	$scope.formData.name = "hello";
+                 var formData = new FormData();
+
+                 for (var i = 0; i < element.files.length; i++) {
+                 var file = element.files[i];
+                 formData.append('image['+i+']', file);
+                 }
+
+                 tempName = element.files[0].name;
+                 tempURL = '/uploads';
+
+                 if(element.files && element.files.length > 0){
+                 jQuery.ajax({
+                 url: "/uploader_ajax.php",
+                 type: "POST",
+                 data: formData,
+                 processData: false,
+                 contentType: false,
+                 success: function(data){
+                 jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);
+
+
+                 },
+
+                 });
+                 }
+
+                 }
+                 */
+            )
+
         }
-        
+
+        $scope.upload = function () {
+
+        }
+
+        $scope.test = function () {
+            $scope.formData.name = "hello";
+        }
+
         $scope.processForm = function () {
-            $scope.formData.tags.push($scope.formData.section);
+            console.log($scope.files);
+            $scope.formData.name = $scope.files[0].name;
+            $scope.formData.url = '/uploads/' + $scope.files[0].name;
 
-            db.all('content').post($scope.formData).then(function (response) {
-                $scope.message = 'Your form has been sent!';
-                $scope.formData = {section: "basics"};
-            }).otherwise(function (response) {
-                    $scope.message = 'An error occured. Please fix data and try again';
+            var formData = new FormData();
 
-                });
+            formData.append('image[0]', $scope.files[0]);
 
+            if ($scope.files && $scope.files.length > 0) {
+                $http.post('/uploader_ajax.php', formData,
+                    {
+                        headers: { 'Content-Type': undefined },
+                        transformRequest: angular.identity
+                    }).success(
+                    function (data, status, headers, config) {
+                        if (typeof(data) != 'undefined' && typeof(data.details) != 'undefined') {
+                            jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+                        }
+
+                        //$scope.formData.tags.push($scope.formData.section);
+
+                        db.all('content').post($scope.formData).then(function (response) {
+                            $scope.message = 'Your form has been sent!';
+
+                        }).otherwise(function (response) {
+                                $scope.message = 'An error occured. Please fix data and try again';
+                            });
+
+                    }).error(
+                    function (data, status, headers, config) {
+                        $scope.message = 'An error occured uploading image. Please fix data and try again';
+                    });
+                //jQuery.ajax({
+                //    url: "/uploader_ajax.php",
+                //    type: "POST",
+                //    data: formData,
+                //    processData: false,
+                //    contentType: false,
+                //    success: function (data) {
+                //        jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
+                //    },
+                //});
+            }
         };
 
     }]);
+	
+	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', 
+		function editEntries($scope, db, $routeParams) {		
+		console.log("EditController action");
+		
+		$scope.title = $routeParams.tag;
+		var all = db.all('content');
+
+		$scope.images = [];
+
+		// SEARCH
+		all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+			$scope.search = data;
+			$scope.contacts = data;
+			
+			// creating cached image list for modification
+			for(var i = 0; i< data.length; i++){
+				$scope.images.push({
+					id: i,
+					name: data[i].name,
+					section: data[i].section,
+					tags: data[i].tags,
+					favorite: false,		
+				});
+			}
+			console.log($scope.images);
+		});
+		
+		$scope.deleteImage = function (id) {
+		// delete image and sort remaining image id's new 
+            $scope.images.splice(id, 1);
+			console.log($scope.images);		
+			for(var i = 0;i < $scope.images.length; i++){
+				$scope.images[i].id = i; 
+			}		
+        }
+		
+	}]);
+	
+	app.controller('EditDialogController', ['$scope', '$modal', '$log', 
+		function EditDialogController($scope, $modal, $log) {
+			
+			// edit image function
+			$scope.open = function (id) {
+				var modalInstance = $modal.open({
+				  templateUrl: 'modal',
+				  controller: EditDialogInstanceController,
+				  resolve: {
+					selectedImage: function() {
+						return $scope.images[id];
+					}
+				  }
+				});
+				
+				modalInstance.result.then(function (selectedImage) {
+				  $log.info('image with ID: ' + id + ' was edited and is going to be saved');
+				  $log.info('name: ' + selectedImage.name);
+				  $log.info('section: ' + selectedImage.section);
+				  $log.info('favorite: ' + selectedImage.favorite);
+				  $log.info('tags: ' + selectedImage.tags);
+				  $scope.images[id] = selectedImage;
+				}, function () {
+				  $log.info('Edid Modal dismissed at: ' + new Date());
+				});
+			};
+			
+			// delete image function
+			$scope.delete = function(id){
+				var modalInstance = $modal.open({
+				  templateUrl: 'modalDelete',
+				  controller: DeleteItemInstanceController,
+				  resolve: {
+					selectedImage: function() {
+						return $scope.images[id];
+					}
+				  }
+				});
+	
+				modalInstance.result.then(function (id) {
+				  $log.info('image to be deleted: ' + id);
+				  $scope.deleteImage(id);
+				}, function () {
+				  $log.info('Delete Modal dismissed at: ' + new Date());
+				});
+			};
+	}]);
+
+	var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
+
+		$scope.selectedImage = selectedImage;
+
+		$scope.save = function () {
+			$modalInstance.close($scope.selectedImage);
+		};
+
+		$scope.cancel = function () {
+			$modalInstance.dismiss('cancel');
+		};
+	};
+	
+	var DeleteItemInstanceController = function ($scope, $modalInstance, selectedImage) {
+
+		$scope.selectedImage = selectedImage;
+
+		$scope.deleteConfirmed = function () {
+			$modalInstance.close(selectedImage.id);
+		};
+
+		$scope.deleteCancelled = function () {
+			$modalInstance.dismiss('cancel');
+		};
+	};
+})();
 
 
 $(document).ready(function () {
