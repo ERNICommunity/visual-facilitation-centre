@@ -130,7 +130,6 @@
 
         $scope.processForm = function () {
             console.log($scope.files);
-            $scope.formData.name = $scope.files[0].name;
             $scope.formData.url = '/uploads/' + $scope.files[0].name;
 
             var formData = new FormData();
