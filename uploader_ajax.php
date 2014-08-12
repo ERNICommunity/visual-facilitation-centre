@@ -55,17 +55,6 @@ if(isset($_REQUEST)){
 			}
 		}
 	
-	} else if {
-		isset($_REQUEST['delete']['name']){
-			if(file_exists($path . $_FILES['delete']["name"])){
-				unlink($path . $_FILES['delete']["name"]);
-				$status = 201;
-				$message = 'deleting file '.$_FILES['delete']["name"].' successful';
-			} else {
-				$status = 404;
-				$message = "Error: " . $_FILES['delete']["name"] . 'not found';
-			}
-		}
 	} else {
 		$status = 409;
 		$message = "file upload not found";
