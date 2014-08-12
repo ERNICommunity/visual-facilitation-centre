@@ -132,20 +132,16 @@
 			return '_' + Math.random().toString(36).substr(2, 9);
 		};
 
-        $scope.processForm = function () {
-            console.log($scope.files);
-            $scope.formData.url = '/uploads/' + $scope.files[0].name;
-            var now = new Date();
-            
-			var processedFilename = $scope.formData.name+$scope.generateId();
-			
+        $scope.processForm = function () {            
+        
+			var processedFilename = $scope.generateId() + $scope.files[0].name;			
+            $scope.formData.url = '/uploads/' + $scope.generateId() + $scope.files[0].name;
 			
 			
             var formData = new FormData();
 
-            formData.append('image[0]', $scope.files[0]);
-            formData.append('filename[0]', processedFilename);
-
+            formData.append('image[0]', $scope.files[0], processedFilename);
+            
             if ($scope.files && $scope.files.length > 0) {
                 $http.post('/uploader_ajax.php', formData,
                     {
