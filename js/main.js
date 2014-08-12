@@ -140,7 +140,7 @@
 			var processedFilename = $scope.formData.name+$scope.generateId();
 			
 			
-			
+			alert(processedFilename);
             var formData = new FormData();
 
             formData.append('image[0]', $scope.files[0]);
