@@ -23,7 +23,7 @@ if(isset($_REQUEST)){
 						$output['details']['content-name'] = $_FILES['image']["name"][$i];
 						$output['details']['content-url'] = $path;
 					} else {
-						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_REQUEST['filename'][$i])){
+						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_FILES['image']["name"][$i])){
 							$status = 201;
 							$message = 'upload successful';
 							$output['details']['content-name'] = $_FILES['image']["name"][$i];
@@ -55,7 +55,18 @@ if(isset($_REQUEST)){
 			}
 		}
 	
-	}  else {
+	} else if {
+		isset($_REQUEST['delete']['name']){
+			if(file_exists($path . $_FILES['delete']["name"])){
+				unlink($path . $_FILES['delete']["name"]);
+				$status = 201;
+				$message = 'deleting file '.$_FILES['delete']["name"].' successful';
+			} else {
+				$status = 404;
+				$message = "Error: " . $_FILES['delete']["name"] . 'not found';
+			}
+		}
+	} else {
 		$status = 409;
 		$message = "file upload not found";
 	}

@@ -143,8 +143,7 @@
 			alert(processedFilename);
             var formData = new FormData();
 
-            formData.append('image[0]', $scope.files[0]);
-            formData.append('filename[0]', processedFilename);
+            formData.append('image[0]', $scope.files[0], processedFilename);
 
             if ($scope.files && $scope.files.length > 0) {
                 $http.post('/uploader_ajax.php', formData,
