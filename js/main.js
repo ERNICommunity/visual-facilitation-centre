@@ -135,7 +135,7 @@
         $scope.processForm = function () {            
         
 			var processedFilename = $scope.generateId() + $scope.files[0].name;			
-            $scope.formData.url = '/uploads/' + $scope.generateId() + $scope.files[0].name;
+            $scope.formData.url = '/uploads/' + processedFilename;
 			
 			
             var formData = new FormData();
