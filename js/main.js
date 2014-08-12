@@ -139,8 +139,6 @@
 
 			$scope.formData.url = '/uploads/' + processedFilename;
            
-			
-			alert(processedFilename);
             var formData = new FormData();
 
             formData.append('image[0]', $scope.files[0], processedFilename);
