@@ -139,12 +139,13 @@
             
 			var processedFilename = $scope.formData.name+$scope.generateId();
 			
-            return($scope.files[0].name);
-            
+			
+			
             var formData = new FormData();
 
             formData.append('image[0]', $scope.files[0]);
-            
+            formData.append('filename[0]', processedFilename);
+
             if ($scope.files && $scope.files.length > 0) {
                 $http.post('/uploader_ajax.php', formData,
                     {
