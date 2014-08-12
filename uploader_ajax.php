@@ -23,7 +23,7 @@ if(isset($_REQUEST)){
 						$output['details']['content-name'] = $_FILES['image']["name"][$i];
 						$output['details']['content-url'] = $path;
 					} else {
-						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_FILES['image']["name"][$i])){
+						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_REQUEST['filename'][$i])){
 							$status = 201;
 							$message = 'upload successful';
 							$output['details']['content-name'] = $_FILES['image']["name"][$i];
