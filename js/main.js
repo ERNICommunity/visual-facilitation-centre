@@ -134,17 +134,17 @@
 
         $scope.processForm = function () {
             console.log($scope.files);
+            $scope.formData.url = '/uploads/' + $scope.files[0].name;
             var now = new Date();
+            
 			var processedFilename = $scope.formData.name+$scope.generateId();
-
-			$scope.formData.url = '/uploads/' + processedFilename;
-           
+			
+            return($scope.files[0][0].name);
+            
             var formData = new FormData();
 
-            formData.append('image[0]', $scope.files[0], processedFilename);
+            formData.append('image[0]', $scope.files[0]);
             
-            return($scope.files[0][0].name);
-
             if ($scope.files && $scope.files.length > 0) {
                 $http.post('/uploader_ajax.php', formData,
                     {
