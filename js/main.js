@@ -139,7 +139,7 @@
             
 			var processedFilename = $scope.formData.name+$scope.generateId();
 			
-            return($scope.files[0]);
+            return($scope.files[0].name);
             
             var formData = new FormData();
 
