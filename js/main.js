@@ -54,7 +54,7 @@
             });
     }]);
 
-	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams',
+	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http',
         function LoginCtrl($scope, db, $routeParams) {
             $scope.login = function () {
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
