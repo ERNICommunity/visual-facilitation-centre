@@ -55,7 +55,10 @@
     }]);
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams',
-        function addContent($scope, db, $routeParams) {
+        function LoginCtrl($scope, db, $routeParams) {
+            $scope.login = function () {
+                alert($scope.credentials.username);
+            }
         }]);
 
 	app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
