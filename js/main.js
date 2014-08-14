@@ -43,12 +43,20 @@
 				templateUrl: 'Sections/edit.html',
 				controller: 'EditController'
 			}).
+            when('/login', {
+
+                templateUrl: 'Sections/login.html',
+                controller: 'LoginController'
+            }).
             when('/', {
 
                 redirectTo: 'content/basics'
             });
     }]);
 
+	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams',
+        function addContent($scope, db, $routeParams) {
+        }]);
 
 	app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
 		function IndexCtrl($scope, db, $routeParams) {
