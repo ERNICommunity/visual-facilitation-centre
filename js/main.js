@@ -57,7 +57,15 @@
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams',
         function LoginCtrl($scope, db, $routeParams) {
             $scope.login = function () {
-                alert($scope.credentials.username);
+                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
+                .success(function (data)
+                {
+                    alert(data);
+                })
+                .error(function (data)
+                {
+                    alert('you failed');
+                });
             }
         }]);
 
