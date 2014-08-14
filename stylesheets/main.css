@@ -152,6 +152,9 @@ input.search-field {
 
 .login-wrapper {
     background-color: #636466;
+    height: 30px;
+    color: white;
+    padding-top: 3px;
 
 }
 
