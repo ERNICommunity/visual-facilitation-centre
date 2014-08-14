@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408009811256" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408012278530" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408010196604" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402292868178" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
@@ -40,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="14" selection-start="2121" selection-end="2121" vertical-scroll-proportion="-5.875">
+            <state line="50" column="14" selection-start="2122" selection-end="2122" vertical-scroll-proportion="2.25">
               <folding />
             </state>
           </provider>
@@ -67,7 +65,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="22" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.72126436">
+            <state line="162" column="22" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.72126436">
               <folding />
             </state>
           </provider>
@@ -627,7 +625,11 @@
       <created>1408009817613</created>
       <updated>1408009817614</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Merge branch 'master' of https://github.com/ERNICommunity/visual-facilitation-centre&#10;&#10;Conflicts:&#10;&#9;stylesheets/main.css&#10;">
+      <created>1408012284020</created>
+      <updated>1408012284020</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -845,14 +847,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="14" selection-start="2121" selection-end="2121" vertical-scroll-proportion="-5.875">
+        <state line="50" column="14" selection-start="2122" selection-end="2122" vertical-scroll-proportion="2.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="22" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.72126436">
+        <state line="162" column="22" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.72126436">
           <folding />
         </state>
       </provider>
