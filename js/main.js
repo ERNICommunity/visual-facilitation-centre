@@ -66,7 +66,7 @@
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                 .success(function (data)
                 {
-                    $cookies.put('UserCredential', JSON.stringify(data));
+//                    $cookies.put('UserCredential', JSON.stringify(data));
                     alert(JSON.stringify(data));
                 })
                 .error(function (data)
