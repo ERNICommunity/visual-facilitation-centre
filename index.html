@@ -47,17 +47,15 @@
         <div class="header-wrapper">
 
             <div class="logo">
-                <a href="/"><img src="./img/logo.png" alt="ERNI Consulting"></a>
-                <span>Visual Facilitation Center</span>
-
+                <a href="/"><img class="logo-img" src="./img/logo.png" alt="ERNI Consulting"></a>
+                <span class="title">Visual Facilitation Centre</span>
+                <a class="upload" href="#/upload">Upload<img src="./img/cloud_icon.png"></a>
             </div>
 
             <nav class="search-header">
-                <input class="search-field" type="text" placeholder="search" ng-model="tags">
 
                 <div class="menu-bar">
                     <ul id="drop-nav" class="menu">
-                        <li><a href="#">Favourites</a></li>
                         <li><a href="#">Categories</a>
                             <ul>
                                 <li class="item"></i><a href="#/content/basics">Basics</a></li>
@@ -67,21 +65,27 @@
                                 <li class="item"><a href="#/content/posters">Posters</a></li>
                             </ul>
                         </li>
-                        <li><a href="#/upload">Uploads</a>
-                            <ul>
-                                <li class="item"></i><a href="#/upload">Upload Images</a></li>
-                                <li class="item"></i><a href="#/edit">Manage Images</a></li>
-                            </ul>
+                        <li><a href="#">Favourites</a>
+
                         </li>
+                        <!--                        <li><a href="#/upload">Uploads</a>
+                                                    <ul>
+                                                        <li class="item"></i><a href="#/upload">Upload Images</a></li>
+                                                        <li class="item"></i><a href="#/edit">Manage Images</a></li>
+                                                    </ul>
+                                                </li>-->
                         <li><a href="#/content/tips">Tips</a>
 
                         </li>
                     </ul>
                 </div>
+                <input class="search-field" type="text" placeholder="search" ng-model="tags"/>
 
 
             </nav>
+        </div>
     </header>
+
 
     <div class="wrapper">
         <div id="body_wrap">
