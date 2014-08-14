@@ -6,12 +6,12 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408013156629" ignored="false" />
-    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408012903322" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408013644002" ignored="false" />
+    <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408013496865" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402292868178" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407172795090" ignored="false" />
-    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408012756519" ignored="false" />
+    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408013620647" ignored="false" />
     <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1408009632884" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
     <file path="/uploader.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402204770083" ignored="false" />
@@ -35,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="42" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.6742857">
+            <state line="50" column="28" selection-start="2131" selection-end="2131" vertical-scroll-proportion="2.25">
               <folding />
             </state>
           </provider>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="20" selection-start="2045" selection-end="2045" vertical-scroll-proportion="2.1538463">
+            <state line="154" column="14" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.27011493">
               <folding />
             </state>
           </provider>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/Sections/upload.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -637,7 +637,15 @@
       <created>1408013161469</created>
       <updated>1408013161469</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Merge branch 'master' of https://github.com/ERNICommunity/visual-facilitation-centre&#10;&#10;Conflicts:&#10;&#9;stylesheets/main.css&#10;">
+      <created>1408013455033</created>
+      <updated>1408013455033</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Merge branch 'master' of https://github.com/ERNICommunity/visual-facilitation-centre&#10;&#10;Conflicts:&#10;&#9;stylesheets/main.css&#10;">
+      <created>1408013653302</created>
+      <updated>1408013653302</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -673,7 +681,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.12241888" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3318584" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40707964" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40707964" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -853,16 +861,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="20" selection-start="2045" selection-end="2045" vertical-scroll-proportion="2.1538463">
+        <state line="50" column="28" selection-start="2131" selection-end="2131" vertical-scroll-proportion="2.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="42" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.6742857">
+        <state line="154" column="14" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.27011493">
           <folding />
         </state>
       </provider>
