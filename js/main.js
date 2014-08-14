@@ -56,12 +56,12 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
-
+/*
             $scope.checkMe = function () {
                 var me = $cookies.get('UserCredential');
                 alert(me);
             };
-
+*/
             $scope.login = function () {
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                 .success(function (data)
