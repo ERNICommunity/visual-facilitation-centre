@@ -100,8 +100,7 @@ nav.search-header {
     float: right;
     background-color: #9d9fa2;
     padding: 10px;
-    text-decoration: none;
-    color: white;
+
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
@@ -109,6 +108,18 @@ nav.search-header {
 
 .upload img {
     padding-left: 10px;
+}
+
+a.upload {
+    text-decoration: none;
+
+    color: white;
+}
+
+a.upload:hover {
+
+    color: white;
+    text-decoration: none;
 }
 
 input.search-field {
@@ -124,8 +135,9 @@ input.search-field {
 }
 
 .wrapper {
-    max-width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tag {
