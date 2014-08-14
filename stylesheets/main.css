@@ -150,6 +150,16 @@ input.search-field {
 
 }
 
+.login-wrapper {
+    background-color: #636466;
+
+}
+
+.login {
+    float: right;
+    margin-right: 10%;
+}
+
 .logo {
     padding-left: 30px;
     padding-top: 30px;
