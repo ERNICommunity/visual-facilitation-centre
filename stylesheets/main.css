@@ -2,10 +2,21 @@
 
 html,
 body {
-    height: 100%;
+    
+	font-family: "Open Sans", sans-serif;
+    background: white;
+	height: 100%;
     margin: 0px;
     padding: 0px;
+	}
+	
 
+	
+div#window_wrap {
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
 }
 
 .menu-bar {
@@ -16,10 +27,6 @@ body {
     display: inline;
 }
 
-body {
-    font-family: "Open Sans", sans-serif;
-    background: white;
-}
 
 ul {
     list-style: none;
@@ -79,7 +86,7 @@ li:hover li a:hover {
 }
 
 nav.search-header {
-    background: #E0E0E0;
+    background-color:#636466;
     margin-bottom: 15px;
     font-size: 1.2em;
     text-decoration: none;
