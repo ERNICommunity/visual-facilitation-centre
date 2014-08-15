@@ -77,8 +77,6 @@
                 .success(function (data){
 					$cookies.UserCredential = JSON.stringify(data);
 					$scope.setUserProfileInViewsModel();
-					$scope.toggleLabel();
-					$scope.toggleDisplay();
     	         })
         	     .error(function (data){
 					alert('login error');
