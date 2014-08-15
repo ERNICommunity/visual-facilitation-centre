@@ -73,7 +73,7 @@
 					$scope.logout();
 					$scope.loginLabel = 'logout';
 				} else {
-					$scope.login();
+					$scope.login($scope.credentials);
 					$scope.loginLabel = 'login';
 				}
 			}
