@@ -48,16 +48,8 @@
         <div class="login-wrapper" ng-controller="LoginController">
 			<div class="login">
 			
-			<form name="loginForm" ng-submit="login(credentials)" novalidate>
-			  <div style="display: {{ loggedOutDisplay }}">
-				  <input type="text" id="username" ng-model="credentials.username" placeholder="username">
-				  <input type="password" id="password" ng-model="credentials.password" placeholder="+xxxxxxxxxx">
-			  </div>
-			  <div style="display: {{ loggedInDisplay }}">
 			  	<img src="./img/profile-icon.png"/>
 	              {{ profile.username }}
-              </div>
-			  <button type="submit">{{ loginLabel }}</button>
 			</form>
 			
             
