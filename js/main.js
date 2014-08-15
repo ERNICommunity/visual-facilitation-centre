@@ -70,11 +70,11 @@
 			
 			$scope.log = function(){
 				if($scope.profile != undefined){
-					$scope.logout();
-					$scope.loginLabel = 'logout';
-				} else {
 					$scope.login();
 					$scope.loginLabel = 'login';
+				} else {
+					$scope.logout();
+					$scope.loginLabel = 'logout';
 				}
 			}
 			
