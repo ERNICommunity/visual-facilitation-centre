@@ -111,6 +111,7 @@
                 
                 } else {
                 	$scope.profile = undefined;
+                	$cookies.UserCredential = undefined;
                 	$scope.toggleLabel();
                 }
                 
