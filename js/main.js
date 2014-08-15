@@ -66,11 +66,15 @@
 				$scope.loginLabel = 'logout';
 			}
 			
+			$scope.toggle
+			
 			$scope.log = function(){
 				if($scope.profile){
-					$scope.login();
-				} else {
 					$scope.logout();
+					$scope.loginLabel = 'logout';
+				} else {
+					$scope.login();
+					$scope.loginLabel = 'login';
 				}
 			}
 			
