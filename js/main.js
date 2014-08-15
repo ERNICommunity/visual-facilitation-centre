@@ -56,14 +56,9 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
+
 			$scope.loginLabel;
 			
-			if($cookies.UserCredential){
-				$scope.setUserProfileInViewsModel();	
-				$scope.loginLabel = 'logout';
-			} else {
-				$scope.loginLabel = 'login';
-			}
 			$scope.setUserProfileInViewsModel = function(){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
 			}
@@ -75,8 +70,14 @@
 					$scope.loginLabel = 'login';
 				}
 			}
+						
+			if($cookies.UserCredential){
+				$scope.setUserProfileInViewsModel();
+				$scope.toggleLabel();	
+			} 
 			
-            $scope.login = function(){
+			
+			$scope.login = function(){
             	if($scope.profile == undefined){
 	                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                 	.success(function (data){
