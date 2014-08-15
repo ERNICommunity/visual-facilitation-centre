@@ -56,16 +56,24 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
+			$scope.loginLabel;
+			
 			if($cookies.UserCredential){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
+				$scope.loginLabel = 'login';
 			} else {
 				$scope.profile;
+				$scope.loginLabel = 'logout';
 			}
 			
-            $scope.checkMe = function(){
-                var me = $cookies.UserCredential;
-                alert(me);
-            };
+			$scope.log = function(){
+				if($scope.profile){
+					$scope.login();
+				} else {
+					$scope.logout();
+				}
+			}
+			
 			$scope.logout = function(){
 				$scope.profile = undefined;
 			}

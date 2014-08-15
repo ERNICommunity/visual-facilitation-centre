@@ -50,8 +50,8 @@
 			<form name="loginForm" ng-submit="login(credentials)" novalidate>
 			  <input type="text" id="username" ng-model="credentials.username" placeholder="username">
 			  <input type="password" id="password" ng-model="credentials.password" placeholder="+xxxxxxxxxx">
-			  <button type="submit">Login</button>
-			  <button type="button" ng-click="logout()">Logout</button>
+<!--			  <button type="submit">Login</button> -->
+			  <button type="button" ng-click="log()">{{ loginLabel }}</button>
 			</form>
 			
             
