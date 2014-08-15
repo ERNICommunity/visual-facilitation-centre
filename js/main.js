@@ -83,15 +83,15 @@
 			}
 			
 			/*set defaults based on user credentials cookie*/
-			if($cookies.UserCredential != undefined){
-				$scope.setUserProfileInViewsModel();	
-				$scope.loginLabel = 'logout';
-				$scope.loggedOutDisplay = 'none';
-				$scope.loggedInDisplay = 'block';
-			} else {
+			if($cookies.UserCredential == undefined){
 				$scope.loginLabel = 'login';
 				$scope.loggedOutDisplay = 'block';
 				$scope.loggedInDisplay = 'none';
+			} else {
+				$scope.setUserProfileInViewsModel();
+				$scope.loginLabel = 'logout';
+				$scope.loggedOutDisplay = 'none';
+				$scope.loggedInDisplay = 'block';
 			}
 			
 						
