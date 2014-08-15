@@ -56,7 +56,12 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
-
+			if($cookies.UserCredential){
+				$scope.profile = angular.fromJson($cookies.UserCredential);	
+			} else {
+				$scope.profile;
+			}
+			
             $scope.checkMe = function () {
                 var me = $cookies.UserCredential;
                 alert(me);
