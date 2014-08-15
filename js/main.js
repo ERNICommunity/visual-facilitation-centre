@@ -67,6 +67,7 @@
                 .success(function (data)
                 {
 //                    $cookies.put('UserCredential', JSON.stringify(data));
+					$cookies.UserCredential = JSON.stringify(data);
                     alert(JSON.stringify(data));
                 })
                 .error(function (data)
