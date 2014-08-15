@@ -86,12 +86,12 @@
 			if($cookies.UserCredential){
 				$scope.setUserProfileInViewsModel();	
 				$scope.loginLabel = 'logout';
-				$scope.loggedOutDisplay == 'none';
-				$scope.loggedInDisplay == 'block';
+				$scope.loggedOutDisplay = 'none';
+				$scope.loggedInDisplay = 'block';
 			} else {
 				$scope.loginLabel = 'login';
-				$scope.loggedOutDisplay == 'block';
-				$scope.loggedInDisplay == 'none';
+				$scope.loggedOutDisplay = 'block';
+				$scope.loggedInDisplay = 'none';
 			}
 			
 						
