@@ -56,14 +56,14 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
-
 			$scope.loginLabel;
 			
 			if($cookies.UserCredential){
-				$scope.setUserProfileInViewsModel();
-				$scope.toggleLabel();	
-			} 
-			
+				$scope.setUserProfileInViewsModel();	
+				$scope.loginLabel = 'logout';
+			} else {
+				$scope.loginLabel = 'login';
+			}
 			$scope.setUserProfileInViewsModel = function(){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
 			}
