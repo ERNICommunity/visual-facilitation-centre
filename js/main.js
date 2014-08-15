@@ -66,6 +66,8 @@
 			$scope.toggleLabel = function(){
 				if($scope.loginLabel == 'login'){
 					$scope.loginLabel = 'logout';
+				} else if($scope.loginLabel == undefined){
+					$scope.loginLabel = 'logout';
 				} else {
 					$scope.loginLabel = 'login';
 				}
