@@ -104,6 +104,7 @@
 						$cookies.UserCredential = JSON.stringify(data);
 						$scope.setUserProfileInViewsModel();
 						$scope.toggleLabel();
+						$scope.toggleDisplay();
     	            })
         	        .error(function (data){
 						alert('you failed');
@@ -113,6 +114,7 @@
                 	$scope.profile = undefined;
                 	$cookies.UserCredential = undefined;
                 	$scope.toggleLabel();
+                	$scope.toggleDisplay();
                 }
                 
                
