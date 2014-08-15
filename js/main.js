@@ -66,33 +66,30 @@
 				$scope.loginLabel = 'login';
 			}
 			
-			$scope.toggle
-			
-			$scope.log = function(){
+			$scope.toggleLabel = function(){
 				if($scope.loginLabel == 'login'){
-					$scope.logout();
 					$scope.loginLabel = 'logout';
 				} else {
-					$scope.login($scope.credentials);
 					$scope.loginLabel = 'login';
 				}
 			}
 			
-			$scope.logout = function(){
-				$scope.profile = undefined;
-			}
-            
             $scope.login = function(){
-                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
-                .success(function (data)
-                {
-					$cookies.UserCredential = JSON.stringify(data);
-                    alert(JSON.stringify(data));
-                })
-                .error(function (data)
-                {
-                    alert('you failed');
-                });
+            	if($scope.profile == undefined){
+	                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
+                	.success(function (data){
+						$cookies.UserCredential = JSON.stringify(data);
+	                    alert(JSON.stringify(data));
+    	            })
+        	        .error(function (data){
+            		        alert('you failed');
+	                });
+                
+                } else {
+                	$scope.profile = undefined;
+                }
+                
+                $scope.toggleLabel();
             }
         }]);
 
