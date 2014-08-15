@@ -60,21 +60,21 @@
 			
 			if($cookies.UserCredential){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
-				$scope.loginLabel = 'login';
+				$scope.loginLabel = 'logout';
 			} else {
 				$scope.profile;
-				$scope.loginLabel = 'logout';
+				$scope.loginLabel = 'login';
 			}
 			
 			$scope.toggle
 			
 			$scope.log = function(){
-				if($scope.profile != undefined){
-					$scope.login();
-					$scope.loginLabel = 'login';
-				} else {
+				if($scope.loginLabel == 'login'){
 					$scope.logout();
 					$scope.loginLabel = 'logout';
+				} else {
+					$scope.login();
+					$scope.loginLabel = 'login';
 				}
 			}
 			
