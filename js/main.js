@@ -83,7 +83,7 @@
 			}
 			
 			/*set defaults based on user credentials cookie*/
-			if($cookies.UserCredential){
+			if($cookies.UserCredential != undefined){
 				$scope.setUserProfileInViewsModel();	
 				$scope.loginLabel = 'logout';
 				$scope.loggedOutDisplay = 'none';
