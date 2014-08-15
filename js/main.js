@@ -57,9 +57,21 @@
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
 			$scope.loginLabel;
+			$scope.loggedOutDisplay;
+			$scope.loggedInDisplay
 			
 			$scope.setUserProfileInViewsModel = function(){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
+			}
+			
+			$scope.toggleDisplay = function(){
+				if($scope.loggedOutDisplay == 'none'){
+					$scope.loggedOutDisplay = 'block';
+					$scope.loggedInDisplay = 'none';
+				} else if($scope.loggedOutDisplay == 'block'){
+					$scope.loggedOutDisplay = 'none';
+					$scope.loggedInDisplay = 'block';
+				}
 			}
 			
 			$scope.toggleLabel = function(){
@@ -70,11 +82,16 @@
 				}
 			}
 			
+			/*set defaults based on user credentials cookie*/
 			if($cookies.UserCredential){
 				$scope.setUserProfileInViewsModel();	
 				$scope.loginLabel = 'logout';
+				$scope.loggedOutDisplay == 'none';
+				$scope.loggedInDisplay == 'block';
 			} else {
 				$scope.loginLabel = 'login';
+				$scope.loggedOutDisplay == 'block';
+				$scope.loggedInDisplay == 'none';
 			}
 			
 						

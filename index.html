@@ -47,16 +47,22 @@
 
         <div class="login-wrapper" ng-controller="LoginController">
 			<div class="login">
+			
 			<form name="loginForm" ng-submit="login(credentials)" novalidate>
-			  <input type="text" id="username" ng-model="credentials.username" placeholder="username">
-			  <input type="password" id="password" ng-model="credentials.password" placeholder="+xxxxxxxxxx">
+			  <div>
+				  <input type="text" id="username" ng-model="credentials.username" placeholder="username">
+				  <input type="password" id="password" ng-model="credentials.password" placeholder="+xxxxxxxxxx">
+			  </div>
+			  <div>
+			  	<img src="./img/profile-icon.png"/>
+	              {{ profile.username }}
+              </div>
 			  <button type="submit">{{ loginLabel }}</button>
 			</form>
 			
             
             
-                <img src="./img/profile-icon.png"/>
-                {{ profile.username }}
+                
             </div>
 
         </div>
