@@ -59,11 +59,13 @@
 			$scope.loginLabel;
 			
 			if($cookies.UserCredential){
-				$scope.profile = angular.fromJson($cookies.UserCredential);	
+				$scope.setUserProfileInViewsModel();	
 				$scope.loginLabel = 'logout';
 			} else {
-				$scope.profile;
 				$scope.loginLabel = 'login';
+			}
+			$scope.setUserProfileInViewsModel = function(){
+				$scope.profile = angular.fromJson($cookies.UserCredential);	
 			}
 			
 			$scope.toggleLabel = function(){
@@ -79,7 +81,7 @@
 	                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                 	.success(function (data){
 						$cookies.UserCredential = JSON.stringify(data);
-	                    alert(JSON.stringify(data));
+						$scope.setUserProfileInViewsModel();
     	            })
         	        .error(function (data){
             		        alert('you failed');
