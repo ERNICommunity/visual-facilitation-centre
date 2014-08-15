@@ -46,6 +46,7 @@
     <header>
 
         <div class="login-wrapper" ng-controller="LoginController">
+			<div class="login">
 			<form name="loginForm" ng-submit="login(credentials)" novalidate>
 			  <label for="username">Username:</label>
 			  <input type="text" id="username" ng-model="credentials.username">
@@ -55,7 +56,7 @@
 			</form>
 			
             
-            <div class="login">
+            
                 <img src="./img/profile-icon.png"/>
                 {{ profile.username }}
             </div>
