@@ -69,7 +69,7 @@
 			$scope.toggle
 			
 			$scope.log = function(){
-				if($scope.loginLabel == 'login'){
+				if($scope.profile != undefined){
 					$scope.logout();
 					$scope.loginLabel = 'logout';
 				} else {
