@@ -62,12 +62,15 @@
 				$scope.profile;
 			}
 			
-            $scope.checkMe = function () {
+            $scope.checkMe = function(){
                 var me = $cookies.UserCredential;
                 alert(me);
             };
-
-            $scope.login = function () {
+			$scope.logout = function(){
+				$scope.profile = undefined;
+			}
+            
+            $scope.login = function(){
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                 .success(function (data)
                 {
