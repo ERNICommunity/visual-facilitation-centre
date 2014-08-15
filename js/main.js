@@ -56,14 +56,14 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
+
 			$scope.loginLabel;
 			
 			if($cookies.UserCredential){
-				$scope.setUserProfileInViewsModel();	
-				$scope.loginLabel = 'logout';
-			} else {
-				$scope.loginLabel = 'login';
-			}
+				$scope.setUserProfileInViewsModel();
+				$scope.toggleLabel();	
+			} 
+			
 			$scope.setUserProfileInViewsModel = function(){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
 			}
@@ -82,16 +82,18 @@
                 	.success(function (data){
 						$cookies.UserCredential = JSON.stringify(data);
 						$scope.setUserProfileInViewsModel();
+						$scope.toggleLabel();
     	            })
         	        .error(function (data){
-            		        alert('you failed');
+						alert('you failed');
 	                });
                 
                 } else {
                 	$scope.profile = undefined;
+                	$scope.toggleLabel();
                 }
                 
-                $scope.toggleLabel();
+               
             }
         }]);
 
