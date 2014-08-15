@@ -56,68 +56,34 @@
 
 	app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
-			$scope.loginLabel;
-			$scope.loggedOutDisplay;
-			$scope.loggedInDisplay
 			
 			$scope.setUserProfileInViewsModel = function(){
 				$scope.profile = angular.fromJson($cookies.UserCredential);	
 			}
 			
-			$scope.toggleDisplay = function(){
-				if($scope.loggedOutDisplay == 'none'){
-					$scope.loggedOutDisplay = 'block';
-					$scope.loggedInDisplay = 'none';
-				} else if($scope.loggedOutDisplay == 'block'){
-					$scope.loggedOutDisplay = 'none';
-					$scope.loggedInDisplay = 'block';
-				}
-			}
-			
-			$scope.toggleLabel = function(){
-				if($scope.loginLabel == 'login'){
-					$scope.loginLabel = 'logout';
-				} else {
-					$scope.loginLabel = 'login';
-				}
-			}
-			
 			/*set defaults based on user credentials cookie*/
-			if($cookies.UserCredential == undefined){
-				$scope.loginLabel = 'login';
-				$scope.loggedOutDisplay = 'block';
-				$scope.loggedInDisplay = 'none';
-			} else {
+			if($cookies.UserCredential != undefined){
 				$scope.setUserProfileInViewsModel();
-				$scope.loginLabel = 'logout';
-				$scope.loggedOutDisplay = 'none';
-				$scope.loggedInDisplay = 'block';
 			}
 			
 						
-			
+			$scope.logout = function(){
+				$scope.profile = undefined;
+				$cookies.UserCredential = undefined;
+			}
 			
             $scope.login = function(){
-            	if($scope.profile == undefined){
-	                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
-                	.success(function (data){
-						$cookies.UserCredential = JSON.stringify(data);
-						$scope.setUserProfileInViewsModel();
-						$scope.toggleLabel();
-						$scope.toggleDisplay();
-    	            })
-        	        .error(function (data){
-						alert('you failed');
-	                });
-                
-                } else {
-                	$scope.profile = undefined;
-                	$cookies.UserCredential = undefined;
-                	$scope.toggleLabel();
-                	$scope.toggleDisplay();
-                }
-                
-               
+               $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
+                .success(function (data){
+					$cookies.UserCredential = JSON.stringify(data);
+					$scope.setUserProfileInViewsModel();
+					$scope.toggleLabel();
+					$scope.toggleDisplay();
+    	         })
+        	     .error(function (data){
+					alert('login error');
+	             });
+
             }
         }]);
 
