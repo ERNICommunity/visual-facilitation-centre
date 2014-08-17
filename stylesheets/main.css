@@ -71,6 +71,7 @@ li:hover a {
 
 li:hover li a:hover {
     background: #428BCA;
+    width: 100%;
 }
 
 #drop-nav li ul li {
@@ -83,6 +84,10 @@ li:hover li a:hover {
     margin-top: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 #drop-nav ul:before {
     content: ' ';
     position: absolute;
@@ -92,6 +97,16 @@ li:hover li a:hover {
     top: -10px;
     border: 10px solid;
     border-color: transparent #666 #666 transparent;
+}
+
+a.account {
+    text-decoration: none;
+    color: white;
+}
+
+.account a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 nav.search-header {
@@ -263,8 +278,20 @@ span.title {
     margin-top: 10px;
 }
 
-.submenu {
+.submenu-cats {
     display: none;
+    position: absolute;
+    background-color: #636466;;
+    width: 170px;
+}
+
+.submenu-account {
+    display: none;
+    position: absolute;
+    background-color: #9d9fa2;;
+    color: white;
+    width: 190px;
+    padding-left: 0px;
 }
 
 .the_nav .submenu li {

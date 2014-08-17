@@ -46,16 +46,22 @@
     <header>
 
         <div class="login-wrapper" ng-controller="LoginController">
-			<div class="login">
-			
-			  	<img src="./img/profile-icon.png"/>
-	              <!--{{ profile.username }}-->
-	              Wilbert Chang
-			</form>
-			
-            
-            
-                
+            <div class="login">
+
+                <img src="./img/profile-icon.png"/>
+                <!--{{ profile.username }}-->
+
+                <a class="account">Wilbert Chang</a>
+
+                <div class="submenu-account">
+                    <ul class="root">
+                        <li class="item"></i><a href="#/content/edit">Manage uploads</a></li>
+                        <li class="item"></i><a href="#/content/logout">logout</a></li>
+
+                    </ul>
+                </div>
+
+
             </div>
 
         </div>
@@ -72,15 +78,21 @@
             <nav class="search-header">
 
                 <div class="menu-bar">
-                    <ul id="drop-nav" class="menu">
-                        <li><a href="#">Categories</a>
-                            <ul>
-                                <li class="item"></i><a href="#/content/basics">Basics</a></li>
 
-                                <li class="item"><a href="#/content/icons">Icons&nbsp;</a></li>
-                                <li class="item"><a href="#/content/emotions">Emotions</a></li>
-                                <li class="item"><a href="#/content/posters">Posters</a></li>
-                            </ul>
+                    <ul id="drop-nav" class="menu">
+                        <li><a class="categories" href="#">Categories</a>
+
+                            <div class="submenu-cats">
+                                <ul class="root">
+                                    <li class="item"></i><a href="#/content/basics">Basics</a></li>
+
+                                    <li class="item"><a href="#/content/icons">Icons&nbsp;</a></li>
+                                    <li class="item"><a href="#/content/emotions">Emotions</a></li>
+                                    <li class="item"><a href="#/content/posters">Posters</a></li>
+                                </ul>
+                            </div>
+
+
                         </li>
                         <li><a href="#">Favourites</a>
 
