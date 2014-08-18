@@ -105,11 +105,6 @@ a.account {
     color: white;
 }
 
-.account a:hover {
-    text-decoration: none;
-    color: white;
-}
-
 nav.search-header {
     background: #4F5052;
 
@@ -321,51 +316,6 @@ span.title {
     text-decoration: none;
     background-color: #636466;;
 
-}
-
-.email {
-
-    width: 50%;
-    float: left;
-}
-
-.social-media {
-
-    width: 49%;
-    float: right;
-}
-
-.links {
-    float: left;
-    width: 51%;
-    margin-top: 15px;
-}
-
-.footer-tags {
-    width: 46%;
-    float: right;
-    margin-top: 15px;
-}
-
-sub-footer1 {
-    border: 1px solid #000;
-    margin-top: 26px;
-    padding-top: 20px;
-}
-
-.sub-footer1 {
-    max-width: 960px;
-    margin: auto;
-}
-
-.sub-footer2 {
-    max-width: 960px;
-    margin: auto;
-}
-
-.sub-footer-header {
-    border: 1px solid #000;
-    padding-top: 25px;
 }
 
 @media only screen
