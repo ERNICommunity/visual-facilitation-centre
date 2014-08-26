@@ -6,15 +6,15 @@ $output = [];
 $status = 404;
 $message = 'Not Found';
 
-if(isset($_REQUEST)){
-	if(isset($_REQUEST['delete']['name'])){
-			if(file_exists($path . $_FILES['delete']["name"])){
-				unlink($path . $_FILES['delete']["name"]);
+if(isset($_POST)){
+	if(isset($_POST['delete']['name'])){
+			if(file_exists($path . $_POST['delete']["name"])){
+				unlink($path . $_POST['delete']["name"]);
 				$status = 201;
-				$message = 'deleting file '.$_FILES['delete']["name"].' successful';
+				$message = 'deleting file '.$_POST['delete']["name"].' successful';
 			} else {
 				$status = 204;
-				$message = "Error: " . $_FILES['delete']["name"] . 'not found';
+				$message = "Error: " . $_POST['delete']["name"] . 'not found';
 			}
 		}
 	}  else {
