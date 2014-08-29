@@ -68,7 +68,7 @@
  		});
 
     app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
-        function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
