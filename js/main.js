@@ -55,7 +55,7 @@
         }]).run( function($rootScope, $location) {
 			// register listener to watch route changes
 			$rootScope.$on( "$routeChangeStart", function(event, next, current) {
-				if ( $rootScope.loggedUser == null ) {
+				if ( $cookies.UserCredential == null ) {
 					// no logged user, we should be going to #login
 					if ( next.templateUrl == "Sections/login.html" ) {
 						// already going to #login, no redirect needed
