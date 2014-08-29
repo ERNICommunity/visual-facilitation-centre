@@ -61,7 +61,7 @@
 						// already going to #login, no redirect needed
 					} else {
 						// not going to #login, we should redirect now
-						$location.path( "/" );
+						$location.path( "/login" );
 					}
 				}         
 			});
@@ -85,6 +85,7 @@
             $scope.logout = function () {
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
+                $rootScope.loggedUser = null;
             }
 
             $scope.login = function () {
