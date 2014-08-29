@@ -61,7 +61,7 @@
 						// already going to #login, no redirect needed
 					} else {
 						// not going to #login, we should redirect now
-						$location.path( "/login" );
+						$location.path( "/" );
 					}
 				}         
 			});
