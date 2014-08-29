@@ -26,7 +26,7 @@
 
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies']);
 
-    app.config(['$routeProvider',
+    app.config(['$routeProvider','$cookies',
         function ($routeProvider) {
             $routeProvider.
                 when('/content/:tag', {
@@ -52,7 +52,7 @@
 
                     redirectTo: 'content/basics'
                 });
-        }]).run( function($rootScope, $location) {
+        }]).run( function($rootScope, $location, $cookies) {
 			// register listener to watch route changes
 			$rootScope.$on( "$routeChangeStart", function(event, next, current) {
 				if ( $cookies.UserCredential == null ) {
