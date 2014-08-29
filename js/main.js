@@ -52,10 +52,10 @@
 
                     redirectTo: 'content/basics'
                 });
-        }]).run( function($rootScope, $location, $cookies) {
+        }]).run( function($rootScope, $location) {
 			// register listener to watch route changes
-			$rootScope.$on( "$routeChangeStart", '$cookies', function(event, next, current) {
-				if ( $cookies.UserCredential == null ) {
+			$rootScope.$on( "$routeChangeStart", function(event, next, current) {
+				if ( $rootScope.loggedUser == null ) {
 					// no logged user, we should be going to #login
 					if ( next.templateUrl == "Sections/login.html" ) {
 						// already going to #login, no redirect needed
@@ -68,7 +68,7 @@
  		});
 
     app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
-        function LoginCtrl($scope, db, $routeParams, $http, $cookies) {
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -77,6 +77,12 @@
             /*set defaults based on user credentials cookie*/
             if ($cookies.UserCredential != undefined) {
                 $scope.setUserProfileInViewsModel();
+            }
+            
+            if($cookies.UserCredential){
+            	$rootScope.loggedUser = $cookies.UserCredential;
+            } else {
+	            $rootScope.loggedUser = null;
             }
 
 
