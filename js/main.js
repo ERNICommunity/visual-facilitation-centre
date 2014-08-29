@@ -76,7 +76,7 @@
 
             /*set defaults based on user credentials cookie*/
             if ($cookies.UserCredential != undefined) {
-                $scope.setUserProfileInViewsModel();
+//                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
 	            $rootScope.loggedUser = null;
