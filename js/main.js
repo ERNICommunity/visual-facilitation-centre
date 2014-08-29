@@ -67,7 +67,7 @@
 			});
  		});
 
-    app.controller('LoginController', ['$scope', 'Restangular', '$routeParams', '$http', '$cookies',
+    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
@@ -77,8 +77,10 @@
             /*set defaults based on user credentials cookie*/
             if ($cookies.UserCredential != undefined) {
                 $scope.setUserProfileInViewsModel();
+                $rootScope.loggedUser = $cookies.UserCredential;
+            } else {
+	            $rootScope.loggedUser = null;
             }
-
 
             $scope.logout = function () {
                 $scope.profile = undefined;
