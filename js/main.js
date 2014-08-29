@@ -26,7 +26,7 @@
 
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies']);
 
-    app.config(['$routeProvider','$cookies',
+    app.config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider.
                 when('/content/:tag', {
@@ -54,7 +54,7 @@
                 });
         }]).run( function($rootScope, $location, $cookies) {
 			// register listener to watch route changes
-			$rootScope.$on( "$routeChangeStart", function(event, next, current) {
+			$rootScope.$on( "$routeChangeStart", '$cookies', function(event, next, current) {
 				if ( $cookies.UserCredential == null ) {
 					// no logged user, we should be going to #login
 					if ( next.templateUrl == "Sections/login.html" ) {
