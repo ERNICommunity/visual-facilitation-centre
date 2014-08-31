@@ -27,45 +27,45 @@
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies']);
 
     app.config(['$routeProvider',
-        function ($routeProvider) {
-            $routeProvider.
-                when('/content/:tag', {
+            function ($routeProvider) {
+                $routeProvider.
+                    when('/content/:tag', {
 
-                    templateUrl: 'Sections/content.html',
-                    controller: 'DisplayController'
-                }).
-                when('/upload', {
+                        templateUrl: 'Sections/content.html',
+                        controller: 'DisplayController'
+                    }).
+                    when('/upload', {
 
-                    templateUrl: 'Sections/upload.html',
-                    controller: 'UploadController'
-                }).
-                when('/edit', {
-                    templateUrl: 'Sections/edit.html',
-                    controller: 'EditController'
-                }).
-                when('/login', {
+                        templateUrl: 'Sections/upload.html',
+                        controller: 'UploadController'
+                    }).
+                    when('/edit', {
+                        templateUrl: 'Sections/edit.html',
+                        controller: 'EditController'
+                    }).
+                    when('/login', {
 
-                    templateUrl: 'Sections/login.html',
-                    controller: 'LoginController'
-                }).
-                when('/', {
+                        templateUrl: 'Sections/login.html',
+                        controller: 'LoginController'
+                    }).
+                    when('/', {
 
-                    redirectTo: 'content/basics'
-                });
-        }]).run( function($rootScope, $location) {
-			// register listener to watch route changes
-			$rootScope.$on( "$routeChangeStart", function(event, next, current) {
-				if ( $rootScope.loggedUser == null ) {
-					// no logged user, we should be going to #login
-					if ( next.templateUrl == "Sections/login.html" ) {
-						// already going to #login, no redirect needed
-					} else {
-						// not going to #login, we should redirect now
-						$location.path( "/login" );
-					}
-				}         
-			});
- 		});
+                        redirectTo: 'content/basics'
+                    });
+            }]).run(function ($rootScope, $location) {
+            // register listener to watch route changes
+            $rootScope.$on("$routeChangeStart", function (event, next, current) {
+                if ($rootScope.loggedUser == null) {
+                    // no logged user, we should be going to #login
+                    if (next.templateUrl == "Sections/login.html") {
+                        // already going to #login, no redirect needed
+                    } else {
+                        // not going to #login, we should redirect now
+                        $location.path("/login");
+                    }
+                }
+            });
+        });
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
@@ -79,14 +79,31 @@
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
-	            $rootScope.loggedUser = null;
+                $rootScope.loggedUser = null;
             }
 
             $scope.logout = function () {
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
+                changeLocation('/login', false);
             }
+
+            //be sure to inject $scope and $location
+            changeLocation = function (url, forceReload) {
+                $scope = $scope || angular.element(document).scope();
+                if (forceReload || $scope.$$phase) {
+                    window.location = url;
+                }
+                else {
+                    //only use this if you want to replace the history stack
+                    //$location.path(url).replace();
+
+                    //this this if you want to change the URL and add it to the history stack
+                    $location.path(url);
+                    $scope.$apply();
+                }
+            };
 
             $scope.login = function () {
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
