@@ -86,7 +86,7 @@
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
-                changeLocation('/login', false);
+                changeLocation('/#/login', false);
             }
 
             //be sure to inject $scope and $location
