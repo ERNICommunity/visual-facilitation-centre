@@ -331,14 +331,11 @@
                     $log.info('image id to be deleted: ' + id);
                     $log.info('image name to be deleted: ' + $scope.images[id].name);
 					alert('image name to be deleted: ' + $scope.images[id].name);
-					$http.post({url: '/delete_ajax.php', 
-								data: { "delete" : { "name" : $scope.images[id].name }}, 
-								config: {
-									method: 'POST',
-									headers: { 'Content-Type': undefined },
-									transformRequest: angular.identity
-									}
-							}).success(function(data, status, headers, config){
+					
+					var data = $.param({json: JSON.stringify({ delete : { name : $scope.images[id].name }})});
+					alert('stringified JSON object: ' + data);
+					
+					$http.post('/delete_ajax.php', data).success(function(data, status, headers, config){
 								$scope.deleteImage(id);
 								alert("file successfully deleted, response data: " + data);
 								// todo: delete file from db
