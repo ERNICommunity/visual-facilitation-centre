@@ -288,8 +288,8 @@
 
         }]);
 
-    app.controller('EditDialogController', ['$scope', '$modal', '$log',
-        function EditDialogController($scope, $modal, $log) {
+    app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 
+        function EditDialogController($scope, $modal, $log, $http) {
 
             // edit image function
             $scope.open = function (id) {
@@ -328,11 +328,28 @@
                 });
 
                 modalInstance.result.then(function (id) {
-                    $log.info('image to be deleted: ' + id);
-                    $scope.deleteImage(id);
+                    $log.info('image id to be deleted: ' + id);
+                    $log.info('image name to be deleted: ' + $scope.images[id].name);
+					alert('image name to be deleted: ' + $scope.images[id].name);
+					$http.post({url: '/delete_ajax.php', 
+								data: { "delete" : { "name" : $scope.images[id].name }}, 
+								config: {
+									method: 'POST',
+									headers: { 'Content-Type': undefined },
+									transformRequest: angular.identity
+									}
+							}).success(function(data, status, headers, config){
+								$scope.deleteImage(id);
+								alert("file successfully deleted, response data: " + data);
+								// todo: delete file from db
+							
+							}).error(function(data, status, headers, config){
+								alert("deleting the file was not successful, response data: " + data);			
+							});					
                 }, function () {
                     $log.info('Delete Modal dismissed at: ' + new Date());
                 });
+
             };
         }]);
 
