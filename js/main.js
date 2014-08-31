@@ -332,10 +332,13 @@
                     $log.info('image name to be deleted: ' + $scope.images[id].name);
 					alert('image name to be deleted: ' + $scope.images[id].name);
 					
-					var data = $.param({json: JSON.stringify({ delete : { name : $scope.images[id].name }})});
-					alert('stringified JSON object: ' + data);
+					var data = $.param({ delete : { name : $scope.images[id].name }});
+					alert('url encoded object: ' + data);
 					
-					$http.post('/delete_ajax.php', data).success(function(data, status, headers, config){
+					$http.post('/delete_ajax.php', data,
+							{
+								headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8' },
+							}).success(function(data, status, headers, config){
 								$scope.deleteImage(id);
 								alert("file successfully deleted, response data: " + data);
 								// todo: delete file from db
