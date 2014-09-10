@@ -79,7 +79,7 @@
             		}
             	}
         		
-        	}
+        	};
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
