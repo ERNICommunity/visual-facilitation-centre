@@ -66,7 +66,16 @@
                 } else {
                 }
             });
-        });
+        }).service('Global', ['$location', '$rootScope', function ($location) {
+        	var global;
+        	
+        	return {
+	        	showCurrentUser: function () {
+    	            return $rootScope.loggedUser;
+        	    }
+        		
+        	}
+        }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
