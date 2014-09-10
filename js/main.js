@@ -71,13 +71,18 @@
         	
         	return {
 	        	showCurrentUser: function () {
-    	            return $rootScope.loggedUser;
-        	    }
+    	    		if($rootScope.loggedUser){
+        	    		var loggedUser = JSON.parse($rootScope.loggedUser);
+    	        		return loggedUser.username;
+	            	} else {
+            			return 'Login';
+            		}
+            	}
         		
         	}
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
+    app.controller('LoginController', ['Global','$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
@@ -101,16 +106,10 @@
                 changeLocation('/#/login', false);
             }
             
-            $scope.showUserName = function(){
-            	if($rootScope.loggedUser){
-            		var loggedUser = JSON.parse($rootScope.loggedUser);
-            		return loggedUser.username;
-            	} else {
-            		return 'Login';
-            	}
-            }
-			console.log( $scope.showUserName );
-            //be sure to inject $scope and $location
+            $scope.showUserName = Global.showCurrentUser();
+            
+            
+			//be sure to inject $scope and $location
             changeLocation = function (url, forceReload) {
                 $scope = $scope || angular.element(document).scope();
                 if (forceReload || $scope.$$phase) {
