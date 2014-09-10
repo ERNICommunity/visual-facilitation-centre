@@ -52,7 +52,7 @@
 
                         redirectTo: 'content/basics'
                     });
-            }]).run(function ($scope, $rootScope, $location) {
+            }]).run(function ($rootScope, $location) {
             // register listener to watch route changes
             $rootScope.$on("$routeChangeStart", function (event, next, current) {
                 if ($rootScope.loggedUser == null) {
@@ -64,7 +64,7 @@
                         $location.path("/login");
                     }
                 } else {
-                	$scope.profile = $rootScope.loggedUser;
+                	//$scope.profile = $rootScope.loggedUser;
                 }
             });
         });
