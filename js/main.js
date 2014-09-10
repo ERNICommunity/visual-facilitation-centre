@@ -83,22 +83,10 @@
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
-            $scope.setUserProfileInViewsModel = function () {
-                $scope.profile = angular.fromJson($cookies.UserCredential);
-            }
 
-
+            $rootScope.loggedUser = null;
+            $scope.profile = null;
             $cookies.UserCredential = undefined;
-
-            /*set defaults based on user credentials cookie*/
-            if ($cookies.UserCredential != undefined) {
-//                $scope.setUserProfileInViewsModel();
-                $rootScope.loggedUser = $cookies.UserCredential;
-
-            } else {
-                $rootScope.loggedUser = null;
-                $scope.profile = null;
-            }
 
             $scope.logout = function () {
                 $scope.profile = undefined;
