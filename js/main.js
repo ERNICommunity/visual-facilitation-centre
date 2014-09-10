@@ -103,9 +103,10 @@
             
             $scope.showUserName = function(){
             	if($rootScope.loggedUser){
-            		console.log($rootScope.loggedUser);
+            		var loggedUser = $rootScope.loggedUser;
+            		console.log(loggedUser);
             		
-            		console.log($rootScope.loggedUser['username']);
+            		console.log(loggedUser.username);
             		return $rootScope.loggedUser['username'];
             	} else {
             		return 'Login';
