@@ -87,6 +87,9 @@
                 $scope.profile = angular.fromJson($cookies.UserCredential);
             }
 
+
+            $cookies.UserCredential = undefined;
+
             /*set defaults based on user credentials cookie*/
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
