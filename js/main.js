@@ -59,10 +59,12 @@
                     // no logged user, we should be going to #login
                     if (next.templateUrl == "Sections/login.html") {
                         // already going to #login, no redirect needed
-                    } else {
+                                            } else {
                         // not going to #login, we should redirect now
                         $location.path("/login");
                     }
+                } else {
+                	$scope.profile = $rootScope.loggedUser;
                 }
             });
         });
