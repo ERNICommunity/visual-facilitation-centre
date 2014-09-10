@@ -88,6 +88,11 @@
             $scope.profile = null;
             $cookies.UserCredential = undefined;
 
+            $scope.setUserProfileInViewsModel = function () {
+                $scope.profile = angular.fromJson($cookies.UserCredential);
+            }
+
+
             $scope.logout = function () {
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
