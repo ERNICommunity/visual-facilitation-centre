@@ -184,38 +184,7 @@
             $scope.setFiles = function (element) {
                 $scope.files = element.files;
                 $scope.$apply(
-                    /*
-                     function(scope){
-                     console.log(element.files);
 
-                     var formData = new FormData();
-
-                     for (var i = 0; i < element.files.length; i++) {
-                     var file = element.files[i];
-                     formData.append('image['+i+']', file);
-                     }
-
-                     tempName = element.files[0].name;
-                     tempURL = '/uploads';
-
-                     if(element.files && element.files.length > 0){
-                     jQuery.ajax({
-                     url: "/uploader_ajax.php",
-                     type: "POST",
-                     data: formData,
-                     processData: false,
-                     contentType: false,
-                     success: function(data){
-                     jQuery('#placeHolder').attr('src', data['details']['content-url']+data['details']['content-name']);
-
-
-                     },
-
-                     });
-                     }
-
-                     }
-                     */
                 )
 
             }
@@ -224,9 +193,6 @@
 
             }
 
-            $scope.test = function () {
-                $scope.formData.name = "hello";
-            }
 
             $scope.generateId = function () {
                 return  Math.random().toString(36).substr(2, 9) + '_';
@@ -272,16 +238,6 @@
                         function (data, status, headers, config) {
                             $scope.message = 'An error occured uploading image. Please fix data and try again';
                         });
-                    //jQuery.ajax({
-                    //    url: "/uploader_ajax.php",
-                    //    type: "POST",
-                    //    data: formData,
-                    //    processData: false,
-                    //    contentType: false,
-                    //    success: function (data) {
-                    //        jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
-                    //    },
-                    //});
                 }
             };
 
