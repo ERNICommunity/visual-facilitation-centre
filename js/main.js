@@ -61,9 +61,6 @@
                         // already going to #login, no redirect needed
                     } else {
                         // not going to #login, we should redirect now
-                        $scope.profile = undefined;
-                        $cookies.UserCredential = undefined;
-                        $rootScope.loggedUser = null;
                         $location.path("/login");
                     }
                 } else {
@@ -101,7 +98,7 @@
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
-                changeLocation('/#/login', true);
+                changeLocation('/#/login', false);
 
             }
 
