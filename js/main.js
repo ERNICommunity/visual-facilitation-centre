@@ -64,7 +64,6 @@
                         $location.path("/login");
                     }
                 } else {
-                	//$scope.profile = $rootScope.loggedUser;
                 }
             });
         });
@@ -80,8 +79,10 @@
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
+                $scope.profile = $cookies.UserCredential;
             } else {
                 $rootScope.loggedUser = null;
+                $scope.profile = null;
             }
 
             $scope.logout = function () {
