@@ -79,12 +79,10 @@
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
-                $scope.loggedUser = $rootScope.loggedUser;
                 
             } else {
                 $rootScope.loggedUser = null;
                 $scope.profile = null;
-                $scope.loggedUser = null;
             }
 
             $scope.logout = function () {
@@ -92,6 +90,14 @@
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
                 changeLocation('/#/login', false);
+            }
+            
+            $scope.showUserName = function(){
+            	if($rootScope.loggedUser){
+            		return $rootScope.loggedUser.name;
+            	} else {
+            		return 'Login';
+            	}
             }
 
             //be sure to inject $scope and $location
