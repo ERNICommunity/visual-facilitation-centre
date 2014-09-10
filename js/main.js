@@ -66,7 +66,8 @@
                 } else {
                 }
             });
-        }).service('Global', ['$location', '$rootScope', function ($location) {
+        })
+	app.service('Global', ['$location', '$rootScope', function ($location) {
         	var global;
         	
         	return {
