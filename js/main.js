@@ -66,26 +66,19 @@
                 } else {
                 }
             });
-        })
-        
-	app.service('Global', ['$location', '$rootScope', function ($location) {
+        }).service('Global', ['$location', '$rootScope', function ($location) {
         	var global;
         	
         	return {
 	        	showCurrentUser: function () {
-    	    		if($rootScope.loggedUser){
-        	    		var loggedUser = JSON.parse($rootScope.loggedUser);
-    	        		return loggedUser.username;
-	            	} else {
-            			return 'Login';
-            		}
-            	}
+    	            return $rootScope.loggedUser;
+        	    }
         		
-        	};
+        	}
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
-        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, Global) {
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -108,10 +101,16 @@
                 changeLocation('/#/login', false);
             }
             
-            $scope.showUserName = Global.showCurrentUser();
+            $scope.showUserName = function(){
+            	if($rootScope.loggedUser){
+            		var loggedUser = JSON.parse($rootScope.loggedUser);
+            		return loggedUser.username;
+            	} else {
+            		return 'Login';
+            	}
+            }
             
-            
-			//be sure to inject $scope and $location
+            //be sure to inject $scope and $location
             changeLocation = function (url, forceReload) {
                 $scope = $scope || angular.element(document).scope();
                 if (forceReload || $scope.$$phase) {
