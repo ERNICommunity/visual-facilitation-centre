@@ -237,6 +237,9 @@
 
                 $scope.formData.dateAdded = now;
 
+                var loggedUser = JSON.parse($scope.loggedUser);
+                $scope.formData = loggedUser.username;
+
 
                 var formData = new FormData();
 
