@@ -108,7 +108,7 @@
             		return 'Login';
             	}
             }
-
+			console.log( $scope.showUserName );
             //be sure to inject $scope and $location
             changeLocation = function (url, forceReload) {
                 $scope = $scope || angular.element(document).scope();
