@@ -79,10 +79,12 @@
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
-                $scope.profile = $cookies.UserCredential;
+                $scope.loggedUser = $rootScope.loggedUser;
+                
             } else {
                 $rootScope.loggedUser = null;
                 $scope.profile = null;
+                $scope.loggedUser = null;
             }
 
             $scope.logout = function () {
