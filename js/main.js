@@ -103,7 +103,7 @@
             
             $scope.showUserName = function(){
             	if($rootScope.loggedUser){
-            		return $rootScope.loggedUser.username;
+            		return $rootScope.loggedUser['username'];
             	} else {
             		return 'Login';
             	}
