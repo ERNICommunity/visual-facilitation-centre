@@ -50,7 +50,7 @@
                     }).
                     when('/', {
 
-                        redirectTo: 'content/basics'
+                        redirectTo: 'content/all'
                     });
             }]).run(function ($rootScope, $location) {
             // register listener to watch route changes
@@ -59,7 +59,7 @@
                     // no logged user, we should be going to #login
                     if (next.templateUrl == "Sections/login.html") {
                         // already going to #login, no redirect needed
-                                            } else {
+                    } else {
                         // not going to #login, we should redirect now
                         $location.path("/login");
                     }
@@ -67,14 +67,14 @@
                 }
             });
         }).service('Global', ['$location', '$rootScope', function ($location) {
-        	var global;
-        	
-        	return {
-	        	showCurrentUser: function () {
-    	            return $rootScope.loggedUser;
-        	    }
-        		
-        	}
+            var global;
+
+            return {
+                showCurrentUser: function () {
+                    return $rootScope.loggedUser;
+                }
+
+            }
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
@@ -88,7 +88,7 @@
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
-                
+
             } else {
                 $rootScope.loggedUser = null;
                 $scope.profile = null;
@@ -100,16 +100,16 @@
                 $rootScope.loggedUser = null;
                 changeLocation('/#/login', false);
             }
-            
-            $scope.showUserName = function(){
-            	if($rootScope.loggedUser){
-            		var loggedUser = JSON.parse($rootScope.loggedUser);
-            		return loggedUser.username;
-            	} else {
-            		return 'Login';
-            	}
+
+            $scope.showUserName = function () {
+                if ($rootScope.loggedUser) {
+                    var loggedUser = JSON.parse($rootScope.loggedUser);
+                    return loggedUser.username;
+                } else {
+                    return 'Login';
+                }
             }
-            
+
             //be sure to inject $scope and $location
             changeLocation = function (url, forceReload) {
                 $scope = $scope || angular.element(document).scope();
@@ -146,15 +146,22 @@
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
-            // SEARCH
-            all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
-                $scope.search = data;
 
-                $scope.contacts = data;
+            if ($routeParams.tag == "all") {
 
-                console.log(data);
-            });
 
+                $scope.contacts = db.all('content').getList();
+
+            } else {
+                all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+                    $scope.search = data;
+
+                    $scope.contacts = data;
+
+                    console.log(data);
+                });
+            }
+            ;
             // SEARCH
             db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
                 $scope.search = data;
@@ -309,7 +316,7 @@
 
         }]);
 
-    app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 
+    app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http',
         function EditDialogController($scope, $modal, $log, $http) {
 
             // edit image function
@@ -351,22 +358,22 @@
                 modalInstance.result.then(function (id) {
                     $log.info('image id to be deleted: ' + id);
                     $log.info('image name to be deleted: ' + $scope.images[id].name);
-					alert('image name to be deleted: ' + $scope.images[id].name);
-					
-					var data = $.param({ delete : { name : $scope.images[id].name }});
-					alert('url encoded object: ' + data);
-					
-					$http.post('/delete_ajax.php', data,
-							{
-								headers: {'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8' },
-							}).success(function(data, status, headers, config){
-								$scope.deleteImage(id);
-								alert("file successfully deleted, response data: " + data);
-								// todo: delete file from db
-							
-							}).error(function(data, status, headers, config){
-								alert("deleting the file was not successful, response data: " + data);			
-							});					
+                    alert('image name to be deleted: ' + $scope.images[id].name);
+
+                    var data = $.param({ delete: { name: $scope.images[id].name }});
+                    alert('url encoded object: ' + data);
+
+                    $http.post('/delete_ajax.php', data,
+                        {
+                            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+                        }).success(function (data, status, headers, config) {
+                            $scope.deleteImage(id);
+                            alert("file successfully deleted, response data: " + data);
+                            // todo: delete file from db
+
+                        }).error(function (data, status, headers, config) {
+                            alert("deleting the file was not successful, response data: " + data);
+                        });
                 }, function () {
                     $log.info('Delete Modal dismissed at: ' + new Date());
                 });
