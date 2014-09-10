@@ -251,9 +251,6 @@
                             }
 
 
-                            var now = new Date();
-
-                            $scope.formData.dateAdded = now.format("dd/M/yy h:mm tt");
                             db.all('content').post($scope.formData).then(function (response) {
                                 $scope.message = 'Your form has been sent!';
 
