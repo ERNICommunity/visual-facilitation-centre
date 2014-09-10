@@ -99,6 +99,9 @@
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
                 changeLocation('/#/login', false);
+                $scope.profile = undefined;
+                $cookies.UserCredential = undefined;
+                $rootScope.loggedUser = null;
             }
 
             $scope.showUserName = function () {
@@ -238,7 +241,7 @@
                 $scope.formData.dateAdded = now;
 
                 var loggedUser = JSON.parse($scope.loggedUser);
-                $scope.formData = loggedUser.username;
+                $scope.formData.owner = loggedUser.username;
 
 
                 var formData = new FormData();
