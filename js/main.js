@@ -249,7 +249,7 @@
 			$scope.all = data.getList();
 			
 			$scope.delete = function(e) {
-				db.one('product', e).remove();
+				db.one('content', e).remove();
 			};
 			
 			$scope.logAll = function(){
