@@ -254,7 +254,7 @@
 			
 			
 			$scope.logRow = function(index){
-				console.log($scope.all.$object[index]);
+				console.log($scope.all['$object'][index]);
 			}
 		});
 
