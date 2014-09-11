@@ -244,8 +244,6 @@
 	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', function($scope, db, $routeParams){
 		var all = db.all('content');
 		
-		var allList = all.getList();
-		
 		$scope.all = function(){
 			return all;
 		}
