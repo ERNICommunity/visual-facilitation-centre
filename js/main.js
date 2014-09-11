@@ -246,9 +246,7 @@
 		var all = db.all('content');
 		
 		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
-			$scope.all = function(){
-				return data.getList();
-			}
+			$scope.all = data.getList();
 			
 			$scope.logAll = function(){
 				console.log($scope.all);
