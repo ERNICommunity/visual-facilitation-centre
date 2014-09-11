@@ -245,12 +245,14 @@
 		
 		var all = db.all('content');
 		
-		$scope.all;
-		
 		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
-			console.log(data);
-			$scope.all = data.getList();
-			console.log($scope.all);
+			$scope.all = function(){
+				return data.getList();
+			}
+			
+			$scope.logAll = function(){
+				console.log($scope.all);
+			}
 		});
 
 	}]);
