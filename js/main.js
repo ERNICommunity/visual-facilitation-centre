@@ -242,7 +242,13 @@
         }]);
 
 	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', function($scope, db, $routeParams){
-		$scope.all = db.all('content');
+		
+		db.all('content');
+		
+		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
+			$scope.data	
+		});
+
 		/*
 		$scope.all = function(){
 			return all;
