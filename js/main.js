@@ -242,11 +242,12 @@
         }]);
 
 	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', function($scope, db, $routeParams){
-		var all = db.all('content');
-		
+		$scope.all = db.all('content');
+		/*
 		$scope.all = function(){
 			return all;
 		}
+		*/
 		
 	}]);
     /*
