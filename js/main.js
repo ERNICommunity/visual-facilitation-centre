@@ -254,6 +254,7 @@
 			
 			
 			$scope.logRow = function(index){
+				console.log('row clicked');
 				console.log($scope.all['$object'][index]);
 			}
 		});
