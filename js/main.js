@@ -241,6 +241,17 @@
 
         }]);
 
+	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', function($scope, db, $routeParams){
+		var all = db.all('content');
+		
+		var allList = all.getList();
+		
+		$scope.all = function(){
+			return allList;
+		}
+		
+	}]);
+    /*
     app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
         function editEntries($scope, db, $routeParams) {
             console.log("EditController action");
@@ -278,7 +289,7 @@
             }
 
         }]);
-
+*/
     app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http',
         function EditDialogController($scope, $modal, $log, $http) {
 
