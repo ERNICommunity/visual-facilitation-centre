@@ -13,7 +13,10 @@
 			<td>{{row.name}}</td>
 			<td>{{row.url}}</td>			
 			<td>{{row.tags}}</td>
-			<td><a href="javascript:void(0);" ng-click="logRow($index)">log Row Object</a></td>
+			<td>
+				<a href="javascript:void(0);" ng-click="logRow($index)">log Row Object</a>
+				<a href="javascript:void(0);" ng-click="deleteImage($index)">Delete Image</a>
+			</td>
 		</tr>
 		
 	</table>
