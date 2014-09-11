@@ -2,11 +2,14 @@
 	
 	<h4>Edit Visual Facilitation Image List</h4>
 	{{ all }}
-	
-	<div ng-repeat="row in all">
-		{{row}}
-		<hr/>
-	</div>
+	<table>
+		<tr>
+			<th></th>	
+		</tr>	
+		<tr ng-repeat="row in all">
+			<td>{{row}}</td>
+		</tr>
+	</table>
 <!--	
 	<div ng-controller="EditDialogController">
     <script type="text/ng-template" id="modal">
