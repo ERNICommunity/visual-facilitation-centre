@@ -258,7 +258,7 @@
 			}
 			
 			$scope.deleteImage = function(index){
-				$scope.all['$object'][index].doDelete();
+				$scope.all['$object'][index].remove();
 			}
 
 		});
