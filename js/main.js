@@ -246,7 +246,7 @@
 		var all = db.all('content');
 		
 		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
-			$scope.data = data;
+			$scope.all = data;
 		});
 
 	}]);
