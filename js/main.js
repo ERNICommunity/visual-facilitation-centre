@@ -251,6 +251,11 @@
 			$scope.logAll = function(){
 				console.log($scope.all);
 			}
+			
+			
+			$scope.logAll = function(index){
+				console.log($scope.all.$object[index]);
+			}
 		});
 
 	}]);
