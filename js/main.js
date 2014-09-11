@@ -249,12 +249,6 @@
 			$scope.data	
 		});
 
-		/*
-		$scope.all = function(){
-			return all;
-		}
-		*/
-		
 	}]);
     /*
     app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
