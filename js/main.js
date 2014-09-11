@@ -247,7 +247,7 @@
 		var allList = all.getList();
 		
 		$scope.all = function(){
-			return allList;
+			return all;
 		}
 		
 	}]);
