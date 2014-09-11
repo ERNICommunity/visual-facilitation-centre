@@ -247,7 +247,7 @@
 		
 		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
 			console.log(data);
-			$scope.data = data;
+			$scope.all = data;
 		});
 
 	}]);
