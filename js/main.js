@@ -253,7 +253,7 @@
 			}
 			
 			
-			$scope.logAll = function(index){
+			$scope.logRow = function(index){
 				console.log($scope.all.$object[index]);
 			}
 		});
