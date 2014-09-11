@@ -264,6 +264,7 @@
 		});
 
 	}]);
+	
     /*
     app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
         function editEntries($scope, db, $routeParams) {
