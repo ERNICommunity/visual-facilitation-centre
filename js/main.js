@@ -252,11 +252,15 @@
 				console.log($scope.all);
 			}
 			
-			
 			$scope.logRow = function(index){
 				console.log('row clicked');
 				console.log($scope.all['$object'][index]);
 			}
+			
+			$scope.deleteImage = function(index){
+				$scope.all['$object'][index].doDelete();
+			}
+
 		});
 
 	}]);
