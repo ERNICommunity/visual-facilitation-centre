@@ -248,6 +248,10 @@
 		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
 			$scope.all = data.getList();
 			
+			$scope.delete = function(e) {
+				db.one('product', e).remove();
+			};
+			
 			$scope.logAll = function(){
 				console.log($scope.all);
 			}
