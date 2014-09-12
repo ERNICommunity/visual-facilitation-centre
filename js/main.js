@@ -292,7 +292,8 @@
 
                         var copyObj = db.copy(obj)
                         copyObj.name = selectedImage.name;
-                        copyObj.tags = selectedImage.tags;
+                        copyObj.tags = selectedImage.tags.split(',');
+                        ;
                         copyObj.put();
                         $scope.all[id] = selectedImage;
 
