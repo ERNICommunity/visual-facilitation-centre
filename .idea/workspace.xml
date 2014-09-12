@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="tidy up the login form a little bit.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/edit.html" afterPath="$PROJECT_DIR$/Sections/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/login.html" afterPath="$PROJECT_DIR$/Sections/login.html" />
+    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410501939483" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410505509825" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1409461510793" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410505406211" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
@@ -69,7 +67,7 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.9113924">
+            <state line="8" column="21" selection-start="365" selection-end="365" vertical-scroll-proportion="1.3797468">
               <folding />
             </state>
           </provider>
@@ -87,7 +85,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="135" selection-start="7704" selection-end="7704" vertical-scroll-proportion="-8.894737">
+            <state line="254" column="32" selection-start="9289" selection-end="9289" vertical-scroll-proportion="0.5394737">
               <folding />
             </state>
           </provider>
@@ -96,7 +94,7 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="122" selection-start="3106" selection-end="3106" vertical-scroll-proportion="-3.9">
+            <state line="82" column="16" selection-start="3290" selection-end="3290" vertical-scroll-proportion="1.6">
               <folding />
             </state>
           </provider>
@@ -750,7 +748,11 @@
       <created>1410406850198</created>
       <updated>1410406850198</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="delete functionality implemented">
+      <created>1410505515506</created>
+      <updated>1410505515506</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -838,7 +840,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidy up the login form a little bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="delete functionality implemented" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -852,7 +854,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="add submit button to ngFlow" />
     <MESSAGE value="adding a temp menu" />
     <MESSAGE value="playing with new uploader code" />
     <MESSAGE value="add menu to website" />
@@ -877,6 +878,7 @@
     <MESSAGE value="remove commented out code" />
     <MESSAGE value="tidy up logout" />
     <MESSAGE value="tidy up the login form a little bit." />
+    <MESSAGE value="delete functionality implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -965,21 +967,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.9113924">
+        <state line="8" column="21" selection-start="365" selection-end="365" vertical-scroll-proportion="1.3797468">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="122" selection-start="3106" selection-end="3106" vertical-scroll-proportion="-3.9">
+        <state line="82" column="16" selection-start="3290" selection-end="3290" vertical-scroll-proportion="1.6">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="135" selection-start="7704" selection-end="7704" vertical-scroll-proportion="-8.894737">
+        <state line="254" column="32" selection-start="9289" selection-end="9289" vertical-scroll-proportion="0.5394737">
           <folding />
         </state>
       </provider>

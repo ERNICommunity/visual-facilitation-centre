@@ -270,45 +270,6 @@
 
     }]);
 
-    /*
-     app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
-     function editEntries($scope, db, $routeParams) {
-     console.log("EditController action");
-
-     $scope.title = $routeParams.tag;
-     var all = db.all('content');
-
-     $scope.images = [];
-
-     // SEARCH
-     all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
-     $scope.search = data;
-     $scope.contacts = data;
-
-     // creating cached image list for modification
-     for (var i = 0; i < data.length; i++) {
-     $scope.images.push({
-     id: i,
-     name: data[i].name,
-     section: data[i].section,
-     tags: data[i].tags,
-     favorite: false,
-     });
-     }
-     console.log($scope.images);
-     });
-
-     $scope.deleteImage = function (id) {
-     // delete image and sort remaining image id's new
-     $scope.images.splice(id, 1);
-     console.log($scope.images);
-     for (var i = 0; i < $scope.images.length; i++) {
-     $scope.images[i].id = i;
-     }
-     }
-
-     }]);
-     */
     app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 'Restangular' ,
         function EditDialogController($scope, $modal, $log, $http, db) {
 
