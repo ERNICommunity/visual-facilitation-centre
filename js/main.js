@@ -263,11 +263,7 @@
                     uid: data[i]._id.$oid
                 });
             }
-
-
         });
-
-
     }]);
 
     app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 'Restangular' ,
@@ -290,7 +286,7 @@
                     $log.info('name: ' + selectedImage.name);
                     $log.info('section: ' + selectedImage.section);
                     $log.info('favorite: ' + selectedImage.favorite);
-                    $log.info('tags: ' + selectedImage.tags);
+                    $log.info('tags: ' + selectedImage.tags.split(','));
 
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 
@@ -301,9 +297,6 @@
                         $scope.all[id] = selectedImage;
 
                     });
-                    ;
-
-
                 }, function () {
 
                     $log.info('Edid Modal dismissed at: ' + new Date());
