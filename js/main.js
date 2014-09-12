@@ -189,11 +189,6 @@
 
             }
 
-            $scope.upload = function () {
-
-            }
-
-
             $scope.generateId = function () {
                 return  Math.random().toString(36).substr(2, 9) + '_';
             };
@@ -295,7 +290,6 @@
                         var copyObj = db.copy(obj)
                         copyObj.name = selectedImage.name;
                         copyObj.tags = selectedImage.tags;
-
                         copyObj.put();
                         $scope.all[id] = selectedImage;
 
