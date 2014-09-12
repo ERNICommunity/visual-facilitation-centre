@@ -200,7 +200,7 @@
                 var now = new Date();
 
                 $scope.formData.dateAdded = now;
-
+                $scope.formData.favourites = [];
                 var loggedUser = JSON.parse($scope.loggedUser);
                 $scope.formData.owner = loggedUser.username;
 
