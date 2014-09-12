@@ -220,11 +220,6 @@
 
             }
 
-            $scope.upload = function () {
-
-            }
-
-
             $scope.generateId = function () {
                 return  Math.random().toString(36).substr(2, 9) + '_';
             };
@@ -236,7 +231,7 @@
                 var now = new Date();
 
                 $scope.formData.dateAdded = now;
-
+                $scope.formData.favourites = [];
                 var loggedUser = JSON.parse($scope.loggedUser);
                 $scope.formData.owner = loggedUser.username;
 
@@ -318,6 +313,8 @@
                     $log.info('section: ' + selectedImage.section);
                     $log.info('favorite: ' + selectedImage.favorite);
                     $log.info('tags: ' + selectedImage.tags.split(','));
+
+                    selectedImage.tags = selectedImage.tags.split(',');
 
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 

@@ -1,5 +1,5 @@
 <div id="gallery" ng-controller="DisplayController">
-    <div class="polaroid" ng-repeat="picture in contacts | orderBy:'name':false | filter:tags">
+    <div class="polaroid" ng-repeat="picture in contacts | orderBy:'dateAdded':true | filter:tags">
         <a rel="fncbx" data-lightbox="image-1" data-title="{{ picture.name }}" href="{{ picture.url }}" target="_blank"><img
                 alt="{{ picture.name }}" src="{{ picture.url }}"/></a>
         <span>{{ picture.name }}</span>
