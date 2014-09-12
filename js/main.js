@@ -288,12 +288,14 @@
                     $log.info('favorite: ' + selectedImage.favorite);
                     $log.info('tags: ' + selectedImage.tags.split(','));
 
+                    selectedImage.tags = selectedImage.tags.split(',');
+
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 
                         var copyObj = db.copy(obj)
                         copyObj.name = selectedImage.name;
-                        copyObj.tags = selectedImage.tags.split(',');
-                        ;
+                        copyObj.tags = selectedImage.tags;
+
                         copyObj.put();
                         $scope.all[id] = selectedImage;
 
