@@ -280,7 +280,7 @@
                     controller: EditDialogInstanceController,
                     resolve: {
                         selectedImage: function () {
-                            return $scope.images[id];
+                            return id;
                         }
                     }
                 });
@@ -291,8 +291,21 @@
                     $log.info('section: ' + selectedImage.section);
                     $log.info('favorite: ' + selectedImage.favorite);
                     $log.info('tags: ' + selectedImage.tags);
-                    $scope.images[id] = selectedImage;
+
+                    var x = db.one('content', selectedImage.uid).get().then(function (obj) {
+
+                        var copyObj = db.copy(obj)
+                        copyObj.name = selectedImage.name;
+                        copyObj.tags = selectedImage.tags;
+                        copyObj.put();
+                        $scope.all[id] = selectedImage;
+
+                    });
+                    ;
+
+
                 }, function () {
+
                     $log.info('Edid Modal dismissed at: ' + new Date());
                 });
             };
@@ -340,7 +353,7 @@
         $scope.selectedImage = selectedImage;
 
         $scope.save = function () {
-            $modalInstance.close($scope.selectedImage);
+            $modalInstance.close(selectedImage);
         };
 
         $scope.cancel = function () {

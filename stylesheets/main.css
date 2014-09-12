@@ -36,7 +36,7 @@ ul li {
     display: block;
     position: relative;
     float: left;
-    z-index: 10000;
+    z-index: 1000;
 
 }
 
