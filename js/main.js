@@ -311,7 +311,12 @@
 
                 modalInstance.result.then(function (content) {
 
-                    db.one('content', content.uid).remove();
+                    db.one('content', content.uid).remove().then(function (data) {
+                        $scope.all.splice(content.id, 1);
+                    });
+                    ;
+
+
                     /*                $http.post('/delete_ajax.php', data,
                      {
                      headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
