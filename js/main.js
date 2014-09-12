@@ -11,7 +11,7 @@
             apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
         })
         RestangularProvider.setRestangularFields({
-            id: '_id'
+            id: '_id.$oid'
         });
         RestangularProvider.setRequestInterceptor(function (elem, operation, what) {
             if (operation === 'put') {
@@ -20,6 +20,8 @@
             }
             return elem;
         });
+
+
     });
 
     angular.module('BootstrapApp', ['ui.bootstrap']);
@@ -241,75 +243,74 @@
 
         }]);
 
-	app.controller('EditController', ['$scope', 'Restangular', '$routeParams', function($scope, db, $routeParams){
-		
-		var all = db.all('content');
-		
-		all.customGET('', {"q": {"section": "all" }}).then(function (data) {
-			$scope.all = data.getList();
-			
-			$scope.delete = function(e) {
-				db.one('content', e).remove();
-			};
-			
-			$scope.logAll = function(){
-				console.log($scope.all);
-			}
-			
-			$scope.logRow = function(index){
-				console.log('row clicked');
-				console.log($scope.all['$object'][index]);
-			}
-			
-			$scope.deleteImage = function(index){
-				$scope.all['$object'][index].remove();
-			}
+    app.controller('EditController', ['$scope', 'Restangular', '$http', '$routeParams', '$filter', function ($scope, db, $httpProvider, $routeParams, $filter) {
 
-		});
+        var all = db.all('content');
+        $scope.all = [];
 
-	}]);
-	
-    /*
-    app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
-        function editEntries($scope, db, $routeParams) {
-            console.log("EditController action");
+        all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+            $scope.search = data;
+            $scope.contacts = data;
 
-            $scope.title = $routeParams.tag;
-            var all = db.all('content');
-
-            $scope.images = [];
-
-            // SEARCH
-            all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
-                $scope.search = data;
-                $scope.contacts = data;
-
-                // creating cached image list for modification
-                for (var i = 0; i < data.length; i++) {
-                    $scope.images.push({
-                        id: i,
-                        name: data[i].name,
-                        section: data[i].section,
-                        tags: data[i].tags,
-                        favorite: false,
-                    });
-                }
-                console.log($scope.images);
-            });
-
-            $scope.deleteImage = function (id) {
-                // delete image and sort remaining image id's new
-                $scope.images.splice(id, 1);
-                console.log($scope.images);
-                for (var i = 0; i < $scope.images.length; i++) {
-                    $scope.images[i].id = i;
-                }
+            // creating cached image list for modification
+            for (var i = 0; i < data.length; i++) {
+                $scope.all.push({
+                    id: i,
+                    name: data[i].name,
+                    section: data[i].section,
+                    tags: data[i].tags,
+                    favorite: false,
+                    uid: data[i]._id.$oid
+                });
             }
 
-        }]);
-*/
-    app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http',
-        function EditDialogController($scope, $modal, $log, $http) {
+
+        });
+
+
+    }]);
+
+    /*
+     app.controller('EditController', ['$scope', 'Restangular', '$routeParams',
+     function editEntries($scope, db, $routeParams) {
+     console.log("EditController action");
+
+     $scope.title = $routeParams.tag;
+     var all = db.all('content');
+
+     $scope.images = [];
+
+     // SEARCH
+     all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+     $scope.search = data;
+     $scope.contacts = data;
+
+     // creating cached image list for modification
+     for (var i = 0; i < data.length; i++) {
+     $scope.images.push({
+     id: i,
+     name: data[i].name,
+     section: data[i].section,
+     tags: data[i].tags,
+     favorite: false,
+     });
+     }
+     console.log($scope.images);
+     });
+
+     $scope.deleteImage = function (id) {
+     // delete image and sort remaining image id's new
+     $scope.images.splice(id, 1);
+     console.log($scope.images);
+     for (var i = 0; i < $scope.images.length; i++) {
+     $scope.images[i].id = i;
+     }
+     }
+
+     }]);
+     */
+    app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 'Restangular' ,
+        function EditDialogController($scope, $modal, $log, $http, db) {
 
             // edit image function
             $scope.open = function (id) {
@@ -342,32 +343,27 @@
                     controller: DeleteItemInstanceController,
                     resolve: {
                         selectedImage: function () {
-                            return $scope.images[id];
+                            return id;
                         }
                     }
                 });
 
-                modalInstance.result.then(function (id) {
-                    $log.info('image id to be deleted: ' + id);
-                    $log.info('image name to be deleted: ' + $scope.images[id].name);
-                    alert('image name to be deleted: ' + $scope.images[id].name);
+                modalInstance.result.then(function (content) {
 
-                    var data = $.param({ delete: { name: $scope.images[id].name }});
-                    alert('url encoded object: ' + data);
+                    db.one('content', content.uid).remove();
+                    /*                $http.post('/delete_ajax.php', data,
+                     {
+                     headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
+                     }).success(function (data, status, headers, config) {
+                     $scope.deleteImage(id);
+                     alert("file successfully deleted, response data: " + data);
+                     // todo: delete file from db
 
-                    $http.post('/delete_ajax.php', data,
-                        {
-                            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
-                        }).success(function (data, status, headers, config) {
-                            $scope.deleteImage(id);
-                            alert("file successfully deleted, response data: " + data);
-                            // todo: delete file from db
-
-                        }).error(function (data, status, headers, config) {
-                            alert("deleting the file was not successful, response data: " + data);
-                        });
-                }, function () {
-                    $log.info('Delete Modal dismissed at: ' + new Date());
+                     }).error(function (data, status, headers, config) {
+                     alert("deleting the file was not successful, response data: " + data);
+                     });
+                     }, function () {
+                     $log.info('Delete Modal dismissed at: ' + new Date());*/
                 });
 
             };
@@ -391,7 +387,7 @@
         $scope.selectedImage = selectedImage;
 
         $scope.deleteConfirmed = function () {
-            $modalInstance.close(selectedImage.id);
+            $modalInstance.close(selectedImage);
         };
 
         $scope.deleteCancelled = function () {
