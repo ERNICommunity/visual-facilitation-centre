@@ -150,6 +150,21 @@
             var all = db.all('content');
 
 
+            $scope.addToFavourites = function (picture) {
+
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+
+                    var copyObj = db.copy(obj)
+
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites = [loggedUser.username];
+
+                    copyObj.put();
+
+
+                });
+            }
+
             if ($routeParams.tag == "all") {
 
 
@@ -170,6 +185,7 @@
                 $scope.search = data;
                 console.log(data.files);
             });
+
 
         }]);
 
