@@ -67,7 +67,7 @@
                     if (next.templateUrl == "Sections/login.html") {
                         // already going to #login, no redirect needed
                     } else {
-                        if(next.templateUrl != "Sections/register.html")//not going to #login or #register, we should redirect now
+                        if (next.templateUrl != "Sections/register.html")//not going to #login or #register, we should redirect now
                             $location.path("/login");
                     }
                 } else {
@@ -89,12 +89,11 @@
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
-                if($scope.details.password !== $scope.details.confirmPassword)
-                {
+                if ($scope.details.password !== $scope.details.confirmPassword) {
                     alert("Passwords do not match.");
                     return;
                 }
-                
+
                 $http({
                     method: 'POST',
                     url: 'http://moodyrest.azurewebsites.net/users',
@@ -108,7 +107,7 @@
                     });
             };
 
-    }]);
+        }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
@@ -188,11 +187,19 @@
                     var copyObj = db.copy(obj)
 
                     var loggedUser = JSON.parse($scope.loggedUser);
-                    copyObj.favourites = [loggedUser.username];
 
+                    if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
+                        return;
+                    }
+                    ;
+
+
+                    if (copyObj.favourites.length == 0) {
+                        copyObj.favourites = [loggedUser.username];
+                    } else {
+                        copyObj.favourites.push(loggedUser.username);
+                    }
                     copyObj.put();
-
-
                 });
             }
 
@@ -301,7 +308,7 @@
                     name: data[i].name,
                     section: data[i].section,
                     tags: data[i].tags,
-                    favorite: false,
+
                     uid: data[i]._id.$oid
                 });
             }
@@ -327,7 +334,7 @@
                     $log.info('image with ID: ' + id + ' was edited and is going to be saved');
                     $log.info('name: ' + selectedImage.name);
                     $log.info('section: ' + selectedImage.section);
-                    $log.info('favorite: ' + selectedImage.favorite);
+
                     $log.info('tags: ' + selectedImage.tags.split(','));
 
                     selectedImage.tags = selectedImage.tags.split(',');
