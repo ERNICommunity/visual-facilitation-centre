@@ -50,6 +50,11 @@
                         templateUrl: 'Sections/login.html',
                         controller: 'LoginController'
                     }).
+                    when('/register', {
+
+                        templateUrl: 'Sections/register.html',
+                        controller: 'RegistrationController'
+                    }).
                     when('/', {
 
                         redirectTo: 'content/all'
@@ -62,8 +67,8 @@
                     if (next.templateUrl == "Sections/login.html") {
                         // already going to #login, no redirect needed
                     } else {
-                        // not going to #login, we should redirect now
-                        $location.path("/login");
+                        if(next.templateUrl != "Sections/register.html")//not going to #login or #register, we should redirect now
+                            $location.path("/login");
                     }
                 } else {
                 }
@@ -78,6 +83,32 @@
 
             }
         }]);
+
+    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
+        function RegistrationCtrl($scope, db, $routeParams, $http) {
+
+            $scope.title = $routeParams.tag;
+            $scope.register = function () {
+                if($scope.details.password !== $scope.details.confirmPassword)
+                {
+                    alert("Passwords do not match.");
+                    return;
+                }
+                
+                $http({
+                    method: 'POST',
+                    url: 'http://moodyrest.azurewebsites.net/users',
+                    headers: {'Content-Type': 'application/json'},
+                    data: JSON.stringify($scope.details)})
+                    .success(function (data) {
+                        alert('User created successfully');
+                    })
+                    .error(function (data) {
+                        alert(data.message);
+                    });
+            };
+
+    }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
