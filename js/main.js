@@ -106,7 +106,6 @@
                         alert(data.message);
                     });
             };
-
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
@@ -169,7 +168,6 @@
                     .error(function (data) {
                         alert('login error');
                     });
-
             }
         }]);
 
@@ -180,19 +178,42 @@
             var all = db.all('content');
 
 
+            $scope.exists = false;
+
+            $scope.isInFavourites = function (picture) {
+                var loggedUser = JSON.parse($scope.loggedUser);
+                if (picture.favourites.indexOf(loggedUser.username) > -1) {
+                    return true;
+                }
+                ;
+                return false;
+            }
+
+
+            $scope.removeFromFavourites = function (picture) {
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+                    copyObj.put();
+                    picture.favourites = copyObj.favourites;
+                    $scope.exists = false;
+
+                });
+            }
+
             $scope.addToFavourites = function (picture) {
 
+
+                $scope.exists = true;
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-
                     var copyObj = db.copy(obj)
-
                     var loggedUser = JSON.parse($scope.loggedUser);
-
                     if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
                         return;
                     }
                     ;
-
 
                     if (copyObj.favourites.length == 0) {
                         copyObj.favourites = [loggedUser.username];
@@ -200,12 +221,11 @@
                         copyObj.favourites.push(loggedUser.username);
                     }
                     copyObj.put();
+                    picture.favourites = copyObj.favourites;
                 });
             }
 
             if ($routeParams.tag == "all") {
-
-
                 $scope.contacts = db.all('content').getList();
 
             } else {
@@ -223,8 +243,6 @@
                 $scope.search = data;
                 console.log(data.files);
             });
-
-
         }]);
 
 
@@ -238,9 +256,7 @@
             $scope.setFiles = function (element) {
                 $scope.files = element.files;
                 $scope.$apply(
-
                 )
-
             }
 
             $scope.generateId = function () {
@@ -258,11 +274,8 @@
                 var loggedUser = JSON.parse($scope.loggedUser);
                 $scope.formData.owner = loggedUser.username;
 
-
                 var formData = new FormData();
-
                 formData.append('image[0]', $scope.files[0], processedFilename);
-
 
                 if ($scope.files && $scope.files.length > 0) {
                     $http.post('/uploader_ajax.php', formData,
@@ -274,8 +287,6 @@
                             if (typeof(data) != 'undefined' && typeof(data.details) != 'undefined') {
                                 jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
                             }
-
-
                             db.all('content').post($scope.formData).then(function (response) {
                                 $scope.message = 'Your form has been sent!';
 
