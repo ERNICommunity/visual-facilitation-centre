@@ -428,15 +428,19 @@
                     $log.info('name: ' + selectedImage.name);
                     $log.info('section: ' + selectedImage.section);
 
-                    $log.info('tags: ' + selectedImage.tags.split(','));
+                    if (Array.isArray(selectedImage.tags) == false) {
+                        selectedImage.tags = selectedImage.tags.split(',');
+                    }
 
-                    selectedImage.tags = selectedImage.tags.split(',');
+
+                    alert(selectedImage.section);
 
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 
                         var copyObj = db.copy(obj)
                         copyObj.name = selectedImage.name;
                         copyObj.tags = selectedImage.tags;
+                        copyObj.section = selectedImage.section;
                         copyObj.put();
                         $scope.all[id] = selectedImage;
 
