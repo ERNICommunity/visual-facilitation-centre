@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410670412434" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410675722631" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410669651118" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410675183378" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410681703055" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410631494035" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410552223107" ignored="false" />
@@ -88,11 +87,10 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="448" column="4" selection-start="16966" selection-end="16966" vertical-scroll-proportion="0.8881579">
+            <state line="260" column="16" selection-start="9901" selection-end="9901" vertical-scroll-proportion="0.28289473">
               <folding>
                 <element signature="e#4337#6819#0" expanded="false" />
                 <element signature="e#7104#7880#0" expanded="false" />
-                <element signature="e#7944#8378#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,7 +99,7 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="45" selection-start="1708" selection-end="1708" vertical-scroll-proportion="7.28">
+            <state line="40" column="45" selection-start="1708" selection-end="1708" vertical-scroll-proportion="-12.0">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#3204#6309#0" expanded="false" />
@@ -804,7 +802,11 @@
       <created>1410670416912</created>
       <updated>1410670416912</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="commit favourites screen">
+      <created>1410675728718</created>
+      <updated>1410675728718</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1019,7 +1021,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="45" selection-start="1708" selection-end="1708" vertical-scroll-proportion="7.28">
+        <state line="40" column="45" selection-start="1708" selection-end="1708" vertical-scroll-proportion="-12.0">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="e#3204#6309#0" expanded="false" />
@@ -1036,11 +1038,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="448" column="4" selection-start="16966" selection-end="16966" vertical-scroll-proportion="0.8881579">
+        <state line="260" column="16" selection-start="9901" selection-end="9901" vertical-scroll-proportion="0.28289473">
           <folding>
             <element signature="e#4337#6819#0" expanded="false" />
             <element signature="e#7104#7880#0" expanded="false" />
-            <element signature="e#7944#8378#0" expanded="false" />
           </folding>
         </state>
       </provider>

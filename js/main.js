@@ -257,6 +257,24 @@
 
             });
 
+            $scope.removeFromFavourites = function (picture) {
+
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+
+                    copyObj.put().then(function (results) {
+                        $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
+
+                    });
+
+
+                });
+            }
+
+
         }]);
 
 
