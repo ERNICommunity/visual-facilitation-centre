@@ -36,6 +36,11 @@
                         templateUrl: 'Sections/content.html',
                         controller: 'DisplayController'
                     }).
+                    when('/favourites', {
+
+                        templateUrl: 'Sections/content.html',
+                        controller: 'FavouritesController'
+                    }).
                     when('/upload', {
 
                         templateUrl: 'Sections/upload.html',
@@ -177,30 +182,6 @@
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
-            $scope.exists = false;
-
-            $scope.isInFavourites = function (picture) {
-                var loggedUser = JSON.parse($scope.loggedUser);
-                if (picture.favourites.indexOf(loggedUser.username) > -1) {
-                    return true;
-                }
-                ;
-                return false;
-            }
-
-            $scope.removeFromFavourites = function (picture) {
-                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
-                    var loggedUser = JSON.parse($scope.loggedUser);
-                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-
-                    copyObj.put();
-                    picture.favourites = copyObj.favourites;
-                    $scope.exists = false;
-
-                });
-            }
-
             $scope.addToFavourites = function (picture) {
                 $scope.exists = true;
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
@@ -221,6 +202,30 @@
                 });
             }
 
+
+            $scope.removeFromFavourites = function (picture) {
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+                    copyObj.put();
+                    picture.favourites = copyObj.favourites;
+                });
+            }
+
+
+            $scope.isInFavourites = function (picture) {
+
+                var loggedUser = JSON.parse($scope.loggedUser);
+                if (picture.favourites.indexOf(loggedUser.username) > -1) {
+                    return true;
+                }
+                ;
+                return false;
+            }
+
+
             if ($routeParams.tag == "all") {
                 $scope.contacts = db.all('content').getList();
 
@@ -238,11 +243,20 @@
                 });
             }
             ;
-            // SEARCH
-//            db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
-//                $scope.search = data;
-//                console.log(data.files);
-//            });
+        }]);
+
+    app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams',
+        function IndexCtrl2($scope, db, $routeParams) {
+            var all = db.all('content');
+
+            var loggedUser = JSON.parse($scope.loggedUser);
+
+            all.customGET('', {"q": {"favourites": loggedUser.username }}).then(function (data) {
+                $scope.search = data;
+                $scope.contacts = data;
+
+            });
+
         }]);
 
 
