@@ -41,6 +41,11 @@
                         templateUrl: 'Sections/content.html',
                         controller: 'FavouritesController'
                     }).
+                    when('/tips', {
+
+                        templateUrl: 'Sections/tips.html',
+                        controller: 'TipsController'
+                    }).
                     when('/upload', {
 
                         templateUrl: 'Sections/upload.html',
@@ -112,6 +117,17 @@
                         alert(data.message);
                     });
             };
+        }]);
+
+
+    app.controller('TipsController', ['$scope', 'Restangular', '$routeParams', '$http',
+        function TipsCtrl($scope, db, $routeParams, $http) {
+            var all = db.all('content');
+            all.customGET('', {"q": {"section": "tips" }}).then(function (data) {
+                $scope.search = data;
+                $scope.contacts = data;
+            });
+
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',

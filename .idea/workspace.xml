@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sections/tips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/register.html" afterPath="$PROJECT_DIR$/Sections/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410683496761" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410683842735" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410669651118" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410681703055" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410687392192" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410682099977" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410552223107" ignored="false" />
@@ -40,19 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="51" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-3.56">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
+            <state line="103" column="26" selection-start="4243" selection-end="4243" vertical-scroll-proportion="0.41666666">
               <folding />
             </state>
           </provider>
@@ -88,18 +80,27 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="61" selection-start="7357" selection-end="7392" vertical-scroll-proportion="-14.384615">
+            <state line="135" column="80" selection-start="5109" selection-end="5109" vertical-scroll-proportion="-54.76923">
               <folding>
-                <element signature="e#7901#8677#0" expanded="false" />
+                <element signature="e#8456#9232#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tips.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/tips.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="50" selection-start="400" selection-end="400" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="12" selection-start="962" selection-end="962" vertical-scroll-proportion="0.6680162">
+            <state line="23" column="6" selection-start="963" selection-end="963" vertical-scroll-proportion="-14.375">
               <folding />
             </state>
           </provider>
@@ -154,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/uploader.php" />
         <option value="$PROJECT_DIR$/test/js/upload.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test2.html" />
@@ -166,10 +166,11 @@
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
         <option value="$PROJECT_DIR$/Sections/register.html" />
+        <option value="$PROJECT_DIR$/Sections/tips.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -293,6 +294,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sections" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/test2" />
       <recent name="$PROJECT_DIR$/test" />
@@ -833,7 +835,11 @@
       <created>1410683501244</created>
       <updated>1410683501244</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="refine the login controller.&#10;&#10;redirect to login page after login.">
+      <created>1410683849053</created>
+      <updated>1410683849053</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -921,7 +927,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refine the login controller.&#10;&#10;migration register method to this controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="refine the login controller.&#10;&#10;redirect to login page after login." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -935,7 +941,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="add down icons to the menu bar" />
     <MESSAGE value="Add user friendly message for login." />
     <MESSAGE value="Display all images on home page as default." />
     <MESSAGE value="save dateTimeAdded on item upload" />
@@ -960,6 +965,7 @@
     <MESSAGE value="FAVOURITES: users can now remove favourite items from the favourites page.&#10;And UI will automatically refresh too." />
     <MESSAGE value="fixed issues with favourites.&#10;fixes styling for favourites screen." />
     <MESSAGE value="refine the login controller.&#10;&#10;migration register method to this controller" />
+    <MESSAGE value="refine the login controller.&#10;&#10;redirect to login page after login." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,11 +973,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sections/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_ajax.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1037,13 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="51" selection-start="2643" selection-end="2643" vertical-scroll-proportion="-3.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="23" selection-start="721" selection-end="721" vertical-scroll-proportion="1.329114">
@@ -1058,18 +1052,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="963" selection-end="963" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/tips.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="50" selection-start="400" selection-end="400" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="61" selection-start="7357" selection-end="7392" vertical-scroll-proportion="-14.384615">
+        <state line="135" column="80" selection-start="5109" selection-end="5109" vertical-scroll-proportion="-54.76923">
           <folding>
-            <element signature="e#7901#8677#0" expanded="false" />
+            <element signature="e#8456#9232#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/register.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="962" selection-end="962" vertical-scroll-proportion="0.6680162">
+        <state line="103" column="26" selection-start="4243" selection-end="4243" vertical-scroll-proportion="0.41666666">
           <folding />
         </state>
       </provider>
