@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.polaroid a {
+.polaroid a.images {
     display: block;
     width: 110px;
     height: 110px;
