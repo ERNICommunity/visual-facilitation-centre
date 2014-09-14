@@ -432,9 +432,6 @@
                         selectedImage.tags = selectedImage.tags.split(',');
                     }
 
-
-                    alert(selectedImage.section);
-
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 
                         var copyObj = db.copy(obj)
