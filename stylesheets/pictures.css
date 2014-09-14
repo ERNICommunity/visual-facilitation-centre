@@ -49,6 +49,14 @@
     overflow: hidden;
 }
 
+.tips-tile {
+    width: 250px;
+}
+
+.tips-tile img {
+    width: 250px
+}
+
 .polaroid img:hover {
 
     -webkit-transform: scale(1.07, 1.07);
