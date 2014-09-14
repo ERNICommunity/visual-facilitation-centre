@@ -189,7 +189,7 @@
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
                         alert('User created successfully');
-                        window.location.href = '#/login';
+                        window.location.href = '/#/login';
 
                     })
                     .error(function (data) {

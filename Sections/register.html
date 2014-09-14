@@ -2,7 +2,8 @@
 
     <p>Please enter you account details details in the form below.</p>
     <br>
-    <form name="registerForm" ng-controller="RegistrationController" ng-submit="register(details)">
+
+    <form name="registerForm" ng-submit="register(details)">
         <label for="username">Username:</label>
         <input type="text" id="username"
                ng-model="details.username" required>
