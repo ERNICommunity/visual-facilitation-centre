@@ -58,7 +58,7 @@
                     when('/register', {
 
                         templateUrl: 'Sections/register.html',
-                        controller: 'RegistrationController'
+                        controller: 'LoginController'
                     }).
                     when('/', {
 
@@ -106,6 +106,7 @@
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
                         alert('User created successfully');
+
                     })
                     .error(function (data) {
                         alert(data.message);
@@ -174,6 +175,28 @@
                         alert('login error');
                     });
             }
+
+            $scope.register = function () {
+                if ($scope.details.password !== $scope.details.confirmPassword) {
+                    alert("Passwords do not match.");
+                    return;
+                }
+
+                $http({
+                    method: 'POST',
+                    url: 'http://moodyrest.azurewebsites.net/users',
+                    headers: {'Content-Type': 'application/json'},
+                    data: JSON.stringify($scope.details)})
+                    .success(function (data) {
+                        alert('User created successfully');
+                        window.location.href = '#/login';
+
+                    })
+                    .error(function (data) {
+                        alert(data.message);
+                    });
+            };
+
         }]);
 
     app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
