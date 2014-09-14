@@ -177,7 +177,6 @@
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
-
             $scope.exists = false;
 
             $scope.isInFavourites = function (picture) {
@@ -188,7 +187,6 @@
                 ;
                 return false;
             }
-
 
             $scope.removeFromFavourites = function (picture) {
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
@@ -204,8 +202,6 @@
             }
 
             $scope.addToFavourites = function (picture) {
-
-
                 $scope.exists = true;
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
                     var copyObj = db.copy(obj)
@@ -228,21 +224,25 @@
             if ($routeParams.tag == "all") {
                 $scope.contacts = db.all('content').getList();
 
+            } else if ($routeParams.tag == "favourites") {
+                var loggedUser = JSON.parse($scope.loggedUser);
+                all.customGET('', {"q": {"favourites": loggedUser.username }}).then(function (data) {
+                    $scope.search = data;
+                    $scope.contacts = data;
+
+                });
             } else {
                 all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
                     $scope.search = data;
-
                     $scope.contacts = data;
-
-                    console.log(data);
                 });
             }
             ;
             // SEARCH
-            db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
-                $scope.search = data;
-                console.log(data.files);
-            });
+//            db.several('items', '?q=' + JSON.stringify({"name": {"$in": ["angularjs"] }})).getList().then(function (data) {
+//                $scope.search = data;
+//                console.log(data.files);
+//            });
         }]);
 
 
