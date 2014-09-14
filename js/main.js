@@ -253,6 +253,17 @@
                 });
             }
 
+            $scope.searchFilter = function (item) {
+
+                if ($scope.query == undefined || $scope.query == '') {
+                    return true;
+                }
+
+                if (item.tags.indexOf($scope.query) > -1 || item.owner.indexOf($scope.query) > -1) {
+                    return true;
+                }
+                return false;
+            };
 
             $scope.isInFavourites = function (picture) {
 

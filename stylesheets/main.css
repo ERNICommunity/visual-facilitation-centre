@@ -233,7 +233,7 @@ span.title {
     overflow: hidden;
     margin-top: 5px;
     position: relative;
-
+    top: 30px
 }
 
 .header {
