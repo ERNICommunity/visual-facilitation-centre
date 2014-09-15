@@ -26,7 +26,7 @@
 
     angular.module('BootstrapApp', ['ui.bootstrap']);
 
-    var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies']);
+    var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog']);
 
     app.config(['$routeProvider',
             function ($routeProvider) {
