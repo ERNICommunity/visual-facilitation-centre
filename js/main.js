@@ -101,13 +101,14 @@
             }
         }]);
 
-    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
-        function RegistrationCtrl($scope, db, $routeParams, $http) {
+    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http', 'Global'
+        function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+					Global.showMessage('Passwords do not match.');
+                    //alert("");
                     return;
                 }
 
@@ -117,11 +118,10 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
-
+						Global.showMessage('User created successfully');    
                     })
                     .error(function (data) {
-                        alert(data.message);
+						Global.showMessage(data.message);
                     });
             };
         }]);
@@ -202,7 +202,8 @@
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+//                    alert("Passwords do not match.");
+                    Global.showMessage("Passwords do not match.");
                     return;
                 }
 
@@ -212,12 +213,14 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
+						Global.showMessage('User created successfully');
+//                        alert('User created successfully');
                         window.location.href = '/#/login';
 
                     })
                     .error(function (data) {
-                        alert(data.message);
+                    	Global.showMessage(data.message);
+//                        alert(data.message);
                     });
             };
 
