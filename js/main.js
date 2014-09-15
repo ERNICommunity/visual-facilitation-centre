@@ -28,7 +28,7 @@
 
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog']);
 
-    app.config(['$routeProvider',
+    app.config(['$routeProvider', 'ngDialogProvider',
             function ($routeProvider, ngDialogProvider) {
                 $routeProvider.
                     when('/content/:tag', {
