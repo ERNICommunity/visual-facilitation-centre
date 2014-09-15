@@ -83,7 +83,7 @@
                 } else {
                 }
             });
-        }).service('Global', ['$location', '$rootScope', 'ngDialog', function ($location, ngDialog) {
+        }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
             var global;
 
             return {
