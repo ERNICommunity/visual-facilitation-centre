@@ -196,7 +196,7 @@
                     })
                     .error(function (data) {
                     	Global.showMessage('login error');
-                        alert('login error');
+//                        alert('login error');
                     });
             }
 
