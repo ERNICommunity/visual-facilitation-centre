@@ -138,7 +138,7 @@
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
-        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, global) {
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -195,8 +195,7 @@
                         window.location.href = '/';
                     })
                     .error(function (data) {
-                    	Global.showMessage('login error');
-//                        alert('login error');
+                        alert('login error');
                     });
             }
 
