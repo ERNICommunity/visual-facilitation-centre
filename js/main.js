@@ -229,7 +229,7 @@
     app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
         function IndexCtrl($scope, db, $routeParams) {
 
-
+            Notifier.info('Loading content.');
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
