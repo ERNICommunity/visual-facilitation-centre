@@ -4,17 +4,18 @@
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/pictures.css" afterPath="$PROJECT_DIR$/stylesheets/pictures.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410791065819" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410791239816" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410695638113" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410715007976" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
-    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410791058942" ignored="false" />
+    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410798623932" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410790904899" ignored="false" />
-    <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410767414638" ignored="false" />
+    <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410798711388" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
     <file path="/uploader.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402204770083" ignored="false" />
     <file path="/login.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410683025865" ignored="false" />
@@ -50,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pictures.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pictures.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="18" selection-start="684" selection-end="684" vertical-scroll-proportion="2.1538463">
+            <state line="40" column="4" selection-start="711" selection-end="711" vertical-scroll-proportion="0.4446602">
               <folding />
             </state>
           </provider>
@@ -71,7 +72,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="243" column="12" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-14.384615">
+            <state line="238" column="0" selection-start="3135" selection-end="3135" vertical-scroll-proportion="-4.769231">
               <folding />
             </state>
           </provider>
@@ -118,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="692" selection-end="692" vertical-scroll-proportion="0.40618956">
+            <state line="21" column="33" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -159,9 +160,9 @@
         <option value="$PROJECT_DIR$/Sections/tips.html" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
       </list>
     </option>
   </component>
@@ -225,7 +226,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sections" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -846,7 +847,11 @@
       <created>1410791074614</created>
       <updated>1410791074614</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="added icons for favourites">
+      <created>1410791244294</created>
+      <updated>1410791244294</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1068,23 +1073,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="33" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="12" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-14.384615">
+        <state line="238" column="0" selection-start="3135" selection-end="3135" vertical-scroll-proportion="-4.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="18" selection-start="684" selection-end="684" vertical-scroll-proportion="2.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="692" selection-end="692" vertical-scroll-proportion="0.40618956">
+        <state line="40" column="4" selection-start="711" selection-end="711" vertical-scroll-proportion="0.4446602">
           <folding />
         </state>
       </provider>

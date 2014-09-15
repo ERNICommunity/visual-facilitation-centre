@@ -31,12 +31,21 @@
     margin: 15px;
     padding: 5px;
     text-align: center;
-
+    position: relative;
     text-decoration: none;
     font-size: 14px;
     border-radius: 50%;
     box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
     text-align: center;
+    white-space: nowrap;
+
+}
+
+.favourite {
+    position: absolute;
+    float: right;
+    top: -10px;
+    right: -10px
 }
 
 .polaroid img.item {
