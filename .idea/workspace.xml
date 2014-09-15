@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410790959092" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410791065819" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410695638113" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410715007976" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
@@ -70,7 +71,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="13" selection-start="3218" selection-end="3218" vertical-scroll-proportion="-14.384615">
+            <state line="243" column="12" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -120,7 +121,7 @@
       <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="55" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46421662">
+            <state line="14" column="42" selection-start="692" selection-end="692" vertical-scroll-proportion="0.40618956">
               <folding />
             </state>
           </provider>
@@ -841,7 +842,11 @@
       <created>1410790964508</created>
       <updated>1410790964508</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="added icons for favourites">
+      <created>1410791074614</created>
+      <updated>1410791074614</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1065,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="13" selection-start="3218" selection-end="3218" vertical-scroll-proportion="-14.384615">
+        <state line="243" column="12" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
@@ -1079,7 +1084,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="55" selection-start="877" selection-end="877" vertical-scroll-proportion="0.46421662">
+        <state line="14" column="42" selection-start="692" selection-end="692" vertical-scroll-proportion="0.40618956">
           <folding />
         </state>
       </provider>
