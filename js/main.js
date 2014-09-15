@@ -140,7 +140,7 @@
 
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Global', 'Restangular', '$routeParams', '$http', '$cookies',
+    app.controller('LoginController', ['$scope', '$rootScope', 'Global', 'Restangular', '$routeParams', '$http', '$cookies', '$location',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
@@ -195,7 +195,7 @@
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        window.location.href = '/';
+                        $location.path('/');
                     })
                     .error(function (data) {
                     	Global.showMessage('login error');
@@ -205,7 +205,7 @@
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+					Global.showMessage("Passwords do not match.");
                     return;
                 }
 
@@ -215,8 +215,10 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
-                        window.location.href = '/#/login';
+                    	
+                    	Global.showMessage('User created successfully');
+                    	
+                        $location.path('/#/login');
 
                     })
                     .error(function (data) {
