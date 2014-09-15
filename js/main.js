@@ -195,10 +195,10 @@
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        $location.path('/');
+//                        $location.path('/');
                     })
                     .error(function (data) {
-                    	Global.showMessage('login error');
+  //                  	Global.showMessage('login error');
                         alert('login error');
                     });
             }
