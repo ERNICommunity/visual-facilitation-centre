@@ -12,10 +12,11 @@
             <div class="tag" ng-repeat="tag in picture.tags"> #{{ tag}}</div>
         </div>
         <div ng-switch on="isInFavourites(picture)">
-            <div ng-switch-when="false"><a ng-click="addToFavourites(picture)"><img
+            <div ng-switch-when="false"><a class="favourite" ng-click="addToFavourites(picture)"><img
                     src="./img/favorites_icon-add_new.png"></a></div>
-            <div ng-switch-default><a ng-click="removeFromFavourites(picture)"><img
-                    src="./img/favorites_icon-remove_new.png"></a></div>
+            <div ng-switch-default><a ng-click="removeFromFavourites(picture)">
+                <img class="favourite"
+                     src="./img/favorites_icon-remove_new.png"></a></div>
         </div>
 
     </div>

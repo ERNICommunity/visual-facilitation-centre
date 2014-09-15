@@ -236,6 +236,13 @@ span.title {
     top: 15px
 }
 
+.favourite {
+    position: absolute;
+    float: right;
+    top: 20px;
+    right: 10px
+}
+
 .header {
     list-style: none;
     padding: 0;
