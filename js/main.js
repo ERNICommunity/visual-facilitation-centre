@@ -102,13 +102,12 @@
         }]);
 
     app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
-        function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
+        function RegistrationCtrl($scope, db, $routeParams, $http) {
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-//                    alert("Passwords do not match.");
-                    Global.showMessage("Passwords do not match.");
+                    alert("Passwords do not match.");
                     return;
                 }
 
@@ -118,13 +117,11 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                    	 Global.showMessage('User created successfully');
-//                        alert('User created successfully');
+                        alert('User created successfully');
 
                     })
                     .error(function (data) {
-                    	Global.showMessage(data.message);
-//                        alert(data.message);
+                        alert(data.message);
                     });
             };
         }]);
@@ -140,8 +137,8 @@
 
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies', '$location',
-        function LoginCtrl($scope, $rootScope, db, $routeParams, Global, $http, $cookies, $location) {
+    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, global) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -191,21 +188,21 @@
             };
 
             $scope.login = function () {
-                $http.get({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
+                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        $location.path('/');
+                        window.location.href = '/';
                     })
                     .error(function (data) {
                     	Global.showMessage('login error');
-                        alert('login error');
+//                        alert('login error');
                     });
             }
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-					Global.showMessage("Passwords do not match.");
+                    alert("Passwords do not match.");
                     return;
                 }
 
@@ -215,10 +212,8 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                    	
-                    	Global.showMessage('User created successfully');
-                    	
-                        $location.path('/#/login');
+                        alert('User created successfully');
+                        window.location.href = '/#/login';
 
                     })
                     .error(function (data) {
