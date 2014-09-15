@@ -101,8 +101,8 @@
             }
         }]);
 
-    app.controller('RegistrationController', ['$scope', 'Restangular', 'Global', '$routeParams', '$http',
-        function RegistrationCtrl($scope, db, $routeParams, $http) {
+    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
+        function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
@@ -140,7 +140,7 @@
 
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Global', 'Restangular', '$routeParams', '$http', '$cookies', '$location',
+    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies', '$location',
         function LoginCtrl($scope, $rootScope, db, $routeParams, Global, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
