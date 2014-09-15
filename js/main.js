@@ -141,7 +141,7 @@
         }]);
 
     app.controller('LoginController', ['$scope', '$rootScope', 'Global', 'Restangular', '$routeParams', '$http', '$cookies', '$location',
-        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
+        function LoginCtrl($scope, $rootScope, db, $routeParams, Global, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -191,7 +191,7 @@
             };
 
             $scope.login = function () {
-                $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
+                $http.get({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
