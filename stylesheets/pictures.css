@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-.polaroid img {
+.polaroid img.item {
     width: 120px;
     height: 120px;
     top: 50%;
