@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410812984971" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410813935686" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410811932954" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410801076425" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="25" selection-start="9096" selection-end="9096" vertical-scroll-proportion="0.35856575">
+            <state line="243" column="41" selection-start="9493" selection-end="9493" vertical-scroll-proportion="-13.846154">
               <folding />
             </state>
           </provider>
@@ -115,7 +115,7 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="595" selection-end="595" vertical-scroll-proportion="-0.3">
+            <state line="16" column="30" selection-start="595" selection-end="595" vertical-scroll-proportion="3.6">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#3155#6260#0" expanded="false" />
@@ -124,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="7" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-13.125">
+            <state line="6" column="44" selection-start="423" selection-end="423" vertical-scroll-proportion="0.17408124">
               <folding />
             </state>
           </provider>
@@ -165,9 +165,9 @@
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
-        <option value="$PROJECT_DIR$/Sections/content.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Sections/content.html" />
       </list>
     </option>
   </component>
@@ -900,7 +900,11 @@
       <created>1410812988111</created>
       <updated>1410812988111</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Added some basic flash messages">
+      <created>1410813943771</created>
+      <updated>1410813943771</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1072,16 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="595" selection-end="595" vertical-scroll-proportion="-0.3">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#3155#6260#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/favorites_icon-add.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1097,13 +1091,6 @@
     <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="17" selection-start="744" selection-end="744" vertical-scroll-proportion="2.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
@@ -1138,7 +1125,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="25" selection-start="9096" selection-end="9096" vertical-scroll-proportion="0.35856575">
+        <state line="243" column="41" selection-start="9493" selection-end="9493" vertical-scroll-proportion="-13.846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="595" selection-end="595" vertical-scroll-proportion="3.6">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#3155#6260#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="423" selection-end="423" vertical-scroll-proportion="0.17408124">
           <folding />
         </state>
       </provider>
