@@ -26,10 +26,10 @@
 
     angular.module('BootstrapApp', ['ui.bootstrap']);
 
-    var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies']);
+    var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog']);
 
-    app.config(['$routeProvider',
-            function ($routeProvider) {
+    app.config(['$routeProvider', 'ngDialogProvider',
+            function ($routeProvider, ngDialogProvider) {
                 $routeProvider.
                     when('/content/:tag', {
 
@@ -83,24 +83,32 @@
                 } else {
                 }
             });
-        }).service('Global', ['$location', '$rootScope', function ($location) {
+        }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
             var global;
 
             return {
                 showCurrentUser: function () {
                     return $rootScope.loggedUser;
-                }
+                },
+                showMessage: function(input){
+					ngDialog.open({ 
+						template: '<p>'+input+'</p>',
+						className: 'ngdialog-theme-plain',
+    					plain: true 
+			    	});
+				}
 
             }
         }]);
 
-    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
-        function RegistrationCtrl($scope, db, $routeParams, $http) {
+    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http', 'Global',
+        function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+					Global.showMessage('Passwords do not match.');
+                    //alert("");
                     return;
                 }
 
@@ -110,11 +118,10 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
-
+						Global.showMessage('User created successfully');    
                     })
                     .error(function (data) {
-                        alert(data.message);
+						Global.showMessage(data.message);
                     });
             };
         }]);
@@ -130,8 +137,8 @@
 
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
-        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
+    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies', 'Global',
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, Global) {
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
@@ -188,13 +195,15 @@
                         window.location.href = '/';
                     })
                     .error(function (data) {
-                        alert('login error');
+                    	Global.showMessage('login error');
+//                        alert('login error');
                     });
             }
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+//                    alert("Passwords do not match.");
+                    Global.showMessage("Passwords do not match.");
                     return;
                 }
 
@@ -204,12 +213,14 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
+						Global.showMessage('User created successfully');
+//                        alert('User created successfully');
                         window.location.href = '/#/login';
 
                     })
                     .error(function (data) {
-                        alert(data.message);
+                    	Global.showMessage(data.message);
+//                        alert(data.message);
                     });
             };
 
