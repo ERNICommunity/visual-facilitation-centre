@@ -101,7 +101,7 @@
             }
         }]);
 
-    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http', 'Global'
+    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http', 'Global',
         function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
 
             $scope.title = $routeParams.tag;
