@@ -90,13 +90,13 @@
                 showCurrentUser: function () {
                     return $rootScope.loggedUser;
                 },
-                showMessage: function(input){
-					ngDialog.open({ 
-						template: '<p>'+input+'</p>',
-						className: 'ngdialog-theme-plain',
-    					plain: true 
-			    	});
-				}
+                showMessage: function (input) {
+                    ngDialog.open({
+                        template: '<p>' + input + '</p>',
+                        className: 'ngdialog-theme-plain',
+                        plain: true
+                    });
+                }
 
             }
         }]);
@@ -107,7 +107,7 @@
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-					Global.showMessage('Passwords do not match.');
+                    Global.showMessage('Passwords do not match.');
                     //alert("");
                     return;
                 }
@@ -118,10 +118,10 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-						Global.showMessage('User created successfully');    
+                        Global.showMessage('User created successfully');
                     })
                     .error(function (data) {
-						Global.showMessage(data.message);
+                        Global.showMessage(data.message);
                     });
             };
         }]);
@@ -195,7 +195,7 @@
                         window.location.href = '/';
                     })
                     .error(function (data) {
-                    	Global.showMessage('login error');
+                        Global.showMessage('login error');
 //                        alert('login error');
                     });
             }
@@ -206,20 +206,20 @@
                     Global.showMessage("Passwords do not match.");
                     return;
                 }
-
+                Notifier.success('Creating user...');
                 $http({
                     method: 'POST',
                     url: 'http://moodyrest.azurewebsites.net/users',
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-						Global.showMessage('User created successfully');
+                        Notifier.success('Registration Complete.');
 //                        alert('User created successfully');
                         window.location.href = '/#/login';
 
                     })
                     .error(function (data) {
-                    	Global.showMessage(data.message);
+                        Global.showMessage(data.message);
 //                        alert(data.message);
                     });
             };
@@ -229,11 +229,17 @@
     app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
         function IndexCtrl($scope, db, $routeParams) {
 
+
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
             $scope.addToFavourites = function (picture) {
                 $scope.exists = true;
+
+
+                Notifier.success('Adding to favourites.');
+
+
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
@@ -254,6 +260,7 @@
 
 
             $scope.removeFromFavourites = function (picture) {
+                Notifier.success('Removing from your favourites.');
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
@@ -319,7 +326,7 @@
             });
 
             $scope.removeFromFavourites = function (picture) {
-
+                Notifier.success('Removing from your favourites.');
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
@@ -369,7 +376,7 @@
 
                 var formData = new FormData();
                 formData.append('image[0]', $scope.files[0], processedFilename);
-
+                Notifier.success('Uploading content', 3000);
                 if ($scope.files && $scope.files.length > 0) {
                     $http.post('/uploader_ajax.php', formData,
                         {
@@ -443,6 +450,7 @@
                         selectedImage.tags = selectedImage.tags.split(',');
                     }
 
+                    Notifier.success('Saving data...');
                     var x = db.one('content', selectedImage.uid).get().then(function (obj) {
 
                         var copyObj = db.copy(obj)
@@ -472,7 +480,7 @@
                 });
 
                 modalInstance.result.then(function (content) {
-
+                    Notifier.success('Content has been deleted');
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
                     });
