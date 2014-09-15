@@ -89,18 +89,26 @@
             return {
                 showCurrentUser: function () {
                     return $rootScope.loggedUser;
-                }
+                },
+                showMessage: function(input){
+					ngDialog.open({ 
+						template: '<p>'+input+'</p>',
+						className: 'ngdialog-theme-plain',
+    					plain: true 
+			    	});
+				}
 
             }
         }]);
 
-    app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http',
+    app.controller('RegistrationController', ['$scope', 'Restangular', 'Global', '$routeParams', '$http',
         function RegistrationCtrl($scope, db, $routeParams, $http) {
 
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+//                    alert("Passwords do not match.");
+                    Global.showMessage("Passwords do not match.");
                     return;
                 }
 
@@ -110,11 +118,13 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
+                    	 Global.showMessage('User created successfully');
+//                        alert('User created successfully');
 
                     })
                     .error(function (data) {
-                        alert(data.message);
+                    	Global.showMessage(data.message);
+//                        alert(data.message);
                     });
             };
         }]);
@@ -130,7 +140,7 @@
 
         }]);
 
-    app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies',
+    app.controller('LoginController', ['$scope', '$rootScope', 'Global', 'Restangular', '$routeParams', '$http', '$cookies',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies) {
 
             $scope.setUserProfileInViewsModel = function () {
@@ -185,16 +195,17 @@
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        window.location.href = '/';
+                        $location.path('/');
                     })
                     .error(function (data) {
+                    	Global.showMessage('login error');
                         alert('login error');
                     });
             }
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-                    alert("Passwords do not match.");
+					Global.showMessage("Passwords do not match.");
                     return;
                 }
 
@@ -204,8 +215,10 @@
                     headers: {'Content-Type': 'application/json'},
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
-                        alert('User created successfully');
-                        window.location.href = '/#/login';
+                    	
+                    	Global.showMessage('User created successfully');
+                    	
+                        $location.path('/#/login');
 
                     })
                     .error(function (data) {
