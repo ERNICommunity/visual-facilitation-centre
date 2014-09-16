@@ -283,7 +283,6 @@
                     return true;
                 }
                 return false;
-
             };*/
 
             $scope.isInFavourites = function (picture) {
