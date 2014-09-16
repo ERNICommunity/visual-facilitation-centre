@@ -21,10 +21,17 @@
 .polaroid span {
     top: 20px;
     position: relative;
+
 }
 
-.upload_form {
-    width: 50%;
+.welcome-panel {
+    display: inline-block;
+    position: relative;
+
+}
+
+.cat-tile {
+    display: inline-block;
 }
 
 .polaroid {
@@ -33,7 +40,7 @@
     height: 125px;
     display: inline-block;
     margin: 15px;
-    padding: 5px;
+    padding: 20px;
     text-align: center;
     position: relative;
     text-decoration: none;
