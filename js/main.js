@@ -215,8 +215,11 @@
                     data: JSON.stringify($scope.details)})
                     .success(function (data) {
                         Notifier.success('Registration Complete.');
+                        $cookies.UserCredential = JSON.stringify(data);
+                        $scope.setUserProfileInViewsModel();
+                        window.location.href = './#/welcome';
 //                        alert('User created successfully');
-                        window.location.href = '/#/login';
+                        Notifier.success('Registration Complete.');
 
                     })
                     .error(function (data) {
