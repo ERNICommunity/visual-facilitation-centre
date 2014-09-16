@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="implement welcome page">
+    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410850031421" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410850564821" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410811932954" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410850456691" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1407173967509" ignored="false" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="395" column="80" selection-start="15523" selection-end="15523" vertical-scroll-proportion="0.6450939">
+            <state line="396" column="58" selection-start="15588" selection-end="15591" vertical-scroll-proportion="0.33194155">
               <folding />
             </state>
           </provider>
@@ -907,7 +907,11 @@
       <created>1410849892141</created>
       <updated>1410849892141</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="tidy up upload page">
+      <created>1410850569514</created>
+      <updated>1410850569514</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -995,7 +999,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement welcome page" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidy up upload page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1009,7 +1013,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="turn tags into an array before updating." />
     <MESSAGE value="order content by dateAdded" />
     <MESSAGE value="add property favourites" />
     <MESSAGE value="add basic favourites functionality" />
@@ -1034,6 +1037,7 @@
     <MESSAGE value="turn static page for tips" />
     <MESSAGE value="add welcome page" />
     <MESSAGE value="implement welcome page" />
+    <MESSAGE value="tidy up upload page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1147,7 +1151,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="395" column="80" selection-start="15523" selection-end="15523" vertical-scroll-proportion="0.6450939">
+        <state line="396" column="58" selection-start="15588" selection-end="15591" vertical-scroll-proportion="0.33194155">
           <folding />
         </state>
       </provider>
