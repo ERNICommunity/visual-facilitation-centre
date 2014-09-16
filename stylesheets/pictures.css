@@ -32,6 +32,11 @@
 
 .cat-tile {
     display: inline-block;
+    width: 250px;
+}
+
+.cat-tile img {
+    width: 100%;
 }
 
 .polaroid {
