@@ -226,8 +226,8 @@
 
         }]);
 
-    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
-        function IndexCtrl($scope, db, $routeParams) {
+    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams','ngDialog',
+        function IndexCtrl($scope, db, $routeParams, ngDialog) {
 
             Notifier.info('Loading content.');
             $scope.title = $routeParams.tag;
