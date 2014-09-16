@@ -393,6 +393,8 @@
                             }
                             db.all('content').post($scope.formData).then(function (response) {
                                 $scope.message = 'Your form has been sent!';
+                                Notifier.success('Your content has been uploaded', 3000);
+                                window.location.href = './#/section/' + $scope.formData.section;
 
                             }).otherwise(function (response) {
                                     $scope.message = 'An error occured. Please fix data and try again';
