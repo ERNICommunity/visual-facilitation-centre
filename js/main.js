@@ -517,8 +517,8 @@
         }]);
 
 	app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
-		function ($scope, Restangular, Global) {
-			
+		function ($scope, Restangular, Global) {	
+		
 		}
 	])
     var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
