@@ -293,6 +293,17 @@
                 return false;
             }
 
+			$scope.previewDialog = function (input) {
+				ngDialog.open ({
+					template: 'Sections/dialog.html',
+					controller: 'PreviewDialogController',
+					className: 'ngdialog-theme-plain',
+					showClose: true,
+					closeByDocument: true,
+					closeByEscape: true,
+					scope: $scope
+				});
+			}
 
             if ($routeParams.tag == "all") {
                 $scope.contacts = db.all('content').getList();
@@ -505,6 +516,11 @@
             };
         }]);
 
+	app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
+		function ($scope, Restangular, Global) {
+			
+		}
+	])
     var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
 
         $scope.selectedImage = selectedImage;
