@@ -159,7 +159,8 @@
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
-                changeLocation('/#/login', false);
+                window.location.href = '/#/loging'
+                //changeLocation('/#/login', false);
 
             }
 
@@ -285,7 +286,7 @@
                     return true;
                 }
                 return false;
-            };
+            }
 
             $scope.isInFavourites = function (picture) {
 
@@ -294,7 +295,7 @@
                     return true;
                 }
                 return false;
-            };
+            }
 
 
             if ($routeParams.tag == "all") {
