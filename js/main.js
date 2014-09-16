@@ -294,6 +294,8 @@
             }
 
 			$scope.previewDialog = function (input) {
+				$scope.currentViewedImage = input;
+				
 				ngDialog.open ({
 					template: 'Sections/dialog.html',
 					controller: 'PreviewDialogController',

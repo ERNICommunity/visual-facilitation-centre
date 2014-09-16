@@ -1,15 +1,13 @@
 <div id="frameBody" ng-controller="PreviewDialogController">
-	<div id="imgContainer"><img src="..\Sections\basics\speech_balloon_01.jpg"/></div>
+	<div id="imgContainer"><img src="{{ currentViewedImage.url }}"/></div>
 	<div id="dataContainer">
 		<div class="imgName">
-			STEPS
+			{{ currentViewedImage.name }}
 		</div>			
 		<div class="tagsTitle">
 			Tags
-			<div class="tagsContainer">
-				<span>Process</span>
-				<span>Solution</span>
-				<span>Services</span>
+			<div class="tagsContainer" ng-repeat="tag in currentViewedImage.tags">
+				<span>{{ tag }}</span>
 			</div>
 		</div>					
 	</div>		
