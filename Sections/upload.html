@@ -6,7 +6,7 @@
 <div class="upload_form" ng-controller="UploadController" flow-init>
 
 
-    <div>
+    <div class="upload_form">
         <p>Please select a file that you would like to load.</p>
 
         <form action="uploader.php" method="post" enctype="multipart/form-data">
@@ -20,7 +20,7 @@
         </form>
 
     </div>
-    
+
     <div id="messages" class="well" ng-show="message">{{ message }}</div>
 
     <!-- FORM -->
@@ -31,12 +31,12 @@
 
             <p>Which section would you like to place your image? </p>
             <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
-                <option value="rules">-- RULES --</option>
+
                 <option value="basics">-- BASICS --</option>
                 <option value="icons">-- ICONS --</option>
                 <option value="emotions">-- EMOTIONS --</option>
                 <option value="posters">-- POSTERS --</option>
-                <option value="tips">-- TIPS --</option>
+
             </select>
             <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
         </div>

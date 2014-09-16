@@ -23,6 +23,10 @@
     position: relative;
 }
 
+.upload_form {
+    width: 50%;
+}
+
 .polaroid {
     content: attr(title);
     width: 125px;
