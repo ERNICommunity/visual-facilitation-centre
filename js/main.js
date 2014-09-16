@@ -77,7 +77,7 @@
             }]).run(function ($rootScope, $location) {
             // register listener to watch route changes
             $rootScope.$on("$routeChangeStart", function (event, next, current) {
-                if ($rootScope.loggedUser == null || $rootScope.loggedUser == undefined) {
+                if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
                     // no logged user, we should be going to #login
                     if (next.templateUrl == "Sections/login.html") {
                         // already going to #login, no redirect needed
@@ -143,7 +143,7 @@
 
             $scope.setUserProfileInViewsModel = function () {
                 $scope.profile = angular.fromJson($cookies.UserCredential);
-            }
+            };
 
             /*set defaults based on user credentials cookie*/
             if ($cookies.UserCredential != undefined) {
@@ -159,10 +159,8 @@
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
-                window.location.href = '/#/loging'
-                //changeLocation('/#/login', false);
-
-            }
+                changeLocation('/#/login', false);
+            };
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser) {
@@ -171,7 +169,7 @@
                 } else {
                     return 'Login';
                 }
-            }
+            };
 
             //be sure to inject $scope and $location
             changeLocation = function (url, forceReload) {
@@ -200,7 +198,7 @@
                         Global.showMessage('login error');
 //                        alert('login error');
                     });
-            }
+            };
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
@@ -228,7 +226,6 @@
 //                        alert(data.message);
                     });
             };
-
         }]);
 
     app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
@@ -313,8 +310,7 @@
                     $scope.search = data;
                     $scope.contacts = data;
                 });
-            }
-            ;
+            };
         }]);
 
     app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams',
