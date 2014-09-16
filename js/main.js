@@ -193,7 +193,7 @@
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        window.location.href = '/';
+                        window.location.href = './#/welcome';
                     })
                     .error(function (data) {
                         Global.showMessage('login error');
