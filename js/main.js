@@ -273,7 +273,7 @@
                 });
             }
 
-            $scope.searchFilter = function (item) {
+            /*$scope.searchFilter = function (item) {
 
                 if ($scope.query == undefined || $scope.query == '') {
                     return true;
@@ -283,7 +283,7 @@
                     return true;
                 }
                 return false;
-            }
+            }*/
 
             $scope.isInFavourites = function (picture) {
 

@@ -1,5 +1,5 @@
 <div id="gallery">
-    <div class="polaroid" ng-repeat="picture in contacts | orderBy:'dateAdded':true | filter:searchFilter">
+    <div class="polaroid" ng-repeat="picture in contacts | orderBy:'dateAdded':true | filter:searchText">
 
         <a class="images" rel="fncbx" ng-click="previewDialog(picture)" href="javascript:void(0);"
            target="_blank"><img class="item"
