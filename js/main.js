@@ -228,8 +228,8 @@
             };
         }]);
 
-    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams',
-        function IndexCtrl($scope, db, $routeParams) {
+    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams','ngDialog',
+        function IndexCtrl($scope, db, $routeParams, ngDialog) {
 
             Notifier.info('Loading content.');
             $scope.title = $routeParams.tag;
@@ -294,6 +294,19 @@
                 return false;
             }
 
+			$scope.previewDialog = function (input) {
+				$scope.currentViewedImage = input;
+				
+				ngDialog.open ({
+					template: 'Sections/dialog.html',
+					controller: 'PreviewDialogController',
+					className: 'ngdialog-theme-plain',
+					showClose: true,
+					closeByDocument: true,
+					closeByEscape: true,
+					scope: $scope
+				});
+			}
 
             if ($routeParams.tag == "all") {
                 $scope.contacts = db.all('content').getList();
@@ -507,6 +520,11 @@
             };
         }]);
 
+	app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
+		function ($scope, Restangular, Global) {	
+		
+		}
+	])
     var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
 
         $scope.selectedImage = selectedImage;
