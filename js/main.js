@@ -60,6 +60,11 @@
                         templateUrl: 'Sections/login.html',
                         controller: 'LoginController'
                     }).
+                    when('/welcome', {
+
+                        templateUrl: 'Sections/welcome.html',
+                        controller: 'TipsController'
+                    }).
                     when('/register', {
 
                         templateUrl: 'Sections/register.html',
@@ -129,11 +134,7 @@
 
     app.controller('TipsController', ['$scope', 'Restangular', '$routeParams', '$http',
         function TipsCtrl($scope, db, $routeParams, $http) {
-            var all = db.all('content');
-            all.customGET('', {"q": {"section": "tips" }}).then(function (data) {
-                $scope.search = data;
-                $scope.contacts = data;
-            });
+
 
         }]);
 
