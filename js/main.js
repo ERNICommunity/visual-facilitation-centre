@@ -197,7 +197,7 @@
                         $scope.setUserProfileInViewsModel();
                         var millisecondsToWait = 500;
                         setTimeout(function () {
-                            window.location.href = './#/welcome';
+                            window.location.href = '/';
                         }, millisecondsToWait);
 
                     })
@@ -223,7 +223,7 @@
                         Notifier.success('Registration Complete.');
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        window.location.href = './#/welcome';
+                        window.location.href = '/';
                         Notifier.success('Registration Complete.');
 
                     })
