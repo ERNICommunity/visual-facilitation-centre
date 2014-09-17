@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/tips.html" afterPath="$PROJECT_DIR$/Sections/tips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410856332605" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410858129695" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410811932954" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410850456691" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410851904139" ignored="false" />
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="396" column="58" selection-start="15588" selection-end="15591" vertical-scroll-proportion="-6.1153846">
+            <state line="230" column="4" selection-start="9152" selection-end="9152" vertical-scroll-proportion="0.4117647">
               <folding />
             </state>
           </provider>
@@ -71,16 +71,18 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="253" column="10" selection-start="3339" selection-end="3340" vertical-scroll-proportion="-6.3076925">
-              <folding />
+            <state line="295" column="10" selection-start="3339" selection-end="3340" vertical-scroll-proportion="-6.3076925">
+              <folding>
+                <marker date="1410951444000" expanded="true" signature="4565:5063" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tips.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tips.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/tips.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.9392713">
+            <state line="68" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="-19.333334">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -176,11 +178,11 @@
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/upload.html" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/Sections/welcome.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -262,27 +264,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="73" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="73" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="149" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="73" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="250" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../httpdocs" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="78" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="152" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="445" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="443" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="75" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="74" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="621" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="941" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="252" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="251" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -947,7 +963,15 @@
       <created>1410856338148</created>
       <updated>1410856338148</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="added icons for welcome page plus stylin">
+      <created>1410856964097</created>
+      <updated>1410856964098</updated>
+    </task>
+    <task id="LOCAL-00153" summary="added icons for welcome page plus stylin">
+      <created>1410858133830</created>
+      <updated>1410858133831</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -978,12 +1002,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27876106" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.6507937" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.32323232" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.17027417" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.1010101" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3318584" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17893218" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.57575756" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1136,13 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="396" column="58" selection-start="15588" selection-end="15591" vertical-scroll-proportion="-6.1153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="23" selection-start="721" selection-end="721" vertical-scroll-proportion="-3.0379746">
@@ -1166,8 +1183,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="253" column="10" selection-start="3339" selection-end="3340" vertical-scroll-proportion="-6.3076925">
-          <folding />
+        <state line="295" column="10" selection-start="3339" selection-end="3340" vertical-scroll-proportion="-6.3076925">
+          <folding>
+            <marker date="1410951444000" expanded="true" signature="4565:5063" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,7 +1206,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/tips.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.9392713">
+        <state line="68" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="-19.333334">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1201,6 +1220,13 @@
             <element signature="n#style#0;n#div#9;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="4" selection-start="9152" selection-end="9152" vertical-scroll-proportion="0.4117647">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -228,7 +228,8 @@
             };
         }]);
 
-    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams','ngDialog',
+
+    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog',
         function IndexCtrl($scope, db, $routeParams, ngDialog) {
 
             Notifier.info('Loading content.');
@@ -294,19 +295,19 @@
                 return false;
             }
 
-			$scope.previewDialog = function (input) {
-				$scope.currentViewedImage = input;
-				
-				ngDialog.open ({
-					template: 'Sections/dialog.html',
-					controller: 'PreviewDialogController',
-					className: 'ngdialog-theme-plain',
-					showClose: true,
-					closeByDocument: true,
-					closeByEscape: true,
-					scope: $scope
-				});
-			}
+            $scope.previewDialog = function (input) {
+                $scope.currentViewedImage = input;
+
+                ngDialog.open({
+                    template: 'Sections/dialog.html',
+                    controller: 'PreviewDialogController',
+                    className: 'ngdialog-theme-plain',
+                    showClose: true,
+                    closeByDocument: true,
+                    closeByEscape: true,
+                    scope: $scope
+                });
+            }
 
             if ($routeParams.tag == "all") {
                 $scope.contacts = db.all('content').getList();
@@ -323,7 +324,8 @@
                     $scope.search = data;
                     $scope.contacts = data;
                 });
-            };
+            }
+            ;
         }]);
 
     app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams',
@@ -520,11 +522,11 @@
             };
         }]);
 
-	app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
-		function ($scope, Restangular, Global) {	
-		
-		}
-	])
+    app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
+        function ($scope, Restangular, Global) {
+
+        }
+    ])
     var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
 
         $scope.selectedImage = selectedImage;
