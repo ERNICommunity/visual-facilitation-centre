@@ -166,7 +166,7 @@
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser) {
-                    alert($rootScope.loggedUser);
+
                     var loggedUser = JSON.parse($rootScope.loggedUser);
                     return loggedUser.username;
                 } else {
@@ -203,13 +203,13 @@
                     })
                     .error(function (data) {
                         Global.showMessage('login error');
-//                        alert('login error');
+//
                     });
             };
 
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
-//                    alert("Passwords do not match.");
+//
                     Global.showMessage("Passwords do not match.");
                     return;
                 }
@@ -533,7 +533,7 @@
 
                 modalInstance.result.then(function (content) {
                     Notifier.success('Content has been deleted');
-                    alert(content.uid);
+
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
                     });
