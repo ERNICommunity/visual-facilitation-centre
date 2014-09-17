@@ -335,6 +335,24 @@
 
             });
 
+
+            $scope.searchFilter = function (item) {
+
+
+                if (item.owner == undefined) {
+                    return false;
+                }
+
+                if ($scope.query == undefined || $scope.query == '') {
+                    return true;
+                }
+                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                    return true;
+                }
+                return false;
+            }
+
+
             $scope.removeFromFavourites = function (picture) {
                 Notifier.success('Removing from your favourites.');
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
