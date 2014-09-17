@@ -215,17 +215,14 @@
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
                         window.location.href = './#/welcome';
-//                        alert('User created successfully');
                         Notifier.success('Registration Complete.');
 
                     })
                     .error(function (data) {
                         Global.showMessage(data.message);
-//                        alert(data.message);
                     });
             };
         }]);
-
 
     app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog',
         function IndexCtrl($scope, db, $routeParams, ngDialog) {
@@ -236,11 +233,7 @@
 
             $scope.addToFavourites = function (picture) {
                 $scope.exists = true;
-
-
                 Notifier.success('Adding to favourites.');
-
-
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
@@ -274,11 +267,15 @@
 
             $scope.searchFilter = function (item) {
 
+
+                if (item.owner == undefined) {
+                    return false;
+                }
+
                 if ($scope.query == undefined || $scope.query == '') {
                     return true;
                 }
-
-                if (item.tags.indexOf($scope.query) > -1 || item.owner.indexOf($scope.query) > -1) {
+                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
                     return true;
                 }
                 return false;
@@ -496,6 +493,7 @@
 
                 modalInstance.result.then(function (content) {
                     Notifier.success('Content has been deleted');
+                    alert(content.uid);
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
                     });
