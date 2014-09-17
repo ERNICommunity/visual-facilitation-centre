@@ -107,6 +107,10 @@
     app.controller('RegistrationController', ['$scope', 'Restangular', '$routeParams', '$http', 'Global',
         function RegistrationCtrl($scope, db, $routeParams, $http, Global) {
 
+
+            $scope.searchHint = "search in " + $routeParams.tag;
+
+
             $scope.title = $routeParams.tag;
             $scope.register = function () {
                 if ($scope.details.password !== $scope.details.confirmPassword) {
@@ -446,7 +450,7 @@
                     name: data[i].name,
                     section: data[i].section,
                     tags: data[i].tags,
-
+                    owner: data[i].owner,
                     uid: data[i]._id.$oid
                 });
             }
@@ -456,6 +460,22 @@
     app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 'Restangular' ,
         function EditDialogController($scope, $modal, $log, $http, db) {
 
+
+            $scope.searchFilter = function (item) {
+
+
+                if (item.owner == undefined) {
+                    return false;
+                }
+
+                if ($scope.query == undefined || $scope.query == '') {
+                    return true;
+                }
+                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                    return true;
+                }
+                return false;
+            }
             // edit image function
             $scope.open = function (id) {
                 var modalInstance = $modal.open({
