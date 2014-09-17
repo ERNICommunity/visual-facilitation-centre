@@ -166,6 +166,7 @@
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser) {
+                    alert($rootScope.loggedUser);
                     var loggedUser = JSON.parse($rootScope.loggedUser);
                     return loggedUser.username;
                 } else {
@@ -194,7 +195,11 @@
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
                         $scope.setUserProfileInViewsModel();
-                        window.location.href = './#/welcome';
+                        var millisecondsToWait = 500;
+                        setTimeout(function () {
+                            window.location.href = './#/welcome';
+                        }, millisecondsToWait);
+
                     })
                     .error(function (data) {
                         Global.showMessage('login error');
