@@ -1,6 +1,5 @@
 (function () {
     angular.module('RestangularApp', ["restangular"]);
-
     angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
 
         $httpProvider.defaults.useXDomain = true;
@@ -25,7 +24,6 @@
     });
 
     angular.module('BootstrapApp', ['ui.bootstrap']);
-
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog']);
 
     app.config(['$routeProvider', 'ngDialogProvider',

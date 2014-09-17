@@ -27,7 +27,6 @@
 .welcome-panel {
     display: inline-block;
     position: relative;
-
 }
 
 .cat-tile {
@@ -46,7 +45,7 @@
 
 .polaroid {
     content: attr(title);
-    width: 130px;
+    width: 150px;
     height: 250px;
     display: inline-block;
     margin: 20px;
@@ -56,9 +55,7 @@
     text-decoration: none;
     font-size: 14px;
     overflow: hidden;
-
     text-align: center;
-
 }
 
 .favourite {
@@ -71,7 +68,6 @@
 .polaroid img.item {
     width: 120px;
     height: 120px;
-
     border-radius: 50%;
     border: none;
     overflow: hidden;
@@ -79,7 +75,6 @@
     top: 10px;
     left: 0px;
     box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
-
 }
 
 .tips-tile {
@@ -91,14 +86,12 @@
 }
 
 .polaroid img:hover {
-
     -webkit-transform: scale(1.07, 1.07);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 250ms;
     -moz-transform: scale(1.07, 1.07);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
-
 }
 
 label, input {
