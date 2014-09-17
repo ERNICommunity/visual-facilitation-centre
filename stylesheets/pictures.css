@@ -19,7 +19,7 @@
 }
 
 .polaroid span {
-    top: 20px;
+    top: 15px;
     position: relative;
 
 }
@@ -46,17 +46,17 @@
 
 .polaroid {
     content: attr(title);
-    width: 125px;
-    height: 125px;
+    width: 130px;
+    height: 250px;
     display: inline-block;
-    margin: 15px;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     position: relative;
     text-decoration: none;
     font-size: 14px;
-    border-radius: 50%;
-    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+    overflow: hidden;
+
     text-align: center;
 
 }
@@ -64,18 +64,22 @@
 .favourite {
     position: absolute;
     float: right;
-    top: -10px;
-    right: -10px
+    top: 0px;
+    right: 0px
 }
 
 .polaroid img.item {
     width: 120px;
     height: 120px;
-    top: 50%;
-    left: 50%;
+
     border-radius: 50%;
     border: none;
     overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+
 }
 
 .tips-tile {
