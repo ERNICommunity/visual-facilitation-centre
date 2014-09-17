@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/welcome.html" afterPath="$PROJECT_DIR$/Sections/welcome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410980025888" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410980082987" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410968761714" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410977580660" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410851904139" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="$PROJECT_DIR$/../../Work/http/home.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410624612190" ignored="false" />
     <file path="/home.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410624611821" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410846933661" ignored="false" />
-    <file path="/welcome.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410856162148" ignored="false" />
+    <file path="/welcome.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410980172784" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="welcome.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="54" selection-start="671" selection-end="671" vertical-scroll-proportion="-6.9">
+            <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.050675675">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="459" selection-end="459" vertical-scroll-proportion="0.1699029">
+            <state line="17" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -162,7 +162,6 @@
         <option value="$PROJECT_DIR$/Sections/register.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/upload.html" />
-        <option value="$PROJECT_DIR$/Sections/welcome.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
+        <option value="$PROJECT_DIR$/Sections/welcome.html" />
       </list>
     </option>
   </component>
@@ -1010,7 +1010,11 @@
       <created>1410980030674</created>
       <updated>1410980030674</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="remove added">
+      <created>1410980086953</created>
+      <updated>1410980086953</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1238,16 +1242,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="671" selection-end="671" vertical-scroll-proportion="-6.9">
+        <state line="17" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+    <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="459" selection-end="459" vertical-scroll-proportion="0.1699029">
+        <state line="2" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.050675675">
           <folding />
         </state>
       </provider>
