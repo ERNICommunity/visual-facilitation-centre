@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410974120576" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410974606358" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410968761714" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410973538786" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410851904139" ignored="false" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="353" column="0" selection-start="13796" selection-end="13796" vertical-scroll-proportion="0.9101796">
+            <state line="321" column="13" selection-start="12793" selection-end="12793" vertical-scroll-proportion="1.8532934">
               <folding />
             </state>
           </provider>
@@ -986,7 +986,11 @@
       <created>1410974124148</created>
       <updated>1410974124148</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="fix search for favourite screen">
+      <created>1410974610973</created>
+      <updated>1410974610973</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1074,7 +1078,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed search" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix search for favourite screen" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1088,7 +1092,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="FAVOURITES: users can now remove favourite items from the favourites page.&#10;And UI will automatically refresh too." />
     <MESSAGE value="fixed issues with favourites.&#10;fixes styling for favourites screen." />
     <MESSAGE value="refine the login controller.&#10;&#10;migration register method to this controller" />
     <MESSAGE value="refine the login controller.&#10;&#10;redirect to login page after login." />
@@ -1113,6 +1116,7 @@
     <MESSAGE value="add new All category and change home link to welcome page" />
     <MESSAGE value="re designed content layout" />
     <MESSAGE value="fixed search" />
+    <MESSAGE value="fix search for favourite screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1226,7 +1230,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="0" selection-start="13796" selection-end="13796" vertical-scroll-proportion="0.9101796">
+        <state line="321" column="13" selection-start="12793" selection-end="12793" vertical-scroll-proportion="1.8532934">
           <folding />
         </state>
       </provider>

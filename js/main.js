@@ -335,10 +335,7 @@
 
             });
 
-
             $scope.searchFilter = function (item) {
-
-
                 if (item.owner == undefined) {
                     return false;
                 }
