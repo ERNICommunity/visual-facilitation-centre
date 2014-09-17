@@ -72,7 +72,7 @@
                     }).
                     when('/', {
 
-                        redirectTo: 'content/all'
+                        redirectTo: 'welcome'
                     });
             }]).run(function ($rootScope, $location) {
             // register listener to watch route changes
