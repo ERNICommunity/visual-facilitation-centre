@@ -149,7 +149,7 @@
             };
 
             /*set defaults based on user credentials cookie*/
-            if ($cookies.UserCredential != undefined) {
+            if (angular.isUndefined($cookies.UserCredential) == false) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
