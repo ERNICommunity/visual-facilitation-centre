@@ -179,7 +179,7 @@
             changeLocation = function (url, forceReload) {
                 $scope = $scope || angular.element(document).scope();
                 if (forceReload || $scope.$$phase) {
-                    window.location = url;
+                    window.location.href = url;
                 }
                 else {
                     //only use this if you want to replace the history stack
