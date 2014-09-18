@@ -152,7 +152,6 @@
             if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
-
             } else {
                 $rootScope.loggedUser = null;
                 $scope.profile = null;
@@ -162,12 +161,11 @@
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
-                changeLocation('/#/login', false);
+                changeLocation('/', false);
             };
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser) {
-
                     var loggedUser = JSON.parse($rootScope.loggedUser);
                     return loggedUser.username;
                 } else {
@@ -275,8 +273,6 @@
             }
 
             $scope.searchFilter = function (item) {
-
-
                 if (item.owner == undefined) {
                     return false;
                 }
@@ -291,7 +287,6 @@
             }
 
             $scope.isInFavourites = function (picture) {
-
                 var loggedUser = JSON.parse($scope.loggedUser);
                 if (picture.favourites.indexOf(loggedUser.username) > -1) {
                     return true;
