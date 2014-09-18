@@ -149,7 +149,7 @@
             };
 
             /*set defaults based on user credentials cookie*/
-            if ($cookies.UserCredential != null) {
+            if ($cookies.UserCredential != undefined) {
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
@@ -159,7 +159,7 @@
 
             $scope.logout = function () {
                 $scope.profile = undefined;
-                $cookies.UserCredential = null;
+                $cookies.UserCredential = undefined;
                 $rootScope.loggedUser = null;
                 changeLocation('/', false);
             };
