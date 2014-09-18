@@ -8,7 +8,7 @@
         RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
         RestangularProvider.setDefaultRequestParams({
             apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
-        })
+        });
         RestangularProvider.setRestangularFields({
             id: '_id.$oid'
         });
@@ -77,13 +77,14 @@
             $rootScope.$on("$routeChangeStart", function (event, next, current) {
                 if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
                     // no logged user, we should be going to #login
-                    if (next.templateUrl == "Sections/login.html") {
-                        // already going to #login, no redirect needed
-                    } else {
-                        if (next.templateUrl != "Sections/register.html")//not going to #login or #register, we should redirect now
+                    if (next.templateUrl != "Sections/login.html") {
+                        // only go to #login if not already there
+                        if (next.templateUrl != "Sections/register.html") {
+                            //not going to #login or #register, we should redirect now
                             $location.path("/login");
+                        }
                     }
-                } else {
+                // } else {
                 }
             });
         }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
@@ -249,7 +250,6 @@
                     if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
                         return;
                     }
-                    ;
 
                     if (copyObj.favourites.length == 0) {
                         copyObj.favourites = [loggedUser.username];
@@ -329,7 +329,6 @@
                     $scope.contacts = data;
                 });
             }
-            ;
         }]);
 
     app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams',
