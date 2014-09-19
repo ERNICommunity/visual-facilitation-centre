@@ -36,7 +36,7 @@
                     'height': '100px',
                     'width': '200px',
                     onAddTag: function onAddTag(tag) {
-                        scope.selectedImage.tags.push(tag);
+                        scope.selectedImage.tags.push(tag.replace(/ +$/, ""));
                     },
                     onRemoveTag: function onAddTag(tag) {
                         scope.selectedImage.tags.splice(scope.selectedImage.tags.indexOf(tag));
@@ -108,7 +108,7 @@
                             $location.path("/login");
                         }
                     }
-                // } else {
+                    // } else {
                 }
             });
         }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
