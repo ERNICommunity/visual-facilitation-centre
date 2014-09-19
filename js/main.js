@@ -36,6 +36,31 @@
                     'height': '100px',
                     'width': '200px',
                     onAddTag: function onAddTag(tag) {
+
+                        scope.selectedImage.tags.push(tag.replace(/ +$/, ""));
+                    },
+                    onRemoveTag: function onAddTag(tag) {
+                        scope.selectedImage.tags.splice(scope.selectedImage.tags.indexOf(tag));
+                    }
+                });
+
+                $(element).importTags(scope.selectedImage.tags.join());
+
+            }
+        };
+    });
+
+    app.directive('tagerupload', function () {
+
+
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                $(element).tagsInput({
+                    'height': '50px',
+                    'width': '700px',
+                    onAddTag: function onAddTag(tag) {
+
                         scope.selectedImage.tags.push(tag.replace(/ +$/, ""));
                     },
                     onRemoveTag: function onAddTag(tag) {

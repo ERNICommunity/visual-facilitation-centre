@@ -52,7 +52,8 @@
 
         <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
             <label>tags</label>
-            <input size="60" type="text" name="content-tags" class="form-control" ng-list placeholder="Enter tags"
+            <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
+                   placeholder="Enter tags"
                    ng-model="formData.tags">
 
             <p ng-show="formData.name.$invalid && !formData.name.$pristine" class="help-block">You name is required.</p>
