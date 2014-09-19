@@ -322,7 +322,7 @@
             }
 
             $scope.searchFilter = function (item) {
-                if (item.owner == undefined) {
+                if (item.owner == undefined || item.owner == tags) {
                     return false;
                 }
 

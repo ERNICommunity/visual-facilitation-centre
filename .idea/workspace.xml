@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/upload.html" afterPath="$PROJECT_DIR$/Sections/upload.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411098868432" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411099667402" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411067155034" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411097980805" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411120487861" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411099489805" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410980074066" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411098545760" ignored="false" />
@@ -54,7 +53,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="31" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.6013289">
+            <state line="324" column="65" selection-start="12478" selection-end="12478" vertical-scroll-proportion="0.43189368">
               <folding />
             </state>
           </provider>
@@ -90,7 +89,7 @@
       <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="34" selection-start="2048" selection-end="2048" vertical-scroll-proportion="-5.44">
+            <state line="54" column="34" selection-start="2048" selection-end="2048" vertical-scroll-proportion="1.6">
               <folding />
             </state>
           </provider>
@@ -1023,7 +1022,11 @@
       <created>1411098874724</created>
       <updated>1411098874724</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="add tagging widget to upload page">
+      <created>1411099672090</created>
+      <updated>1411099672090</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1111,7 +1114,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove leading and trailing blanks on tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tagging widget to upload page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1125,7 +1128,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="added a tips controller and a seperate view" />
     <MESSAGE value="added a search filter on two fields.&#10;update layout for pictures" />
     <MESSAGE value="tweak layout of favourites link" />
     <MESSAGE value="tidy up the tips page" />
@@ -1150,6 +1152,7 @@
     <MESSAGE value="remove added" />
     <MESSAGE value="added tagging functionality" />
     <MESSAGE value="remove leading and trailing blanks on tags" />
+    <MESSAGE value="add tagging widget to upload page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1257,14 +1260,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="34" selection-start="2048" selection-end="2048" vertical-scroll-proportion="-5.44">
+        <state line="54" column="34" selection-start="2048" selection-end="2048" vertical-scroll-proportion="1.6">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="31" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.6013289">
+        <state line="324" column="65" selection-start="12478" selection-end="12478" vertical-scroll-proportion="0.43189368">
           <folding />
         </state>
       </provider>
