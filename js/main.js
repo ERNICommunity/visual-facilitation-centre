@@ -26,6 +26,30 @@
     angular.module('BootstrapApp', ['ui.bootstrap']);
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog']);
 
+    app.directive('tager', function () {
+
+
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                $(element).tagsInput({
+                    'height': '100px',
+                    'width': '200px',
+                    onAddTag: function onAddTag(tag) {
+                        scope.selectedImage.tags.push(tag);
+                    },
+                    onRemoveTag: function onAddTag(tag) {
+                        scope.selectedImage.tags.splice(scope.selectedImage.tags.indexOf(tag));
+                    }
+                });
+
+                $(element).importTags(scope.selectedImage.tags.join());
+
+            }
+        };
+    });
+
+
     app.config(['$routeProvider', 'ngDialogProvider',
             function ($routeProvider, ngDialogProvider) {
                 $routeProvider.
@@ -567,6 +591,7 @@
 
         $scope.selectedImage = selectedImage;
 
+
         $scope.save = function () {
             $modalInstance.close(selectedImage);
         };
@@ -638,6 +663,8 @@ $(document).ready(function () {
 
 //Document Click
     $(document).mouseup(function () {
+
+
         $(".submenu-account").hide();
         $(".submenu-cat").hide();
         $(".account").attr('id', '');
