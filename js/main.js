@@ -322,14 +322,14 @@
             }
 
             $scope.searchFilter = function (item) {
+                if ($scope.query == undefined || $scope.query == '') {
+                    return true;
+                }
                 if (item.owner == undefined || item.tags == undefined) {
                     return false;
                 }
 
-                if ($scope.query == undefined || $scope.query == '') {
-                    return true;
-                }
-                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
                     return true;
                 }
                 return false;
