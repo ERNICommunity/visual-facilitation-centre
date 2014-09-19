@@ -325,18 +325,27 @@
                 if ($scope.query == undefined || $scope.query == '') {
                     return true;
                 }
-                if (item.owner == undefined || item.tags == undefined) {
-                    return false;
+                if (item.owner != undefined) {
+                    if (item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
                 }
 
-                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
-                    return true;
+                if (item.tags != undefined && item.owner != undefined) {
+                    if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
                 }
                 return false;
             }
 
             $scope.isInFavourites = function (picture) {
                 var loggedUser = JSON.parse($scope.loggedUser);
+
+                if (picture.favourites == undefined) {
+                    picture.favourites = [];
+                }
+
                 if (picture.favourites.indexOf(loggedUser.username) > -1) {
                     return true;
                 }
