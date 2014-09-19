@@ -21,8 +21,10 @@
                         <tbody>
                         <tr>
                             <td>
-                                <input class="nameedit" type="text" ng-model="selectedImage.name" required/>
-                                <span class="help-block" ng-show="errorName">{{ errorName }}</span>
+                                <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+                                    <input class="nameedit" type="text" ng-model="selectedImage.name" required/>
+                                    <span class="help-block" ng-show="errorName">{{ errorName }}</span>
+                                </div>
                             </td>
                             <td>
                                 <select class="sectionedit" data-ng-model="selectedImage.section">
