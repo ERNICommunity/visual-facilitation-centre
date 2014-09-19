@@ -18,7 +18,8 @@
                     <tbody>
                     <tr>
                         <td>
-                            <input class="nameedit" type="text" ng-model="selectedImage.name" required=""/>
+                            <input class="nameedit" type="text" ng-model="selectedImage.name" required/>
+                            <span class="help-block" ng-show="errorName">{{ errorName }}</span>
                         </td>
                         <td>
                             <select class="sectionedit" data-ng-model="selectedImage.section">

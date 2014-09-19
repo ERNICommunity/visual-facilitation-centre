@@ -36,7 +36,11 @@
                     'height': '100px',
                     'width': '200px',
                     onAddTag: function onAddTag(tag) {
+                        if (scope.selectedImage.tags == undefined) {
 
+                            scope.selectedImage.tags = [];
+                        }
+                        ;
                         scope.selectedImage.tags.push(tag.replace(/ +$/, ""));
                     },
                     onRemoveTag: function onAddTag(tag) {
@@ -44,7 +48,11 @@
                     }
                 });
 
-                $(element).importTags(scope.selectedImage.tags.join());
+                if (scope.selectedImage.tags != undefined) {
+
+                    $(element).importTags(scope.selectedImage.tags.join());
+                }
+                ;
 
             }
         };
@@ -321,23 +329,6 @@
                 });
             }
 
-            $scope.searchFilter = function (item) {
-                if ($scope.query == undefined || $scope.query == '') {
-                    return true;
-                }
-                if (item.owner != undefined) {
-                    if (item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
-                        return true;
-                    }
-                }
-
-                if (item.tags != undefined && item.owner != undefined) {
-                    if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
-                        return true;
-                    }
-                }
-                return false;
-            }
 
             $scope.isInFavourites = function (picture) {
                 var loggedUser = JSON.parse($scope.loggedUser);
@@ -397,15 +388,19 @@
             });
 
             $scope.searchFilter = function (item) {
-                if (item.owner == undefined) {
-                    return false;
-                }
-
                 if ($scope.query == undefined || $scope.query == '') {
                     return true;
                 }
-                if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
-                    return true;
+                if (item.owner != undefined) {
+                    if (item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
+                }
+
+                if (item.tags != undefined && item.owner != undefined) {
+                    if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
                 }
                 return false;
             }
