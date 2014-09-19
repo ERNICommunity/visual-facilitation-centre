@@ -47,16 +47,15 @@
             <input size="60" type="text" name="content-name" class="form-control"
                    placeholder="please enter a name for your image"
                    ng-model="formData.name" value="{{formData.name}}" required>
-            <span class="help-block" ng-show="errorName">{{ errorName }}</span>
+            <span class="help-block1" ng-show="errorName">{{ errorName }}</span>
         </div>
 
         <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
             <label>tags</label>
             <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
                    placeholder="Enter tags"
-                   ng-model="formData.tags" required="">
+                   ng-model="formData.tags">
 
-            <p ng-show="formData.name.$invalid && !formData.name.$pristine">You name is required.</p>
 
         </div>
 
