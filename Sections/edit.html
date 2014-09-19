@@ -3,44 +3,51 @@
 
     <div ng-controller="EditDialogController" style="z-index: 900000">
         <script type="text/ng-template" id="modal">
-            <div class="modal-header">
-                <h3 class="modal-title">Edit image info</h3>
-            </div>
-            <div class="modal-body">
-                <table class="table grid" id="grid">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Section</th>
-                        <th>Tags</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <input class="nameedit" type="text" ng-model="selectedImage.name" required/>
-                            <span class="help-block" ng-show="errorName">{{ errorName }}</span>
-                        </td>
-                        <td>
-                            <select class="sectionedit" data-ng-model="selectedImage.section">
-                                <option value="basics">Basics</option>
-                                <option value="icons">Icons</option>
-                                <option value="emotions">Emotions</option>
-                                <option value="posters">Posters</option>
-                                <option value="tips">Tips</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input class="tagedit" tager ng-model="selectedImage.tags" required=""/>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" ng-click="save()">Save</button>
-                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-            </div>
+            <form ng-submit="save()">
+
+
+                <div class="modal-header">
+                    <h3 class="modal-title">Edit image info</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table grid" id="grid">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Section</th>
+                            <th>Tags</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <input class="nameedit" type="text" ng-model="selectedImage.name" required/>
+                                <span class="help-block" ng-show="errorName">{{ errorName }}</span>
+                            </td>
+                            <td>
+                                <select class="sectionedit" data-ng-model="selectedImage.section">
+                                    <option value="basics">Basics</option>
+                                    <option value="icons">Icons</option>
+                                    <option value="emotions">Emotions</option>
+                                    <option value="posters">Posters</option>
+                                    <option value="tips">Tips</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input class="tagedit" tager ng-model="selectedImage.tags" required=""/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                    <p ng-show="selectedImage.name.$invalid && !selectedImage.name.$pristine" class="help-block">You
+                        name is required.</p>
+
+                </div>
+            </form>
         </script>
 
         <script type="text/ng-template" id="modalDelete">

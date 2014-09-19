@@ -68,15 +68,17 @@
                     'height': '50px',
                     'width': '700px',
                     onAddTag: function onAddTag(tag) {
+                        if (scope.formData.tags == undefined) {
 
-                        scope.selectedImage.tags.push(tag.replace(/ +$/, ""));
+                            scope.formData.tags = [];
+                        }
+                        scope.formData.tags.push(tag.replace(/ +$/, ""));
                     },
                     onRemoveTag: function onAddTag(tag) {
-                        scope.selectedImage.tags.splice(scope.selectedImage.tags.indexOf(tag));
+                        scope.formData.tags.splice(scope.formData.tags.indexOf(tag));
                     }
                 });
 
-                $(element).importTags(scope.selectedImage.tags.join());
 
             }
         };
@@ -316,6 +318,23 @@
                 });
             }
 
+            $scope.searchFilter = function (item) {
+                if ($scope.query == undefined || $scope.query == '') {
+                    return true;
+                }
+                if (item.owner != undefined) {
+                    if (item.owner.toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
+                }
+
+                if (item.tags != undefined && item.owner != undefined) {
+                    if (item.tags.join().toLowerCase().indexOf($scope.query.toLowerCase()) > -1 || item.name.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
+                        return true;
+                    }
+                }
+                return false;
+            }
 
             $scope.removeFromFavourites = function (picture) {
                 Notifier.success('Removing from your favourites.');
