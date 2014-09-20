@@ -184,6 +184,7 @@
 
 
         $scope.doUpload = function () {
+            uploader.queue[0].file.name = "00009" + uploader.queue[0].file.name;
             uploader.queue[0].upload();
         };
 
