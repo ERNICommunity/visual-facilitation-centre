@@ -123,7 +123,7 @@
                                  ng-style="{ 'width': uploader.progress + '%' }"></div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()"
+                    <button type="button" class="btn btn-success btn-s" ng-click="doUpload()"
                             ng-disabled="!uploader.getNotUploadedItems().length">
                         <span class="glyphicon glyphicon-upload"></span> Upload all
                     </button>
