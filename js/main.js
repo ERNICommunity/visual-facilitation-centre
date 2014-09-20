@@ -167,7 +167,7 @@
         }]);
 
 
-    app.controller('AppController', ['$scope', 'FileUploader', function ($scope, FileUploader) {
+    app.controller('AppController', ['$scope', 'FileUploader', 'Restangular', function ($scope, FileUploader, db) {
         var uploader = $scope.uploader = new FileUploader({
             url: 'upload.php'
         });
@@ -184,7 +184,7 @@
 
 
         $scope.doUpload = function () {
-            uploader.queue[0].file.name = "00009" + uploader.queue[0].file.name;
+            uploader.queue[0].file.name = Math.random().toString(36).substr(2, 9) + '_' + uploader.queue[0].file.name;
             uploader.queue[0].upload();
         };
 
@@ -217,6 +217,36 @@
             console.info('onCancelItem', fileItem, response, status, headers);
         };
         uploader.onCompleteItem = function (fileItem, response, status, headers) {
+
+
+            var processedFilename = uploader.queue[0].file.name;
+            $scope.formData.url = '/uploads/' + processedFilename;
+            var now = new Date();
+
+            $scope.formData.dateAdded = now;
+            $scope.formData.favourites = [];
+            var loggedUser = JSON.parse($scope.loggedUser);
+            $scope.formData.owner = loggedUser.username;
+
+            var formData = new FormData();
+
+            Notifier.success('Uploading content', 3000);
+
+            db.all('content').post($scope.formData).then(function (response) {
+
+                Notifier.success('Your content has been uploaded', 3000);
+                window.location.href = '/';
+
+            }).otherwise(function (response) {
+                    $scope.message = 'An error occured. Please fix data and try again';
+                });
+
+//                    }).error(
+//                    function (data, status, headers, config) {
+//                        $scope.message = 'An error occured uploading image. Please fix data and try again';
+//                    });
+
+
             console.info('onCompleteItem', fileItem, response, status, headers);
         };
         uploader.onCompleteAll = function () {

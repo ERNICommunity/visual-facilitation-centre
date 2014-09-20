@@ -93,7 +93,39 @@
                     </tr>
                     </tbody>
                 </table>
+                <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
 
+
+                    <p>Which section would you like to place your image? </p>
+                    <select name="content-section" class="form-control" placeholder="teapot.jpg"
+                            ng-model="formData.section">
+
+                        <option value="basics">-- BASICS --</option>
+                        <option value="icons">-- ICONS --</option>
+                        <option value="emotions">-- EMOTIONS --</option>
+                        <option value="posters">-- POSTERS --</option>
+
+                    </select>
+                    <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
+                </div>
+
+
+                <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+                    <label>Name</label>
+                    <input size="60" type="text" name="content-name" class="form-control"
+                           placeholder="please enter a name for your image"
+                           ng-model="formData.name" value="{{formData.name}}" required>
+                    <span class="help-block1" ng-show="errorName">{{ errorName }}</span>
+                </div>
+
+                <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
+                    <label>tags</label>
+                    <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
+                           placeholder="Enter tags"
+                           ng-model="formData.tags">
+
+
+                </div>
                 <div>
                     <div>
                         Queue progress:
@@ -148,38 +180,7 @@
     <!-- FORM -->
     <form ng-submit="processForm()">
         <!-- SECTION -->
-        <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
 
-
-            <p>Which section would you like to place your image? </p>
-            <select name="content-section" class="form-control" placeholder="teapot.jpg" ng-model="formData.section">
-
-                <option value="basics">-- BASICS --</option>
-                <option value="icons">-- ICONS --</option>
-                <option value="emotions">-- EMOTIONS --</option>
-                <option value="posters">-- POSTERS --</option>
-
-            </select>
-            <span class="help-block" ng-show="errorSection">{{ errorSection }}</span>
-        </div>
-
-
-        <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-            <label>Name</label>
-            <input size="60" type="text" name="content-name" class="form-control"
-                   placeholder="please enter a name for your image"
-                   ng-model="formData.name" value="{{formData.name}}" required>
-            <span class="help-block1" ng-show="errorName">{{ errorName }}</span>
-        </div>
-
-        <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
-            <label>tags</label>
-            <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
-                   placeholder="Enter tags"
-                   ng-model="formData.tags">
-
-
-        </div>
 
         <!-- SUBMIT BUTTON -->
         <button type="submit" class="btn btn-success btn-lg btn-block">
