@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184371838" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184769497" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411150366498" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184027418" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
@@ -108,7 +108,7 @@
       <file leaf-file-name="upload.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="78" selection-start="6247" selection-end="6247" vertical-scroll-proportion="0.6632826">
+            <state line="113" column="24" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.2571912">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1112,7 +1112,11 @@
       <created>1411184377536</created>
       <updated>1411184377536</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="tidy up upload page">
+      <created>1411184773701</created>
+      <updated>1411184773701</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1200,7 +1204,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="validate name is not blank when a user edits the page" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidy up upload page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1224,7 +1228,6 @@
     <MESSAGE value="turn static page for tips" />
     <MESSAGE value="add welcome page" />
     <MESSAGE value="implement welcome page" />
-    <MESSAGE value="tidy up upload page" />
     <MESSAGE value="redirect to home after upload" />
     <MESSAGE value="remove unneeded sections" />
     <MESSAGE value="added icons for welcome page plus stylin" />
@@ -1239,6 +1242,7 @@
     <MESSAGE value="fix search" />
     <MESSAGE value="more tweaks to search and also edit screen" />
     <MESSAGE value="validate name is not blank when a user edits the page" />
+    <MESSAGE value="tidy up upload page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1353,7 +1357,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="78" selection-start="6247" selection-end="6247" vertical-scroll-proportion="0.6632826">
+        <state line="113" column="24" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.2571912">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
