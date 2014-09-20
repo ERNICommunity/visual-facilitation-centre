@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/upload.html" afterPath="$PROJECT_DIR$/Sections/upload.html" />
+    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="validate name is not blank when a user edits the page">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411181712829" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411182752920" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411150366498" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411150981713" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411182616970" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411181694886" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410980074066" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411098545760" ignored="false" />
@@ -46,7 +44,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="45" selection-start="2559" selection-end="2559" vertical-scroll-proportion="2.2">
+            <state line="68" column="10" selection-start="2887" selection-end="2888" vertical-scroll-proportion="4.76">
               <folding />
             </state>
           </provider>
@@ -55,7 +53,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="186" column="83" selection-start="6608" selection-end="6608" vertical-scroll-proportion="0.35714287">
+            <state line="193" column="107" selection-start="6894" selection-end="6894" vertical-scroll-proportion="-0.74657536">
               <folding />
             </state>
           </provider>
@@ -109,7 +107,7 @@
       <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="39" selection-start="2184" selection-end="2198" vertical-scroll-proportion="-1.24">
+            <state line="120" column="37" selection-start="6011" selection-end="6011" vertical-scroll-proportion="-9.42">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -288,9 +286,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="132" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="149" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="250" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -305,6 +305,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1093,7 +1095,11 @@
       <created>1411181718526</created>
       <updated>1411181718526</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="validate name is not blank when a user edits the page">
+      <created>1411181935227</created>
+      <updated>1411181935227</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1283,13 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="45" selection-start="2559" selection-end="2559" vertical-scroll-proportion="2.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
@@ -1325,9 +1324,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="10" selection-start="2887" selection-end="2888" vertical-scroll-proportion="4.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="39" selection-start="2184" selection-end="2198" vertical-scroll-proportion="-1.24">
+        <state line="120" column="37" selection-start="6011" selection-end="6011" vertical-scroll-proportion="-9.42">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1337,7 +1343,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="83" selection-start="6608" selection-end="6608" vertical-scroll-proportion="0.35714287">
+        <state line="193" column="107" selection-start="6894" selection-end="6894" vertical-scroll-proportion="-0.74657536">
           <folding />
         </state>
       </provider>
