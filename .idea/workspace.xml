@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224448983" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224559356" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411187269624" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224255444" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
@@ -111,7 +110,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="224" selection-end="224" vertical-scroll-proportion="0.5327869">
+            <state line="17" column="14" selection-start="222" selection-end="222" vertical-scroll-proportion="0.5327869">
               <folding />
             </state>
           </provider>
@@ -120,7 +119,7 @@
       <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="-2.4">
+            <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="1.6">
               <folding>
                 <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
               </folding>
@@ -1137,7 +1136,11 @@
       <created>1411224453814</created>
       <updated>1411224453815</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="add modal diagram">
+      <created>1411224565441</created>
+      <updated>1411224565441</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1376,7 +1379,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="-2.4">
+        <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="1.6">
           <folding>
             <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
           </folding>
@@ -1385,7 +1388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="224" selection-end="224" vertical-scroll-proportion="0.5327869">
+        <state line="17" column="14" selection-start="222" selection-end="222" vertical-scroll-proportion="0.5327869">
           <folding />
         </state>
       </provider>
