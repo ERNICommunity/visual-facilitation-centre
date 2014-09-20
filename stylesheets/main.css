@@ -141,6 +141,13 @@ nav.search-header {
     width: 590px;
 }
 
+.app-modal-window .modal-dialog .tag {
+    background-color: greenyellow;
+    padding: 10px;
+    font-size: 1em;
+
+}
+
 .upload {
     float: right;
     background-color: #9d9fa2;
