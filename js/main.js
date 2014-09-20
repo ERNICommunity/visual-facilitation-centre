@@ -386,8 +386,8 @@
             };
         }]);
 
-    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog',
-        function IndexCtrl($scope, db, $routeParams, ngDialog) {
+    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog', '$modal',
+        function IndexCtrl($scope, db, $routeParams, ngDialog, $modal) {
 
             Notifier.info('Loading content.');
             $scope.title = $routeParams.tag;
@@ -412,6 +412,19 @@
                     picture.favourites = copyObj.favourites;
                 });
             }
+
+            $scope.open = function (id) {
+                var modalInstance = $modal.open({
+                    templateUrl: 'modal',
+                    controller: EditDialogInstanceController,
+                    resolve: {
+                        selectedImage: function () {
+                            return id;
+                        }
+                    }
+                });
+            };
+
 
             $scope.searchFilter = function (item) {
                 if ($scope.query == undefined || $scope.query == '') {
@@ -458,6 +471,8 @@
             }
 
             $scope.previewDialog = function (input) {
+
+
                 $scope.currentViewedImage = input;
 
                 ngDialog.open({
