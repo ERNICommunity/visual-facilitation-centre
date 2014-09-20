@@ -22,17 +22,11 @@
                         Base drop zone
                     </div>
 
-                    <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
-                    <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
-                        <div nv-file-over="" uploader="uploader" over-class="another-file-over-class"
-                             class="well my-drop-zone">
-                            Another drop zone with its own settings
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- Example: nv-file-select="" uploader="{Object}" options="{Object}" filters="{String}" -->
-                <input type="file" nv-file-select="" uploader="uploader" multiple/><br/>
+                <input type="file" nv-file-select="" uploader="uploader"/><br/>
 
             </div>
 
@@ -46,11 +40,11 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th width="50%">Name</th>
+                        <th width="50%"></th>
                         <th ng-show="uploader.isHTML5">Size</th>
                         <th ng-show="uploader.isHTML5">Progress</th>
                         <th>Status</th>
-                        <th>Actions</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -78,14 +72,7 @@
                             <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
                         </td>
                         <td nowrap>
-                            <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()"
-                                    ng-disabled="item.isReady || item.isUploading || item.isSuccess">
-                                <span class="glyphicon glyphicon-upload"></span> Upload
-                            </button>
-                            <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()"
-                                    ng-disabled="!item.isUploading">
-                                <span class="glyphicon glyphicon-ban-circle"></span> Cancel
-                            </button>
+
                             <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
                                 <span class="glyphicon glyphicon-trash"></span> Remove
                             </button>
@@ -111,7 +98,7 @@
 
 
                 <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-                    <label>Name</label>
+                    <p>Name : Please pick a name for your content.</p>
                     <input size="60" type="text" name="content-name" class="form-control"
                            placeholder="please enter a name for your image"
                            ng-model="formData.name" value="{{formData.name}}" required>
@@ -119,7 +106,7 @@
                 </div>
 
                 <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
-                    <label>tags</label>
+                    <p>Tags : Give your content some tags (comma seperated, eg "agenda,colourful""</p>
                     <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
                            placeholder="Enter tags"
                            ng-model="formData.tags">
@@ -157,40 +144,40 @@
 </div>
 
 
-<div class="upload_form" ng-controller="UploadController" flow-init>
+<!--<div class="upload_form" ng-controller="UploadController" flow-init>-->
 
 
-    <div class="upload_form">
-        <p>Please select a file that you would like to load.</p>
+<!--<div class="upload_form">-->
+<!--<p>Please select a file that you would like to load.</p>-->
 
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
-            <label for="file">Filename:</label>
+<!--<form action="uploader.php" method="post" enctype="multipart/form-data">-->
+<!--<label for="file">Filename:</label>-->
 
-            <div ng-repeat="file in files">
-                {{ file.size }}
-            </div>
-            <input type="file" id="file" name="image" ng-model-instant
-                   onchange="angular.element(this).scope().setFiles(this)"/>
-        </form>
+<!--<div ng-repeat="file in files">-->
+<!--{{ file.size }}-->
+<!--</div>-->
+<!--<input type="file" id="file" name="image" ng-model-instant-->
+<!--onchange="angular.element(this).scope().setFiles(this)"/>-->
+<!--</form>-->
 
-    </div>
+<!--</div>-->
 
-    <div id="messages" class="well" ng-show="message">{{ message }}</div>
+<!--<div id="messages" class="well" ng-show="message">{{ message }}</div>-->
 
-    <!-- FORM -->
-    <form ng-submit="processForm()">
-        <!-- SECTION -->
+<!--&lt;!&ndash; FORM &ndash;&gt;-->
+<!--<form ng-submit="processForm()">-->
+<!--&lt;!&ndash; SECTION &ndash;&gt;-->
 
 
-        <!-- SUBMIT BUTTON -->
-        <button type="submit" class="btn btn-success btn-lg btn-block">
-            <span class="glyphicon glyphicon-flash"></span> Submit!
-        </button>
-    </form>
+<!--&lt;!&ndash; SUBMIT BUTTON &ndash;&gt;-->
+<!--<button type="submit" class="btn btn-success btn-lg btn-block">-->
+<!--<span class="glyphicon glyphicon-flash"></span> Submit!-->
+<!--</button>-->
+<!--</form>-->
 
-    <!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
-<pre>
-		{{ formData }}
-	</pre>
+<!--&lt;!&ndash; SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED &ndash;&gt;-->
+<!--<pre>-->
+<!--{{ formData }}-->
+<!--</pre>-->
 
-</div>
+<!--</div>-->

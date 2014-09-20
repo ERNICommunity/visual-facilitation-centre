@@ -169,7 +169,8 @@
 
     app.controller('AppController', ['$scope', 'FileUploader', 'Restangular', function ($scope, FileUploader, db) {
         var uploader = $scope.uploader = new FileUploader({
-            url: 'upload.php'
+            url: 'upload.php',
+            queueLimit: 1
         });
 
         // FILTERS
