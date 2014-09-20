@@ -169,7 +169,7 @@
 
     app.controller('AppController', ['$scope', 'FileUploader', function ($scope, FileUploader) {
         var uploader = $scope.uploader = new FileUploader({
-            url: '/uploader_ajax.php'
+            url: 'upload.php'
         });
 
         // FILTERS
