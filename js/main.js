@@ -136,6 +136,7 @@
             }]).run(function ($rootScope, $location) {
             // register listener to watch route changes
             $rootScope.$on("$routeChangeStart", function (event, next, current) {
+                $rootScope.query = '';
                 if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
                     // no logged user, we should be going to #login
                     if (next.templateUrl != "Sections/login.html") {
