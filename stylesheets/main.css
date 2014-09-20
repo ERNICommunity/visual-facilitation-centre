@@ -12,7 +12,10 @@ body {
 
     margin-top: 1px;
     display: inline;
+}
 
+.dialog-image {
+    width: 500px;
 }
 
 .container-login {
