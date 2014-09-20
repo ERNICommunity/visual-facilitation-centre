@@ -11,8 +11,8 @@
         <div>
             Date Added : {{ selectedImage.dateAdded}}
         </div>
-        <div class="tagsView">
-            <div class="tagView" ng-repeat="tag in picture.tags"> #{{ tag}}</div>
+        <div class="tags">
+            <div class="tag" ng-repeat="tag in selectedImage.tags"> #{{ tag}}</div>
         </div>
         <div ng-switch on="isInFavourites(picture)">
             <div class="favourite" ng-switch-when="false"><a ng-click="addToFavourites(picture)"><img

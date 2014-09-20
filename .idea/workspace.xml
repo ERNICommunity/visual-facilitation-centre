@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224617199" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224651686" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411187269624" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224255444" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
-    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224528982" ignored="false" />
-    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224549834" ignored="false" />
+    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224774453" ignored="false" />
+    <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224724780" ignored="false" />
     <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410970168837" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
     <file path="/uploader.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402204770083" ignored="false" />
@@ -107,19 +108,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="222" selection-end="222" vertical-scroll-proportion="0.5327869">
+            <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="-8.653846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="1.6">
+            <state line="14" column="27" selection-start="474" selection-end="474" vertical-scroll-proportion="0.61403507">
               <folding>
                 <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
               </folding>
@@ -172,8 +173,8 @@
         <option value="$PROJECT_DIR$/Sections/upload.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/Sections/content.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/Sections/content.html" />
       </list>
     </option>
   </component>
@@ -1144,7 +1145,11 @@
       <created>1411224620940</created>
       <updated>1411224620940</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="add modal diagram">
+      <created>1411224655318</created>
+      <updated>1411224655319</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1381,19 +1386,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="245" selection-end="257" vertical-scroll-proportion="1.6">
-          <folding>
-            <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
-          </folding>
+        <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="-8.653846">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="222" selection-end="222" vertical-scroll-proportion="0.5327869">
-          <folding />
+        <state line="14" column="27" selection-start="474" selection-end="474" vertical-scroll-proportion="0.61403507">
+          <folding>
+            <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

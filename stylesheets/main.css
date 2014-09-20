@@ -16,6 +16,7 @@ body {
 
 .dialog-image {
     width: 550px;
+    border-radius: 20px;
 }
 
 .container-login {
