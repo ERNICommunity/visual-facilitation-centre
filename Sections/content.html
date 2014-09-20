@@ -8,9 +8,7 @@
         <div>
             <img class="dialog-image" alt="{{ selectedImage.name }}" src="{{ selectedImage.url }}"/>
         </div>
-        <div>
-            Date Added : {{ selectedImage.dateAdded}}
-        </div>
+
         <div class="tags">
             <div class="tag" ng-repeat="tag in selectedImage.tags"> #{{ tag}}</div>
         </div>
@@ -24,7 +22,7 @@
     </div>
     <div class="modal-footer">
 
-        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <button class="btn btn-warning" ng-click="cancel()">Close</button>
         <p ng-show="selectedImage.name.$invalid && !selectedImage.name.$pristine" class="help-block">You
             name is required.</p>
 

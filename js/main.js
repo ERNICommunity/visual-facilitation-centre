@@ -743,7 +743,6 @@
 
         $scope.selectedImage = selectedImage;
 
-
         $scope.save = function () {
             $modalInstance.close(selectedImage);
         };

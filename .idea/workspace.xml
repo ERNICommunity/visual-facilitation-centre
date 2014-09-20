@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224651686" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224828821" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411187269624" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224255444" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411226269627" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
-    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224774453" ignored="false" />
+    <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411225710564" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411224724780" ignored="false" />
     <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1410970168837" ignored="false" />
     <file path="/upload.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1402126922205" ignored="false" />
@@ -55,7 +55,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="418" column="62" selection-start="16015" selection-end="16015" vertical-scroll-proportion="-3.75">
+            <state line="744" column="45" selection-start="28804" selection-end="28804" vertical-scroll-proportion="-3.1818182">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="-8.653846">
+            <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="2.1538463">
               <folding />
             </state>
           </provider>
@@ -120,9 +120,9 @@
       <file leaf-file-name="content.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="27" selection-start="474" selection-end="474" vertical-scroll-proportion="0.61403507">
+            <state line="10" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.4385965">
               <folding>
-                <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
+                <element signature="tag#div#2;tag#div#1;tag#script#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -172,8 +172,8 @@
         <option value="$PROJECT_DIR$/Sections/upload.php" />
         <option value="$PROJECT_DIR$/Sections/upload.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
       </list>
     </option>
@@ -1149,7 +1149,11 @@
       <created>1411224655318</created>
       <updated>1411224655319</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="add modal diagram">
+      <created>1411224833162</created>
+      <updated>1411224833162</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1379,25 +1383,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="62" selection-start="16015" selection-end="16015" vertical-scroll-proportion="-3.75">
+        <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="2.1538463">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="-8.653846">
+        <state line="744" column="45" selection-start="28804" selection-end="28804" vertical-scroll-proportion="-3.1818182">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="474" selection-end="474" vertical-scroll-proportion="0.61403507">
+        <state line="10" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.4385965">
           <folding>
-            <element signature="tag#div#3;tag#div#1;tag#script#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#1;tag#script#0" expanded="false" />
           </folding>
         </state>
       </provider>
