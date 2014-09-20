@@ -413,9 +413,23 @@
                 });
             }
 
+            $scope.removeFromFavourites = function (picture) {
+                Notifier.success('Removing from your favourites.');
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+                    copyObj.put();
+                    picture.favourites = copyObj.favourites;
+                });
+            }
+
+
             $scope.open = function (id) {
                 var modalInstance = $modal.open({
                     templateUrl: 'modal',
+                    windowClass: 'app-modal-window',
                     controller: EditDialogInstanceController,
                     resolve: {
                         selectedImage: function () {
@@ -442,18 +456,6 @@
                     }
                 }
                 return false;
-            }
-
-            $scope.removeFromFavourites = function (picture) {
-                Notifier.success('Removing from your favourites.');
-                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
-                    var loggedUser = JSON.parse($scope.loggedUser);
-                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-
-                    copyObj.put();
-                    picture.favourites = copyObj.favourites;
-                });
             }
 
 
@@ -750,6 +752,7 @@
         $scope.cancel = function () {
             $modalInstance.dismiss('cancel');
         };
+
     };
 
     var DeleteItemInstanceController = function ($scope, $modalInstance, selectedImage) {
