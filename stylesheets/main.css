@@ -153,10 +153,9 @@ a.upload {
     color: white;
 }
 
-a.upload:hover {
-
-    color: white;
-    text-decoration: none;
+.upload:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=30);;
 }
 
 input.search-field {
