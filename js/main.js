@@ -489,6 +489,19 @@
 
             });
 
+            $scope.isInFavourites = function (picture) {
+                var loggedUser = JSON.parse($scope.loggedUser);
+
+                if (picture.favourites == undefined) {
+                    picture.favourites = [];
+                }
+
+                if (picture.favourites.indexOf(loggedUser.username) > -1) {
+                    return true;
+                }
+                return false;
+            }
+
             $scope.open = function (id) {
                 var modalInstance = $modal.open({
                     templateUrl: 'modal',
