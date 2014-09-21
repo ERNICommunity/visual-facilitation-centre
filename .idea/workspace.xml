@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/pictures.css" afterPath="$PROJECT_DIR$/stylesheets/pictures.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411285655578" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411286197865" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411187269624" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411285531888" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411295980119" ignored="false" />
     <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411286070203" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411227564961" ignored="false" />
@@ -52,19 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="502" column="13" selection-start="18807" selection-end="18807" vertical-scroll-proportion="-163.29546">
+            <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="0.9229452">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pictures.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pictures.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="9" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.8211382">
+            <state line="73" column="9" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-19.423077">
               <folding />
             </state>
           </provider>
@@ -100,7 +99,7 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="26" selection-start="916" selection-end="916" vertical-scroll-proportion="-15.0">
+            <state line="24" column="26" selection-start="916" selection-end="916" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -118,7 +117,7 @@
       <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="612" selection-end="612" vertical-scroll-proportion="-5.625">
+            <state line="10" column="14" selection-start="613" selection-end="613" vertical-scroll-proportion="2.25">
               <folding />
             </state>
           </provider>
@@ -165,9 +164,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -1162,7 +1161,11 @@
       <created>1411285662290</created>
       <updated>1411285662290</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="tweak layout of the dialog">
+      <created>1411286202079</created>
+      <updated>1411286202079</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1250,7 +1253,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="mark unliked items as removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="tweak layout of the dialog" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1264,7 +1267,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added some basic flash messages" />
     <MESSAGE value="limit name text to 15 characters" />
     <MESSAGE value="turn static page for tips" />
     <MESSAGE value="add welcome page" />
@@ -1289,6 +1291,7 @@
     <MESSAGE value="add modal diagram" />
     <MESSAGE value="add modal diagram to favourites" />
     <MESSAGE value="mark unliked items as removed." />
+    <MESSAGE value="tweak layout of the dialog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,20 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="916" selection-end="916" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="502" column="13" selection-start="18807" selection-end="18807" vertical-scroll-proportion="-163.29546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="309" column="27" selection-start="4196" selection-end="4197" vertical-scroll-proportion="-7.8846154">
@@ -1390,14 +1379,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="612" selection-end="612" vertical-scroll-proportion="-5.625">
+        <state line="10" column="14" selection-start="613" selection-end="613" vertical-scroll-proportion="2.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="9" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.8211382">
+        <state line="73" column="9" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-19.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="916" selection-end="916" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="0.9229452">
           <folding />
         </state>
       </provider>

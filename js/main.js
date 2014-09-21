@@ -429,6 +429,38 @@
                 return false;
             }
 
+            $scope.addToFavourites = function (picture) {
+                $scope.exists = true;
+                Notifier.success('Adding to favourites.');
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
+                        return;
+                    }
+
+                    if (copyObj.favourites.length == 0) {
+                        copyObj.favourites = [loggedUser.username];
+                    } else {
+                        copyObj.favourites.push(loggedUser.username);
+                    }
+                    copyObj.put();
+                    picture.favourites = copyObj.favourites;
+                });
+            }
+
+            $scope.removeFromFavourites = function (picture) {
+                Notifier.success('Removing from your favourites.');
+                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                    var copyObj = db.copy(obj)
+                    var loggedUser = JSON.parse($scope.loggedUser);
+                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+                    copyObj.put();
+                    picture.favourites = copyObj.favourites;
+                });
+            }
+
 
             $scope.isInFavourites = function (picture) {
                 var loggedUser = JSON.parse($scope.loggedUser);
@@ -516,6 +548,18 @@
                         }
                     }
                 });
+
+                modalInstance.result.then(function (selectedImage) {
+
+                }, function (selectedImage) {
+
+                    if ($scope.isInFavourites(selectedImage) == false) {
+                        $scope.contacts.splice($scope.contacts.indexOf(selectedImage), 1);
+                    }
+
+
+                });
+
             };
 
             $scope.searchFilter = function (item) {
@@ -543,8 +587,6 @@
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
                     copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-
-
                     copyObj.put().then(function (results) {
                         $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
 
@@ -667,6 +709,9 @@
                     resolve: {
                         selectedImage: function () {
                             return id;
+                        },
+                        db: function () {
+                            return db;
                         }
                     }
                 });
@@ -750,7 +795,7 @@
         };
 
         $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
+            $modalInstance.dismiss(selectedImage);
         };
 
         $scope.addToFavourites = function (picture) {
