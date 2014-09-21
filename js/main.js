@@ -393,38 +393,6 @@
             $scope.title = $routeParams.tag;
             var all = db.all('content');
 
-            $scope.addToFavourites = function (picture) {
-                $scope.exists = true;
-                Notifier.success('Adding to favourites.');
-                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
-                    var loggedUser = JSON.parse($scope.loggedUser);
-                    if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
-                        return;
-                    }
-
-                    if (copyObj.favourites.length == 0) {
-                        copyObj.favourites = [loggedUser.username];
-                    } else {
-                        copyObj.favourites.push(loggedUser.username);
-                    }
-                    copyObj.put();
-                    picture.favourites = copyObj.favourites;
-                });
-            }
-
-            $scope.removeFromFavourites = function (picture) {
-                Notifier.success('Removing from your favourites.');
-                var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
-                    var loggedUser = JSON.parse($scope.loggedUser);
-                    copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-
-                    copyObj.put();
-                    picture.favourites = copyObj.favourites;
-                });
-            }
-
 
             $scope.open = function (id) {
                 var modalInstance = $modal.open({
@@ -434,6 +402,9 @@
                     resolve: {
                         selectedImage: function () {
                             return id;
+                        },
+                        db: function () {
+                            return db
                         }
                     }
                 });
@@ -506,8 +477,8 @@
             }
         }]);
 
-    app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams',
-        function IndexCtrl2($scope, db, $routeParams) {
+    app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams', '$modal',
+        function IndexCtrl2($scope, db, $routeParams, $modal) {
             var all = db.all('content');
 
             var loggedUser = JSON.parse($scope.loggedUser);
@@ -517,6 +488,22 @@
                 $scope.contacts = data;
 
             });
+
+            $scope.open = function (id) {
+                var modalInstance = $modal.open({
+                    templateUrl: 'modal',
+                    windowClass: 'app-modal-window',
+                    controller: EditDialogInstanceController,
+                    resolve: {
+                        selectedImage: function () {
+                            return id;
+                        },
+                        db: function () {
+                            return db
+                        }
+                    }
+                });
+            };
 
             $scope.searchFilter = function (item) {
                 if ($scope.query == undefined || $scope.query == '') {
@@ -741,7 +728,7 @@
 
         }
     ])
-    var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage) {
+    var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage, db) {
 
         $scope.selectedImage = selectedImage;
 
@@ -752,6 +739,51 @@
         $scope.cancel = function () {
             $modalInstance.dismiss('cancel');
         };
+
+        $scope.addToFavourites = function (picture) {
+            $scope.exists = true;
+            Notifier.success('Adding to favourites.');
+            var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                var copyObj = db.copy(obj)
+                var loggedUser = JSON.parse($scope.loggedUser);
+                if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
+                    return;
+                }
+
+                if (copyObj.favourites.length == 0) {
+                    copyObj.favourites = [loggedUser.username];
+                } else {
+                    copyObj.favourites.push(loggedUser.username);
+                }
+                copyObj.put();
+                picture.favourites = copyObj.favourites;
+            });
+        }
+
+        $scope.removeFromFavourites = function (picture) {
+            Notifier.success('Removing from your favourites.');
+            var x = db.one('content', picture._id.$oid).get().then(function (obj) {
+                var copyObj = db.copy(obj)
+                var loggedUser = JSON.parse($scope.loggedUser);
+                copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
+
+                copyObj.put();
+                picture.favourites = copyObj.favourites;
+            });
+        }
+
+        $scope.isInFavourites = function (picture) {
+            var loggedUser = JSON.parse($scope.loggedUser);
+
+            if (picture.favourites == undefined) {
+                picture.favourites = [];
+            }
+
+            if (picture.favourites.indexOf(loggedUser.username) > -1) {
+                return true;
+            }
+            return false;
+        }
 
     };
 
