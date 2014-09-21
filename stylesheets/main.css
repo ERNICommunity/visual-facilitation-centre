@@ -14,11 +14,6 @@ body {
     display: inline;
 }
 
-.dialog-image {
-    width: 550px;
-    border-radius: 20px;
-}
-
 .container-login {
     width: 50%;
     margin-left: auto;
@@ -138,7 +133,12 @@ nav.search-header {
 }
 
 .app-modal-window .modal-dialog {
-    width: 590px;
+    width: 500px;
+}
+
+.dialog-image {
+    width: 490px;
+    border-radius: 20px;
 }
 
 .app-modal-window .modal-dialog .tag {
