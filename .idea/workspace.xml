@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/upload.html" afterPath="$PROJECT_DIR$/Sections/upload.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411286197865" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411296224272" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411187269624" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411295980119" ignored="false" />
-    <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411184745260" ignored="false" />
+    <file path="/upload.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411304419940" ignored="false" />
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411286070203" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411227564961" ignored="false" />
     <file path="/pictures.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1411286127166" ignored="false" />
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="0.9229452">
+            <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="-12.25">
               <folding />
             </state>
           </provider>
@@ -123,11 +123,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="upload.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="24" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="16" column="38" selection-start="367" selection-end="367" vertical-scroll-proportion="0.20304568">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,13 +162,13 @@
         <option value="$PROJECT_DIR$/js/directives.js" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/Sections/upload.php" />
-        <option value="$PROJECT_DIR$/Sections/upload.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Sections/upload.html" />
       </list>
     </option>
   </component>
@@ -1165,7 +1167,11 @@
       <created>1411286202079</created>
       <updated>1411286202079</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="fixed some bugs with favourites.&#10;Favourite Dialog will now remove favourites when user unfavourites something from the pop up dialog.">
+      <created>1411296237313</created>
+      <updated>1411296237313</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1253,7 +1259,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tweak layout of the dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bugs with favourites.&#10;Favourite Dialog will now remove favourites when user unfavourites something from the pop up dialog." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1267,7 +1273,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="limit name text to 15 characters" />
     <MESSAGE value="turn static page for tips" />
     <MESSAGE value="add welcome page" />
     <MESSAGE value="implement welcome page" />
@@ -1292,6 +1297,7 @@
     <MESSAGE value="add modal diagram to favourites" />
     <MESSAGE value="mark unliked items as removed." />
     <MESSAGE value="tweak layout of the dialog" />
+    <MESSAGE value="fixed some bugs with favourites.&#10;Favourite Dialog will now remove favourites when user unfavourites something from the pop up dialog." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,13 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="24" selection-start="5115" selection-end="5115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="32" selection-start="3856" selection-end="3862" vertical-scroll-proportion="0.0">
@@ -1400,8 +1399,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="0.9229452">
+        <state line="462" column="0" selection-start="17771" selection-end="17771" vertical-scroll-proportion="-12.25">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="38" selection-start="367" selection-end="367" vertical-scroll-proportion="0.20304568">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
