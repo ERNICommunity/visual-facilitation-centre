@@ -65,6 +65,15 @@
     right: 0px
 }
 
+.favourite-dialog {
+    float: right;
+
+}
+
+.favourite-dialog img {
+
+}
+
 .polaroid img.item {
     width: 120px;
     height: 120px;

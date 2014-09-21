@@ -2,6 +2,13 @@
 
     <div class="modal-header">
         <h3 class="modal-title">{{ selectedImage.name}} by {{ selectedImage.owner}} </h3>
+
+        <div ng-switch on="isInFavourites(selectedImage)">
+            <div class="favourite-dialog" ng-switch-when="false"><a ng-click="addToFavourites(selectedImage)"><img
+                    src="./img/favorites_icon-add_new.png"></a></div>
+            <div class="favourite-dialog" ng-switch-default><a ng-click="removeFromFavourites(selectedImage)"><img
+                    src="./img/favorites_icon-remove_new.png"></a></div>
+        </div>
     </div>
     <div class="modal-body">
 
@@ -12,12 +19,7 @@
         <div class="tags">
             <div class="tag" ng-repeat="tag in selectedImage.tags"> #{{ tag}}</div>
         </div>
-        <div ng-switch on="isInFavourites(selectedImage)">
-            <div class="favourite" ng-switch-when="false"><a ng-click="addToFavourites(selectedImage)"><img
-                    src="./img/favorites_icon-add_new.png"></a></div>
-            <div class="favourite" ng-switch-default><a ng-click="removeFromFavourites(selectedImage)"><img
-                    src="./img/favorites_icon-remove_new.png"></a></div>
-        </div>
+
 
     </div>
     <div class="modal-footer">
