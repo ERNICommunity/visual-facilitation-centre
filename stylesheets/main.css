@@ -370,6 +370,7 @@ h2 {
 
 .cat-tile > a {
     text-decoration: none;
+    text-align: center;
 }
 
 .cat-tile > p {
