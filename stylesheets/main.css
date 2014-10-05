@@ -206,7 +206,20 @@ input.search-field {
     padding-right: 3px;
     color: black;
     margin-top: 5px;
-    font-size: 0.8em;
+
+}
+
+.taglist {
+    font-size: 0.75em;
+    line-height: 0.75em;
+    top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.taglist p {
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -345,7 +358,7 @@ div.row-container {
 
 }
 
-.wrapper {
+.wrapper2 {
     width: 100%;
     text-align: center;
 }
@@ -481,10 +494,6 @@ and (min-width : 321px) and (max-width :480px) {
         margin: auto;
     }
 
-    sub-footer1 {
-        width: 100%;
-        margin: auto;
-    }
 
     .footer-tags {
         display: none;

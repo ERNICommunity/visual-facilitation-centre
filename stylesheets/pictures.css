@@ -7,6 +7,7 @@
     overflow: visible;
     min-height: 700px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .polaroid a.images {
@@ -36,9 +37,9 @@
 .polaroid {
     content: attr(title);
     width: 150px;
-    height: 250px;
+    height: 220px;
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
     padding: 20px;
     text-align: center;
     position: relative;

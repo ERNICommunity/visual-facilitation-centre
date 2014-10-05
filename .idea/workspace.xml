@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="I restyled the welcome page">
+    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="getting more shit done">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/content.html" afterPath="$PROJECT_DIR$/Sections/content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/pictures.css" afterPath="$PROJECT_DIR$/stylesheets/pictures.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/welcome.html" afterPath="$PROJECT_DIR$/Sections/welcome.html" />
@@ -28,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="dialog.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/dialog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="0" selection-start="3983" selection-end="3983" vertical-scroll-proportion="-66.25" vertical-offset="0" max-vertical-offset="2460">
+            <state line="14" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -40,25 +41,7 @@
       <file leaf-file-name="pictures.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="32" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.6570397" vertical-offset="701" max-vertical-offset="1995">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sections/dialog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
+            <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.70397115" vertical-offset="195" max-vertical-offset="2010">
               <folding />
             </state>
           </provider>
@@ -85,7 +68,16 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="381" column="27" selection-start="5290" selection-end="5299" vertical-scroll-proportion="-15.153846" vertical-offset="5321" max-vertical-offset="8190">
+            <state line="208" column="0" selection-start="2720" selection-end="2720" vertical-scroll-proportion="-109.61539" vertical-offset="270" max-vertical-offset="8310">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="2" selection-start="414" selection-end="414" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -96,6 +88,29 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="18" selection-start="274" selection-end="275" vertical-scroll-proportion="-7.1153846" vertical-offset="55" max-vertical-offset="2895">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/content.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="93" selection-start="1704" selection-end="1704" vertical-scroll-proportion="-14.375" vertical-offset="360" max-vertical-offset="945">
+              <folding>
+                <marker date="1412517760000" expanded="true" signature="74:623" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="224:612" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="290:409" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="335:403" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="340:399" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="470:597" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="520:591" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="525:587" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="652:923" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="667:783" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="811:910" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="954:1181" placeholder="..." />
+                <marker date="1412517760000" expanded="true" signature="1132:1169" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +129,7 @@
       <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="60" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="570">
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -149,12 +164,12 @@
         <option value="$PROJECT_DIR$/Sections/upload.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
-        <option value="$PROJECT_DIR$/Sections/content.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/ng-tags-input.bootstrap.min.css" />
         <option value="$PROJECT_DIR$/Sections/upload.html" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/welcome.html" />
+        <option value="$PROJECT_DIR$/Sections/content.html" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
       </list>
     </option>
@@ -263,7 +278,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="250" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -1193,7 +1208,11 @@
       <created>1412515892274</created>
       <updated>1412515892274</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="getting more shit done">
+      <created>1412516506187</created>
+      <updated>1412516506188</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1252,7 +1271,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add new All category and change home link to welcome page" />
     <MESSAGE value="re designed content layout" />
     <MESSAGE value="fixed search" />
     <MESSAGE value="fix search for favourite screen" />
@@ -1277,7 +1295,8 @@
     <MESSAGE value="i made h3 18px" />
     <MESSAGE value="I restyled the upload page" />
     <MESSAGE value="I restyled the welcome page" />
-    <option name="LAST_COMMIT_MESSAGE" value="I restyled the welcome page" />
+    <MESSAGE value="getting more shit done" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting more shit done" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1346,19 +1365,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="27" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="945">
           <folding>
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="74:623" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="224:612" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="290:409" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="335:403" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="340:399" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="470:597" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="520:591" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="525:587" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="652:923" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="667:783" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="811:910" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="954:1181" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="1132:1169" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1395,11 +1414,6 @@
     <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="41" selection-start="1426" selection-end="1427" vertical-scroll-proportion="-25.384615" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="2" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
@@ -1444,27 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.4586331" vertical-offset="360" max-vertical-offset="945">
-          <folding>
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1412505923000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="-3.3" vertical-offset="75" max-vertical-offset="2490">
@@ -1481,23 +1474,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="2" selection-start="414" selection-end="414" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="60" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="570">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="93" selection-start="1704" selection-end="1704" vertical-scroll-proportion="-14.375" vertical-offset="360" max-vertical-offset="945">
+          <folding>
+            <marker date="1412517760000" expanded="true" signature="74:623" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="224:612" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="290:409" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="335:403" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="340:399" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="470:597" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="520:591" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="525:587" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="652:923" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="667:783" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="811:910" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="954:1181" placeholder="..." />
+            <marker date="1412517760000" expanded="true" signature="1132:1169" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="27" selection-start="5290" selection-end="5299" vertical-scroll-proportion="-15.153846" vertical-offset="5321" max-vertical-offset="8190">
+        <state line="208" column="0" selection-start="2720" selection-end="2720" vertical-scroll-proportion="-109.61539" vertical-offset="270" max-vertical-offset="8310">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="32" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.6570397" vertical-offset="701" max-vertical-offset="1995">
+        <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.70397115" vertical-offset="195" max-vertical-offset="2010">
           <folding />
         </state>
       </provider>

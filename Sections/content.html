@@ -41,11 +41,10 @@
                  alt="{{ picture.name }}" src="{{ picture.url }}"/></a>
 
         <span>{{ picture.name.substring(0,15); }} </span></br>
-        <span>by {{ picture.owner }}</span>
 
 
         <div class="tags">
-            <div class="tag" ng-repeat="tag in picture.tags"> #{{ tag}}</div>
+            <div class="tag" ng-repeat="tag in picture.tags"><p class="taglist"> #{{ tag}}</p></div>
         </div>
         <div ng-switch on="isInFavourites(picture)">
             <div class="favourite" ng-switch-when="false"><a ng-click="addToFavourites(picture)"><img
