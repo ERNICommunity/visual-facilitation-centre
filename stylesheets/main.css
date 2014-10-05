@@ -345,6 +345,11 @@ div.row-container {
 
 }
 
+.wrapper {
+    width: 100%;
+    text-align: center;
+}
+
 .cat-tile img {
     height: 150px;
     padding-bottom: 5px;
@@ -371,9 +376,10 @@ div.row-container {
     display: inline-block;
     width: 20%;
     padding: 15px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 8px;
     border: solid lightblue 3px;
+    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
 }
 
 div.tagsinput span.tag {
