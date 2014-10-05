@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="i made h3 18px">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
+    <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="I restyled the upload page">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/upload.html" afterPath="$PROJECT_DIR$/Sections/upload.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,7 +83,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="347" column="19" selection-start="4746" selection-end="4746" vertical-scroll-proportion="-15.730769" vertical-offset="4796" max-vertical-offset="7515">
+            <state line="346" column="19" selection-start="4747" selection-end="4747" vertical-scroll-proportion="-15.730769" vertical-offset="4781" max-vertical-offset="7500">
               <folding />
             </state>
           </provider>
@@ -102,7 +101,7 @@
       <file leaf-file-name="upload.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1104" selection-end="1104" vertical-scroll-proportion="1.018868" vertical-offset="0" max-vertical-offset="2490">
+            <state line="16" column="24" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31132075" vertical-offset="75" max-vertical-offset="2490">
               <folding>
                 <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -1171,7 +1170,11 @@
       <created>1412512150202</created>
       <updated>1412512150202</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="I restyled the upload page">
+      <created>1412514335297</created>
+      <updated>1412514335297</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1230,7 +1233,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="remove unneeded sections" />
     <MESSAGE value="added icons for welcome page plus stylin" />
     <MESSAGE value="add new All category and change home link to welcome page" />
     <MESSAGE value="re designed content layout" />
@@ -1255,7 +1257,8 @@
     <MESSAGE value="maybe the dialog a bit smaller" />
     <MESSAGE value="i made h3 red" />
     <MESSAGE value="i made h3 18px" />
-    <option name="LAST_COMMIT_MESSAGE" value="i made h3 18px" />
+    <MESSAGE value="I restyled the upload page" />
+    <option name="LAST_COMMIT_MESSAGE" value="I restyled the upload page" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1459,14 +1462,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="347" column="19" selection-start="4746" selection-end="4746" vertical-scroll-proportion="-15.730769" vertical-offset="4796" max-vertical-offset="7515">
+        <state line="346" column="19" selection-start="4747" selection-end="4747" vertical-scroll-proportion="-15.730769" vertical-offset="4781" max-vertical-offset="7500">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1104" selection-end="1104" vertical-scroll-proportion="1.018868" vertical-offset="0" max-vertical-offset="2490">
+        <state line="16" column="24" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31132075" vertical-offset="75" max-vertical-offset="2490">
           <folding>
             <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
