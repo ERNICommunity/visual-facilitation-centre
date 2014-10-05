@@ -148,6 +148,10 @@ nav.search-header {
 
 }
 
+h3 {
+    color: red;
+}
+
 .upload {
     float: right;
     background-color: #9d9fa2;
