@@ -337,6 +337,45 @@ div.tagsinput {
     overflow-y: auto;
 }
 
+div.row-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+
+}
+
+.cat-tile img {
+    height: 150px;
+    padding-bottom: 5px;
+}
+
+.cat-tile > a {
+    text-decoration: none;
+}
+
+.cat-tile > p {
+    padding-top: 10px;
+}
+
+.cat-tile img:hover {
+    -webkit-transform: scale(1.07, 1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07, 1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+
+.cat-tile {
+    display: inline-block;
+    width: 20%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: solid lightblue 3px;
+}
+
 div.tagsinput span.tag {
     border: 1px solid #a5d24a;
     -moz-border-radius: 2px;

@@ -29,16 +29,6 @@
     position: relative;
 }
 
-.cat-tile {
-    display: inline-block;
-    width: 250px;
-    padding: 15px
-}
-
-.cat-tile img {
-    width: 100%;
-}
-
 .instructions {
     text-align: center;
 }

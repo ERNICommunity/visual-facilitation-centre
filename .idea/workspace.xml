@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="I restyled the upload page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/upload.html" afterPath="$PROJECT_DIR$/Sections/upload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/pictures.css" afterPath="$PROJECT_DIR$/stylesheets/pictures.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/welcome.html" afterPath="$PROJECT_DIR$/Sections/welcome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
@@ -38,7 +40,7 @@
       <file leaf-file-name="pictures.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2130">
+            <state line="33" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="-7.076923" vertical-offset="311" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
@@ -80,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="346" column="19" selection-start="4747" selection-end="4747" vertical-scroll-proportion="-15.730769" vertical-offset="4781" max-vertical-offset="7500">
+            <state line="351" column="0" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.6570397" vertical-offset="4901" max-vertical-offset="8085">
               <folding />
             </state>
           </provider>
@@ -98,13 +100,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31132075" vertical-offset="75" max-vertical-offset="2490">
+            <state line="16" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="-3.3" vertical-offset="75" max-vertical-offset="2490">
               <folding>
                 <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="525">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,18 +144,18 @@
         <option value="$PROJECT_DIR$/Sections/register.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
-        <option value="$PROJECT_DIR$/Sections/welcome.html" />
         <option value="$PROJECT_DIR$/js/directives.js" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/Sections/upload.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/Sections/content.html" />
-        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/ng-tags-input.bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/upload.html" />
+        <option value="$PROJECT_DIR$/Sections/welcome.html" />
+        <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -1174,7 +1185,11 @@
       <created>1412514335297</created>
       <updated>1412514335297</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="I restyled the upload page">
+      <created>1412514532474</created>
+      <updated>1412514532474</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1418,13 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="2130">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="0" selection-start="3983" selection-end="3983" vertical-scroll-proportion="-66.25" vertical-offset="0" max-vertical-offset="2460">
@@ -1453,6 +1461,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="400" selection-end="400" vertical-scroll-proportion="-3.3" vertical-offset="75" max-vertical-offset="2490">
+          <folding>
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/ng-tags-input.bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="18" selection-start="274" selection-end="275" vertical-scroll-proportion="-7.1153846" vertical-offset="55" max-vertical-offset="2895">
@@ -1460,19 +1477,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+    <entry file="file://$PROJECT_DIR$/Sections/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="19" selection-start="4747" selection-end="4747" vertical-scroll-proportion="-15.730769" vertical-offset="4781" max-vertical-offset="7500">
+        <state line="25" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/upload.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31132075" vertical-offset="75" max-vertical-offset="2490">
-          <folding>
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="33" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="-7.076923" vertical-offset="311" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="0" selection-start="4728" selection-end="4728" vertical-scroll-proportion="0.6570397" vertical-offset="4901" max-vertical-offset="8085">
+          <folding />
         </state>
       </provider>
     </entry>
