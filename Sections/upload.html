@@ -12,9 +12,9 @@
 
         <div class="row">
 
-            <div class="col-md-3" ng-show="uploader.queue.length == 0">
+            <div class="upload-section" ng-show="uploader.queue.length == 0">
 
-                <h3>1. Select an image to upload</h3>
+                <h3>Please select an image to upload</h3>
 
                 <div ng-show="uploader.isHTML5">
                     <!-- 3. nv-file-over uploader="link" over-class="className" -->
@@ -30,19 +30,11 @@
 
             </div>
 
-            <div class="col-md-9" style="margin-bottom: 40px" ng-show="uploader.queue.length">
+            <div class="upload-section" style="margin-bottom: 40px" ng-show="uploader.queue.length">
 
 
                 <table class="table">
-                    <thead>
-                    <tr>
-                        <th width="50%"></th>
-                        <th ng-show="uploader.isHTML5">Size</th>
-                        <th ng-show="uploader.isHTML5">Progress</th>
-                        <th>Status</th>
-                        <th></th>
-                    </tr>
-                    </thead>
+
                     <tbody>
                     <tr ng-repeat="item in uploader.queue">
                         <td>
@@ -56,20 +48,11 @@
                             <!--<div ng-thumb="{ file: item.file, width: 100, height: 100 }"></div>-->
                         </td>
                         <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
-                        <td ng-show="uploader.isHTML5">
-                            <div class="progress" style="margin-bottom: 0;">
-                                <div class="progress-bar" role="progressbar"
-                                     ng-style="{ 'width': item.progress + '%' }"></div>
-                            </div>
-                        </td>
-                        <td class="text-center">
-                            <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
-                            <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
-                            <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
-                        </td>
-                        <td nowrap>
 
-                            <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+
+                        <td nowrap style="float:right">
+
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
                                 <span class="glyphicon glyphicon-trash"></span> Remove
                             </button>
                         </td>
@@ -77,9 +60,8 @@
                     </tbody>
                 </table>
                 <div id="section-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-                    <h3>2. Please fill in some details about your content.</h3>
 
-                    <p>Which section would you like to place your image? </p>
+                    <p>Select a section for your image</p>
                     <select name="content-section" class="form-control" placeholder="teapot.jpg"
                             ng-model="formData.section">
 
@@ -94,16 +76,16 @@
 
 
                 <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
-                    <p>Name : Please pick a name for your content.</p>
-                    <input size="60" type="text" name="content-name" class="form-control"
+                    <p>Pick a name for your image</p>
+                    <input type="text" name="content-name" class="form-control"
                            placeholder="please enter a name for your image"
                            ng-model="formData.name" value="{{formData.name}}" required>
                     <span class="help-block1" ng-show="errorName">{{ errorName }}</span>
                 </div>
 
                 <div id="tag-group" class="form-group" ng-class="{ 'has-error' : errorTag }">
-                    <p>Tags : Give your content some tags (comma seperated, eg "agenda,colourful""</p>
-                    <input size="60" tagerupload type="text" name="content-tags" class="form-control" ng-list
+                    <p>Give your image some tags (comma separated, e.g. agenda, colourful, ...)</p>
+                    <input tagerupload type="text" name="content-tags" class="form-control" ng-list
                            placeholder="Enter tags"
                            ng-model="formData.tags">
 

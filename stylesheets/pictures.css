@@ -7,6 +7,7 @@
     overflow: visible;
     min-height: 700px;
     text-align: center;
+    padding-top: 10px;
 }
 
 .polaroid a.images {
@@ -29,16 +30,6 @@
     position: relative;
 }
 
-.cat-tile {
-    display: inline-block;
-    width: 250px;
-    padding: 15px
-}
-
-.cat-tile img {
-    width: 100%;
-}
-
 .instructions {
     text-align: center;
 }
@@ -46,9 +37,9 @@
 .polaroid {
     content: attr(title);
     width: 150px;
-    height: 250px;
+    height: 220px;
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
     padding: 20px;
     text-align: center;
     position: relative;
@@ -78,7 +69,8 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: none;
+
+    border: lightblue solid 2px;
     overflow: hidden;
     position: absolute;
     top: 10px;

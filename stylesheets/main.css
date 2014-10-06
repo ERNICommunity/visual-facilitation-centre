@@ -141,11 +141,20 @@ nav.search-header {
     border-radius: 20px;
 }
 
+.upload-section {
+
+    width: 700px;
+}
+
 .app-modal-window .modal-dialog .tag {
-    background-color: greenyellow;
+    background-color: lightblue;
     padding: 10px;
     font-size: 1em;
 
+}
+
+h3 {
+    font-size: 18px;
 }
 
 .upload {
@@ -197,7 +206,20 @@ input.search-field {
     padding-right: 3px;
     color: black;
     margin-top: 5px;
-    font-size: 0.8em;
+
+}
+
+.taglist {
+    font-size: 0.75em;
+    line-height: 0.75em;
+    top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.taglist p {
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -324,9 +346,54 @@ div.tagsinput {
     border: 1px solid #CCC;
     background: #FFF;
     padding: 5px;
-    width: 200px;
-    height: 100px;
+    border-radius: 4px;
     overflow-y: auto;
+}
+
+div.row-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.cat-tile img {
+    height: 150px;
+    padding-bottom: 5px;
+}
+
+.cat-tile > a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.cat-tile > p {
+    padding-top: 10px;
+}
+
+.cat-tile img:hover {
+    -webkit-transform: scale(1.07, 1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07, 1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+
+.cat-tile {
+    display: inline-block;
+    width: 20%;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    border: solid lightblue 3px;
+    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
 }
 
 div.tagsinput span.tag {
@@ -428,10 +495,6 @@ and (min-width : 321px) and (max-width :480px) {
         margin: auto;
     }
 
-    sub-footer1 {
-        width: 100%;
-        margin: auto;
-    }
 
     .footer-tags {
         display: none;
