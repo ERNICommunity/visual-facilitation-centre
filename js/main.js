@@ -28,6 +28,7 @@
 
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog', 'FileUploaderApp']);
 
+
     app.directive('triggerChange', function ($sniffer) {
         return {
             link: function (scope, elem, attrs) {
