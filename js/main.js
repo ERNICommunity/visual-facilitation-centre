@@ -28,6 +28,18 @@
 
     var app = angular.module('app', ['RestangularApp', 'BootstrapApp', 'ngCookies', 'ngDialog', 'FileUploaderApp']);
 
+    app.directive('triggerChange', function ($sniffer) {
+        return {
+            link: function (scope, elem, attrs) {
+                elem.bind('click', function () {
+                    $(attrs.triggerChange).trigger($sniffer.hasEvent('input') ? 'input' : 'change');
+                });
+            },
+            priority: 1
+        }
+    });
+
+
     app.directive('tager', function () {
 
 
@@ -344,6 +356,8 @@
             };
 
             $scope.login = function () {
+
+
                 $http({ method: 'GET', url: 'http://moodyrest.azurewebsites.net/users/' + $scope.credentials.username + '/' + $scope.credentials.password })
                     .success(function (data) {
                         $cookies.UserCredential = JSON.stringify(data);
