@@ -9,9 +9,15 @@ $message = 'Not Found';
 if(isset($_REQUEST)){
 	if(isset($_REQUEST['name'])){
 		if(file_exists($path . $_REQUEST["name"])){
-			unlink($path . $_REQUEST["name"]);
-			$status = 201;
-			$message = 'deleting file '.$_REQUEST["name"].' successful';
+			if(unlink($path . $_REQUEST["name"])){
+				$status = 201;			
+				$message = 'deleting file '.$_REQUEST["name"].' successful';
+			} else {
+				
+				$status = 400;			
+				$message = 'deleting file '.$_REQUEST["name"].' error';
+			}
+			
 		} else {
 			$status = 204;
 			$message = "Error: " . $_REQUEST["name"] . 'not found';
