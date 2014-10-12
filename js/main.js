@@ -771,14 +771,16 @@
 
                 modalInstance.result.then(function (content) {
                     Notifier.success('Content has been deleted');
+                    
+                    var fileNameToDelete = content.
 
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
+//                        $http.post('/delete_ajax.php', {'name':fileNameToDelete});
                     });
-                    ;
+ 
 
-
-                    /*                $http.post('/delete_ajax.php', data,
+                    /* $http.post('/delete_ajax.php', data,
                      {
                      headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
                      }).success(function (data, status, headers, config) {
