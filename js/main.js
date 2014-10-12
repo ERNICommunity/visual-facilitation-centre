@@ -776,7 +776,7 @@
 
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
-//                        $http.post('/delete_ajax.php', {'name':fileNameToDelete});
+                        $http.post('/delete_ajax.php', {'name':fileNameToDelete});
                     });
  
 
