@@ -772,11 +772,11 @@
                 modalInstance.result.then(function (content) {
                     Notifier.success('Content has been deleted');
                     
-                    var fileNameToDelete = content.
+                    var fileNameToDelete = String(content.url).replace('/uploads/', '');
 
                     db.one('content', content.uid).remove().then(function (data) {
                         $scope.all.splice(content.id, 1);
-//                        $http.post('/delete_ajax.php', {'name':fileNameToDelete});
+                        $http.post('/delete_ajax.php', {'name':fileNameToDelete});
                     });
  
 
