@@ -747,6 +747,7 @@
                         copyObj.name = selectedImage.name;
                         copyObj.tags = selectedImage.tags;
                         copyObj.section = selectedImage.section;
+                        copyObj.url = selectedImage.url;
                         copyObj.put();
                         $scope.all[id] = selectedImage;
 
