@@ -6,6 +6,14 @@ $output = [];
 $status = 404;
 $message = 'Not Found';
 
+function resize(input){
+	$thumb = new Imagick();
+	$thumb->readImage(input);    $thumb->resizeImage(400,400,Imagick::FILTER_LANCZOS,1);
+	$thumb->writeImage(input);
+	$thumb->clear();
+	$thumb->destroy(); 
+}
+
 if(isset($_REQUEST)){
 	if(isset($_FILES['image'])){
 
