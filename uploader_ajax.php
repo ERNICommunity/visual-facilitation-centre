@@ -32,6 +32,7 @@ if(isset($_REQUEST)){
 						$output['details']['content-url'] = $path;
 					} else {
 						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_FILES['image']["name"][$i])){
+							resize($path.$_FILES['image']["name"][$i]);
 							$status = 201;
 							$message = 'upload successful';
 							$output['details']['content-name'] = $_FILES['image']["name"][$i];
