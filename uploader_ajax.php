@@ -6,6 +6,14 @@ $output = [];
 $status = 404;
 $message = 'Not Found';
 
+function resize(input){
+	$thumb = new Imagick(input);
+	$thumb->resizeImage(400,400,Imagick::FILTER_LANCZOS,1);
+	$thumb->writeImage(input);
+	$thumb->clear();
+	$thumb->destroy(); 
+}
+
 if(isset($_REQUEST)){
 	if(isset($_FILES['image'])){
 
@@ -24,6 +32,7 @@ if(isset($_REQUEST)){
 						$output['details']['content-url'] = $path;
 					} else {
 						if(move_uploaded_file($_FILES['image']["tmp_name"][$i], $path.$_FILES['image']["name"][$i])){
+							resize($path.$_FILES['image']["name"][$i]);
 							$status = 201;
 							$message = 'upload successful';
 							$output['details']['content-name'] = $_FILES['image']["name"][$i];
@@ -46,6 +55,7 @@ if(isset($_REQUEST)){
 					$output['details']['content-url'] = $path;
 				} else {
 					if(move_uploaded_file($_FILES['image']["tmp_name"][0], $path.$_FILES['image']["name"][0])){
+						resize($path.$_FILES['image']["name"][0]);
 						$status = 201;
 						$message = 'upload successful';
 						$output['details']['content-name'] = $_FILES['image']["name"][0];
