@@ -779,8 +779,8 @@
                         var fileNameToDelete = String(content.url).replace('/uploads/', '');
                         console.log(fileNameToDelete);
                         
-                        $http.get('/delete_ajax.php?'+'name='+escape(fileNameToDelete)).success(
-                        function(){
+                        $http.get('/delete_ajax.php?'+'name='+escape(fileNameToDelete))
+                        .success(function(){
                         	console.log('delete success');
                         }).error(function(){
                         	console.log('delete fail');
