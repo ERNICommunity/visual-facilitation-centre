@@ -691,7 +691,8 @@
                     section: data[i].section,
                     tags: data[i].tags,
                     owner: data[i].owner,
-                    uid: data[i]._id.$oid
+                    uid: data[i]._id.$oid,
+                    url: data[i].url
                 });
             }
         });
@@ -772,25 +773,25 @@
 
                 modalInstance.result.then(function (content) {
                     Notifier.success('Content has been deleted');
-					
-					console.log(content);
-					
+
+                    console.log(content);
+
                     db.one('content', content.uid).remove().then(function (data) {
                         var fileNameToDelete = String(content.url).replace('/uploads/', '');
                         console.log(fileNameToDelete);
-                        
-                        $http.get('/delete_ajax.php?'+'name='+escape(fileNameToDelete))
-                        .success(function(){
-                        	console.log('delete success');
-                        }).error(function(){
-                        	console.log('delete fail');
-                        });
-                    
-                    
+
+                        $http.get('/delete_ajax.php?' + 'name=' + escape(fileNameToDelete))
+                            .success(function () {
+                                console.log('delete success');
+                            }).error(function () {
+                                console.log('delete fail');
+                            });
+
+
                         $scope.all.splice(content.id, 1);
-                        
+
                     });
- 
+
 
                     /* $http.post('/delete_ajax.php', data,
                      {
