@@ -5,8 +5,6 @@
         $httpProvider.defaults.useXDomain = true;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-        $httpProvider.defaults.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS';
-        $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
         RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
         RestangularProvider.setDefaultRequestParams({
