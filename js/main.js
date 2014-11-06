@@ -602,7 +602,7 @@
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
                     copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-                    copyObj.put().then(function (results) {
+                    copyObj.post().then(function (results) {
                         $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
 
                     });
@@ -749,7 +749,7 @@
                         copyObj.tags = selectedImage.tags;
                         copyObj.section = selectedImage.section;
                         copyObj.url = selectedImage.url;
-                        copyObj.put();
+                        copyObj.post();
                         $scope.all[id] = selectedImage;
 
                     });
@@ -843,7 +843,7 @@
                 } else {
                     copyObj.favourites.push(loggedUser.username);
                 }
-                copyObj.put();
+                copyObj.post();
                 picture.favourites = copyObj.favourites;
             });
         }
@@ -855,7 +855,7 @@
                 var loggedUser = JSON.parse($scope.loggedUser);
                 copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
 
-                copyObj.put();
+                copyObj.post();
                 picture.favourites = copyObj.favourites;
             });
         }
