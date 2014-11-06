@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415301905419" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415302062132" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415300831562" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414834140476" ignored="false" />
@@ -33,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="19" selection-start="3052" selection-end="3052" vertical-scroll-proportion="-9.375">
+            <state line="20" column="72" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-6.0">
               <folding />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="49" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1910828">
+            <state line="11" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.2866242">
               <folding />
             </state>
           </provider>
@@ -150,10 +150,10 @@
         <option value="$PROJECT_DIR$/Sections/welcome.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/delete_ajax.php" />
         <option value="$PROJECT_DIR$/SchellLeser/index.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -1202,7 +1202,11 @@
       <created>1415301910924</created>
       <updated>1415301910924</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="playing with headers">
+      <created>1415302066919</created>
+      <updated>1415302066920</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1434,14 +1438,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="19" selection-start="3052" selection-end="3052" vertical-scroll-proportion="-9.375">
+        <state line="20" column="72" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-6.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="212" selection-end="212" vertical-scroll-proportion="0.1910828">
+        <state line="11" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.2866242">
           <folding />
         </state>
       </provider>
