@@ -7,9 +7,9 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415298499289" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415298766761" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415298613908" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415300831562" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414834140476" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="98" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.34582132">
+            <state line="77" column="19" selection-start="3052" selection-end="3052" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="727" column="80" selection-start="27680" selection-end="27680" vertical-scroll-proportion="-5.8461537">
+            <state line="753" column="35" selection-start="28887" selection-end="28887" vertical-scroll-proportion="0.14012739">
               <folding />
             </state>
           </provider>
@@ -1174,7 +1174,11 @@
       <created>1414834203858</created>
       <updated>1414834203858</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="replace put with post">
+      <created>1415298772273</created>
+      <updated>1415298772273</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1268,7 +1272,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tips page" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace put with post" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1282,7 +1286,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fix search for favourite screen" />
     <MESSAGE value="remove added" />
     <MESSAGE value="added tagging functionality" />
     <MESSAGE value="remove leading and trailing blanks on tags" />
@@ -1307,6 +1310,7 @@
     <MESSAGE value="getting more shit done" />
     <MESSAGE value="fix save. add url as field to be saved" />
     <MESSAGE value="update tips page" />
+    <MESSAGE value="replace put with post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1404,16 +1408,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="727" column="80" selection-start="27680" selection-end="27680" vertical-scroll-proportion="-5.8461537">
+        <state line="77" column="19" selection-start="3052" selection-end="3052" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="98" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.34582132">
+        <state line="753" column="35" selection-start="28887" selection-end="28887" vertical-scroll-proportion="0.14012739">
           <folding />
         </state>
       </provider>

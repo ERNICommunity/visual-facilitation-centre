@@ -5,6 +5,8 @@
         $httpProvider.defaults.useXDomain = true;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
+        $httpProvider.defaults.headers.common['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS';
+
         RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
         RestangularProvider.setDefaultRequestParams({
             apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
@@ -602,7 +604,7 @@
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
                     copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-                    copyObj.post().then(function (results) {
+                    copyObj.put().then(function (results) {
                         $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
 
                     });
@@ -749,7 +751,7 @@
                         copyObj.tags = selectedImage.tags;
                         copyObj.section = selectedImage.section;
                         copyObj.url = selectedImage.url;
-                        copyObj.post();
+                        copyObj.put();
                         $scope.all[id] = selectedImage;
 
                     });
