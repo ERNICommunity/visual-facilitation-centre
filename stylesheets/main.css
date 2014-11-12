@@ -129,6 +129,7 @@ nav.search-header {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 700px;
 
 }
 
@@ -198,6 +199,7 @@ input.search-field {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 700px;
 }
 
 .tag {

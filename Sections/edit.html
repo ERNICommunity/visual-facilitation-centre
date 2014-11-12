@@ -76,7 +76,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="image in all | filter:searchFilter">
+            <tr ng-repeat="image in all | orderBy:'name':false | filter:searchFilter">
                 <td>{{image.name}}</td>
                 <td>{{image.section}}</td>
                 <td>{{image.tags}}</td>
