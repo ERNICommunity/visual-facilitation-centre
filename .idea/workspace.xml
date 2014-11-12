@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415828829032" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415828911613" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415300831562" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="180" selection-end="180" vertical-scroll-proportion="0.114854515">
+            <state line="4" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.091883615">
               <folding />
             </state>
           </provider>
@@ -1254,7 +1254,11 @@
       <created>1415828834665</created>
       <updated>1415828834665</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="make text area wider for tips">
+      <created>1415828916236</created>
+      <updated>1415828916236</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1487,7 +1491,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="180" selection-end="180" vertical-scroll-proportion="0.114854515">
+        <state line="4" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.091883615">
           <folding />
         </state>
       </provider>
