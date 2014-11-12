@@ -8,6 +8,7 @@
     min-height: 700px;
     text-align: center;
     padding-top: 10px;
+    vertical-align: top;
 }
 
 .polaroid a.images {
