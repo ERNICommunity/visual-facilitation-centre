@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415827397184" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415827828515" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415300831562" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="310" column="35" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.9324117">
+            <state line="309" column="96" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.9093702">
               <folding />
             </state>
           </provider>
@@ -1236,7 +1236,11 @@
       <created>1415827402935</created>
       <updated>1415827402935</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="make text area wider for tips">
+      <created>1415827832731</created>
+      <updated>1415827832731</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1330,7 +1334,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more spacing on tips page" />
+    <option name="LAST_COMMIT_MESSAGE" value="make text area wider for tips" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1344,7 +1348,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="validate name is not blank when a user edits the page" />
     <MESSAGE value="tidy up upload page" />
     <MESSAGE value="add subtle hover over effect to upload button." />
     <MESSAGE value="clear search filer on route change" />
@@ -1369,6 +1372,7 @@
     <MESSAGE value="order Edit page by name" />
     <MESSAGE value="adjust height of polaroids" />
     <MESSAGE value="add more spacing on tips page" />
+    <MESSAGE value="make text area wider for tips" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1469,7 +1473,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="310" column="35" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.9324117">
+        <state line="309" column="96" selection-start="4048" selection-end="4048" vertical-scroll-proportion="0.9093702">
           <folding />
         </state>
       </provider>
