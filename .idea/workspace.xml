@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/pictures.css" afterPath="$PROJECT_DIR$/stylesheets/pictures.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/main.css" afterPath="$PROJECT_DIR$/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415818849263" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415826898041" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415300831562" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="16" selection-start="1737" selection-end="1737" vertical-scroll-proportion="2.1538463">
+            <state line="292" column="14" selection-start="3827" selection-end="3827" vertical-scroll-proportion="0.51766515">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pictures.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pictures.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.5096012">
+            <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,9 +144,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
-        <option value="$PROJECT_DIR$/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/Sections/edit.html" />
         <option value="$PROJECT_DIR$/stylesheets/pictures.css" />
+        <option value="$PROJECT_DIR$/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -1228,7 +1228,11 @@
       <created>1415818853832</created>
       <updated>1415818853832</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="adjust height of polaroids">
+      <created>1415826902653</created>
+      <updated>1415826902653</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1322,7 +1326,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="order Edit page by name" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust height of polaroids" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1336,7 +1340,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="fix search" />
     <MESSAGE value="more tweaks to search and also edit screen" />
     <MESSAGE value="validate name is not blank when a user edits the page" />
     <MESSAGE value="tidy up upload page" />
@@ -1361,6 +1364,7 @@
     <MESSAGE value="implement new images for home page." />
     <MESSAGE value="style tips page" />
     <MESSAGE value="order Edit page by name" />
+    <MESSAGE value="adjust height of polaroids" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1438,13 +1442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="16" selection-start="1737" selection-end="1737" vertical-scroll-proportion="2.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="83" selection-start="1272" selection-end="1298" vertical-scroll-proportion="-22.5">
@@ -1461,7 +1458,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/pictures.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.5096012">
+        <state line="39" column="14" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="14" selection-start="3827" selection-end="3827" vertical-scroll-proportion="0.51766515">
           <folding />
         </state>
       </provider>
