@@ -37,7 +37,7 @@
 .polaroid {
     content: attr(title);
     width: 150px;
-    height: 220px;
+    height: 230px;
     display: inline-block;
     margin: 5px;
     padding: 20px;
