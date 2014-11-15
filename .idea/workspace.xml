@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416029268797" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416029970952" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416029239305" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -53,11 +53,10 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="18" selection-start="2401" selection-end="2401" vertical-scroll-proportion="1.5517242">
+            <state line="617" column="0" selection-start="22970" selection-end="25731" vertical-scroll-proportion="0.9529781">
               <folding>
-                <element signature="e#23616#28040#0" expanded="false" />
-                <element signature="e#28090#28191#0" expanded="false" />
-                <element signature="e#28285#30235#0" expanded="false" />
+                <element signature="e#31110#31211#0" expanded="false" />
+                <element signature="e#31305#33255#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -234,6 +233,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Sections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1282,7 +1295,11 @@
       <created>1416029273982</created>
       <updated>1416029273982</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="remove redundant js">
+      <created>1416029976415</created>
+      <updated>1416029976415</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1376,7 +1393,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix add to favourites pop up bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="remove redundant js" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1390,7 +1407,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="add subtle hover over effect to upload button." />
     <MESSAGE value="clear search filer on route change" />
     <MESSAGE value="add modal diagram" />
     <MESSAGE value="add modal diagram to favourites" />
@@ -1415,6 +1431,7 @@
     <MESSAGE value="add more spacing on tips page" />
     <MESSAGE value="make text area wider for tips" />
     <MESSAGE value="fix add to favourites pop up bug." />
+    <MESSAGE value="remove redundant js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1515,11 +1532,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="18" selection-start="2401" selection-end="2401" vertical-scroll-proportion="1.5517242">
+        <state line="617" column="0" selection-start="22970" selection-end="25731" vertical-scroll-proportion="0.9529781">
           <folding>
-            <element signature="e#23616#28040#0" expanded="false" />
-            <element signature="e#28090#28191#0" expanded="false" />
-            <element signature="e#28285#30235#0" expanded="false" />
+            <element signature="e#31110#31211#0" expanded="false" />
+            <element signature="e#31305#33255#0" expanded="false" />
           </folding>
         </state>
       </provider>
