@@ -507,7 +507,13 @@
             }
 
             if ($routeParams.tag == "all") {
-                $scope.contacts = db.all('content').getList();
+
+                db.all('content').getList().then(function (tasks) {
+                    tasks.splice(0, 1);
+
+                    $scope.contacts = tasks;
+
+                });
 
             } else if ($routeParams.tag == "favourites") {
                 var loggedUser = JSON.parse($scope.loggedUser);
