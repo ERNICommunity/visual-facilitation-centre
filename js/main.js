@@ -42,8 +42,6 @@
 
 
     app.directive('tager', function () {
-
-
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
@@ -68,14 +66,11 @@
                     $(element).importTags(scope.selectedImage.tags.join());
                 }
                 ;
-
             }
         };
     });
 
     app.directive('tagerupload', function () {
-
-
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
@@ -255,11 +250,6 @@
             }).otherwise(function (response) {
                     $scope.message = 'An error occured. Please fix data and try again';
                 });
-
-//                    }).error(
-//                    function (data, status, headers, config) {
-//                        $scope.message = 'An error occured uploading image. Please fix data and try again';
-//                    });
 
 
             console.info('onCompleteItem', fileItem, response, status, headers);
@@ -611,66 +601,6 @@
                 });
             }
 
-
-        }]);
-
-
-    app.controller('UploadController', ['$scope', 'Restangular', '$routeParams', '$http',
-        function addContent($scope, db, $routeParams, $http) {
-
-            // create a blank object to hold our form information
-            // $scope will allow this to pass between controller and view
-            $scope.formData = {section: "basics"};
-
-            $scope.setFiles = function (element) {
-                $scope.files = element.files;
-                $scope.$apply(
-                )
-            }
-
-            $scope.generateId = function () {
-                return  Math.random().toString(36).substr(2, 9) + '_';
-            };
-
-            $scope.processForm = function () {
-
-                var processedFilename = $scope.generateId() + $scope.files[0].name;
-                $scope.formData.url = '/uploads/' + processedFilename;
-                var now = new Date();
-
-                $scope.formData.dateAdded = now;
-                $scope.formData.favourites = [];
-                var loggedUser = JSON.parse($scope.loggedUser);
-                $scope.formData.owner = loggedUser.username;
-
-                var formData = new FormData();
-                formData.append('image[0]', $scope.files[0], processedFilename);
-                Notifier.success('Uploading content', 3000);
-                if ($scope.files && $scope.files.length > 0) {
-                    $http.post('/uploader_ajax.php', formData,
-                        {
-                            headers: { 'Content-Type': undefined },
-                            transformRequest: angular.identity
-                        }).success(
-                        function (data, status, headers, config) {
-                            if (typeof(data) != 'undefined' && typeof(data.details) != 'undefined') {
-                                jQuery('#placeHolder').attr('src', data['details']['content-url'] + data['details']['content-name']);
-                            }
-                            db.all('content').post($scope.formData).then(function (response) {
-                                $scope.message = 'Your form has been sent!';
-                                Notifier.success('Your content has been uploaded', 3000);
-                                window.location.href = '/';
-
-                            }).otherwise(function (response) {
-                                    $scope.message = 'An error occured. Please fix data and try again';
-                                });
-
-                        }).error(
-                        function (data, status, headers, config) {
-                            $scope.message = 'An error occured uploading image. Please fix data and try again';
-                        });
-                }
-            };
 
         }]);
 
