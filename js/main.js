@@ -843,7 +843,7 @@
                 } else {
                     copyObj.favourites.push(loggedUser.username);
                 }
-                copyObj.post();
+                copyObj.put();
                 picture.favourites = copyObj.favourites;
             });
         }
@@ -855,7 +855,7 @@
                 var loggedUser = JSON.parse($scope.loggedUser);
                 copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
 
-                copyObj.post();
+                copyObj.put();
                 picture.favourites = copyObj.favourites;
             });
         }
