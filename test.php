@@ -1,8 +1,7 @@
 <?php
 
-      echo '<p>Hello World</p>'
-$output = shell_exec('ls');
+               <p>Hello World</p>
 
 
-          echo $output ;
+
 ?>
