@@ -1,27 +1,25 @@
 <?php
 
-function resize(input){
-	$thumb = new Imagick(input);
-	$thumb->resizeImage(400,400,Imagick::FILTER_LANCZOS,1);
-	$thumb->writeImage(input);
-	$thumb->clear();
-	$thumb->destroy();
-}
-
-
 
 if ( !empty( $_FILES ) ) {
 
 
+error_log("your message");
+
+
 $name = $_FILES["file"]["name"];
-$ext = end((explode(".", $name))); # extra () to prevent notice
-
-
-
 
     $tempPath = $_FILES[ 'file' ][ 'tmp_name' ];
 
+
+    error_log($tempPath);
+
     $uploadPath = dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . $_FILES[ 'file' ][ 'name' ];
+
+
+
+    error_log('uploads : ' . $uploadPath);
+
 
     move_uploaded_file( $tempPath, $uploadPath );
 
@@ -30,6 +28,8 @@ $ext = end((explode(".", $name))); # extra () to prevent notice
     $json = json_encode( $answer );
 
     echo $json;
+
+    error_log("END");
 
 } else {
 
