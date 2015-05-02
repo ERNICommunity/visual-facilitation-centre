@@ -14,7 +14,7 @@ if ( !empty( $_FILES ) ) {
     move_uploaded_file( $tempPath, $uploadPath );
 
 
-    $cmd = 'convert ' . $uploadPath . $ext . ' -resize 400 -quality 90 ' . $uploadPath . $ext;
+    $cmd = 'convert ' . $uploadPath . '.jpg' . ' -resize 400 -quality 90 ' . $uploadPath . '.jpg';
 
 
     $output = shell_exec($cmd);
