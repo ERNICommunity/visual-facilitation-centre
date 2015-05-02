@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430566151950" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430566337997" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="97" selection-start="416" selection-end="416" vertical-scroll-proportion="0.62663186">
+            <state line="20" column="74" selection-start="430" selection-end="430" vertical-scroll-proportion="0.76501304">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="439" column="34" selection-start="16436" selection-end="16437" vertical-scroll-proportion="-15.346154">
+            <state line="185" column="26" selection-start="6532" selection-end="6540" vertical-scroll-proportion="26.192308">
               <folding>
                 <element signature="e#19319#19607#0" expanded="false" />
                 <element signature="e#19485#19591#0" expanded="false" />
@@ -210,6 +210,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1372,7 +1386,11 @@
       <created>1430566154279</created>
       <updated>1430566154279</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="remove legacy code">
+      <created>1430566340936</created>
+      <updated>1430566340936</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1587,22 +1605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="439" column="34" selection-start="16436" selection-end="16437" vertical-scroll-proportion="-15.346154">
-          <folding>
-            <element signature="e#19319#19607#0" expanded="false" />
-            <element signature="e#19485#19591#0" expanded="false" />
-            <element signature="e#20002#23077#0" expanded="false" />
-            <element signature="e#20754#21601#0" expanded="false" />
-            <element signature="e#21376#21584#0" expanded="false" />
-            <element signature="e#21450#21564#0" expanded="false" />
-            <element signature="e#31223#31324#0" expanded="false" />
-            <element signature="e#31418#33368#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="180" selection-end="183" vertical-scroll-proportion="0.0">
@@ -1617,9 +1619,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="26" selection-start="6532" selection-end="6540" vertical-scroll-proportion="26.192308">
+          <folding>
+            <element signature="e#19319#19607#0" expanded="false" />
+            <element signature="e#19485#19591#0" expanded="false" />
+            <element signature="e#20002#23077#0" expanded="false" />
+            <element signature="e#20754#21601#0" expanded="false" />
+            <element signature="e#21376#21584#0" expanded="false" />
+            <element signature="e#21450#21564#0" expanded="false" />
+            <element signature="e#31223#31324#0" expanded="false" />
+            <element signature="e#31418#33368#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="97" selection-start="416" selection-end="416" vertical-scroll-proportion="0.62663186">
+        <state line="20" column="74" selection-start="430" selection-end="430" vertical-scroll-proportion="0.76501304">
           <folding />
         </state>
       </provider>

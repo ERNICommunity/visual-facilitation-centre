@@ -9,12 +9,12 @@ if ( !empty( $_FILES ) ) {
     $uploadPath = dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . $_FILES[ 'file' ][ 'name' ];
 
 
+    $cmd = 'convert ' . $tempPath . ' -resize 400 -quality 90 ' . $tempPath;
 
 
     move_uploaded_file( $tempPath, $uploadPath );
 
 
-    $cmd = 'convert ' . $uploadPath . '.jpg' . ' -resize 400 -quality 90 ' . $uploadPath . '.jpg';
 
 
     $output = shell_exec($cmd);
