@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430566337997" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430567157571" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -16,7 +16,7 @@
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035222120" ignored="false" />
     <file path="/.gitignore" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430278492741" ignored="false" />
     <file path="/test.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561299145" ignored="false" />
-    <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430566312908" ignored="false" />
+    <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430567531662" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="74" selection-start="430" selection-end="430" vertical-scroll-proportion="0.76501304">
+            <state line="16" column="54" selection-start="365" selection-end="365" vertical-scroll-proportion="0.62663186">
               <folding />
             </state>
           </provider>
@@ -1390,7 +1390,11 @@
       <created>1430566340936</created>
       <updated>1430566340936</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="remove legacy code">
+      <created>1430567160116</created>
+      <updated>1430567160116</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1637,7 +1641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="74" selection-start="430" selection-end="430" vertical-scroll-proportion="0.76501304">
+        <state line="16" column="54" selection-start="365" selection-end="365" vertical-scroll-proportion="0.62663186">
           <folding />
         </state>
       </provider>
