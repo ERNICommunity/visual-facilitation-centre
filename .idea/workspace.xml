@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561705077" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430562247589" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -39,7 +38,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="62" selection-start="3940" selection-end="3940" vertical-scroll-proportion="-1.875">
+            <state line="107" column="62" selection-start="3940" selection-end="3940" vertical-scroll-proportion="2.25">
               <folding />
             </state>
           </provider>
@@ -111,7 +110,7 @@
       <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="34" selection-start="109" selection-end="109" vertical-scroll-proportion="0.23498695">
+            <state line="6" column="36" selection-start="112" selection-end="112" vertical-scroll-proportion="0.23498695">
               <folding />
             </state>
           </provider>
@@ -1320,7 +1319,11 @@
       <created>1430561709776</created>
       <updated>1430561709776</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="shell command test">
+      <created>1430562251846</created>
+      <updated>1430562251846</updated>
+    </task>
+    <option name="localTasksCounter" value="253" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1414,7 +1417,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="shell command test" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1428,7 +1431,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="tweak layout of the dialog" />
     <MESSAGE value="fixed some bugs with favourites.&#10;Favourite Dialog will now remove favourites when user unfavourites something from the pop up dialog." />
     <MESSAGE value="tweaked the upload page a bit" />
     <MESSAGE value="maybe the dialog a bit smaller" />
@@ -1453,6 +1455,7 @@
     <MESSAGE value="remove the tips image from the returned list." />
     <MESSAGE value="playing around with resizing pictures" />
     <MESSAGE value="test" />
+    <MESSAGE value="shell command test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1546,7 +1549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="62" selection-start="3940" selection-end="3940" vertical-scroll-proportion="-1.875">
+        <state line="107" column="62" selection-start="3940" selection-end="3940" vertical-scroll-proportion="2.25">
           <folding />
         </state>
       </provider>
@@ -1567,7 +1570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="109" selection-end="109" vertical-scroll-proportion="0.23498695">
+        <state line="6" column="36" selection-start="112" selection-end="112" vertical-scroll-proportion="0.23498695">
           <folding />
         </state>
       </provider>
