@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430565364636" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430565582207" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -16,7 +16,7 @@
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035222120" ignored="false" />
     <file path="/.gitignore" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430278492741" ignored="false" />
     <file path="/test.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561299145" ignored="false" />
-    <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430565315230" ignored="false" />
+    <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430566143316" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="381" selection-end="381" vertical-scroll-proportion="0.7049608">
+            <state line="16" column="93" selection-start="412" selection-end="412" vertical-scroll-proportion="0.62663186">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="uploader_ajax.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="69" selection-start="1868" selection-end="1910" vertical-scroll-proportion="-8.653846">
+            <state line="57" column="69" selection-start="1868" selection-end="1910" vertical-scroll-proportion="-28.73077">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="18" selection-start="6466" selection-end="6472" vertical-scroll-proportion="4.269231">
+            <state line="439" column="34" selection-start="16436" selection-end="16437" vertical-scroll-proportion="-15.346154">
               <folding>
                 <element signature="e#19319#19607#0" expanded="false" />
                 <element signature="e#19485#19591#0" expanded="false" />
@@ -210,20 +210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1378,7 +1364,11 @@
       <created>1430565366772</created>
       <updated>1430565366772</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="remove legacy code">
+      <created>1430565584763</created>
+      <updated>1430565584763</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1586,9 +1576,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="40" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="18" selection-start="6466" selection-end="6472" vertical-scroll-proportion="4.269231">
+        <state line="439" column="34" selection-start="16436" selection-end="16437" vertical-scroll-proportion="-15.346154">
           <folding>
             <element signature="e#19319#19607#0" expanded="false" />
             <element signature="e#19485#19591#0" expanded="false" />
@@ -1611,21 +1608,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="69" selection-start="1868" selection-end="1910" vertical-scroll-proportion="-8.653846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="49" vertical-scroll-proportion="0.0">
+        <state line="57" column="69" selection-start="1868" selection-end="1910" vertical-scroll-proportion="-28.73077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="381" selection-end="381" vertical-scroll-proportion="0.7049608">
+        <state line="16" column="93" selection-start="412" selection-end="412" vertical-scroll-proportion="0.62663186">
           <folding />
         </state>
       </provider>
