@@ -21,7 +21,7 @@ if ( !empty( $_FILES ) ) {
     move_uploaded_file( $tempPath, $uploadPath );
 
 
-    $output = shell_exec("convert {$uploadPath} -resize 400 -quality 90 {$uploadPath}");
+    $output = shell_exec("convert uploads/". $_FILES[ 'file' ][ 'name' ] . "-resize 400 -quality 90 uploads/". $_FILES[ 'file' ][ 'name' ]);
 
     $answer = array( 'answer' => 'File transfer completed' );
     $json = json_encode( $answer );

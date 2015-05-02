@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430563973570" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430564092031" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -16,6 +16,7 @@
     <file path="/content.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035222120" ignored="false" />
     <file path="/.gitignore" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430278492741" ignored="false" />
     <file path="/test.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561299145" ignored="false" />
+    <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430564421934" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="84" selection-start="594" selection-end="594" vertical-scroll-proportion="0.6083551">
+            <state line="24" column="138" selection-start="651" selection-end="651" vertical-scroll-proportion="0.5691906">
               <folding />
             </state>
           </provider>
@@ -1361,7 +1362,11 @@
       <created>1430563975978</created>
       <updated>1430563975978</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="implementing file resizing.">
+      <created>1430564094529</created>
+      <updated>1430564094529</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1608,7 +1613,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="84" selection-start="594" selection-end="594" vertical-scroll-proportion="0.6083551">
+        <state line="24" column="138" selection-start="651" selection-end="651" vertical-scroll-proportion="0.5691906">
           <folding />
         </state>
       </provider>
