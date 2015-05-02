@@ -12,7 +12,7 @@ if ( !empty( $_FILES ) ) {
     move_uploaded_file( $tempPath, $uploadPath );
 
 
-    $cmd = 'convert uploads/' . $_FILES[ 'file' ][ 'name' ] . '-resize 400 -quality 90 uploads/' . $_FILES[ 'file' ][ 'name' ];
+    $cmd = 'convert ' . $uploadPath . ' -resize 400 -quality 90 ' . $uploadPath;
 
 
     $output = shell_exec($cmd);
