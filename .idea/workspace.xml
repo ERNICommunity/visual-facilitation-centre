@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561455728" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561505791" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -118,7 +119,7 @@
       <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="94" selection-end="94" vertical-scroll-proportion="0.27415144">
+            <state line="6" column="24" selection-start="93" selection-end="93" vertical-scroll-proportion="0.23498695">
               <folding />
             </state>
           </provider>
@@ -1311,7 +1312,11 @@
       <created>1430561458537</created>
       <updated>1430561458537</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="playing around with resizing pictures">
+      <created>1430561508216</created>
+      <updated>1430561508216</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1565,7 +1570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="94" selection-end="94" vertical-scroll-proportion="0.27415144">
+        <state line="6" column="24" selection-start="93" selection-end="93" vertical-scroll-proportion="0.23498695">
           <folding />
         </state>
       </provider>
