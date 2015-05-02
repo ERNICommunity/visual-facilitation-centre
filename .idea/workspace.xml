@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430563233759" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430563973570" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="82" selection-start="539" selection-end="539" vertical-scroll-proportion="0.25587466">
+            <state line="23" column="84" selection-start="594" selection-end="594" vertical-scroll-proportion="0.6083551">
               <folding />
             </state>
           </provider>
@@ -1357,7 +1357,11 @@
       <created>1430563237652</created>
       <updated>1430563237652</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="implementing file resizing.">
+      <created>1430563975978</created>
+      <updated>1430563975978</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1604,7 +1608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="82" selection-start="539" selection-end="539" vertical-scroll-proportion="0.25587466">
+        <state line="23" column="84" selection-start="594" selection-end="594" vertical-scroll-proportion="0.6083551">
           <folding />
         </state>
       </provider>
