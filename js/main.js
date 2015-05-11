@@ -3,11 +3,7 @@
     angular.module('RestangularApp').config(function (RestangularProvider, $httpProvider) {
 
         $httpProvider.defaults.useXDomain = true;
-
-        RestangularProvider.setDefaultHeaders({
-            'Content-Type': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest'
-        });
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 
         RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
