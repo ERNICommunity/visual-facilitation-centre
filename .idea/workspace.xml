@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382214170" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382346026" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382323898" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -17,7 +17,7 @@
     <file path="/.gitignore" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430278492741" ignored="false" />
     <file path="/test.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561299145" ignored="false" />
     <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430581672640" ignored="false" />
-    <file path="/.htaccess" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431379540158" ignored="false" />
+    <file path="/.htaccess" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382582474" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="32" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="3" column="10" selection-start="135" selection-end="135" vertical-scroll-proportion="0.067771085">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6304">
+            <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="-15.153846">
               <folding />
             </state>
           </provider>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/upload.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -1512,7 +1512,11 @@
       <created>1431382225261</created>
       <updated>1431382225261</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="add access methods">
+      <created>1431382352671</created>
+      <updated>1431382352671</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1733,13 +1737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="-7.5">
@@ -1749,7 +1746,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6304">
+        <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="-15.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="10" selection-start="135" selection-end="135" vertical-scroll-proportion="0.067771085">
           <folding />
         </state>
       </provider>
