@@ -7,9 +7,9 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431380595320" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382214170" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1416035378896" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382323898" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415817031743" ignored="false" />
     <file path="/edit.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415818830073" ignored="false" />
@@ -37,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.28125">
+            <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="86" selection-start="3234" selection-end="3234" vertical-scroll-proportion="-5.6923075">
+            <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6304">
               <folding />
             </state>
           </provider>
@@ -1508,7 +1508,11 @@
       <created>1431380597480</created>
       <updated>1431380597480</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="add access methods">
+      <created>1431382225261</created>
+      <updated>1431382225261</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1736,16 +1740,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="86" selection-start="3234" selection-end="3234" vertical-scroll-proportion="-5.6923075">
+        <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.28125">
+        <state line="113" column="43" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6304">
           <folding />
         </state>
       </provider>
