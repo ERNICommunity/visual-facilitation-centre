@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blank.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431530661668" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431723831177" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382323898" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -49,16 +50,25 @@
       <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="597" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="71" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="6" column="84" selection-start="372" selection-end="372" vertical-scroll-proportion="0.11042945">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blank.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blank.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,7 +86,7 @@
       <file leaf-file-name="uploader_ajax.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="139" selection-end="318" vertical-scroll-proportion="0.0">
+            <state line="20" column="35" selection-start="417" selection-end="439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="819" selection-end="819" vertical-scroll-proportion="0.33027524">
+            <state line="36" column="84" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,15 +123,6 @@
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="106" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Sections/welcome.html" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
         <option value="$PROJECT_DIR$/delete_ajax.php" />
         <option value="$PROJECT_DIR$/SchellLeser/index.html" />
@@ -161,6 +161,7 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/blank.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
@@ -1544,7 +1545,11 @@
       <created>1431384264517</created>
       <updated>1431384264517</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="add access methods">
+      <created>1431723837779</created>
+      <updated>1431723837780</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1571,6 +1576,7 @@
     <frame x="0" y="23" width="1440" height="836" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.4996421" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27876106" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1585,7 +1591,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.4996421" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1684,13 +1689,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/tip5.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1737,13 +1735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="139" selection-end="318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="32" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
@@ -1758,13 +1749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="118" column="116" selection-start="4331" selection-end="4331" vertical-scroll-proportion="0.0">
@@ -1772,16 +1756,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="71" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="36" column="84" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="819" selection-end="819" vertical-scroll-proportion="0.33027524">
+        <state line="0" column="0" selection-start="0" selection-end="597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader_ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="35" selection-start="417" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="84" selection-start="372" selection-end="372" vertical-scroll-proportion="0.11042945">
           <folding />
         </state>
       </provider>
