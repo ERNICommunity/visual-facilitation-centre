@@ -2,4 +2,7 @@
 
 //multiple file upload
 
+header('countryname: USA');
+
+
 ?>
