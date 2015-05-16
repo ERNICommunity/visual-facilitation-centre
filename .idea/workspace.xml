@@ -7,7 +7,7 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431727773542" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431753325485" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431382323898" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
@@ -58,7 +58,7 @@
       <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="69" selection-start="70" selection-end="70" vertical-scroll-proportion="0.018404908">
+            <state line="5" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.09202454">
               <folding />
             </state>
           </provider>
@@ -1568,7 +1568,11 @@
       <created>1431727782651</created>
       <updated>1431727782651</updated>
     </task>
-    <option name="localTasksCounter" value="297" />
+    <task id="LOCAL-00297" summary="add access methods">
+      <created>1431753328711</created>
+      <updated>1431753328711</updated>
+    </task>
+    <option name="localTasksCounter" value="298" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1807,7 +1811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="69" selection-start="70" selection-end="70" vertical-scroll-proportion="0.018404908">
+        <state line="5" column="0" selection-start="366" selection-end="366" vertical-scroll-proportion="0.09202454">
           <folding />
         </state>
       </provider>
