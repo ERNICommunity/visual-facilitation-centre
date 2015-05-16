@@ -6,10 +6,12 @@
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 
-        RestangularProvider.setBaseUrl('https://api.mongolab.com/api/1/databases/visualfacilitation/collections');
+        RestangularProvider.setBaseUrl('https://visualfacilitation.erni.ch/api/1/databases/visualfacilitation/collections');
         RestangularProvider.setDefaultRequestParams({
             apiKey: 'mFxXtZ1opPpsET7fdrmZ7LNjI3pd2OhB'
         });
+
+
         RestangularProvider.setRestangularFields({
             id: '_id.$oid'
         });
