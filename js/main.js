@@ -501,7 +501,7 @@
                         data: JSON.stringify(copyObj)
                     })
                         .success(function (data) {
-                            //alert(data);
+                            //(data);
                             picture.favourites = copyObj.favourites;
                         })
                         .error(function (data) {
@@ -566,8 +566,8 @@
             }
         }]);
 
-    app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams', '$modal',
-        function IndexCtrl2($scope, db, $routeParams, $modal) {
+    app.controller('FavouritesController', ['$scope', 'Restangular', '$routeParams', '$modal', '$http',
+        function IndexCtrl2($scope, db, $routeParams, $modal, $http) {
             var all = db.all('content');
 
             var loggedUser = JSON.parse($scope.loggedUser);
@@ -644,10 +644,21 @@
                     var copyObj = db.copy(obj)
                     var loggedUser = JSON.parse($scope.loggedUser);
                     copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
-                    copyObj.put().then(function (results) {
-                        $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
 
-                    });
+
+                    $http({
+                        method: 'POST',
+                        url: 'http://visualfacilitation.erni.ch/node/save',
+                        headers: {'Content-Type': 'application/json'},
+                        data: JSON.stringify(copyObj)
+                    })
+                        .success(function (data) {
+                            //alert(data);
+                            $scope.contacts.splice($scope.contacts.indexOf(picture), 1);
+                        })
+                        .error(function (data) {
+                            alert(data.message);
+                        });
 
 
                 });
@@ -791,8 +802,22 @@
                         copyObj.tags = selectedImage.tags;
                         copyObj.section = selectedImage.section;
                         copyObj.url = selectedImage.url;
-                        copyObj.put();
-                        $scope.all[id] = selectedImage;
+
+
+                        $http({
+                            method: 'POST',
+                            url: 'http://visualfacilitation.erni.ch/node/save',
+                            headers: {'Content-Type': 'application/json'},
+                            data: JSON.stringify(copyObj)
+                        })
+                            .success(function (data) {
+                                //alert(data);
+                                $scope.all[id] = selectedImage;
+                            })
+                            .error(function (data) {
+                                alert(data.message);
+                            });
+
 
                     });
                 }, function () {
@@ -885,8 +910,20 @@
                 } else {
                     copyObj.favourites.push(loggedUser.username);
                 }
-                copyObj.put();
-                picture.favourites = copyObj.favourites;
+                $http({
+                    method: 'POST',
+                    url: 'http://visualfacilitation.erni.ch/node/save',
+                    headers: {'Content-Type': 'application/json'},
+                    data: JSON.stringify(copyObj)
+                })
+                    .success(function (data) {
+                        //(data);
+                        picture.favourites = copyObj.favourites;
+                    })
+                    .error(function (data) {
+                        alert(data.message);
+                    });
+
             });
         }
 
@@ -897,8 +934,20 @@
                 var loggedUser = JSON.parse($scope.loggedUser);
                 copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
 
-                copyObj.put();
-                picture.favourites = copyObj.favourites;
+                $http({
+                    method: 'POST',
+                    url: 'http://visualfacilitation.erni.ch/node/save',
+                    headers: {'Content-Type': 'application/json'},
+                    data: JSON.stringify(copyObj)
+                })
+                    .success(function (data) {
+                        //(data);
+                        picture.favourites = copyObj.favourites;
+                    })
+                    .error(function (data) {
+                        alert(data.message);
+                    });
+
             });
         }
 
