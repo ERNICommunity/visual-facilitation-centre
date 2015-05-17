@@ -846,7 +846,7 @@
 
                     $http({
                         method: 'POST',
-                        url: 'http:visualfacilitation.erni.ch/node/deleteRecord',
+                        url: 'http://visualfacilitation.erni.ch/node/deleteRecord',
                         headers: {'Content-Type': 'application/json'},
                         data: JSON.stringify(content)
                     })
