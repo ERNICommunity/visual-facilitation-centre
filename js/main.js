@@ -404,8 +404,8 @@
             };
         }]);
 
-    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog', '$modal',
-        function IndexCtrl($scope, db, $routeParams, ngDialog, $modal) {
+    app.controller('DisplayController', ['$scope', 'Restangular', '$routeParams', 'ngDialog', '$modal', '$http',
+        function IndexCtrl($scope, db, $routeParams, ngDialog, $modal, $http) {
 
             Notifier.info('Loading content.');
             $scope.title = $routeParams.tag;
@@ -451,7 +451,8 @@
                 $scope.exists = true;
                 Notifier.success('Adding to favourites.');
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
+                    var copyObj = db.copy(obj);
+
                     var loggedUser = JSON.parse($scope.loggedUser);
                     if (copyObj.favourites.indexOf(loggedUser.username) > -1) {
                         return;
@@ -462,20 +463,52 @@
                     } else {
                         copyObj.favourites.push(loggedUser.username);
                     }
-                    copyObj.put();
+                    //copyObj.put();
                     picture.favourites = copyObj.favourites;
+
+                    $http({
+                        method: 'PUT',
+                        url: 'http://visualfacilitation.erni.ch/node/save',
+                        headers: {'Content-Type': 'application/json'},
+                        data: JSON.stringify(copyObj)
+                    })
+                        .success(function (data) {
+                            //alert(data);
+                            picture.favourites = copyObj.favourites;
+                        })
+                        .error(function (data) {
+                            Global.showMessage(data.message);
+                        });
+
+
                 });
             }
 
             $scope.removeFromFavourites = function (picture) {
                 Notifier.success('Removing from your favourites.');
                 var x = db.one('content', picture._id.$oid).get().then(function (obj) {
-                    var copyObj = db.copy(obj)
+                    var copyObj = db.copy(obj);
                     var loggedUser = JSON.parse($scope.loggedUser);
                     copyObj.favourites.splice(copyObj.favourites.indexOf(loggedUser.username), 1);
 
-                    copyObj.put();
-                    picture.favourites = copyObj.favourites;
+
+                    //copyObj.put();
+
+                    $http({
+                        method: 'PUT',
+                        url: 'http://visualfacilitation.erni.ch/node/save',
+                        headers: {'Content-Type': 'application/json'},
+                        data: JSON.stringify(copyObj)
+                    })
+                        .success(function (data) {
+                            //alert(data);
+                            picture.favourites = copyObj.favourites;
+                        })
+                        .error(function (data) {
+                            Global.showMessage(data.message);
+                        });
+
+
                 });
             }
 
