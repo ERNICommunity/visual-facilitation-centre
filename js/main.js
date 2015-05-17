@@ -731,8 +731,8 @@
 
         var all = db.all('content');
         $scope.all = [];
-
-        all.customGET('', {"q": {"section": $routeParams.tag }}).then(function (data) {
+        var loggedUser = JSON.parse($scope.loggedUser);
+        all.customGET('', {"q": {"owner": loggedUser.username }}).then(function (data) {
             $scope.search = data;
             $scope.contacts = data;
 
