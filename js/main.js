@@ -467,7 +467,7 @@
                     picture.favourites = copyObj.favourites;
 
                     $http({
-                        method: 'PUT',
+                        method: 'POST',
                         url: 'http://visualfacilitation.erni.ch/node/save',
                         headers: {'Content-Type': 'application/json'},
                         data: JSON.stringify(copyObj)
@@ -495,7 +495,7 @@
                     //copyObj.put();
 
                     $http({
-                        method: 'PUT',
+                        method: 'POST',
                         url: 'http://visualfacilitation.erni.ch/node/save',
                         headers: {'Content-Type': 'application/json'},
                         data: JSON.stringify(copyObj)
