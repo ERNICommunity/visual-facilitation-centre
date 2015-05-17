@@ -843,21 +843,36 @@
 
                     console.log(content);
 
-                    db.one('content', content.uid).remove().then(function (data) {
-                        var fileNameToDelete = String(content.url).replace('/uploads/', '');
-                        console.log(fileNameToDelete);
 
-                        $http.get('/delete_ajax.php?' + 'name=' + escape(fileNameToDelete))
-                            .success(function () {
-                                console.log('delete success');
-                            }).error(function () {
-                                console.log('delete fail');
-                            });
+                    $http({
+                        method: 'POST',
+                        url: 'http:visualfacilitation.erni.ch/node/deleteRecord',
+                        headers: {'Content-Type': 'application/json'},
+                        data: JSON.stringify(content)
+                    })
+                        .success(function (data) {
+                            var fileNameToDelete = String(content.url).replace('/uploads/', '');
+                            console.log(fileNameToDelete);
+
+                            $http.get('/delete_ajax.php?' + 'name=' + escape(fileNameToDelete))
+                                .success(function () {
+                                    console.log('delete success');
+                                }).error(function () {
+                                    console.log('delete fail');
+                                });
 
 
-                        $scope.all.splice(content.id, 1);
+                            $scope.all.splice(content.id, 1);
+                        })
+                        .error(function (data) {
+                            alert(data.message);
+                        });
 
-                    });
+
+                    // db.one('content', content.uid).remove().then(function (data) {
+
+
+                    //});
 
 
                     /* $http.post('/delete_ajax.php', data,
