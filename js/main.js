@@ -477,7 +477,7 @@
                             picture.favourites = copyObj.favourites;
                         })
                         .error(function (data) {
-                            Global.showMessage(data.message);
+                            alert(data.message);
                         });
 
 
@@ -505,7 +505,7 @@
                             picture.favourites = copyObj.favourites;
                         })
                         .error(function (data) {
-                            Global.showMessage(data.message);
+                            alert(data.message);
                         });
 
 
