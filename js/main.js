@@ -732,23 +732,54 @@
         var all = db.all('content');
         $scope.all = [];
         var loggedUser = JSON.parse($scope.loggedUser);
-        all.customGET('', {"q": {"owner": loggedUser.username }}).then(function (data) {
-            $scope.search = data;
-            $scope.contacts = data;
 
-            // creating cached image list for modification
-            for (var i = 0; i < data.length; i++) {
-                $scope.all.push({
-                    id: i,
-                    name: data[i].name,
-                    section: data[i].section,
-                    tags: data[i].tags,
-                    owner: data[i].owner,
-                    uid: data[i]._id.$oid,
-                    url: data[i].url
-                });
-            }
-        });
+        if (loggedUser.username != 'daniela') {
+
+
+            all.customGET('', {"q": {"owner": loggedUser.username }}).then(function (data) {
+                $scope.search = data;
+                $scope.contacts = data;
+
+                // creating cached image list for modification
+                for (var i = 0; i < data.length; i++) {
+                    $scope.all.push({
+                        id: i,
+                        name: data[i].name,
+                        section: data[i].section,
+                        tags: data[i].tags,
+                        owner: data[i].owner,
+                        uid: data[i]._id.$oid,
+                        url: data[i].url
+                    });
+                }
+            });
+        }
+        ;
+
+        if (loggedUser.username == 'daniela') {
+
+
+            all.customGET('', {}).then(function (data) {
+                $scope.search = data;
+                $scope.contacts = data;
+
+                // creating cached image list for modification
+                for (var i = 0; i < data.length; i++) {
+                    $scope.all.push({
+                        id: i,
+                        name: data[i].name,
+                        section: data[i].section,
+                        tags: data[i].tags,
+                        owner: data[i].owner,
+                        uid: data[i]._id.$oid,
+                        url: data[i].url
+                    });
+                }
+            });
+        }
+        ;
+
+
     }]);
 
     app.controller('EditDialogController', ['$scope', '$modal', '$log', '$http', 'Restangular' ,

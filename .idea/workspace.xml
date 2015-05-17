@@ -7,9 +7,9 @@
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431863907466" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431864622009" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
-    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431864532418" ignored="false" />
+    <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431864750752" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415816218111" ignored="false" />
     <file path="/main.css" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415817031743" ignored="false" />
     <file path="/edit.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1415818830073" ignored="false" />
@@ -94,7 +94,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="733" column="55" selection-start="27784" selection-end="27784" vertical-scroll-proportion="0.54605263">
+            <state line="762" column="48" selection-start="28658" selection-end="28658" vertical-scroll-proportion="0.6644737">
               <folding />
             </state>
           </provider>
@@ -1638,7 +1638,11 @@
       <created>1431863913169</created>
       <updated>1431863913169</updated>
     </task>
-    <option name="localTasksCounter" value="311" />
+    <task id="LOCAL-00311" summary="fix delete for IE">
+      <created>1431864627516</created>
+      <updated>1431864627516</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1879,7 +1883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="733" column="55" selection-start="27784" selection-end="27784" vertical-scroll-proportion="0.54605263">
+        <state line="762" column="48" selection-start="28658" selection-end="28658" vertical-scroll-proportion="0.6644737">
           <folding />
         </state>
       </provider>
