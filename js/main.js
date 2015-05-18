@@ -756,7 +756,7 @@
         }
         ;
 
-        if (loggedUser.username == 'daniela') {
+        if (loggedUser.username == 'daniela' || loggedUser.username == 'ContentAdmin') {
 
 
             all.customGET('', {}).then(function (data) {
