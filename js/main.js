@@ -330,13 +330,20 @@
             $scope.logout = function () {
                 $scope.profile = undefined;
                 $cookies.UserCredential = undefined;
-                $rootScope.loggedUser = null;
+                $rootScope.loggedUser = undefined;
                 changeLocation('/', false);
             };
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser != undefined) {
-                    var loggedUser = JSON.parse($rootScope.loggedUser);
+                    var loggedUser = "Login";
+                    try {
+                        loggedUser = JSON.parse($rootScope.loggedUser);
+                    }
+                    catch (err) {
+                        return 'Login';
+                    }
+
                     return loggedUser.username;
                 } else {
                     return 'Login';
