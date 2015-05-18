@@ -335,7 +335,7 @@
             };
 
             $scope.showUserName = function () {
-                if ($rootScope.loggedUser) {
+                if ($rootScope.loggedUser != undefined) {
                     var loggedUser = JSON.parse($rootScope.loggedUser);
                     return loggedUser.username;
                 } else {
