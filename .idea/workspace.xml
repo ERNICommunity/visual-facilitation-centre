@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/forgotpassword.html" afterPath="$PROJECT_DIR$/Sections/forgotpassword.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432055350638" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432055583484" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432055280350" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431961520791" ignored="false" />
@@ -19,7 +20,7 @@
     <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430581672640" ignored="false" />
     <file path="/.htaccess" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431727727152" ignored="false" />
     <file path="/login.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431958221265" ignored="false" />
-    <file path="/forgotpassword.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432047632892" ignored="false" />
+    <file path="/forgotpassword.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432056831898" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="13" selection-start="5476" selection-end="5476" vertical-scroll-proportion="0.6028939">
+            <state line="368" column="52" selection-start="12941" selection-end="12941" vertical-scroll-proportion="-5.6538463">
               <folding />
             </state>
           </provider>
@@ -93,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotpassword.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forgotpassword.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/forgotpassword.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="29" selection-start="617" selection-end="617" vertical-scroll-proportion="-9.714286">
+            <state line="2" column="94" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0375">
               <folding />
             </state>
           </provider>
@@ -162,8 +163,8 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/Sections/login.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
-        <option value="$PROJECT_DIR$/Sections/forgotpassword.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Sections/forgotpassword.html" />
       </list>
     </option>
   </component>
@@ -1672,7 +1673,11 @@
       <created>1432055355434</created>
       <updated>1432055355434</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="reset password">
+      <created>1432055589498</created>
+      <updated>1432055589498</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1703,7 +1708,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27876106" sideWeight="0.49894142" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.6005626" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.6005626" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24911785" sideWeight="0.20605187" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3318584" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
@@ -1908,16 +1913,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/forgotpassword.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="617" selection-end="617" vertical-scroll-proportion="-9.714286">
+        <state line="368" column="52" selection-start="12941" selection-end="12941" vertical-scroll-proportion="-5.6538463">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/Sections/forgotpassword.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="13" selection-start="5476" selection-end="5476" vertical-scroll-proportion="0.6028939">
+        <state line="2" column="94" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0375">
           <folding />
         </state>
       </provider>
