@@ -145,6 +145,11 @@
                         templateUrl: 'Sections/register.html',
                         controller: 'LoginController'
                     }).
+                    when('/forgotpassword', {
+
+                        templateUrl: 'Sections/forgotpassword.html',
+                        controller: 'PasswordController'
+                    }).
                     when('/', {
 
                         redirectTo: 'welcome'
@@ -153,16 +158,23 @@
             // register listener to watch route changes
             $rootScope.$on("$routeChangeStart", function (event, next, current) {
                 $rootScope.query = '';
-                if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
-                    // no logged user, we should be going to #login
-                    if (next.templateUrl != "Sections/login.html") {
-                        // only go to #login if not already there
-                        if (next.templateUrl != "Sections/register.html") {
-                            //not going to #login or #register, we should redirect now
-                            $location.path("/login");
+
+                if (next.templateUrl === "Sections/forgotpassword.html") {
+                } else {
+                    $location.path("/login");
+
+
+                    if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
+                        // no logged user, we should be going to #login
+                        if (next.templateUrl != "Sections/login.html") {
+                            // only go to #login if not already there
+                            if (next.templateUrl != "Sections/register.html") {
+                                //not going to #login or #register, we should redirect now
+                                $location.path("/login");
+                            }
                         }
+                        // } else {
                     }
-                    // } else {
                 }
             });
         }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
@@ -311,6 +323,64 @@
 
         }]);
 
+
+    app.controller('PasswordController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies', 'Global',
+        function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, Global) {
+
+            $scope.setUserProfileInViewsModel = function () {
+                $scope.profile = angular.fromJson($cookies.UserCredential);
+            };
+
+            /*set defaults based on user credentials cookie*/
+            if (angular.isUndefined($cookies.UserCredential) == false) {
+//                $scope.setUserProfileInViewsModel();
+                $rootScope.loggedUser = $cookies.UserCredential;
+            } else {
+                $rootScope.loggedUser = null;
+                $scope.profile = null;
+            }
+
+
+            $scope.showUserName = function () {
+                if ($rootScope.loggedUser != undefined) {
+
+
+                    var loggedUser = "Login";
+                    try {
+                        console.log($rootScope.loggedUser);
+
+                        loggedUser = JSON.parse($rootScope.loggedUser);
+                    }
+                    catch (err) {
+                        return 'Login';
+                    }
+
+                    return loggedUser.username;
+                } else {
+                    return 'Login';
+                }
+            };
+
+
+            $scope.login = function () {
+
+
+                $http({ method: 'GET', url: 'http://visualfacilitation.erni.ch/node/forgotpassword/' + $scope.credentials.username })
+                    .success(function (data) {
+
+                        Global.showMessage('An email has been sent to you with your credentials.');
+
+                    })
+                    .error(function (data) {
+                        Global.showMessage('Your username could not be found in the system.');
+//
+                    });
+            };
+
+
+        }]);
+
+
     app.controller('LoginController', ['$scope', '$rootScope', 'Restangular', '$routeParams', '$http', '$cookies', 'Global',
         function LoginCtrl($scope, $rootScope, db, $routeParams, $http, $cookies, Global) {
 
@@ -336,8 +406,12 @@
 
             $scope.showUserName = function () {
                 if ($rootScope.loggedUser != undefined) {
+
+
                     var loggedUser = "Login";
                     try {
+                        console.log($rootScope.loggedUser);
+
                         loggedUser = JSON.parse($rootScope.loggedUser);
                     }
                     catch (err) {
