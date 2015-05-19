@@ -366,7 +366,7 @@
             $scope.login = function () {
 
 
-                $http({ method: 'GET', url: 'http://127.0.0.1:8888/forgotpassword/' + $scope.credentials.username })
+                $http({ method: 'GET', url: 'http://visualfacilitation.erni.ch/node/forgotpassword/' + $scope.credentials.username })
                     .success(function (data) {
 
                         Global.showMessage('An email has been sent to you with your credentials.');
