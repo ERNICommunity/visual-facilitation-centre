@@ -337,24 +337,17 @@
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
-                $rootScope.loggedUser = null;
-                $scope.profile = null;
+                $rootScope.loggedUser = undefined;
+                $scope.profile = undefined;
             }
 
 
             $scope.showUserName = function () {
-                if ($rootScope.loggedUser != undefined) {
+                if (!$rootScope.loggedUser) {
 
+                    console.log($rootScope.loggedUser);
 
-                    var loggedUser = "Login";
-                    try {
-                        console.log($rootScope.loggedUser);
-
-                        loggedUser = JSON.parse($rootScope.loggedUser);
-                    }
-                    catch (err) {
-                        return 'Login';
-                    }
+                    loggedUser = JSON.parse($rootScope.loggedUser);
 
                     return loggedUser.username;
                 } else {
@@ -394,8 +387,8 @@
 //                $scope.setUserProfileInViewsModel();
                 $rootScope.loggedUser = $cookies.UserCredential;
             } else {
-                $rootScope.loggedUser = null;
-                $scope.profile = null;
+                $rootScope.loggedUser = undefined;
+                $scope.profile = undefined;
             }
 
             $scope.logout = function () {
@@ -406,12 +399,14 @@
             };
 
             $scope.showUserName = function () {
-                if ($rootScope.loggedUser != undefined) {
 
+
+                if (!$rootScope.loggedUser) {
+
+                    console.log('value:' + $rootScope.loggedUser);
 
                     var loggedUser = "Login";
                     try {
-                        console.log($rootScope.loggedUser);
 
                         loggedUser = JSON.parse($rootScope.loggedUser);
                     }
