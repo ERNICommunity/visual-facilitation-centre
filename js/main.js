@@ -160,22 +160,25 @@
                 $rootScope.query = '';
 
                 if (next.templateUrl === "Sections/forgotpassword.html") {
-                } else {
-                    $location.path("/login");
+                    return;
 
-
-                    if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
-                        // no logged user, we should be going to #login
-                        if (next.templateUrl != "Sections/login.html") {
-                            // only go to #login if not already there
-                            if (next.templateUrl != "Sections/register.html") {
-                                //not going to #login or #register, we should redirect now
-                                $location.path("/login");
-                            }
-                        }
-                        // } else {
-                    }
                 }
+                ;
+                $location.path("/login");
+
+
+                if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
+                    // no logged user, we should be going to #login
+                    if (next.templateUrl != "Sections/login.html") {
+                        // only go to #login if not already there
+                        if (next.templateUrl != "Sections/register.html") {
+                            //not going to #login or #register, we should redirect now
+                            $location.path("/login");
+                        }
+                    }
+                    // } else {
+                }
+
             });
         }).service('Global', ['$location', 'ngDialog', function ($location, ngDialog) {
             var global;
