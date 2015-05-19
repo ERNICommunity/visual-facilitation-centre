@@ -164,8 +164,6 @@
 
                 }
                 ;
-                $location.path("/login");
-
 
                 if ($rootScope.loggedUser == null || $rootScope.loggedUser == 'undefined') {
                     // no logged user, we should be going to #login
