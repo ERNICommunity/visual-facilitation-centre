@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0530bfc7-ee43-4796-92b7-f1756f3cc823" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/forgotpassword.html" afterPath="$PROJECT_DIR$/Sections/forgotpassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sections/login.html" afterPath="$PROJECT_DIR$/Sections/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VF.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432098642287" ignored="false" />
+    <file path="/Dummy.txt" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432105779333" ignored="false" />
     <file path="/index.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1414228607985" ignored="false" />
     <file path="/main.js" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432098593706" ignored="false" />
     <file path="/tips.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431961520791" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="/test.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430561299145" ignored="false" />
     <file path="/upload.php" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1430581672640" ignored="false" />
     <file path="/.htaccess" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431727727152" ignored="false" />
-    <file path="/login.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1431958221265" ignored="false" />
+    <file path="/login.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432106358769" ignored="false" />
     <file path="/forgotpassword.html" changelist="0530bfc7-ee43-4796-92b7-f1756f3cc823" time="1432105769907" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,19 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sections/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="-9.714286">
+            <state line="18" column="29" selection-start="890" selection-end="890" vertical-scroll-proportion="0.3375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotpassword.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forgotpassword.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sections/forgotpassword.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="27" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0375">
+            <state line="16" column="139" selection-start="594" selection-end="594" vertical-scroll-proportion="-9.142858">
               <folding />
             </state>
           </provider>
@@ -160,10 +160,10 @@
         <option value="$PROJECT_DIR$/blank.php" />
         <option value="$PROJECT_DIR$/xDomain.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/Sections/login.html" />
         <option value="$PROJECT_DIR$/Sections/tips.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/Sections/forgotpassword.html" />
+        <option value="$PROJECT_DIR$/Sections/login.html" />
       </list>
     </option>
   </component>
@@ -1700,7 +1700,11 @@
       <created>1432098647107</created>
       <updated>1432098647107</updated>
     </task>
-    <option name="localTasksCounter" value="326" />
+    <task id="LOCAL-00326" summary="fix show username">
+      <created>1432105784854</created>
+      <updated>1432105784855</updated>
+    </task>
+    <option name="localTasksCounter" value="327" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1922,13 +1926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sections/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="-9.714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sections/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="52" selection-start="1182" selection-end="1182" vertical-scroll-proportion="-17.142857">
@@ -1945,7 +1942,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sections/forgotpassword.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0375">
+        <state line="16" column="139" selection-start="594" selection-end="594" vertical-scroll-proportion="-9.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sections/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="890" selection-end="890" vertical-scroll-proportion="0.3375">
           <folding />
         </state>
       </provider>
