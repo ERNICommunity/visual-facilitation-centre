@@ -1001,8 +1001,8 @@
             };
         }]);
 
-    app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global',
-        function ($scope, Restangular, Global) {
+    app.controller('PreviewDialogController', ['$scope', 'Restangular', 'Global', '$http',
+        function ($scope, Restangular, Global, $http) {
 
         }
     ])
