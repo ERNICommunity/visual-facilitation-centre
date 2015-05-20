@@ -1006,7 +1006,7 @@
 
         }
     ])
-    var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage, db) {
+    var EditDialogInstanceController = function ($scope, $modalInstance, selectedImage, db, $http) {
 
         $scope.selectedImage = selectedImage;
 
