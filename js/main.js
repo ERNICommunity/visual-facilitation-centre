@@ -341,7 +341,7 @@
                 $scope.profile = undefined;
             }
 
-
+            console.log($rootScope.loggedUser);
             $scope.showUserName = function () {
                 if (!$rootScope.loggedUser) {
 
@@ -399,9 +399,10 @@
             };
 
             $scope.showUserName = function () {
+                console.log('value:' + $rootScope.loggedUser);
 
-
-                if (!$rootScope.loggedUser) {
+                console.log('test:');
+                if ($rootScope.loggedUser != undefined) {
 
                     console.log('value:' + $rootScope.loggedUser);
 
@@ -411,11 +412,14 @@
                         loggedUser = JSON.parse($rootScope.loggedUser);
                     }
                     catch (err) {
+                        console.log('error');
                         return 'Login';
                     }
 
+                    console.log('name:' + loggedUser.username);
                     return loggedUser.username;
                 } else {
+                    console.log('not null:');
                     return 'Login';
                 }
             };
